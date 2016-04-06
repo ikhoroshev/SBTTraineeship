@@ -1,0 +1,33 @@
+Benchmark                (size)     (type)  Mode  Cnt     Score       Error  Units
+ToArrayIssue.simpleCopy       0  arraylist  avgt    3    12,912 ±     1,089  ns/op
+ToArrayIssue.simpleCopy       0    hashset  avgt    3    14,122 ±     0,434  ns/op
+ToArrayIssue.simpleCopy       1  arraylist  avgt    3    13,505 ±     0,915  ns/op
+ToArrayIssue.simpleCopy       1    hashset  avgt    3    26,652 ±     1,141  ns/op
+ToArrayIssue.simpleCopy      10  arraylist  avgt    3    19,840 ±     0,717  ns/op
+ToArrayIssue.simpleCopy      10    hashset  avgt    3    54,163 ±     0,628  ns/op
+ToArrayIssue.simpleCopy     100  arraylist  avgt    3   107,008 ±    78,343  ns/op
+ToArrayIssue.simpleCopy     100    hashset  avgt    3   500,768 ±    59,627  ns/op
+ToArrayIssue.simpleCopy    1000  arraylist  avgt    3   877,420 ±    49,541  ns/op
+ToArrayIssue.simpleCopy    1000    hashset  avgt    3  7523,737 ±   839,390  ns/op
+
+ToArrayIssue.sizedCopy        0  arraylist  avgt    3    11,710 ±     0,813  ns/op
+ToArrayIssue.sizedCopy        0    hashset  avgt    3    14,148 ±     0,830  ns/op
+ToArrayIssue.sizedCopy        1  arraylist  avgt    3    19,934 ±     3,085  ns/op
+ToArrayIssue.sizedCopy        1    hashset  avgt    3    26,727 ±     0,340  ns/op
+ToArrayIssue.sizedCopy       10  arraylist  avgt    3    32,015 ±     2,602  ns/op
+ToArrayIssue.sizedCopy       10    hashset  avgt    3    61,132 ±     4,730  ns/op
+ToArrayIssue.sizedCopy      100  arraylist  avgt    3   200,779 ±    21,610  ns/op
+ToArrayIssue.sizedCopy      100    hashset  avgt    3   647,973 ±    29,993  ns/op
+ToArrayIssue.sizedCopy     1000  arraylist  avgt    3  2483,800 ±   247,176  ns/op
+ToArrayIssue.sizedCopy     1000    hashset  avgt    3  8124,578 ±   739,496  ns/op
+
+ToArrayIssue.zeroCopy         0  arraylist  avgt    3     6,752 ±     5,898  ns/op
+ToArrayIssue.zeroCopy         0    hashset  avgt    3     7,454 ±     1,391  ns/op
+ToArrayIssue.zeroCopy         1  arraylist  avgt    3    20,118 ±     1,879  ns/op
+ToArrayIssue.zeroCopy         1    hashset  avgt    3    28,013 ±    16,150  ns/op
+ToArrayIssue.zeroCopy        10  arraylist  avgt    3    33,190 ±     3,488  ns/op
+ToArrayIssue.zeroCopy        10    hashset  avgt    3    67,054 ±     7,297  ns/op
+ToArrayIssue.zeroCopy       100  arraylist  avgt    3   170,837 ±    62,270  ns/op
+ToArrayIssue.zeroCopy       100    hashset  avgt    3   554,796 ±    41,054  ns/op
+ToArrayIssue.zeroCopy      1000  arraylist  avgt    3  1804,327 ±  1041,345  ns/op
+ToArrayIssue.zeroCopy      1000    hashset  avgt    3  9279,538 ± 17055,460  ns/op
