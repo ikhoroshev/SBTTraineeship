@@ -17,7 +17,9 @@ public class Contravariance {
 
 
   private Contravariance doSomeInterestingThings() {
-    // playerNumbers.add(1);
+    // playerNumbers.add(0);
+    // playerNumbers.add(null);
+    // playerNumbers.add(-.1);
     return this;
   }
 
