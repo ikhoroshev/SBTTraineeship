@@ -6,8 +6,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.sberbank.dao.QuestionRepository;
+import ru.sberbank.dao.UserGroupRepository;
+import ru.sberbank.dao.UserRepository;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.QuestionType;
+import ru.sberbank.model.User;
+import ru.sberbank.model.UserGroup;
 
 import javax.annotation.Resource;
 
@@ -21,6 +25,10 @@ public class Application {
 
     @Resource
     QuestionRepository questionRepository;
+    @Resource
+    UserGroupRepository userGroupRepository;
+    @Resource
+    UserRepository userRepository;
 
     @RequestMapping("/")
     String home() {
@@ -32,6 +40,22 @@ public class Application {
         question.setType(QuestionType.MULTIPLE);
 
         questionRepository.save(question);
+
+        UserGroup userGroup = new UserGroup();
+        userGroup.setId(1L);
+        userGroup.setGroupName("Group 1");
+
+        userGroupRepository.save(userGroup);
+
+        User user = new User();
+        user.setId(1L);
+        user.setFirstName("11111");
+        user.setLastName("22222");
+        user.setMiddleName("33333");
+        user.setUserGroup(userGroup);
+
+        userRepository.save(user);
+
         return "Hello World!";
     }
 
