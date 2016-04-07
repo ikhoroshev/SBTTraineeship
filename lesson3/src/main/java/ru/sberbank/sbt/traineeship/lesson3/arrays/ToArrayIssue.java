@@ -1,6 +1,7 @@
 package ru.sberbank.sbt.traineeship.lesson3.arrays;
 
 import org.openjdk.jmh.annotations.*;
+import ru.sberbank.sbt.traineeship.lesson3.common.Account;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -23,29 +24,6 @@ import java.util.concurrent.TimeUnit;
 public class ToArrayIssue {
 
 
-  /** Интерфейс счета. */
-  private static class Account {
-    private final int        number;  // номер счёта
-    private final BigDecimal balance; // остаток
-
-    public Account(final int number, final BigDecimal balance) {
-      this.number = number;
-      this.balance = balance;
-    }
-
-    @Override public boolean equals(final Object o) {
-      if (this == o) return true;
-      if (o == null || getClass() != o.getClass()) return false;
-      Account account = (Account) o;
-      return number == account.number;
-    }
-
-    @Override public int hashCode() {
-      return number;
-    }
-  }
-
-
   @Param({"0", "1", "10", "100", "1000"})
   private int size;
 
@@ -65,10 +43,10 @@ public class ToArrayIssue {
         accounts = new HashSet<>();
         break;
       default:
-        throw new IllegalStateException("Не поддерживаемый тип коллекции: " + type);
+        throw new IllegalStateException("Неподдерживаемый тип коллекции: " + type);
     }
     for (int i = 0; i < size; i++) {
-      accounts.add(new Account(i, BigDecimal.valueOf(i % 20)));
+      accounts.add(new Account(i));
     }
   }
 
