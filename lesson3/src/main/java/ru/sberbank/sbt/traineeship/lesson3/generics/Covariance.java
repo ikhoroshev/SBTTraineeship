@@ -12,7 +12,7 @@ import java.util.List;
 public class Covariance {
 
 
-  List<? extends Number> playerNumbers = new ArrayList<Integer>() // {{ add(1);}}
+  List<? extends Number> playerNumbers = new ArrayList<Integer>()  {{ add(1);}}
   ;
   List<? extends Number> weights       = new ArrayList<Float>()   // {{ add(2);}}
   ;
@@ -22,6 +22,7 @@ public class Covariance {
 
   private Covariance doSomeInterestingThings() {
     // playerNumbers.add(1);
+    // playerNumbers.add(null);
     return this;
   }
 
