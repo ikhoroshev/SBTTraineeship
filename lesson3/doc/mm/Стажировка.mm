@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1459859373958" ID="ID_844487620" MODIFIED="1460028277997" TEXT="&#x421;&#x442;&#x430;&#x436;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
+<node CREATED="1459859373958" ID="ID_844487620" MODIFIED="1460114111357" TEXT="&#x421;&#x442;&#x430;&#x436;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -12,39 +12,7 @@
   </body>
 </html>
 </richcontent>
-<node CREATED="1459859427985" ID="ID_1589096889" MODIFIED="1460005204783" POSITION="left" TEXT="&#x41c;&#x430;&#x441;&#x441;&#x438;&#x432;&#x44b;">
-<arrowlink COLOR="#b0b0b0" DESTINATION="ID_1440380139" ENDARROW="Default" ENDINCLINATION="920;-313;" ID="Arrow_ID_1021111231" STARTARROW="None" STARTINCLINATION="898;-313;"/>
-<icon BUILTIN="full-2"/>
-<node CREATED="1459859905182" ID="ID_737945304" MODIFIED="1459867278137" TEXT="&#x41f;&#x43e;&#x43b;&#x435;&#x437;&#x43d;&#x44b;&#x435; &#x441;&#x441;&#x44b;&#x43b;&#x43a;&#x438;">
-<node CREATED="1459860044684" ID="ID_1752292444" LINK="https://dzone.com/articles/covariance-and-contravariance" MODIFIED="1459860050321" TEXT="Covariance and Contravariance In Java"/>
-<node CREATED="1459867303917" ID="ID_1174748159" LINK="http://shipilev.net/blog/2016/arrays-wisdom-ancients/" MODIFIED="1459867324696" TEXT="Arrays of Wisdom of the Ancients"/>
-</node>
-<node CREATED="1459924286036" ID="ID_1637229621" MODIFIED="1459924293184" TEXT="&#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;&#x44b; &#x441;&#x43e;&#x437;&#x434;&#x430;&#x43d;&#x438;&#x44f;"/>
-<node CREATED="1459924348758" ID="ID_1779005108" MODIFIED="1459924362675" TEXT="&#x43a;&#x43e;&#x43f;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x435;"/>
-<node CREATED="1459924363574" ID="ID_454732606" MODIFIED="1459924365461" TEXT="&#x441;&#x440;&#x430;&#x432;&#x43d;&#x435;&#x43d;&#x438;&#x435;"/>
-<node CREATED="1459924387977" ID="ID_590636385" MODIFIED="1460006763943" TEXT="&#x441;&#x43e;&#x440;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
-<richcontent TYPE="NOTE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Collections.sort
-    </p>
-    <p>
-      Arrays.sort
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Implementation note: The sorting algorithm is a Dual-Pivot Quicksort by Vladimir Yaroslavskiy, Jon Bentley, and Joshua Bloch. This algorithm offers O(n log(n)) performance on many data sets that cause other quicksorts to degrade to quadratic performance, and is typically faster than traditional (one-pivot) Quicksort implementations.
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node CREATED="1459859438530" ID="ID_1505106338" MODIFIED="1460006320702" POSITION="left" STYLE="fork" TEXT="&#x41a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x446;&#x438;&#x438;">
+<node CREATED="1459859438530" FOLDED="true" ID="ID_1505106338" MODIFIED="1460114111356" POSITION="left" STYLE="fork" TEXT="&#x41a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x446;&#x438;&#x438; &#x438; &#x43c;&#x430;&#x441;&#x441;&#x438;&#x432;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -63,11 +31,31 @@
       http://bigocheatsheet.com/
     </p>
   </body>
-</html></richcontent>
-<icon BUILTIN="full-3"/>
-<node CREATED="1460005445264" ID="ID_78719781" MODIFIED="1460035661330" TEXT="&#x422;&#x438;&#x43f;&#x44b;">
-<node CREATED="1460005453871" ID="ID_1765249558" MODIFIED="1460035561325" TEXT="Map">
-<node CREATED="1460006081613" FOLDED="true" ID="ID_617899239" MODIFIED="1460035552555" TEXT="HashMap">
+</html>
+</richcontent>
+<icon BUILTIN="full-2"/>
+<node CREATED="1460005445264" FOLDED="true" ID="ID_78719781" MODIFIED="1460114111356" TEXT="&#x422;&#x438;&#x43f;&#x44b;">
+<node CREATED="1460005453871" FOLDED="true" ID="ID_1765249558" MODIFIED="1460114111355" TEXT="Map">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    &#1048;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;
+
+    <p>
+      <strong>Map </strong>&#1089;&#1086;&#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090; &#1091;&#1085;&#1080;&#1082;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1082;&#1083;&#1102;&#1095;&#1080; &#1089;&#1086; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1103;&#1084;&#1080;. &#1050;&#1083;&#1102;&#1095; &#8212; &#1101;&#1090;&#1086; &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1081; &#1074;&#1099; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090;&#1077; &#1076;&#1083;&#1103; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1091;&#1102;&#1097;&#1077;&#1075;&#1086; &#1080;&#1079;&#1074;&#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1103; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;. &#1047;&#1072;&#1076;&#1072;&#1074;&#1072;&#1103; &#1082;&#1083;&#1102;&#1095; &#1080; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077;, &#1074;&#1099; &#1084;&#1086;&#1078;&#1077;&#1090;&#1077; &#1087;&#1086;&#1084;&#1077;&#1097;&#1072;&#1090;&#1100; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1103; &#1074; &#1086;&#1073;&#1098;&#1077;&#1082;&#1090; &#1082;&#1072;&#1088;&#1090;&#1099;. &#1055;&#1086;&#1089;&#1083;&#1077; &#1090;&#1086;&#1075;&#1086; &#1082;&#1072;&#1082; &#1101;&#1090;&#1086; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1086;, &#1074;&#1099; &#1084;&#1086;&#1078;&#1077;&#1090;&#1077; &#1087;&#1086;&#1083;&#1091;&#1095;&#1080;&#1090;&#1100; &#1077;&#1075;&#1086; &#1087;&#1086; &#1082;&#1083;&#1102;&#1095;&#1091;.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1103; &#1087;&#1086; map entryset vs keyset
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460006081613" FOLDED="true" ID="ID_617899239" MODIFIED="1460114111354" TEXT="HashMap">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -131,8 +119,7 @@
       As you can see, it worth to replace JDK HashMap with Trove THashMap if you want to save some memory.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_617899239" ENDARROW="None" ENDINCLINATION="177;0;" ID="Arrow_ID_850546038" SOURCE="ID_1012105592" STARTARROW="None" STARTINCLINATION="177;0;"/>
 <node CREATED="1460006087070" ID="ID_864678731" MODIFIED="1460035477246" TEXT="LinkedHashMap">
 <richcontent TYPE="NOTE"><html>
@@ -147,18 +134,25 @@
       It means that <code>LinkedHashMap</code>&#160;consumes <strong>40 * SIZE + 4 * CAPACITY</strong>&#160; bytes. Unfortunately, Trove does not offer a direct replacement for this collection, but I would advise you to use a linked list if you want to store a small number of elements.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_864678731" ENDARROW="None" ENDINCLINATION="74;0;" ID="Arrow_ID_595070157" SOURCE="ID_1012105592" STARTARROW="None" STARTINCLINATION="74;0;"/>
 </node>
 </node>
 <node CREATED="1460006093934" ID="ID_1266421570" MODIFIED="1460006097979" TEXT="WeakHashMap"/>
-<node CREATED="1460023881547" ID="ID_671879912" MODIFIED="1460035567633" TEXT="TreeMap">
+<node CREATED="1460023881547" ID="ID_671879912" MODIFIED="1460113472041" TEXT="TreeMap">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1103;&#1077;&#1090; &#1082;&#1083;&#1072;&#1089;&#1089;
+
+    <p>
+      <strong>AbstractMap </strong>&#1080; &#1088;&#1077;&#1072;&#1083;&#1080;&#1079;&#1091;&#1077;&#1090; &#1080;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089; <strong>NavigatebleMap</strong>. &#1054;&#1085; &#1089;&#1086;&#1079;&#1076;&#1072;&#1077;&#1090; &#1082;&#1086;&#1083;&#1083;&#1077;&#1082;&#1094;&#1080;&#1102;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1076;&#1083;&#1103; &#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1086;&#1074; &#1087;&#1088;&#1080;&#1084;&#1077;&#1085;&#1103;&#1077;&#1090; <em>&#1076;&#1077;&#1088;&#1077;&#1074;&#1086;</em>. <em>&#1054;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1103;&#1102;&#1090;&#1089;&#1103; &#1074; &#1086;&#1090;&#1089;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1085;&#1086;&#1084; &#1087;&#1086;&#1088;&#1103;&#1076;&#1082;&#1077; &#1087;&#1086; &#1074;&#1086;&#1079;&#1088;&#1072;&#1089;&#1090;&#1072;&#1085;&#1080;&#1102;</em>. &#1042;&#1088;&#1077;&#1084;&#1103; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1072; &#1080; &#1080;&#1079;&#1074;&#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1103; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1086;&#1074; &#1076;&#1086;&#1089;&#1090;&#1072;&#1090;&#1086;&#1095;&#1085;&#1086; &#1084;&#1072;&#1083;&#1086;, &#1095;&#1090;&#1086; &#1076;&#1077;&#1083;&#1072;&#1077;&#1090; &#1082;&#1083;&#1072;&#1089;&#1089; TreeMap &#1073;&#1083;&#1077;&#1089;&#1090;&#1103;&#1097;&#1080;&#1084; &#1074;&#1099;&#1073;&#1086;&#1088;&#1086;&#1084; &#1076;&#1083;&#1103; &#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1103; &#1073;&#1086;&#1083;&#1100;&#1096;&#1080;&#1093; &#1086;&#1073;&#1098;&#1077;&#1084;&#1086;&#1074; &#1086;&#1090;&#1089;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1085;&#1086;&#1081; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1080;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1076;&#1086;&#1083;&#1078;&#1085;&#1072; &#1073;&#1099;&#1090;&#1100; &#1073;&#1099;&#1089;&#1090;&#1088;&#1086; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072;
+    </p>
+    <p>
+      
+    </p>
     <p>
       TreeMap is a red-black tree. This means that a tree contains exactly map.size() nodes. Each tree node contains: key, value, pointers to the left and right children, pointer to a parent and a boolean &#8216;colour&#8217; flag. It means that a node occupies 12 bytes for header, 20 bytes for 5 object fields and 1 byte for the flag, so the total consumption is 12 + 20 + 1 = 40 (due to 8 byte alignment). The last flag seems to be odd in this design, because it causes each node to consume 7 bytes more (due to alignment). This situation could be solved by having 2 types of nodes &#8211; one class for red nodes and another for black ones.
     </p>
@@ -174,12 +168,28 @@
     <p>
       The advantage of a TreeMap is that it implements a NavigableMap interface, which allows you to make cheap requests for previous/next entries by the natural ordering or provided Comparator as well as to make any range selections.
     </p>
+    <p>
+      
+    </p>
+    &#1045;&#1089;&#1083;&#1080; &#1074;&#1072;&#1084; &#1090;&#1088;&#1077;&#1073;&#1091;&#1077;&#1090;&#1089;&#1103; &#1086;&#1090;&#1089;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1089;&#1083;&#1086;&#1074;&#1072;&#1088;&#1100; (Map), &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1081;&#1090;&#1077; &#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1091; TreeMap &#1076;&#1083;&#1103; &#1089;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1082;&#1080;. TreeMap &#1089;&#1086;&#1088;&#1090;&#1080;&#1088;&#1091;&#1077;&#1090;&#1089;&#1103; &#1087;&#1086; &#1082;&#1083;&#1102;&#1095;&#1091; (key).
+
+    <p>
+      <br />
+      
+    </p>
+    <pre class="prettyprint"><code>// TreeMap &#8211; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1102;&#1097;&#1080;&#1081; String &#1082;&#1083;&#1102;&#1095;&#1080; &#1080; &#1082;&#1086;&#1084;&#1087;&#1072;&#1088;&#1072;&#1090;&#1086;&#1088; (Comparator) CASE_INSENSITIVE_ORDER,<br />// &#160; &#160; &#160; &#160; &#160; &#1091;&#1087;&#1086;&#1088;&#1103;&#1076;&#1086;&#1095;&#1080;&#1074;&#1072;&#1102;&#1097;&#1080;&#1081; &#1089;&#1090;&#1088;&#1086;&#1082;&#1080; (String) &#1084;&#1077;&#1090;&#1086;&#1076;&#1086;&#1084; compareToIgnoreCase<br />Map&lt;String, Integer&gt; sortedMap = new TreeMap&lt;String, Integer&gt;(String.CASE_INSENSITIVE_ORDER);<br />sortedMap.putAll(unsortedMap);</code></pre>
+    <br />
+    <br />
+    
+
+    <pre class="prettyprint"><code>//TreeMap &#8211; &#1086;&#1073;&#1097;&#1080;&#1081; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;, &#1082;&#1086;&#1084;&#1087;&#1072;&#1088;&#1072;&#1090;&#1086;&#1088; &#1091;&#1082;&#1072;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074;&#1088;&#1091;&#1095;&#1085;&#1091;&#1102;<br />Map&lt;ObjectName, String&gt; sortedMap = new TreeMap&lt;ObjectName, String&gt;(new Comparator&lt;ObjectName&gt;() {<br />&#160; &#160; &#160; &#160; public int compare(ObjectName o1, ObjectName o2) {<br />&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; return o1.toString().compareTo(o2.toString());<br />&#160; &#160; &#160; &#160; }<br />});<br />sortedMap.putAll(unsortedMap);</code></pre>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_671879912" ENDARROW="Default" ENDINCLINATION="206;-24;" ID="Arrow_ID_402176417" SOURCE="ID_402575952" STARTARROW="None" STARTINCLINATION="346;-14;"/>
 </node>
 </node>
-<node CREATED="1460005465441" ID="ID_779968409" MODIFIED="1460005499452" TEXT="Collection">
+<node CREATED="1460005465441" FOLDED="true" ID="ID_779968409" MODIFIED="1460114111355" TEXT="Collection">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -193,8 +203,8 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1459924480819" ID="ID_1908740993" MODIFIED="1460005357123" TEXT="&#x41c;&#x43d;&#x43e;&#x436;&#x435;&#x441;&#x442;&#x432;&#x43e; Set">
-<node CREATED="1460034909152" ID="ID_1012105592" MODIFIED="1460035477246" TEXT="HashSet">
+<node CREATED="1459924480819" FOLDED="true" ID="ID_1908740993" MODIFIED="1460114111355" TEXT="&#x41c;&#x43d;&#x43e;&#x436;&#x435;&#x441;&#x442;&#x432;&#x43e; Set">
+<node CREATED="1460034909152" ID="ID_1012105592" MODIFIED="1460097152186" TEXT="HashSet">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -216,8 +226,7 @@
       THashSet uses a single object array for its values, so it uses 4 * CAPACITY bytes for storage. As you can see, compared to JDK HashSet, you will save 32 * SIZE bytes in case of the identical load factor, which is a huge improvement.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <arrowlink DESTINATION="ID_617899239" ENDARROW="None" ENDINCLINATION="177;0;" ID="Arrow_ID_850546038" STARTARROW="None" STARTINCLINATION="177;0;"/>
 <arrowlink DESTINATION="ID_864678731" ENDARROW="None" ENDINCLINATION="74;0;" ID="Arrow_ID_595070157" STARTARROW="None" STARTINCLINATION="74;0;"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1012105592" ENDARROW="None" ENDINCLINATION="43;0;" ID="Arrow_ID_1773808423" SOURCE="ID_1507514354" STARTARROW="None" STARTINCLINATION="43;0;"/>
@@ -238,11 +247,10 @@
       Trove TLinkedHashSet could be used as a replacement. It adds TIntList for storing the order of entries to THashSet, which means that it occupies 8 * CAPACITY bytes.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <arrowlink DESTINATION="ID_1012105592" ENDARROW="None" ENDINCLINATION="43;0;" ID="Arrow_ID_1773808423" STARTARROW="None" STARTINCLINATION="43;0;"/>
 </node>
-<node CREATED="1460035530108" ID="ID_402575952" MODIFIED="1460035567633" TEXT="TreeSet ">
+<node CREATED="1460035530108" ID="ID_402575952" LINK="https://habrahabr.ru/post/66926/" MODIFIED="1460112948547" TEXT="TreeSet ">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -251,13 +259,17 @@
     <p>
       JDK TreeSet is backed by a TreeMap, so its memory consumption is identical: 40 * SIZE bytes.
     </p>
+    <p>
+      
+    </p>
+    <pre class="prettyprint"><code>Set&lt;ObjectName&gt; sortedSet = new TreeSet&lt;ObjectName&gt;(new Comparator&lt;ObjectName&gt;() {<br />&#160; &#160; &#160; &#160; public int compare(ObjectName o1, ObjectName o2) {<br />&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; return o1.toString().compareTo(o2.toString());<br />&#160; &#160; &#160; &#160; }<br />});<br />sortedSet.addAll(unsortedSet);</code></pre>
   </body>
 </html>
 </richcontent>
 <arrowlink DESTINATION="ID_671879912" ENDARROW="Default" ENDINCLINATION="206;-24;" ID="Arrow_ID_402176417" STARTARROW="None" STARTINCLINATION="346;-14;"/>
 </node>
 </node>
-<node CREATED="1459924449436" ID="ID_379739741" MODIFIED="1460028303297" TEXT="List">
+<node CREATED="1459924449436" FOLDED="true" ID="ID_379739741" MODIFIED="1460114111355" TEXT="List">
 <node CREATED="1460011253414" ID="ID_1810977035" MODIFIED="1460011262580" TEXT="ArrayList">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -298,8 +310,7 @@
       3. .set &#1074; &#1082;&#1086;&#1085;&#1094;&#1077; &#1089;&#1087;&#1080;&#1089;&#1082;&#1072;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1912797941" ENDARROW="None" ENDINCLINATION="50;0;" ID="Arrow_ID_242344331" SOURCE="ID_977901790" STARTARROW="None" STARTINCLINATION="50;0;"/>
 </node>
 </node>
@@ -319,11 +330,10 @@
       ArrayDeque is based on an Object[], which length is a power of 2. Besides the array, there are int head and tail pointers &#8211; they allow the array to wrap around its edges if required. Because of ArrayDeque internal memory management, its storage array length is always equal to the size of ArrayDeque rounded to the next power of 2. It means that you spend less than 8 bytes per value in the worst case and 4 bytes per value in the best case.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <arrowlink DESTINATION="ID_1912797941" ENDARROW="None" ENDINCLINATION="50;0;" ID="Arrow_ID_242344331" STARTARROW="None" STARTINCLINATION="50;0;"/>
 </node>
-<node CREATED="1459924506597" ID="ID_745120230" MODIFIED="1460006053096" TEXT="&#x41e;&#x447;&#x435;&#x440;&#x435;&#x434;&#x44c; Queue">
+<node CREATED="1459924506597" FOLDED="true" ID="ID_745120230" MODIFIED="1460114111355" TEXT="&#x41e;&#x447;&#x435;&#x440;&#x435;&#x434;&#x44c; Queue">
 <node CREATED="1460035604112" ID="ID_867351900" MODIFIED="1460035614359" TEXT="PriorityQueue">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -340,8 +350,7 @@
       PriorityQueue is based on the binary heap, which is essentially an array, where children of entry with index N are located at 2*N+1 and 2*N+2. The size of this array is increased twofold on each resize, so for sufficiently large collections we use between 50 and 100% of entries in the array. There are no wrappers for collection elements, which means that PriorityQueue consumption is between 4 * SIZE and 8 * SIZE bytes (identical to ArrayList despite their different purposes). We can also specify this size as 4 * CAPACITY bytes.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460028373645" ID="ID_824164927" MODIFIED="1460029641087" TEXT="BitSet">
@@ -354,11 +363,10 @@
       As you have noticed from a previous section, a BitSet is built on top of the long[]. The minor disadvantage of a BitSet is that its minimal allowed value is fixed to zero. Thus, if you need a BitSet starting at some offset, you will have to manually subtract your offset from all your values in BitSet methods. Besides that, a BitSet is limited to int values. It also means a need of some sort of envelope for storing real long values in it.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1460011747971" FOLDED="true" ID="ID_1367053320" MODIFIED="1460035615504" TEXT="&#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x430;">
+<node CREATED="1460011747971" FOLDED="true" ID="ID_1367053320" MODIFIED="1460113729404" TEXT="&#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x430;">
 <node CREATED="1460011754425" MODIFIED="1460011754425">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -371,7 +379,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1460011315760" FOLDED="true" ID="ID_1139964483" LINK="http://java-performance.info/memory-consumption-of-java-data-types-1/" MODIFIED="1460028288391" TEXT="&#x423;&#x442;&#x438;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f; &#x440;&#x435;&#x441;&#x443;&#x440;&#x441;&#x43e;&#x432;">
+<node CREATED="1460011315760" FOLDED="true" ID="ID_1139964483" LINK="http://java-performance.info/memory-consumption-of-java-data-types-1/" MODIFIED="1460111183213" TEXT="&#x423;&#x442;&#x438;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f; &#x440;&#x435;&#x441;&#x443;&#x440;&#x441;&#x43e;&#x432;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -545,7 +553,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1460012188519" FOLDED="true" ID="ID_948285528" LINK="https://habrahabr.ru/post/188010/" MODIFIED="1460024118548" TEXT="&#x412;&#x440;&#x435;&#x43c;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x441;&#x43b;&#x43e;&#x436;&#x43d;&#x43e;&#x441;&#x442;&#x44c;">
+<node CREATED="1460012188519" FOLDED="true" ID="ID_948285528" LINK="https://habrahabr.ru/post/188010/" MODIFIED="1460111523030" TEXT="&#x412;&#x440;&#x435;&#x43c;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x441;&#x43b;&#x43e;&#x436;&#x43d;&#x43e;&#x441;&#x442;&#x44c;">
 <node CREATED="1460012196579" ID="ID_671689421" MODIFIED="1460012196579">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -567,7 +575,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1459859665227" ID="ID_521452344" MODIFIED="1460005357122" TEXT="Comparable">
+<node CREATED="1459859665227" ID="ID_521452344" MODIFIED="1460111633496" TEXT="Comparable">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -592,11 +600,10 @@
     </ul>
   </body>
 </html></richcontent>
+<arrowlink DESTINATION="ID_896842867" ENDARROW="None" ENDINCLINATION="184;0;" ID="Arrow_ID_1461977508" STARTARROW="None" STARTINCLINATION="184;0;"/>
 </node>
 <node CREATED="1459924457347" ID="ID_999134934" MODIFIED="1460005357123" TEXT="Iterator"/>
-<node CREATED="1459924473003" ID="ID_81989227" MODIFIED="1460005357123" TEXT="&#x421;&#x442;&#x435;&#x43a;"/>
-<node CREATED="1459924517565" ID="ID_304328810" MODIFIED="1460005357123" TEXT="foreach"/>
-<node CREATED="1459859724118" ID="ID_1922897366" MODIFIED="1460005554356" TEXT="&#x421;&#x43e;&#x432;&#x435;&#x442;&#x44b;">
+<node CREATED="1459859724118" FOLDED="true" ID="ID_1922897366" MODIFIED="1460114111356" TEXT="&#x421;&#x43e;&#x432;&#x435;&#x442;&#x44b;">
 <node CREATED="1459859784632" ID="ID_1258683944" MODIFIED="1460005357122" TEXT="Prefer lists to arrays">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -679,6 +686,34 @@
   </body>
 </html></richcontent>
 </node>
+<node CREATED="1459860044684" ID="ID_1146453155" LINK="https://dzone.com/articles/covariance-and-contravariance" MODIFIED="1459860050321" TEXT="Covariance and Contravariance In Java"/>
+<node CREATED="1459867303917" ID="ID_1841606802" LINK="http://shipilev.net/blog/2016/arrays-wisdom-ancients/" MODIFIED="1459867324696" TEXT="Arrays of Wisdom of the Ancients"/>
+</node>
+<node CREATED="1459924387977" ID="ID_896842867" MODIFIED="1460112937608" TEXT="&#x441;&#x43e;&#x440;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Collections.sort
+    </p>
+    <p>
+      Arrays.sort
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Implementation note: The sorting algorithm is a Dual-Pivot Quicksort by Vladimir Yaroslavskiy, Jon Bentley, and Joshua Bloch. This algorithm offers O(n log(n)) performance on many data sets that cause other quicksorts to degrade to quadratic performance, and is typically faster than traditional (one-pivot) Quicksort implementations.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_896842867" ENDARROW="None" ENDINCLINATION="184;0;" ID="Arrow_ID_1461977508" SOURCE="ID_521452344" STARTARROW="None" STARTINCLINATION="184;0;"/>
 </node>
 </node>
 <node CREATED="1459859427356" FOLDED="true" ID="ID_1115634716" LINK="https://docs.oracle.com/javase/tutorial/java/generics/types.html" MODIFIED="1460006871010" POSITION="right" TEXT="&#x41f;&#x430;&#x440;&#x430;&#x43c;&#x435;&#x442;&#x440;&#x438;&#x437;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x44b;&#x435; &#x442;&#x438;&#x43f;&#x44b;">
@@ -720,7 +755,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1442223917425" ID="ID_361846194" MODIFIED="1460005532232" TEXT="Polymorphism">
+<node CREATED="1442223917425" FOLDED="true" ID="ID_361846194" MODIFIED="1460114111357" TEXT="Polymorphism">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -737,7 +772,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1442224241305" ID="ID_1477093256" MODIFIED="1460003125422" TEXT="Static">
+<node CREATED="1442224241305" FOLDED="true" ID="ID_1477093256" MODIFIED="1460114111356" TEXT="Static">
 <node CREATED="1442224043356" ID="ID_975740516" MODIFIED="1442224115492" TEXT="Overloading">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -750,7 +785,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1442224088246" ID="ID_148862774" MODIFIED="1460005612876" TEXT="Generic">
+<node CREATED="1442224088246" FOLDED="true" ID="ID_148862774" MODIFIED="1460114111356" TEXT="Generic">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -762,7 +797,7 @@
   </body>
 </html></richcontent>
 <arrowlink DESTINATION="ID_1683417092" ENDARROW="None" ENDINCLINATION="279;0;" ID="Arrow_ID_1936944454" STARTARROW="None" STARTINCLINATION="279;0;"/>
-<node CREATED="1459968305395" ID="ID_207042754" MODIFIED="1460005542470" TEXT="&#x41c;&#x43d;&#x43e;&#x433;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968305395" FOLDED="true" ID="ID_207042754" MODIFIED="1460114111356" TEXT="&#x41c;&#x43d;&#x43e;&#x433;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -773,16 +808,16 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1459968372141" ID="ID_399969570" MODIFIED="1459968375929" TEXT="&#x442;&#x440;&#x435;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968372141" FOLDED="true" ID="ID_399969570" MODIFIED="1460114111356" TEXT="&#x442;&#x440;&#x435;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <node CREATED="1459968379740" ID="ID_685215167" MODIFIED="1459968407593" TEXT="&#x43e;&#x441;&#x442;&#x440;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968412291" ID="ID_1957814829" MODIFIED="1459968417385" TEXT="&#x442;&#x443;&#x43f;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968421262" ID="ID_778353207" MODIFIED="1459968424905" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968435872" ID="ID_1213656978" MODIFIED="1459968439577" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968440700" ID="ID_1222486370" MODIFIED="1459968443690" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d;&#x43d;&#x438;&#x439;"/>
 </node>
-<node CREATED="1459968573846" ID="ID_513207098" MODIFIED="1459968581267" TEXT="&#x447;&#x435;&#x442;&#x44b;&#x440;&#x435;&#x445;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
-<node CREATED="1459968646583" ID="ID_1983987621" MODIFIED="1459968653237" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x442;&#x440;&#x430;&#x43f;&#x435;&#x446;&#x438;&#x44f;">
-<node CREATED="1459968655688" ID="ID_1306659918" MODIFIED="1459968660612" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968573846" FOLDED="true" ID="ID_513207098" MODIFIED="1460114111356" TEXT="&#x447;&#x435;&#x442;&#x44b;&#x440;&#x435;&#x445;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968646583" FOLDED="true" ID="ID_1983987621" MODIFIED="1460114111356" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x442;&#x440;&#x430;&#x43f;&#x435;&#x446;&#x438;&#x44f;">
+<node CREATED="1459968655688" FOLDED="true" ID="ID_1306659918" MODIFIED="1460114111356" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <node CREATED="1459968664743" ID="ID_245192709" MODIFIED="1459968666900" TEXT="&#x43a;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442;"/>
 </node>
 </node>
@@ -793,7 +828,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1442224251200" ID="ID_1793621663" MODIFIED="1459863467603" TEXT="Dynamic">
+<node CREATED="1442224251200" FOLDED="true" ID="ID_1793621663" MODIFIED="1460114111357" TEXT="Dynamic">
 <node CREATED="1442224097460" ID="ID_1130616919" MODIFIED="1442403703347" TEXT="Subtyping">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -810,7 +845,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1460003342294" ID="ID_1828569513" MODIFIED="1460003347013" TEXT="ad-hoc">
+<node CREATED="1460003342294" FOLDED="true" ID="ID_1828569513" MODIFIED="1460114111357" TEXT="ad-hoc">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -822,7 +857,7 @@
 <node CREATED="1460003375776" ID="ID_781260278" MODIFIED="1460003379899" TEXT="aspekt"/>
 </node>
 </node>
-<node CREATED="1459863561794" ID="ID_696576647" MODIFIED="1460003366976" TEXT="&#x41a;&#x43e;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x438; &#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x432; &#x443;&#x43d;&#x438;&#x432;&#x435;&#x440;&#x441;&#x430;&#x43b;&#x44c;&#x43d;&#x44b;&#x445; &#x448;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x430;&#x445;">
+<node CREATED="1459863561794" FOLDED="true" ID="ID_696576647" MODIFIED="1460114111357" TEXT="&#x41a;&#x43e;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x438; &#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x432; &#x443;&#x43d;&#x438;&#x432;&#x435;&#x440;&#x441;&#x430;&#x43b;&#x44c;&#x43d;&#x44b;&#x445; &#x448;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x430;&#x445;">
 <node CREATED="1459863735538" ID="ID_1440380139" MODIFIED="1459863957783" TEXT="Covariance">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -848,7 +883,6 @@
     </p>
   </body>
 </html></richcontent>
-<linktarget COLOR="#b0b0b0" DESTINATION="ID_1440380139" ENDARROW="Default" ENDINCLINATION="920;-313;" ID="Arrow_ID_1021111231" SOURCE="ID_1589096889" STARTARROW="None" STARTINCLINATION="898;-313;"/>
 </node>
 <node CREATED="1459863767648" ID="ID_292832062" MODIFIED="1459863923481" TEXT="Contravariance">
 <richcontent TYPE="NOTE"><html>
