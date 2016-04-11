@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<person>
+    <firstName>Иванов</firstName>
+    <middleName>Иван</middleName>
+    <lastName>Иванович</lastName>
+    <birth-date>2016-04-10T23:02:46.346+06:00</birth-date>
+    <gender>MALE</gender>
+    <address>
+        <city>Омск</city>
+        <street>Гагарина</street>
+    </address>
+</person>
