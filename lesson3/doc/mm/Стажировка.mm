@@ -1,18 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1459859373958" ID="ID_844487620" MODIFIED="1460114111357" TEXT="&#x421;&#x442;&#x430;&#x436;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
-<richcontent TYPE="NOTE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &#1055;&#1086;&#1083;&#1077;&#1079;&#1085;&#1099;&#1077; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;:
-    </p>
-  </body>
-</html>
-</richcontent>
-<node CREATED="1459859438530" FOLDED="true" ID="ID_1505106338" MODIFIED="1460114111356" POSITION="left" STYLE="fork" TEXT="&#x41a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x446;&#x438;&#x438; &#x438; &#x43c;&#x430;&#x441;&#x441;&#x438;&#x432;&#x44b;">
+<node CREATED="1459859373958" ID="ID_844487620" MODIFIED="1460127085862" TEXT="&#x421;&#x442;&#x430;&#x436;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
+<node CREATED="1459859438530" ID="ID_1505106338" MODIFIED="1460175872364" POSITION="left" STYLE="fork" TEXT="&#x41a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x446;&#x438;&#x438; &#x438; &#x43c;&#x430;&#x441;&#x441;&#x438;&#x432;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -34,8 +23,8 @@
 </html>
 </richcontent>
 <icon BUILTIN="full-2"/>
-<node CREATED="1460005445264" FOLDED="true" ID="ID_78719781" MODIFIED="1460114111356" TEXT="&#x422;&#x438;&#x43f;&#x44b;">
-<node CREATED="1460005453871" FOLDED="true" ID="ID_1765249558" MODIFIED="1460114111355" TEXT="Map">
+<node CREATED="1460005445264" ID="ID_78719781" MODIFIED="1460175921716" TEXT="&#x422;&#x438;&#x43f;&#x44b;">
+<node CREATED="1460005453871" ID="ID_1765249558" MODIFIED="1460179055075" TEXT="Map">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -53,9 +42,8 @@
       &#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1103; &#1087;&#1086; map entryset vs keyset
     </p>
   </body>
-</html>
-</richcontent>
-<node CREATED="1460006081613" FOLDED="true" ID="ID_617899239" MODIFIED="1460114111354" TEXT="HashMap">
+</html></richcontent>
+<node CREATED="1460006081613" FOLDED="true" ID="ID_617899239" MODIFIED="1460173806965" TEXT="HashMap">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -184,12 +172,11 @@
 
     <pre class="prettyprint"><code>//TreeMap &#8211; &#1086;&#1073;&#1097;&#1080;&#1081; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;, &#1082;&#1086;&#1084;&#1087;&#1072;&#1088;&#1072;&#1090;&#1086;&#1088; &#1091;&#1082;&#1072;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074;&#1088;&#1091;&#1095;&#1085;&#1091;&#1102;<br />Map&lt;ObjectName, String&gt; sortedMap = new TreeMap&lt;ObjectName, String&gt;(new Comparator&lt;ObjectName&gt;() {<br />&#160; &#160; &#160; &#160; public int compare(ObjectName o1, ObjectName o2) {<br />&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; return o1.toString().compareTo(o2.toString());<br />&#160; &#160; &#160; &#160; }<br />});<br />sortedMap.putAll(unsortedMap);</code></pre>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_671879912" ENDARROW="Default" ENDINCLINATION="206;-24;" ID="Arrow_ID_402176417" SOURCE="ID_402575952" STARTARROW="None" STARTINCLINATION="346;-14;"/>
 </node>
 </node>
-<node CREATED="1460005465441" FOLDED="true" ID="ID_779968409" MODIFIED="1460114111355" TEXT="Collection">
+<node CREATED="1460005465441" ID="ID_779968409" MODIFIED="1460175923182" TEXT="Collection">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -203,7 +190,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1459924480819" FOLDED="true" ID="ID_1908740993" MODIFIED="1460114111355" TEXT="&#x41c;&#x43d;&#x43e;&#x436;&#x435;&#x441;&#x442;&#x432;&#x43e; Set">
+<node CREATED="1459924480819" ID="ID_1908740993" MODIFIED="1460177985378" TEXT="&#x41c;&#x43d;&#x43e;&#x436;&#x435;&#x441;&#x442;&#x432;&#x43e; Set">
 <node CREATED="1460034909152" ID="ID_1012105592" MODIFIED="1460097152186" TEXT="HashSet">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -264,12 +251,11 @@
     </p>
     <pre class="prettyprint"><code>Set&lt;ObjectName&gt; sortedSet = new TreeSet&lt;ObjectName&gt;(new Comparator&lt;ObjectName&gt;() {<br />&#160; &#160; &#160; &#160; public int compare(ObjectName o1, ObjectName o2) {<br />&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; return o1.toString().compareTo(o2.toString());<br />&#160; &#160; &#160; &#160; }<br />});<br />sortedSet.addAll(unsortedSet);</code></pre>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <arrowlink DESTINATION="ID_671879912" ENDARROW="Default" ENDINCLINATION="206;-24;" ID="Arrow_ID_402176417" STARTARROW="None" STARTINCLINATION="346;-14;"/>
 </node>
 </node>
-<node CREATED="1459924449436" FOLDED="true" ID="ID_379739741" MODIFIED="1460114111355" TEXT="List">
+<node CREATED="1459924449436" ID="ID_379739741" MODIFIED="1460175924844" TEXT="List">
 <node CREATED="1460011253414" ID="ID_1810977035" MODIFIED="1460011262580" TEXT="ArrayList">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -333,7 +319,7 @@
 </html></richcontent>
 <arrowlink DESTINATION="ID_1912797941" ENDARROW="None" ENDINCLINATION="50;0;" ID="Arrow_ID_242344331" STARTARROW="None" STARTINCLINATION="50;0;"/>
 </node>
-<node CREATED="1459924506597" FOLDED="true" ID="ID_745120230" MODIFIED="1460114111355" TEXT="&#x41e;&#x447;&#x435;&#x440;&#x435;&#x434;&#x44c; Queue">
+<node CREATED="1459924506597" FOLDED="true" ID="ID_745120230" MODIFIED="1460173806967" TEXT="&#x41e;&#x447;&#x435;&#x440;&#x435;&#x434;&#x44c; Queue">
 <node CREATED="1460035604112" ID="ID_867351900" MODIFIED="1460035614359" TEXT="PriorityQueue">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -366,7 +352,8 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1460011747971" FOLDED="true" ID="ID_1367053320" MODIFIED="1460113729404" TEXT="&#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x430;">
+</node>
+<node CREATED="1460011747971" FOLDED="true" ID="ID_1367053320" MODIFIED="1460173809320" TEXT="&#x441;&#x432;&#x43e;&#x434;&#x43d;&#x430;&#x44f; &#x442;&#x430;&#x431;&#x43b;&#x438;&#x446;&#x430;">
 <node CREATED="1460011754425" MODIFIED="1460011754425">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -378,8 +365,7 @@
 </html></richcontent>
 </node>
 </node>
-</node>
-<node CREATED="1460011315760" FOLDED="true" ID="ID_1139964483" LINK="http://java-performance.info/memory-consumption-of-java-data-types-1/" MODIFIED="1460111183213" TEXT="&#x423;&#x442;&#x438;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f; &#x440;&#x435;&#x441;&#x443;&#x440;&#x441;&#x43e;&#x432;">
+<node CREATED="1460011315760" FOLDED="true" ID="ID_1139964483" LINK="http://java-performance.info/memory-consumption-of-java-data-types-1/" MODIFIED="1460177979617" TEXT="&#x423;&#x442;&#x438;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f; &#x440;&#x435;&#x441;&#x443;&#x440;&#x441;&#x43e;&#x432;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -553,7 +539,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1460012188519" FOLDED="true" ID="ID_948285528" LINK="https://habrahabr.ru/post/188010/" MODIFIED="1460111523030" TEXT="&#x412;&#x440;&#x435;&#x43c;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x441;&#x43b;&#x43e;&#x436;&#x43d;&#x43e;&#x441;&#x442;&#x44c;">
+<node CREATED="1460012188519" FOLDED="true" ID="ID_948285528" LINK="https://habrahabr.ru/post/188010/" MODIFIED="1460178891333" TEXT="&#x412;&#x440;&#x435;&#x43c;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x441;&#x43b;&#x43e;&#x436;&#x43d;&#x43e;&#x441;&#x442;&#x44c;">
 <node CREATED="1460012196579" ID="ID_671689421" MODIFIED="1460012196579">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -575,7 +561,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1459859665227" ID="ID_521452344" MODIFIED="1460111633496" TEXT="Comparable">
+<node CREATED="1459859665227" ID="ID_521452344" MODIFIED="1460116367251" TEXT="Comparable">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -603,7 +589,7 @@
 <arrowlink DESTINATION="ID_896842867" ENDARROW="None" ENDINCLINATION="184;0;" ID="Arrow_ID_1461977508" STARTARROW="None" STARTINCLINATION="184;0;"/>
 </node>
 <node CREATED="1459924457347" ID="ID_999134934" MODIFIED="1460005357123" TEXT="Iterator"/>
-<node CREATED="1459859724118" FOLDED="true" ID="ID_1922897366" MODIFIED="1460114111356" TEXT="&#x421;&#x43e;&#x432;&#x435;&#x442;&#x44b;">
+<node CREATED="1459859724118" ID="ID_1922897366" MODIFIED="1460177342982" TEXT="&#x421;&#x43e;&#x432;&#x435;&#x442;&#x44b;">
 <node CREATED="1459859784632" ID="ID_1258683944" MODIFIED="1460005357122" TEXT="Prefer lists to arrays">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -689,7 +675,7 @@
 <node CREATED="1459860044684" ID="ID_1146453155" LINK="https://dzone.com/articles/covariance-and-contravariance" MODIFIED="1459860050321" TEXT="Covariance and Contravariance In Java"/>
 <node CREATED="1459867303917" ID="ID_1841606802" LINK="http://shipilev.net/blog/2016/arrays-wisdom-ancients/" MODIFIED="1459867324696" TEXT="Arrays of Wisdom of the Ancients"/>
 </node>
-<node CREATED="1459924387977" ID="ID_896842867" MODIFIED="1460112937608" TEXT="&#x441;&#x43e;&#x440;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
+<node CREATED="1459924387977" ID="ID_896842867" MODIFIED="1460116365953" TEXT="&#x441;&#x43e;&#x440;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x43a;&#x430;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -707,16 +693,12 @@
     <p>
       Implementation note: The sorting algorithm is a Dual-Pivot Quicksort by Vladimir Yaroslavskiy, Jon Bentley, and Joshua Bloch. This algorithm offers O(n log(n)) performance on many data sets that cause other quicksorts to degrade to quadratic performance, and is typically faster than traditional (one-pivot) Quicksort implementations.
     </p>
-    <p>
-      
-    </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_896842867" ENDARROW="None" ENDINCLINATION="184;0;" ID="Arrow_ID_1461977508" SOURCE="ID_521452344" STARTARROW="None" STARTINCLINATION="184;0;"/>
 </node>
 </node>
-<node CREATED="1459859427356" FOLDED="true" ID="ID_1115634716" LINK="https://docs.oracle.com/javase/tutorial/java/generics/types.html" MODIFIED="1460006871010" POSITION="right" TEXT="&#x41f;&#x430;&#x440;&#x430;&#x43c;&#x435;&#x442;&#x440;&#x438;&#x437;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x44b;&#x435; &#x442;&#x438;&#x43f;&#x44b;">
+<node CREATED="1459859427356" FOLDED="true" ID="ID_1115634716" LINK="https://docs.oracle.com/javase/tutorial/java/generics/types.html" MODIFIED="1460175870815" POSITION="right" TEXT="&#x41f;&#x430;&#x440;&#x430;&#x43c;&#x435;&#x442;&#x440;&#x438;&#x437;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x44b;&#x435; &#x442;&#x438;&#x43f;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -755,7 +737,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1442223917425" FOLDED="true" ID="ID_361846194" MODIFIED="1460114111357" TEXT="Polymorphism">
+<node CREATED="1442223917425" FOLDED="true" ID="ID_361846194" MODIFIED="1460175340567" TEXT="Polymorphism">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -772,7 +754,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1442224241305" FOLDED="true" ID="ID_1477093256" MODIFIED="1460114111356" TEXT="Static">
+<node CREATED="1442224241305" ID="ID_1477093256" MODIFIED="1460171615157" TEXT="Static">
 <node CREATED="1442224043356" ID="ID_975740516" MODIFIED="1442224115492" TEXT="Overloading">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -785,7 +767,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1442224088246" FOLDED="true" ID="ID_148862774" MODIFIED="1460114111356" TEXT="Generic">
+<node CREATED="1442224088246" ID="ID_148862774" MODIFIED="1460173800469" TEXT="Generic">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -797,7 +779,7 @@
   </body>
 </html></richcontent>
 <arrowlink DESTINATION="ID_1683417092" ENDARROW="None" ENDINCLINATION="279;0;" ID="Arrow_ID_1936944454" STARTARROW="None" STARTINCLINATION="279;0;"/>
-<node CREATED="1459968305395" FOLDED="true" ID="ID_207042754" MODIFIED="1460114111356" TEXT="&#x41c;&#x43d;&#x43e;&#x433;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968305395" ID="ID_207042754" MODIFIED="1460118282966" TEXT="&#x41c;&#x43d;&#x43e;&#x433;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -808,16 +790,16 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1459968372141" FOLDED="true" ID="ID_399969570" MODIFIED="1460114111356" TEXT="&#x442;&#x440;&#x435;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968372141" ID="ID_399969570" MODIFIED="1460173800472" TEXT="&#x442;&#x440;&#x435;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <node CREATED="1459968379740" ID="ID_685215167" MODIFIED="1459968407593" TEXT="&#x43e;&#x441;&#x442;&#x440;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968412291" ID="ID_1957814829" MODIFIED="1459968417385" TEXT="&#x442;&#x443;&#x43f;&#x43e;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968421262" ID="ID_778353207" MODIFIED="1459968424905" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968435872" ID="ID_1213656978" MODIFIED="1459968439577" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x44b;&#x439;"/>
 <node CREATED="1459968440700" ID="ID_1222486370" MODIFIED="1459968443690" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d;&#x43d;&#x438;&#x439;"/>
 </node>
-<node CREATED="1459968573846" FOLDED="true" ID="ID_513207098" MODIFIED="1460114111356" TEXT="&#x447;&#x435;&#x442;&#x44b;&#x440;&#x435;&#x445;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
-<node CREATED="1459968646583" FOLDED="true" ID="ID_1983987621" MODIFIED="1460114111356" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x442;&#x440;&#x430;&#x43f;&#x435;&#x446;&#x438;&#x44f;">
-<node CREATED="1459968655688" FOLDED="true" ID="ID_1306659918" MODIFIED="1460114111356" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968573846" ID="ID_513207098" MODIFIED="1460173800473" TEXT="&#x447;&#x435;&#x442;&#x44b;&#x440;&#x435;&#x445;&#x443;&#x433;&#x43e;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
+<node CREATED="1459968646583" ID="ID_1983987621" MODIFIED="1460173800475" TEXT="&#x440;&#x430;&#x432;&#x43d;&#x43e;&#x431;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x43d;&#x430;&#x44f; &#x442;&#x440;&#x430;&#x43f;&#x435;&#x446;&#x438;&#x44f;">
+<node CREATED="1459968655688" ID="ID_1306659918" MODIFIED="1460173800477" TEXT="&#x43f;&#x440;&#x44f;&#x43c;&#x43e;&#x443;&#x433;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;">
 <node CREATED="1459968664743" ID="ID_245192709" MODIFIED="1459968666900" TEXT="&#x43a;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442;"/>
 </node>
 </node>
@@ -828,7 +810,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1442224251200" FOLDED="true" ID="ID_1793621663" MODIFIED="1460114111357" TEXT="Dynamic">
+<node CREATED="1442224251200" ID="ID_1793621663" MODIFIED="1460173800478" TEXT="Dynamic">
 <node CREATED="1442224097460" ID="ID_1130616919" MODIFIED="1442403703347" TEXT="Subtyping">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -845,7 +827,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1460003342294" FOLDED="true" ID="ID_1828569513" MODIFIED="1460114111357" TEXT="ad-hoc">
+<node CREATED="1460003342294" ID="ID_1828569513" MODIFIED="1460173800479" TEXT="ad-hoc">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -857,7 +839,7 @@
 <node CREATED="1460003375776" ID="ID_781260278" MODIFIED="1460003379899" TEXT="aspekt"/>
 </node>
 </node>
-<node CREATED="1459863561794" FOLDED="true" ID="ID_696576647" MODIFIED="1460114111357" TEXT="&#x41a;&#x43e;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x438; &#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x432; &#x443;&#x43d;&#x438;&#x432;&#x435;&#x440;&#x441;&#x430;&#x43b;&#x44c;&#x43d;&#x44b;&#x445; &#x448;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x430;&#x445;">
+<node CREATED="1459863561794" ID="ID_696576647" MODIFIED="1460173800480" TEXT="&#x41a;&#x43e;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x438; &#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x432;&#x430;&#x440;&#x438;&#x430;&#x446;&#x438;&#x44f; &#x432; &#x443;&#x43d;&#x438;&#x432;&#x435;&#x440;&#x441;&#x430;&#x43b;&#x44c;&#x43d;&#x44b;&#x445; &#x448;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x430;&#x445;">
 <node CREATED="1459863735538" ID="ID_1440380139" MODIFIED="1459863957783" TEXT="Covariance">
 <richcontent TYPE="NOTE"><html>
   <head>

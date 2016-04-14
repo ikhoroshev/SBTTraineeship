@@ -1,6 +1,7 @@
 package ru.sberbank.sbt.traineeship.lesson3.arrays;
 
 import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Shape;
+import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Square;
 import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Triangle;
 
 import java.util.Collections;
@@ -20,6 +21,9 @@ public class ArrayCovariance {
 
   static List<Shape> createShapes(List<Triangle> triangles) {
     return Collections.emptyList(); // ?
+  }
+
+  public static void main(String[] args) {
   }
 
 }

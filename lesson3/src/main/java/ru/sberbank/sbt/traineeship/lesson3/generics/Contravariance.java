@@ -12,20 +12,20 @@ import java.util.List;
 public class Contravariance {
 
 
-  List<? super Number> playerNumbers = new ArrayList<Number>() // {{ add(1);}}
+  List<? super Number> playerNumbers = new ArrayList<Number>() {{ add(1);}}
   ;
 
 
   private Contravariance doSomeInterestingThings() {
-    // playerNumbers.add(0);
-    // playerNumbers.add(null);
-    // playerNumbers.add(-.1);
+    playerNumbers.add(0);
+    playerNumbers.add(null);
+    playerNumbers.add(-0.1);
     return this;
   }
 
   private void print() {
-    // final Number playerNumber = playerNumbers.get(0);
-    // System.out.println(playerNumbers.get(0));
+    // Number playerNumber = playerNumbers.get(0);
+    System.out.println(playerNumbers.get(0));
     // System.out.println(playerNumber);
   }
 

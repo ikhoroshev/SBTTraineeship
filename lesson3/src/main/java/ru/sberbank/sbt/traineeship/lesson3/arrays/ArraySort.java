@@ -15,10 +15,6 @@ public class ArraySort {
 
   private Student[] students = (
     new Student[] {
-      new Student(),
-      new Student(),
-      new Student(),
-      new Student(),
     }
   );
 

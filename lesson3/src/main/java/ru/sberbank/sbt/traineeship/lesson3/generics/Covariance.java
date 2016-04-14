@@ -12,22 +12,22 @@ import java.util.List;
 public class Covariance {
 
 
-  List<? extends Number> playerNumbers = new ArrayList<Integer>()  {{ add(1);}}
+  List<? extends Number> playerNumbers = new ArrayList<Integer>() {{ add(1);}}
   ;
-  List<? extends Number> weights       = new ArrayList<Float>()   // {{ add(2);}}
+  List<? extends Number> weights       = new ArrayList<Float>()   {{ add(2f);}}
   ;
-  List<? extends Number> rates         = new ArrayList<Double>()  // {{ add(.0);}}
+  List<? extends Number> rates         = new ArrayList<Double>()  {{ add(0.);}}
   ;
 
 
   private Covariance doSomeInterestingThings() {
-    // playerNumbers.add(1);
-    // playerNumbers.add(null);
+    //playerNumbers.add(1);
+    playerNumbers.add(null);
     return this;
   }
 
   private void print() {
-    // System.out.println(playerNumbers.get(0));
+    System.out.println(playerNumbers.get(0));
   }
 
   public static void main(String[] args) {
