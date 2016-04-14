@@ -2,8 +2,6 @@ package ru.sberbank.sbt.traineeship.lesson3.collections;
 
 import ru.sberbank.sbt.traineeship.lesson3.common.Student;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 

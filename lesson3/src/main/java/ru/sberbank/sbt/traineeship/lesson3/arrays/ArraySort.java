@@ -2,7 +2,6 @@ package ru.sberbank.sbt.traineeship.lesson3.arrays;
 
 import ru.sberbank.sbt.traineeship.lesson3.common.Student;
 
-import java.util.Arrays;
 
 /**
  * Сортировка массивов, коллекций.

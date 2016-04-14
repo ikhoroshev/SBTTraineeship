@@ -5,7 +5,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by Alex on 07.04.2016.
+ * TODO: Добавить javdoc
+ *
+ * @version 1.0, 07.04.2016
+ * @since 07.04.2016
  */
 public class PolygonPainter<T extends Polygon> {
 

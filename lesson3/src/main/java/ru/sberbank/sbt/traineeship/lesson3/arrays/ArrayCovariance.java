@@ -1,7 +1,6 @@
 package ru.sberbank.sbt.traineeship.lesson3.arrays;
 
 import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Shape;
-import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Square;
 import ru.sberbank.sbt.traineeship.lesson3.generics.polygon.Triangle;
 
 import java.util.Collections;

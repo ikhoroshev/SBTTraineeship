@@ -1,6 +1,5 @@
 package ru.sberbank.sbt.traineeship.lesson3.common;
 
-import java.math.BigDecimal;
 
 /**
  * Интерфейс счета.
