@@ -14,8 +14,9 @@
         <module>lesson1</module>
         <module>lesson3</module>
         <module>lesson4</module>
-        <module>practise</module>
         <module>lesson5</module>
+        <module>lesson8</module>
+        <module>practise</module>
     </modules>
 
     <build>
