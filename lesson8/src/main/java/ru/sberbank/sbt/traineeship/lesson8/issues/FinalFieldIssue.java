@@ -2,6 +2,7 @@ package ru.sberbank.sbt.traineeship.lesson8.issues;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.concurrent.*;
 
 /**
  * Демонстрация того, можно ли менять final поля у класса или объекта.
@@ -22,13 +23,13 @@ public class FinalFieldIssue {
       0
     );
     System.out.println(CONST_INT_VALUE);
+
     updateFinalValue(
       FinalFieldIssue.class.getDeclaredField("shouldBeConstValue"),
       0
     );
     System.out.println(shouldBeConstValue);
   }
-
 
   private static void updateFinalValue(Field field, Object newValue) throws Exception {
     field.setAccessible(true);
@@ -41,3 +42,4 @@ public class FinalFieldIssue {
   }
 
 }
+
