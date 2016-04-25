@@ -1,7 +1,21 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1461439315847" ID="ID_1434711060" MODIFIED="1461448498626" TEXT="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;">
-<node CREATED="1461450104195" ID="ID_332018517" MODIFIED="1461450117508" POSITION="right" TEXT="&#x41e;&#x442;&#x43a;&#x440;&#x44b;&#x442;&#x44b;&#x435; &#x432;&#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x44b;">
+<node CREATED="1461439315847" ID="ID_1434711060" MODIFIED="1461585514102" TEXT="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      UML: http://www.uml-diagrams.org/
+    </p>
+    <p>
+      GoF: https://dzone.com/articles/design-patterns-overview
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461450104195" FOLDED="true" ID="ID_332018517" MODIFIED="1461585514089" POSITION="right" TEXT="&#x41e;&#x442;&#x43a;&#x440;&#x44b;&#x442;&#x44b;&#x435; &#x432;&#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x44b;">
 <node CREATED="1461450118387" ID="ID_880235143" LINK="http://shipilev.net/blog/2014/jmm-pragmatics/#_part_v_finals" MODIFIED="1461526883188" TEXT="&#x41c;&#x43e;&#x434;&#x438;&#x444;&#x438;&#x43a;&#x430;&#x446;&#x438;&#x44f; final-&#x43f;&#x43e;&#x43b;&#x435;&#x439;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -12,8 +26,7 @@
       https://www.securecoding.cert.org/confluence/display/java/TSM03-J.+Do+not+publish+partially+initialized+objects
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1461450131922" ID="ID_1870300470" LINK="http://www.oracle.com/technetwork/java/seccodeguide-139067.html#7" MODIFIED="1461526952276" TEXT="Exception-&#x44b; &#x432; &#x43a;&#x43e;&#x43d;&#x441;&#x442;&#x440;&#x443;&#x43a;&#x442;&#x43e;&#x440;&#x430;&#x445;">
 <richcontent TYPE="NOTE"><html>
@@ -28,20 +41,19 @@
       https://www.securecoding.cert.org/confluence/display/java/OBJ11-J.+Be+wary+of+letting+constructors+throw+exceptions
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1461447629479" ID="ID_19776297" MODIFIED="1461529110784" POSITION="right" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x437; &#x438; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x435;">
-<node CREATED="1461447755147" ID="ID_1373257671" MODIFIED="1461529111842" TEXT="&#x437;&#x430;&#x434;&#x430;&#x447;&#x438;">
+<node CREATED="1461447629479" FOLDED="true" ID="ID_19776297" MODIFIED="1461585514090" POSITION="right" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x437; &#x438; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x435;">
+<node CREATED="1461447755147" FOLDED="true" ID="ID_1373257671" MODIFIED="1461585514089" TEXT="&#x437;&#x430;&#x434;&#x430;&#x447;&#x438;">
 <node CREATED="1461447656252" ID="ID_1280954532" MODIFIED="1461447656777" TEXT="&#x41f;&#x43e;&#x441;&#x442;&#x440;&#x43e;&#x435;&#x43d;&#x438;&#x435; &#x434;&#x438;&#x437;&#x430;&#x439;&#x43d;&#x430; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x44b; &#x43d;&#x430; &#x43e;&#x441;&#x43d;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x438; &#x442;&#x440;&#x435;&#x431;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x439; &#x43a; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x435;"/>
 <node CREATED="1461447662138" ID="ID_360043067" MODIFIED="1461447662663" TEXT="&#x420;&#x430;&#x437;&#x440;&#x430;&#x431;&#x43e;&#x442;&#x43a;&#x430; &#x430;&#x440;&#x445;&#x438;&#x442;&#x435;&#x43a;&#x442;&#x443;&#x440;&#x44b; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x44b;"/>
 <node CREATED="1461447667099" ID="ID_663946459" MODIFIED="1461447667431" TEXT="&#x41f;&#x43e;&#x434;&#x433;&#x43e;&#x442;&#x43e;&#x432;&#x43a;&#x430; &#x434;&#x438;&#x437;&#x430;&#x439;&#x43d;&#x430; &#x432;&#x43d;&#x435;&#x434;&#x440;&#x435;&#x43d;&#x438;&#x44f; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x44b;"/>
 <node CREATED="1461448070259" ID="ID_764885223" MODIFIED="1461448070960" TEXT="&#x420;&#x430;&#x441;&#x441;&#x43c;&#x43e;&#x442;&#x440;&#x435;&#x43d;&#x438;&#x435; &#x43f;&#x440;&#x435;&#x434;&#x43c;&#x435;&#x442;&#x43d;&#x43e;&#x439; &#x43e;&#x431;&#x43b;&#x430;&#x441;&#x442;&#x438; &#x441; &#x446;&#x435;&#x43b;&#x44c;&#x44e; &#x444;&#x43e;&#x440;&#x43c;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f; &#x43a;&#x43e;&#x43d;&#x446;&#x435;&#x43f;&#x442;&#x443;&#x430;&#x43b;&#x44c;&#x43d;&#x43e;&#x439; &#x43c;&#x43e;&#x434;&#x435;&#x43b;&#x438;"/>
 <node CREATED="1461448077282" ID="ID_1739674208" MODIFIED="1461448077663" TEXT="&#x41e;&#x43f;&#x438;&#x441;&#x430;&#x43d;&#x438;&#x435; &#x442;&#x43e;&#x433;&#x43e;, &#x447;&#x442;&#x43e; &#x434;&#x43e;&#x43b;&#x436;&#x43d;&#x430; &#x434;&#x435;&#x43b;&#x430;&#x442;&#x44c; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x443;&#x435;&#x43c;&#x430;&#x44f; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x430;, &#x431;&#x435;&#x437; &#x443;&#x447;&#x435;&#x442;&#x430; &#x43e;&#x441;&#x43e;&#x431;&#x435;&#x43d;&#x43d;&#x43e;&#x441;&#x442;&#x435;&#x439; &#x440;&#x435;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x438;"/>
 </node>
-<node CREATED="1461447769994" ID="ID_1067145829" MODIFIED="1461529295320" TEXT="&#x44d;&#x442;&#x430;&#x43f;&#x44b;">
-<node CREATED="1461447788537" ID="ID_336196292" MODIFIED="1461529327778" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x437; &#x442;&#x440;&#x435;&#x431;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x439;">
+<node CREATED="1461447769994" FOLDED="true" ID="ID_1067145829" MODIFIED="1461585514090" TEXT="&#x44d;&#x442;&#x430;&#x43f;&#x44b;">
+<node CREATED="1461447788537" FOLDED="true" ID="ID_336196292" MODIFIED="1461585514089" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x437; &#x442;&#x440;&#x435;&#x431;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x439;">
 <icon BUILTIN="full-1"/>
 <node CREATED="1461447682779" ID="ID_136451542" MODIFIED="1461447989809" TEXT="&#x412;&#x43e;&#x43f;&#x440;&#x43e;&#x441;: &#x427;&#x442;&#x43e; &#x442;&#x440;&#x435;&#x431;&#x443;&#x435;&#x442; &#x437;&#x430;&#x43a;&#x430;&#x437;&#x447;&#x438;&#x43a;?">
 <icon BUILTIN="help"/>
@@ -50,7 +62,7 @@
 <icon BUILTIN="idea"/>
 </node>
 </node>
-<node CREATED="1461447806265" ID="ID_1784936559" MODIFIED="1461529310283" TEXT="&#x41e;&#x431;&#x44a;&#x435;&#x43a;&#x442;&#x43d;&#x43e;-&#x43e;&#x440;&#x438;&#x435;&#x43d;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x44b;&#x439; &#x430;&#x43d;&#x430;&#x43b;&#x438;&#x437;">
+<node CREATED="1461447806265" FOLDED="true" ID="ID_1784936559" MODIFIED="1461585514089" TEXT="&#x41e;&#x431;&#x44a;&#x435;&#x43a;&#x442;&#x43d;&#x43e;-&#x43e;&#x440;&#x438;&#x435;&#x43d;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x44b;&#x439; &#x430;&#x43d;&#x430;&#x43b;&#x438;&#x437;">
 <icon BUILTIN="full-2"/>
 <node CREATED="1461447817832" ID="ID_586454573" MODIFIED="1461447985825" TEXT="&#x412;&#x43e;&#x43f;&#x440;&#x43e;&#x441;: &#x427;&#x442;&#x43e; &#x43c;&#x44b; &#x434;&#x43e;&#x43b;&#x436;&#x43d;&#x44b; &#x441;&#x434;&#x435;&#x43b;&#x430;&#x442;&#x44c;?">
 <icon BUILTIN="help"/>
@@ -79,7 +91,7 @@
 <node CREATED="1461448140657" ID="ID_1027148589" MODIFIED="1461448140974" TEXT="&#x41e;&#x431;&#x435;&#x441;&#x43f;&#x435;&#x447;&#x438;&#x442;&#x44c; &#x43e;&#x441;&#x43d;&#x43e;&#x432;&#x443; &#x434;&#x43b;&#x44f; &#x440;&#x430;&#x437;&#x440;&#x430;&#x431;&#x43e;&#x442;&#x43a;&#x438; &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x44b;"/>
 </node>
 </node>
-<node CREATED="1461448188977" ID="ID_1184274439" MODIFIED="1461529343604" POSITION="left" TEXT="&#x442;&#x435;&#x440;&#x43c;&#x438;&#x43d;&#x44b;">
+<node CREATED="1461448188977" FOLDED="true" ID="ID_1184274439" MODIFIED="1461585514090" POSITION="left" TEXT="&#x442;&#x435;&#x440;&#x43c;&#x438;&#x43d;&#x44b;">
 <node CREATED="1461448192896" ID="ID_1074717080" MODIFIED="1461529335849" TEXT="&#x41a;&#x43e;&#x43d;&#x446;&#x435;&#x43f;&#x442;&#x443;&#x430;&#x43b;&#x44c;&#x43d;&#x430;&#x44f; &#x43c;&#x43e;&#x434;&#x435;&#x43b;&#x44c;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -96,7 +108,7 @@
 </html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1074717080" ENDARROW="Default" ENDINCLINATION="633;-497;" ID="Arrow_ID_551061994" SOURCE="ID_1740198162" STARTARROW="None" STARTINCLINATION="1630;-43;"/>
 </node>
-<node CREATED="1461448293519" ID="ID_1746432995" MODIFIED="1461448340412" TEXT="&#x41f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x44b;">
+<node CREATED="1461448293519" FOLDED="true" ID="ID_1746432995" MODIFIED="1461585514090" TEXT="&#x41f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -198,7 +210,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1461448501356" ID="ID_627933207" MODIFIED="1461528947735" POSITION="right" TEXT="&#x422;&#x438;&#x43f;&#x44b; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x43e;&#x432;">
+<node CREATED="1461448501356" FOLDED="true" ID="ID_627933207" MODIFIED="1461585514102" POSITION="right" TEXT="&#x422;&#x438;&#x43f;&#x44b; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x43e;&#x432;">
 <node CREATED="1461448511868" ID="ID_1683715745" MODIFIED="1461448533657" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x438;&#x435; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -239,7 +251,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1442223924607" ID="ID_446911256" MODIFIED="1457013967466" TEXT="Protected variations">
+<node CREATED="1442223924607" FOLDED="true" ID="ID_446911256" MODIFIED="1461585514090" TEXT="Protected variations">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -388,7 +400,7 @@
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_287359162" ENDARROW="None" ENDINCLINATION="606;0;" ID="Arrow_ID_174793903" SOURCE="ID_564189850" STARTARROW="None" STARTINCLINATION="748;0;"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_287359162" ENDARROW="None" ENDINCLINATION="141;0;" ID="Arrow_ID_907733374" SOURCE="ID_633259051" STARTARROW="None" STARTINCLINATION="141;0;"/>
 </node>
-<node CREATED="1442223917425" ID="ID_361846194" MODIFIED="1457014275383" TEXT="Polymorphism">
+<node CREATED="1442223917425" FOLDED="true" ID="ID_361846194" MODIFIED="1461585514092" TEXT="Polymorphism">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -406,7 +418,7 @@
   </body>
 </html></richcontent>
 <arrowlink DESTINATION="ID_1303370124" ENDARROW="None" ENDINCLINATION="574;0;" ID="Arrow_ID_1429937196" STARTARROW="None" STARTINCLINATION="394;0;"/>
-<node CREATED="1442224241305" ID="ID_1477093256" MODIFIED="1457014277558" TEXT="Static">
+<node CREATED="1442224241305" FOLDED="true" ID="ID_1477093256" MODIFIED="1461585514091" TEXT="Static">
 <node CREATED="1442224043356" ID="ID_975740516" MODIFIED="1442224115492" TEXT="Overloading">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -432,7 +444,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1442224251200" ID="ID_1793621663" MODIFIED="1457014276716" TEXT="Dynamic">
+<node CREATED="1442224251200" FOLDED="true" ID="ID_1793621663" MODIFIED="1461585514091" TEXT="Dynamic">
 <node CREATED="1442224097460" ID="ID_1130616919" MODIFIED="1442403703347" TEXT="Subtyping">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -599,7 +611,7 @@
 <icon BUILTIN="smily_bad"/>
 </node>
 </node>
-<node CREATED="1442223505298" ID="ID_1511653515" MODIFIED="1457014484283" TEXT="Low Coupling">
+<node CREATED="1442223505298" FOLDED="true" ID="ID_1511653515" MODIFIED="1461585514098" TEXT="Low Coupling">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -970,8 +982,8 @@
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_564189850" ENDARROW="None" ENDINCLINATION="156;0;" ID="Arrow_ID_727050824" SOURCE="ID_1035519314" STARTARROW="None" STARTINCLINATION="156;0;"/>
 </node>
 </node>
-<node COLOR="#bfbfbf" CREATED="1442223939845" ID="ID_871523806" LINK="https://dzone.com/articles/design-patterns-overview" MODIFIED="1461448820780" TEXT="GoF">
-<node CREATED="1442382173401" FOLDED="true" ID="ID_633259051" MODIFIED="1461528961369" TEXT="Creational">
+<node COLOR="#bfbfbf" CREATED="1442223939845" FOLDED="true" ID="ID_871523806" LINK="https://dzone.com/articles/design-patterns-overview" MODIFIED="1461585514101" TEXT="GoF">
+<node CREATED="1442382173401" FOLDED="true" ID="ID_633259051" MODIFIED="1461585514098" TEXT="Creational">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -983,17 +995,184 @@
   </body>
 </html></richcontent>
 <arrowlink COLOR="#b0b0b0" DESTINATION="ID_287359162" ENDARROW="None" ENDINCLINATION="141;0;" ID="Arrow_ID_907733374" STARTARROW="None" STARTINCLINATION="141;0;"/>
-<node CREATED="1442382182979" ID="ID_1453516387" MODIFIED="1442382186594" TEXT="Singleton"/>
-<node CREATED="1442382187515" ID="ID_922320536" MODIFIED="1442382195225" TEXT="Factory method"/>
-<node CREATED="1442382196215" ID="ID_1758275518" MODIFIED="1442382202204" TEXT="Abstract Factory"/>
-<node CREATED="1442382202961" ID="ID_1749283791" MODIFIED="1442382204749" TEXT="Builder"/>
-<node CREATED="1442397189268" ID="ID_922946113" MODIFIED="1442397192185" TEXT="Prototype"/>
+<node CREATED="1442382182979" FOLDED="true" ID="ID_1453516387" MODIFIED="1461585242149" TEXT="Singleton">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Ensure a class has only one instance and provide a global</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585046566" MODIFIED="1461585046566">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_4725539768809434510.jpeg" />
+  </body>
+</html>
+</richcontent>
 </node>
-<node CREATED="1442398344429" ID="ID_1714711684" MODIFIED="1461528958905" TEXT="Structural">
+</node>
+<node CREATED="1442382187515" FOLDED="true" ID="ID_922320536" MODIFIED="1461585240550" TEXT="Factory method">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Define an interface for creating an object, but let the subclasses decide which class to instantiate. The Factory method lets a class defer instantiation to subclasses</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585235049" MODIFIED="1461585235049">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_1445470354704730205.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1442382196215" FOLDED="true" ID="ID_1758275518" MODIFIED="1461584977381" TEXT="Abstract Factory">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Provides an interface for creating families of related or dependent objects without specifying their concrete classes</em>
+    </p>
+    <p>
+      <img alt="" class="fr-dii fr-fil" src="https://dzone.com/sites/all/files/abstract_factory_pattern.PNG" height="546" width="593" />
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461584972074" MODIFIED="1461584972074">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_6522192036355409675.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1442382202961" FOLDED="true" ID="ID_1749283791" MODIFIED="1461585034505" TEXT="Builder">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Allows for object level access control by acting as a pass through entity or a placeholder object</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585003225" MODIFIED="1461585003225">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_7181439889956198563.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1442397189268" FOLDED="true" ID="ID_922946113" MODIFIED="1461585032801" TEXT="Prototype">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Create objects based on a template of an exsiting object through cloning.</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585030614" MODIFIED="1461585030614">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_2887214795817689283.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1442398344429" FOLDED="true" ID="ID_1714711684" MODIFIED="1461585514098" TEXT="Structural">
 <node CREATED="1442223948388" ID="ID_1792350717" MODIFIED="1442397751252" TEXT="Decorator">
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1792350717" ENDARROW="None" ENDINCLINATION="193;0;" ID="Arrow_ID_1207293456" SOURCE="ID_191999848" STARTARROW="None" STARTINCLINATION="193;0;"/>
 </node>
 <node CREATED="1442398340518" ID="ID_348466189" MODIFIED="1442398343603" TEXT="Adapter"/>
+<node CREATED="1461585256222" FOLDED="true" ID="ID_357728875" MODIFIED="1461585286163" TEXT="Proxy">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Allows for object level access control by acting as a pass through entity or a placeholder object</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585282423" MODIFIED="1461585282423">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_3734779880534814058.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1461585313563" FOLDED="true" ID="ID_1681177483" MODIFIED="1461585343495" TEXT="Flyweight &#x2014; &#x41f;&#x440;&#x438;&#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;&#x43b;&#x435;&#x43d;&#x435;&#x446;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Facilitates the reuse of many fine grained objects, making the utilization of large numbers of objects more efficient. </em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585331167" MODIFIED="1461585331167">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_6107455626907876227.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node CREATED="1442226601960" ID="ID_1035519314" MODIFIED="1442226623961" TEXT="Plugin">
 <arrowlink DESTINATION="ID_564189850" ENDARROW="None" ENDINCLINATION="156;0;" ID="Arrow_ID_727050824" STARTARROW="None" STARTINCLINATION="156;0;"/>
@@ -1001,8 +1180,3152 @@
 <node CREATED="1442302652654" ID="ID_556415832" MODIFIED="1442302921810" TEXT="Observer">
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_556415832" ENDARROW="None" ENDINCLINATION="342;0;" ID="Arrow_ID_1216988035" SOURCE="ID_581759123" STARTARROW="None" STARTINCLINATION="342;0;"/>
 </node>
+<node CREATED="1461584935936" FOLDED="true" ID="ID_1021357078" MODIFIED="1461585511638" TEXT="Behavioral Patterns">
+<node CREATED="1461584782745" FOLDED="true" ID="ID_651359326" MODIFIED="1461584802992" TEXT="Command">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations</em>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1461584799873" MODIFIED="1461584799873">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_211924244430036868.jpeg" />
+  </body>
+</html></richcontent>
 </node>
-<node CREATED="1461448659066" ID="ID_889549012" MODIFIED="1461448747012" TEXT="EIP"/>
+</node>
+<node CREATED="1461584841590" FOLDED="true" ID="ID_400513593" MODIFIED="1461585287306" TEXT="Interpreter">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.</em>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1461584858487" MODIFIED="1461584858487">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_4251993963822787585.jpeg" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1461584876475" FOLDED="true" ID="ID_843743268" MODIFIED="1461585289010" TEXT="Iterator ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Provides a way to access the elements of an aggregate object without exposing its underlying representation.</em>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1461584914899" MODIFIED="1461584914899">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_3321567940785533697.jpeg" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1461584760298" FOLDED="true" ID="ID_570722636" MODIFIED="1461584801848" TEXT="Chain of Responsibility">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Gives more than one object an opportunity to handle a request by linking receiving objects together</em>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1461584764834" MODIFIED="1461584764834">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_934402709559697142.jpeg" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1461585382727" FOLDED="true" ID="ID_259733769" MODIFIED="1461585398301" TEXT="Mediator">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Allows loose coupling by encapsulating the way disparate sets of objects interact and communicate with each other.&#160;&#160;Allows for the actions of each object set to vary independently of one another.&#160;</em>
+    </p>
+    <p>
+      <img alt="" class="fr-dii fr-fil" src="https://dzone.com/sites/all/files/mediator_pattern.png" height="221" width="413" />
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585396979" MODIFIED="1461585396979">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_379975966752187401.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1461585407069" FOLDED="true" ID="ID_874164298" MODIFIED="1461585426147" TEXT="Memento">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Captures and externalizes an object's internal state so that it can be restored later, all without violating encapsulation</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1461585424963" MODIFIED="1461585424963">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_4442376991154980954.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1461585431944" ID="ID_831991256" MODIFIED="1461585473823" TEXT="Observer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1461585485665" ID="ID_1982185886" MODIFIED="1461585494621" TEXT="State">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Allows an object to alter its behaviour when its internal state changes. The object will appear to change its class.</em>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1443884232651" FOLDED="true" ID="ID_375475044" MODIFIED="1461585463146" TEXT="Enterprise Integration Patterns">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      http://www.enterpriseintegrationpatterns.com/index.html
+    </p>
+    <p>
+      http://camel.apache.org/enterprise-integration-patterns.html
+    </p>
+    <p>
+      
+    </p>
+    All content on this site is original and is maintained by
+
+    <p>
+      <a href="http://www.enterpriseintegrationpatterns.com/gregor.html">Gregor Hohpe</a>. I have been building integration solutions for large clients for many years and enjoy sharing my findings with the community. You can find the most recent content in <a href="http://www.enterpriseintegrationpatterns.com/ramblings">my Ramblings</a>. Please <a href="http://www.enterpriseintegrationpatterns.com/gregor.html">contact me</a>&#160;if you have suggestions or feedback.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1443884302490" FOLDED="true" ID="ID_1667577359" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/IntegrationStylesIntro.html" MODIFIED="1444071849043" TEXT="Integration Options">
+<node CREATED="1443884315752" ID="ID_222697016" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/FileTransferIntegration.html" MODIFIED="1443884362444" TEXT="File Transfer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Have each application produce files of shared data for others to consume, and consume files that others have produced.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1443884315792" ID="ID_346479752" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SharedDataBaseIntegration.html" MODIFIED="1443884377059" TEXT="Shared Database">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Have the applications store the data they wish to share in a common database.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1443884315793" ID="ID_1370484887" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EncapsulatedSynchronousIntegration.html" MODIFIED="1443884382356" TEXT="Remote Procedure Invocation">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Have each application expose some of its procedures so that they can be invoked remotely, and have applications invoke those to run behavior and exchange data.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1443884315799" ID="ID_858244021" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html" MODIFIED="1443949445315" TEXT="Messaging">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Have each application connect to a common messaging system, and exchange data and invoke behavior using messages.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443885964822" FOLDED="true" ID="ID_412281730" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingComponentsIntro.html" MODIFIED="1461585514102" TEXT="Messaging Systems">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingComponentsIntro.html
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443886435055" FOLDED="true" ID="ID_179346980" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html" MODIFIED="1444071848579" TEXT="Message Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How does one application communicate with another using messaging?</font></b>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Connect the applications using a <i>Message Channel</i>, where one application writes information to the channel and the other one reads that information from the channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">When an application has information to communicate, it doesn't just fling the information into the messaging system, it adds the information to a particular <i>Message Channel</i>. An application receiving information doesn't just pick it up at random from the messaging system; it retrieves the information from a particular <i>Message Channel</i>. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message-channel.html </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443886727817" ID="ID_106522760" MODIFIED="1443886731075">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageChannelSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443886877501" FOLDED="true" ID="ID_1777569530" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html" MODIFIED="1444071848579" TEXT="Message">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How can two applications connected by a message channel exchange a piece of information?</font></b>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Package the information into a <i>Message</i>, a data record that the messaging system can transmit through a message channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Thus any data that is to be transmitted via a messaging system must be converted into one or more messages that can be sent through messaging channels. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message.html </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443886972676" ID="ID_975625910" MODIFIED="1443886975513">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443887018387" FOLDED="true" ID="ID_1674048604" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PipesAndFilters.html" MODIFIED="1444071848580" TEXT="Pipes and Filters">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How can we perform complex processing on a message while maintaining independence and flexibility? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use the <i>Pipes and Filters</i>&#160;architectural style to divide a larger processing task into a sequence of smaller, independent processing steps (Filters) that are connected by channels (Pipes).</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Each filter exposes a very simple interface: it receives messages on the inbound pipe, processes the message, and publishes the results to the outbound pipe. The pipe connects one filter to the next, sending output messages from one filter to the next. Because all component use the same external interface they can be <i>composed</i>&#160;into different solutions by connecting the components to different pipes. We can add new filters, omit existing ones or rearrange them into a new sequence -- all without having to change the filters themselves. The connection between filter and pipe is sometimes called <i>port</i>. In the basic form, each filter component has one input port and one output port. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/pipes-and-filters.html </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443887034299" ID="ID_779713146" MODIFIED="1443887038312">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/PipesAndFilters.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443887168976" FOLDED="true" ID="ID_1197210051" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html" MODIFIED="1456744030090" TEXT="Message Router">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How can you decouple individual processing steps so that messages can be passed to different filters depending on a set of conditions?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Insert a special filter, a <i>Message Router</i>, which consumes a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>&#160; from one <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html"><i>Message Channel</i></a>&#160;and republishes it to a different <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html"><i>Message Channel</i></a>&#160;channel depending on a set of conditions. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Message Router</i>&#160;differs from the most basic notion of <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PipesAndFilters.html"><i>Pipes and Filters</i></a>&#160;in that it connects to multiple output channels. Thanks to the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PipesAndFilters.html"><i>Pipes and Filters</i></a>&#160;architecture the components surrounding the <i>Message Router</i>&#160;are completely unaware of the existence of a <i>Message Router</i>. A key property of the <i>Message Router</i>&#160;is that it does not modify the message contents. It only concerns itself with the destination of the message. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message-router.html </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443887193383" ID="ID_765638013" MODIFIED="1443887199618">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageRouter.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443887386323" FOLDED="true" ID="ID_789589134" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html" MODIFIED="1461585514101" TEXT="&#x9;Message Translator">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How can systems using different data formats communicate with each other using messaging? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a special filter, a <i>Message Translator</i>, between other filters or applications to translate one data format into another. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Message Translator</i>&#160;is the messaging equivalent of the <i>Adapter</i>&#160; pattern described in [<a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/enterpriseint-20" target="_blank" title="Design Patterns: Elements of Reusable Object-Oriented Software">GoF</a>]. An adapter converts the interface of a component into a another interface so it can be used in a different context. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message-translator.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443887412003" ID="ID_1051260672" MODIFIED="1443887416654">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageTranslator.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443887851340" FOLDED="true" ID="ID_1912647111" MODIFIED="1444071848580" TEXT="Message Endpoint">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How does an application connect to a messaging channel to send and receive messages?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Connect an application to a messaging channel using a <i>Message Endpoint</i>, a client of the messaging system that the application can then use to send or receive messages.</font></b>
+    </p>
+    <p class="bodyText">
+      <i><font size="2">Message Endpoint</font></i><font size="2">&#160;code is custom to both the application and the messaging system&#8217;s client API. The rest of the application knows little about message formats, messaging channels, or any of the other details of communicating with other applications via messaging. It just knows that it has a request or piece of data to send to another application, or is expecting those from another application. It is the messaging endpoint code that takes that command or data, makes it into a message, and sends it on a particular messaging channel. It is the endpoint that receives a message, extracts the contents, and gives them to the application in a meaningful way. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message-endpoint.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443887860788" ID="ID_770486497" MODIFIED="1443887868994">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageEndpointSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1443888009793" FOLDED="true" ID="ID_431245554" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingChannelsIntro.html" MODIFIED="1444071849044" TEXT="Messaging Channels">
+<node CREATED="1443888344249" FOLDED="true" ID="ID_1092713266" MODIFIED="1444071848580" TEXT="Point-to-Point Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><font size="2">How can the caller be sure that exactly one receiver will receive the document or perform the call?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Send the message on a <i>Point-to-Point Channel</i>, which ensures that only one receiver will receive a particular message.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">A <i>Point-to-Point Channel</i>&#160;ensures that only one receiver consumes any given message. If the channel has multiple receivers, only one of them can successfully consume a particular message. If multiple receivers try to consume a single message, the channel ensures that only one of them succeeds, so the receivers do not have to coordinate with each other. The channel can still have multiple receivers to consume multiple messages concurrently, but only a single receiver consumes any one message. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/point-to-point-channel.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443888369730" ID="ID_473162743" MODIFIED="1443888372493">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/PointToPointSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443888551151" FOLDED="true" ID="ID_1156484039" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html" MODIFIED="1444071848581" TEXT="Publish-Subscribe Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to announce events. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can the sender broadcast an event to all interested receivers?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Send the event on a <i>Publish-Subscribe Channel</i>, which delivers a copy of a particular event to each receiver.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">A <i>Publish-Subscribe Channel</i>&#160;works like this: It has one input channel that splits into multiple output channels, one for each subscriber. When an event is published into the channel, the <i>Publish-Subscribe Channel</i>&#160;delivers a copy of the message to each of the output channels. Each output channel has only one subscriber, which is only allowed to consume a message once. In this way, each subscriber only gets the message once and consumed copies disappear from their channels. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/publish-subscribe-channel.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443888553223" ID="ID_860359675" MODIFIED="1443888555898">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/PublishSubscribeSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443888692876" FOLDED="true" ID="ID_362188493" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DatatypeChannel.html" MODIFIED="1444071848581" TEXT="Datatype Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to transfer different types of data, such as different types of documents. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can the application send a data item such that the receiver will know how to process it?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a separate <i>Datatype Channel</i>&#160;for each data type, so that all data on a particular channel is of the same type.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">By using a separate <i>Datatype Channel</i>&#160;for each type of data, all of the messages on a given channel will contain the same type of data. The sender, knowing what type the data is, will need to select the appropriate channel to send it on. The receiver, knowing what channel the data was received on, will know what its type is.&#160;</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443888734852" ID="ID_722005145" MODIFIED="1443888737759">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DatatypeSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443888820642" FOLDED="true" ID="ID_1723929313" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/InvalidMessageChannel.html" MODIFIED="1444071848581" TEXT="Invalid Message Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to receive <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>s. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a messaging receiver gracefully handle receiving a message that makes no sense?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">The receiver should move the improper message to an <i>Invalid Message Channel</i>, a special channel for messages that could not be processed by their receivers.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">When designing a messaging system for applications to use, the administrator will need to define one or more <i>Invalid Message Channel</i>s for the applications to use. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443888832970" ID="ID_1826146805" MODIFIED="1443888836109">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/InvalidMessageSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443888940023" FOLDED="true" ID="ID_1142670414" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html" MODIFIED="1444071848582" TEXT="&#x9;Dead Letter Channel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An enterprise is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to integrate applications. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">What will the messaging system do with a message it cannot deliver?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">When a messaging system determines that it cannot or should not deliver a message, it may elect to move the message to a <i>Dead Letter Channel</i>.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The specific way a <i>Dead Letter Channel</i>&#160;works depends on the specific messaging system&#8217;s implementation, if it provides one at all. The channel may be called a &#8220;dead message queue&#8221; [<a href="http://www.amazon.com/exec/obidos/ASIN/0596000685/enterpriseint-20" target="_blank" title="Java Message Service">Monson-Haefel, p.125</a>] or &#8220;dead letter queue.&#8221; [<a href="http://www.ibm.com/software/mqseries" target="_blank" title="MQSeries from IBM">MQSeries</a>], [<a href="http://www.amazon.com/exec/obidos/ASIN/0201325810/enterpriseint-20" target="_blank" title="Designing Applications with MSMQ">Dickman, pp.28-29</a>] Typically, each machine the messaging system is installed on has its own local <i>Dead Letter Channel</i>&#160;so that whatever machine a message dies on, it can be moved from one local queue to another without any networking uncertainties. This also records what machine the message died on. When the messaging system moves the message, it may also record the original channel the message was supposed to be delivered on. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/dead-letter-channel.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443888951559" ID="ID_1164126804" MODIFIED="1443888954530">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DeadLetterChannelSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443889256144" FOLDED="true" ID="ID_1467063958" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/GuaranteedMessaging.html" MODIFIED="1444071848582" TEXT="Guaranteed Delivery">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An enterprise is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to integrate applications. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can the sender make sure that a message will be delivered, even if the messaging system fails?</font></b>
+    </p>
+    <p>
+      <b><font size="2">Use <i>Guaranteed Delivery</i>&#160;to make messages persistent so that they are not lost even if the messaging system crashes.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">With <i>Guaranteed Delivery</i>, the messaging system uses a built-in data store to persist messages. Each computer the messaging system is installed on has its own data store so that the messages can be stored locally. When the sender sends a message, the send operation does not complete successfully until the message is safely stored in the sender&#8217;s data store. Subsequently, the message is not deleted from one data store until it is successfully forwarded to and stored in the next data store. In this way, once the sender successfully sends the message, it is always stored on disk on at least one computer until is successfully delivered to and acknowledged by the receiver. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/guaranteed-delivery.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443889265720" ID="ID_1791627703" MODIFIED="1443889269611">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/GuaranteedMessagingSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443889387101" FOLDED="true" ID="ID_1709522243" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ChannelAdapter.html" MODIFIED="1444071848582" TEXT="Channel Adapter">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">Many enterprises use <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to integrate multiple, disparate applications. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you connect an application to the messaging system so that it can send and receive messages?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Channel Adapter</i>&#160;that can access the application's API or data and publish messages on a channel based on this data, and that likewise can receive messages and invoke functionality inside the application.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The adapter acts as a messaging client to the messaging system and invokes applications functions via an application-supplied interface. This way, any application can connect to the messaging system and be integrated with other applications as long as it has a proper <i>Channel Adapter</i>. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443889411493" ID="ID_517185089" MODIFIED="1443889502872">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ChannelAdapterSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443889518306" FOLDED="true" ID="ID_689355181" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingBridge.html" MODIFIED="1444071848583" TEXT="Messaging Bridge">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An enterprise is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to enable applications to communicate. However, the enterprise uses more than one messaging system, which confuses the issue of which messaging system an application should connect to. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can multiple messaging systems be connected so that messages available on one are also available on the others?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Messaging Bridge</i>, a connection between messaging systems, to replicate messages between systems.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Typically, there is no practical way to connect two complete messaging systems, so instead we connect individual, corresponding channels between the messaging systems. The <i>Messaging Bridge</i>&#160;is a set of <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ChannelAdapter.html"><i>Channel Adapter</i></a>s, where the non-messaging client is a actually another messaging system, and where each pair of adapters connects a pair of corresponding channels. The bridge acts as map from one set of channels to the other, and also transforms the message format of one system to the other. The connected channels may be used to transmit messages between traditional clients of the messaging system, or strictly for messages intended for other messaging systems. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443889526650" ID="ID_1351966420" MODIFIED="1443889530941">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessagingBridge.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443889683361" FOLDED="true" ID="ID_1632728631" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html" MODIFIED="1444071848583" TEXT="Message Bus">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An enterprise contains several existing systems that must be able to share data and operate in a unified manner in response to a set of common business requests. </font>
+    </p>
+    <p>
+      <b><font size="2">What is an architecture that enables separate applications to work together, but in a decoupled fashion such that applications can be easily added or removed without affecting the others?</font></b>
+    </p>
+    <p>
+      <b><font size="2">Structure the connecting middleware between these applications as a <i>Message Bus</i>&#160;that enables them to work together using messaging.</font></b>
+    </p>
+    <p>
+      <font size="2">A <i>Message Bus</i>&#160;is a combination of a common data model, a common command set, and a messaging infrastructure to allow different systems to communicate through a shared set of interfaces. This is analogous to a communications bus in a computer system, which serves as the focal point for communication between the CPU, main memory, and peripherals. Just as in the hardware analogy, there are a number of pieces that come together to form the message bus: </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/message-bus.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443889685670" ID="ID_491295937" MODIFIED="1443889705267">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageBusSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1443889871827" FOLDED="true" ID="ID_1365982961" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageConstructionIntro.html" MODIFIED="1453186574013" TEXT="Message Construction">
+<node CREATED="1443962605274" FOLDED="true" ID="ID_1921552640" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html" MODIFIED="1444071848583" TEXT="Command Message">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An application needs to invoke functionality provided by other applications. It would typically use <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EncapsulatedSynchronousIntegration.html"><i>Remote Procedure Invocation</i></a>, but would like to take advantage of the benefits of using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can messaging be used to invoke a procedure in another application? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Command Message</i>&#160;to reliably invoke a procedure in another application.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">There is no specific message type for commands; a <i>Command Message</i>&#160; is simply a regular message that happens to contain a command. In JMS, the command message could be any type of message; examples include an ObjectMessage&#160;&#160;containing a Serializable&#160;command object, a TextMessage&#160;containing the command in XML form, etc. In .NET, a command message is a Message&#160;&#160;with a command stored in it. A Simple Object Access Protocol (SOAP) request is a command message. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443962632080" ID="ID_1716296851" MODIFIED="1443962637966">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/CommandMessageSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443962736502" FOLDED="true" ID="ID_994009409" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DocumentMessage.html" MODIFIED="1444071848583" TEXT="Document Message">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">An application would like to transfer data to another application. It could do so using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/FileTransferIntegration.html"><i>File Transfer</i></a>&#160;or <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SharedDataBaseIntegration.html"><i>Shared Database</i></a>, but those approaches have shortcomings. The transfer might work better using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can messaging be used to transfer data between applications?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Document Message</i>&#160;to reliably transfer a data structure between applications.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Whereas a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html"><i>Command Message</i></a>&#160;tells the receiver to invoke certain behavior, a <i>Document Message</i>&#160;just passes data and lets the receiver decide what, if anything, to do with the data. The data is a single unit of data, a single object or data structure which may decompose into smaller units. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443962754661" ID="ID_852467565" MODIFIED="1443962759145">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DocumentMessageSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443962792582" FOLDED="true" ID="ID_961777608" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EventMessage.html" MODIFIED="1444071848584" TEXT="Event Message">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">Several applications would like to use event-notification to coordinate their actions, and would like to use <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to communicate those events. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can messaging be used to transmit events from one application to another?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use an <i>Event Message</i>&#160;for reliable, asynchronous event notification between applications.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">When a subject has an event to announce, it will create an event object, wrap it in a message, and send it on a channel. The observer will receive the event message, get the event, and process it. Messaging does not change the event notification, just makes sure that the notification gets to the observer. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/event-message.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443962861708" ID="ID_1621813294" MODIFIED="1443962866437">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/EventMessageSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443962985226" FOLDED="true" ID="ID_1409111673" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html" MODIFIED="1444071848584" TEXT="Request-Reply">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">When two applications communicate via <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>, the communication is one-way. The applications may want a two-way conversation. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">When an application sends a message, how can it get a response from the receiver?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Send a pair of <i>Request-Reply</i>&#160;messages, each on its own channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <i><font size="2">Request-Reply</font></i><font size="2">&#160;has two participants: </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/request-reply.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443963117929" ID="ID_100697231" MODIFIED="1443963123144">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/RequestReply.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443963175439" FOLDED="true" ID="ID_933916753" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html" MODIFIED="1444071848584" TEXT="Return Address">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">My application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to perform a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How does a replier know where to send the reply?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">The request message should contain a <i>Return Address</i>&#160;that indicates where to send the reply message.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">This way, the replier does not need to know where to send the reply, it can just ask the request. If different messages to the same replier require replies to different places, the replier knows where to send the reply for each request. This encapsulates the knowledge of what channels to use for requests and replies within the requestor so those decisions do not have to be hard coded within the replier. A <i>Return Address</i>&#160; is put in the header of a message because it&#8217;s not part of the data being transmitted. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/return-address.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443963221278" ID="ID_289114994" MODIFIED="1443963224838">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ReturnAddressSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443963321804" FOLDED="true" ID="ID_1248605160" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CorrelationIdentifier.html" MODIFIED="1453186562603" TEXT="&#x9;Correlation Identifier">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">My application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;to perform a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>&#160; and has received a reply message. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How does a requestor that has received a reply know which request this is the reply for?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Each reply message should contain a <i>Correlation Identifier</i>, a unique identifier that indicates which request message this reply is for.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">There are six parts to <i>Correlation Identifier</i>: </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <strong><font size="2">JMSCorrelationID</font></strong>
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/correlation-identifier.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443963353691" ID="ID_70405855" MODIFIED="1443963356751">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/CorrelationIdentifierSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443963569374" FOLDED="true" ID="ID_278885091" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageSequence.html" MODIFIED="1444071848585" TEXT="Message Sequence">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      My application needs to send a huge amount of data to another process, more than may fit in a single message. Or my application has made a request whose reply contains too much data for a single message.
+    </p>
+    <p class="bodyText">
+      <b>How can messaging transmit an arbitrarily large amount of data?</b>
+    </p>
+    <p class="bodyText">
+      <b>Whenever a large set of data may need to be broken into message-size chunks, send the data as a <i>Message Sequence</i>&#160;and mark each message with sequence identification fields.</b>
+    </p>
+    <p class="bodyText">
+      The three <i>Message Sequence</i>&#160;identification fields are:
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443963603964" ID="ID_1606420570" MODIFIED="1443963610824">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageSequenceSize.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443964252914" FOLDED="true" ID="ID_1099978898" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageExpiration.html" MODIFIED="1444071848585" TEXT="Message Expiration">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">My application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. If a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>&#8217;s data or request is not received by a certain time, it is useless and should be ignored. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a sender indicate when a message should be considered stale and thus shouldn&#8217;t be processed?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Set the <i>Message Expiration</i>&#160;to specify a time limit how long the message is viable.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Once the time for which a message is viable passes, and the message still has not been consumed, then the message will expire. The messaging system&#8217;s consumers will ignore an expired message; they treat the message as if it where never sent in the first place. Most messaging system implementations reroute expired messages to the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html"><i>Dead Letter Channel</i></a>, while others simply discard expired messages; this may be configurable. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443964282344" ID="ID_1503422401" MODIFIED="1443964287024">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageExpirationSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443964423477" ID="ID_1567644271" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/FormatIndicator.html" MODIFIED="1443964437343" TEXT="Format Indicator">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">Several applications are communicating via <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>s that follow an agreed upon data format, perhaps an enterprise-wide <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html"><i>Canonical Data Model</i></a>. However, that format may need to change over time. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a message&#8217;s data format be designed to allow for possible future changes?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Design a data format that includes a <i>Format Indicator</i>, so that the message specifies what format it is using.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The format indicator enables the sender to tell the receiver the format of the message. This way, a receiver expecting several possible formats knows which one a message is using and therefore how to interpret the message&#8217;s contents. </font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443964523827" FOLDED="true" ID="ID_803733368" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SimpleMessagingIntro.html" MODIFIED="1444071849045" TEXT="Simple Messaging">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <ul class="bodyText">
+      <li>
+        <b><font size="2">Request/Reply</font></b><font size="2">&#160;&#8212; Demonstrates (in Java and .NET/C#) how to use messaging to send a request message and respond with a reply message. </font>
+      </li>
+      <li>
+        <b><font size="2">Publish/Subscribe</font></b><font size="2">&#160;&#8212; Explores how to use a JMS Topic&#160;to implement the Observer pattern. </font>
+      </li>
+    </ul>
+  </body>
+</html></richcontent>
+<node CREATED="1443964572041" FOLDED="true" ID="ID_878692852" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html" MODIFIED="1444071848585" TEXT="JMS Request/Reply Example">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    This is a simple example of how to use messaging, implemented in JMS [
+
+    <p>
+      <a href="http://java.sun.com/products/jms/" target="_blank" title="Java Message Service (JMS)">JMS</a>]. It shows how to implement <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>, where a requestor application sends a request, a replier application receives the request and returns a reply, and the requestor receives the reply. It also shows how an invalid message will be rerouted to a special channel.
+    </p>
+    This example was developed using JMS 1.1 and run using the J2EE 1.4 reference implementation.
+  </body>
+</html></richcontent>
+<node CREATED="1443964580282" ID="ID_1999384281" MODIFIED="1443964587182">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/RequestReplyExample.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443964632146" FOLDED="true" ID="ID_430106623" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ObserverJmsExample.html" MODIFIED="1444071848586" TEXT="JMS Publish/Subscribe Example">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <font size="2">This is a simple example that shows the power of publish/subscribe messaging, and explores the alternative designs available. It shows how multiple subscriber applications can all be informed of a single event by publishing the event just once, and considers alternative stratagies for how to communicate details of that event to the subscribers. To understand how helpful a simple </font>
+
+    <p>
+      <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i><font size="2">Publish-Subscribe Channel</font></i></a><font size="2">&#160;really is, we first need to consider what it is like to implement the Observer pattern in a distributed fashion, amongst multiple applications. Before we get to that, let's review the basics of Observer. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443964648928" ID="ID_1264113421" MODIFIED="1443964660074">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/PublishSubscribePushModel.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1443966566666" FOLDED="true" ID="ID_11458127" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRoutingIntro.html" MODIFIED="1444071849045" TEXT="Message Routing">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="bodyText" border="1" cellpadding="2" cellspacing="0">
+      <tr>
+        <td>
+          <b><font size="1">Pattern</font></b>
+        </td>
+        <td>
+          <b><font size="1">Number of Msgs Consumed</font></b>
+        </td>
+        <td>
+          <b><font size="1">Number of Msgs Published</font></b>
+        </td>
+        <td>
+          <b><font size="1">Stateful?</font></b>
+        </td>
+        <td>
+          <b><font size="1">Comment</font></b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html"><i><font size="1">Content-Based Router</font></i></a>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">No (mostly) </font>
+        </td>
+        <td>
+          <font size="1">&#160; </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html"><i><font size="1">Message Filter</font></i></a>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">0 or 1 </font>
+        </td>
+        <td>
+          <font size="1">No (mostly) </font>
+        </td>
+        <td>
+          <font size="1">&#160; </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html"><i><font size="1">Recipient List</font></i></a>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">multiple (incl. 0) </font>
+        </td>
+        <td>
+          <font size="1">No </font>
+        </td>
+        <td>
+          <font size="1">&#160; </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html"><i><font size="1">Splitter</font></i></a>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">multiple </font>
+        </td>
+        <td>
+          <font size="1">No </font>
+        </td>
+        <td>
+          <font size="1">&#160; </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html"><i><font size="1">Aggregator</font></i></a>
+        </td>
+        <td>
+          <font size="1">multiple </font>
+        </td>
+        <td>
+          <font size="1">1 </font>
+        </td>
+        <td>
+          <font size="1">Yes </font>
+        </td>
+        <td>
+          <font size="1">&#160; </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Resequencer.html"><i><font size="1">Resequencer</font></i></a>
+        </td>
+        <td>
+          <font size="1">multiple </font>
+        </td>
+        <td>
+          <font size="1">multiple </font>
+        </td>
+        <td>
+          <font size="1">Yes </font>
+        </td>
+        <td>
+          <font size="1">Publishes same number it consumes. </font>
+        </td>
+      </tr>
+    </table>
+    <p>
+      
+    </p>
+    <ul class="bodyText">
+      <li>
+        <b><font size="1">Simple Routers </font></b><font size="1">are variants of the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;and route messages from one inbound channel to one or more outbound channels. </font>
+      </li>
+      <li>
+        <b><font size="1">Composed Routers</font></b><font size="1">&#160;combine multiple simple routers to create more complex message flows. </font>
+      </li>
+      <li>
+        <b><font size="1">Architectural Patterns</font></b><font size="1">&#160;describe architectural styles based on <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>s. </font>
+      </li>
+    </ul>
+  </body>
+</html></richcontent>
+<node CREATED="1443966592266" FOLDED="true" ID="ID_1123145328" MODIFIED="1444071848586" TEXT="overview">
+<node CREATED="1443966600817" ID="ID_215843134" MODIFIED="1443966613548">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/RoutingPatternsDecisionTree.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443966754335" FOLDED="true" ID="ID_1195820009" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html" MODIFIED="1444071848586" TEXT="Content-Based Router">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">Assume that we are building an order processing system. When an incoming order is received, we first validate the order and then verify that the ordered item is available in the warehouse. This function is performed by the inventory system. This sequence of processing steps is a perfect candidate for the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PipesAndFilters.html"><i>Pipes and Filters</i></a>&#160;style. We create two filters, one for the validation step and one for the inventory system, and route the incoming messages through both filters. However, in many enterprise integration scenarios more than one inventory system exists with each system being able to handle only specific items. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we handle a situation where the implementation of a single logical function (e.g., inventory check) is spread across multiple physical systems? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Content-Based Router</i>&#160;to route each message to the correct recipient based on message content. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Content-Based Router</i>&#160;examines the message content and routes the message onto a different channel based on data contained in the message. The routing can be based on a number of criteria such as existence of fields, specific field values etc. When implementing a <i>Content-Based Router</i>, special caution should be taken to make the routing function easy to maintain as the router can become a point of frequent maintenance. In more sophisticated integration scenarios, the <i>Content-Based Router</i>&#160;can take on the form of a configurable rules engine that computes the destination channel based on a set of configurable rules. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">http://camel.apache.org/content-based-router.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443966781576" ID="ID_1698669169" MODIFIED="1443966785113">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ContentBasedRouter.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443966969957" FOLDED="true" ID="ID_898495893" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html" MODIFIED="1444071848586" TEXT="Message Filter">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/message-filter.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">Continuing with the order processing example, let's assume that company management publishes price changes and promotions to large customers. Whenever a price for an item changes, we send a message notifying the customer. We do the same if we are running a special promotion, e.g. all widgets are 10% off in the month of November. Some customers may be interested in receiving price updates or promotions only related to specific items. If I purchase primarily gadgets, I may not be interested in knowing whether widgets are on sale or not. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a component avoid receiving uninteresting messages?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a special kind of Message Router, a <i>Message Filter</i>, to eliminate undesired messages from a channel based on a set of criteria.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Message Filter</i>&#160;has only a single output channel. If the message content matches the criteria specified by the <i>Message Filter</i>, the message is routed to the output channel. If the message content does not match the criteria, the message is discarded. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443966989788" ID="ID_1999697139" MODIFIED="1443966993726">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageFilter.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443967126785" FOLDED="true" ID="ID_316345699" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DynamicRouter.html" MODIFIED="1444071848587" TEXT="&#x9;Dynamic Router">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/dynamic-router.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">You are using a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;to route messages between multiple destinations. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you avoid the dependency of the router on all possible destinations while maintaining its efficiency?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Dynamic Router</i>, a Router that can self-configure based on special configuration messages from participating destinations.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Besides the usual input and output channels the <i>Dynamic Router</i>&#160; uses an additional <i>control channel</i>. During system start-up, each potential recipient sends a special message to the <i>Dynamic Router</i>&#160; on this control channel, announcing its presence and listing the conditions under which it can handle a message. The <i>Dynamic Router</i>&#160; stores the 'preferences' for each participant in a rule base. When a message arrives, the <i>Dynamic Router</i>&#160;evaluates all rules and routes the message to the recipient whose rules are fulfilled. This allows for efficient, predictive routing without the maintenance dependency of the <i>Dynamic Router</i>&#160;on each potential recipient. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443967149385" ID="ID_57705400" MODIFIED="1443967152801">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DynamicRouter.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443967310252" FOLDED="true" ID="ID_1670044254" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html" MODIFIED="1444071848587" TEXT="Recipient List">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/recipient-list.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html"><i>Content-Based Router</i></a>&#160;allows us to route a message to the correct system based on message content. This process is transparent to the original sender in the sense that the originator simply sends the message to a channel, where the router picks it up and takes care of everything. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">In some cases, though, we may want to specify one or more recipients for the message. A common analogy are the recipient lists implemented in most e-mail systems. For each e-mail message, the sender can specify a list of recipients. The mail system then ensures transport of the message content to each recipient. An example from the domain of enterprise integration would be a situation where a function can be performed by one or more providers. For example, we may have a contract with multiple credit agencies to assess the credit worthiness of our customers. When a small order comes in we may simply route the credit request message to one credit agency. If a customer places a large order, we may want to route the credit request message to multiple agencies and compare the results before making a decision. In this case, the list of recipients depends on the dollar value of the order. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">In another situation, we may want to route an order message to a select list of suppliers to obtain a quote for the requested item. Rather than sending the request to all vendors, we may want to control which vendors receive the request, possibly based on user preferences </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we route a message to a list of dynamically specified recipients? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Define a channel for each recipient. Then use a <i>Recipient List</i>&#160; to inspect an incoming message, determine the list of desired recipients, and forward the message to all channels associated with the recipients in the list. </font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The logic embedded in a <i>Recipient List</i>&#160;can be pictured as two separate parts even though the implementation is often coupled together. The first part computes a list of recipients. The second part simply traverses the list and sends a copy of the received message to each recipient. Just like a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html"><i>Content-Based Router</i></a>, the <i>Recipient List</i>&#160;usually does not modify the message contents. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443967347348" ID="ID_1558170908" MODIFIED="1443967363806">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/RecipientList.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443967590431" FOLDED="true" ID="ID_181231203" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html" MODIFIED="1444071848587" TEXT="Splitter (Sequencer)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/splitter.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">Many messages passing through an integration solution consist of multiple elements. For example, an order placed by a customer consists of more than just a single line item. As outlined in the description of the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html"><i>Content-Based Router</i></a>, each line item may need to be handled by a different inventory system. Thus, we need to find an approach to process a complete order, but treat each order item contained in the order individually. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we process a message if it contains multiple elements, each of which may have to be processed in a different way? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Splitter</i>&#160;to break out the composite message into a series of individual messages, each containing data related to one item. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">use a <i>Splitter</i>&#160;that consumes one message containing a list of repeating elements, each of which can be processed individually. The <i>Splitter</i>&#160; publishes a one message for each single element (or a subset of elements) from the original message. </font>
+    </p>
+  </body>
+</html></richcontent>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_181231203" ENDARROW="None" ENDINCLINATION="279;0;" ID="Arrow_ID_292202360" SOURCE="ID_1242585920" STARTARROW="None" STARTINCLINATION="279;0;"/>
+<node CREATED="1443967619798" ID="ID_1324462276" MODIFIED="1443967637517">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/Sequencer.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443967781388" FOLDED="true" ID="ID_321486412" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html" MODIFIED="1444071848588" TEXT="Aggregator">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/aggregator2.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html"><i>Splitter</i></a>&#160;is useful to break out a single message into a sequence of sub-messages that can be processed individually. Likewise, a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html"><i>Recipient List</i></a>&#160;or a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a>&#160;is useful to forward a request message to multiple recipients in parallel in order to get multiple responses to choose from. In most of these scenarios, the further processing depends on successful processing of the sub-messages. For example, we want to select the best bid from a number of vendor responses or we want to bill the client for an order after all items have been pulled from the warehouse. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we combine the results of individual, but related messages so that they can be processed as a whole? </font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a stateful filter, an <i>Aggregator</i>, to collect and store individual messages until a complete set of related messages has been received. Then, the <i>Aggregator</i>&#160;publishes a single message distilled from the individual messages.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Aggregator</i>&#160;is a special <i>Filter</i>&#160;that receives a stream of messages and identifies messages that are correlated. Once a complete set of messages has been received (more on how to decide when a set is 'complete' below), the <i>Aggregator</i>&#160;collects information from each correlated message and publishes a single, aggregated message to the output channel for further processing. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443967827603" ID="ID_948594851" MODIFIED="1443967830333">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/Aggregator.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443968350450" FOLDED="true" ID="ID_1218253501" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Resequencer.html" MODIFIED="1444071848588" TEXT="Resequencer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/resequencer.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;can route messages from one channel to different channels based on message content or other criteria. Because individual messages may follow different routes, some messages are likely to pass through the processing steps sooner than others, resulting in the messages getting out of order. However, some subsequent processing steps do require in-sequence processing of messages, for example to maintain referential integrity. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we get a stream of related but out-of-sequence messages back into the correct order?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a stateful filter, a <i>Resequencer</i>, to collect and re-order messages so that they can be published to the output channel in a specified order.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Resequencer</i>&#160;can receive a stream of messages that may not arrive in order. The <i>Resequencer</i>&#160;contains in internal buffer to store out-of-sequence messages until a complete sequence is obtained. The in-sequence messages are then published to the output channel. It is important that the output channel is order-preserving so messages are guaranteed to arrive in order at the next component. Like most other routers, a <i>Resequencer</i>&#160;usually does not modify the message contents. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443968365329" ID="ID_1283858124" MODIFIED="1443968393680">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/Resequencer.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443968532061" FOLDED="true" ID="ID_262190783" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DistributionAggregate.html" MODIFIED="1444071848588" TEXT="Composed Message Processor (Distribution Aggregate)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/composed-message-processor.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The order-processing example presented in the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html"><i>Content-Based Router</i></a>&#160;and <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html"><i>Splitter</i></a>&#160;patterns processes an incoming order consisting of individual line items. Each line item requires an inventory check with the respective inventory system. After all items have been verified we want to pass the validated order message to the next processing step. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you maintain the overall message flow when processing a message consisting of multiple elements, each of which may require different processing? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use <i>Composed Message Processor</i>&#160;to process a composite message. The <i>Composed Message Processor</i>&#160;splits the message up, routes the sub-messages to the appropriate destinations and re-aggregates the responses back into a single message. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Composed Message Processor</i>&#160;uses an <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html"><i>Aggregator</i></a>&#160; to reconcile the requests that were dispatched to the multiple inventory systems. Each processing unit sends a response message to the aggregator stating the inventory on hand for the specified item. The Aggregator collects the individual responses and processes them based on a predefined algorithm as described under <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html"><i>Aggregator</i></a>. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443968603843" ID="ID_1546494269" MODIFIED="1443968607524">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DistributionAggregate.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443968734688" FOLDED="true" ID="ID_620141530" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html" MODIFIED="1444071848588" TEXT="Scatter-Gather (Broadcast Aggregate)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/scatter-gather.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">In the order processing example introduced in the previous patterns , each order item that is not currently in stock could be supplied by one of multiple external suppliers. However, the suppliers may or may not have the respective item in stock themselves, they may charge a different price and may be able to supply the part by a different date. To fill the order in the best way possible, we should request quotes from all suppliers and decide which one provides us with the best term for the requested item. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you maintain the overall message flow when a message needs to be sent to multiple recipients, each of which may send a reply? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Scatter-Gather</i>&#160;that broadcasts a message to multiple recipients and re-aggregates the responses back into a single message.</font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Scatter-Gather</i>&#160;routes a request message to the a number of recipients. It then uses an <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html"><i>Aggregator</i></a>&#160;to collect the responses and distill them into a single response message. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443968742761" ID="ID_200150506" MODIFIED="1443968746555">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/BroadcastAggregate.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443968916045" FOLDED="true" ID="ID_947863389" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RoutingTable.html" MODIFIED="1444071848589" TEXT="Routing Slip (Routing Table)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/routing-slip.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">Most of the routing patterns presented in this section route incoming messages to one or more destinations based on a set of rules. Sometimes, though, we need to route a message not just to a single component, but through a whole series of components. Let's assume, for example, that we use a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PipesAndFilters.html"><i>Pipes and Filters</i></a>&#160;architecture to process incoming messages that have to undergo a sequence of processing steps and business rule validations. Since the nature of the validations varies widely and may depend on external systems (e.g., credit card validations), we implement each type of step as a separate filter. Each filter inspects the incoming message, and applies the business rule(s) to the message. If the message does not fulfill the conditions specified by the rules it is routed to an exception channel. The channels between the filters determine the sequence of validations that the message needs to undergo. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">Now let's assume, though, that the set of validations to perform against each message depends on the message type (for example, purchase order request do not need credit card validation or customers who send orders over a VPN may not require decryption and authentication). To accommodate this requirement we need to find a configuration that can route the message through a different sequence of filters depending on the type of the message. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we route a message consecutively through a series of processing steps when the sequence of steps is not known at design-time and may vary for each message? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Attach a <i>Routing Slip</i>&#160;to each message, specifying the sequence of processing steps. Wrap each component with a special message router that reads the <i>Routing Slip</i>&#160;and routes the message to the next component in the list.</font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">We insert a special component into the beginning of the process that computes the list of required steps for each message. It then attaches the list as a <i>Routing Slip</i>&#160;to the message and starts the process by routing the message to the first processing step. After successful processing, each processing step looks at the <i>Routing Slip</i>&#160;and passes the message to the next processing step specified in the routing table. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443968941237" ID="ID_918573788" MODIFIED="1443968949119">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/RoutingTableSimple.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443979635109" FOLDED="true" ID="ID_1464131264" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html" MODIFIED="1444071848589" TEXT="Process Manager">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RoutingTable.html"><i>Routing Slip</i></a>&#160;demonstrates how a message can be routed through a dynamic series of processing steps. The solution of the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RoutingTable.html"><i>Routing Slip</i></a>&#160;is based on two key assumptions: the sequence of processing steps has to be determined up-front and the sequence is linear. In many cases, these assumptions may not be fulfilled. For example, routing decisions might have to be made based on intermediate results. Or, the processing steps may not be sequential, but multiple steps might be executed in parallel. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we route a message through multiple processing steps when the required steps may not be known at design-time and may not be sequential?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a central processing unit, a <i>Process Manager</i>, to maintain the state of the sequence and determine the next processing step based on intermediate results.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">First of all, let me clarify that the design and configuration of a <i>Process Manager</i>&#160;is a pretty extensive topic. We could probably fill a whole book (Volume 2, maybe?) with patterns related to the design of workflow or business process management. Therefore, this pattern is intended primarily to &quot;round off&quot; the topic of routing patterns and to provide a pointer into the direction of workflow and process modeling. By no means is it a comprehensive treatment of business process design. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1443979646165" ID="ID_1000421498" MODIFIED="1443979649422">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ProcessManager.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443979772499" FOLDED="true" ID="ID_501743537" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBroker.html" MODIFIED="1444071848589" TEXT="Message Broker">
+<node CREATED="1443979779123" ID="ID_1549749335" MODIFIED="1443979793543">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageBroker.gif" />
+  </body>
+</html></richcontent>
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      Many patterns in this chapter present ways to route messages to the proper destination without the originating application being aware of the ultimate destination of the message. Most of the patterns focused on specific types of routing logic. However, in aggregate, these patterns solve a bigger problem.
+    </p>
+    <p class="bodyText">
+      <b>How can you decouple the destination of a message from the sender and maintain central control over the flow of messages?</b>
+    </p>
+    <p class="bodyText">
+      <b>Use a central <i>Message Broker</i>&#160;that can receive messages from multiple destinations, determine the correct destination and route the message to the correct channel. Implement the internals of the <i>Message Broker</i>&#160;using the design patterns presented in this chapter.</b>
+    </p>
+    <p class="bodyText">
+      Using a central <i>Message Broker</i>&#160;is sometimes referred to as <i>hub-and-spoke</i>&#160; architectural style, which appears to be a descriptive name when looking at the diagram above.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1443979900519" ID="ID_1661577981" LINK="http://camel.apache.org/throttler.html" MODIFIED="1443979928276" TEXT="Throttler">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    The Throttler Pattern allows you to ensure that a specific endpoint does not get overloaded, or that we don't exceed an agreed SLA with some external service.
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1443979935055" ID="ID_251293919" LINK="http://camel.apache.org/sampling.html" MODIFIED="1443979945833" TEXT="Sampling Throttler">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A sampling throttler allows you to extract a sample of the exchanges from the traffic through a route.<br clear="none" />It is configured with a sampling period during which only a single exchange is allowed to pass through. All other exchanges will be stopped.
+    </p>
+    <p>
+      Will by default use a sample period of 1 seconds.
+    </p>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1443979968870" ID="ID_1852357646" LINK="http://camel.apache.org/delayer.html" MODIFIED="1443979984786" TEXT="Delayer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The Delayer Pattern allows you to delay the delivery of messages to some destination.
+    </p>
+    <div class="confluence-information-macro confluence-information-macro-information">
+      <div class="confluence-information-macro-body">
+        <p>
+          The expression is a value in millis to wait from the current time, so the expression should just be <code>3000</code>.<br clear="none" />However you can use a long value for a fixed value to indicate the delay in millis.<br clear="none" />See the Spring DSL samples for Delayer.
+        </p>
+      </div>
+    </div>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1443979990662" ID="ID_1576573020" LINK="http://camel.apache.org/load-balancer.html" MODIFIED="1443980038448" TEXT="Load Balancer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">The Load Balancer Pattern allows you to delegate to one of a number of endpoints using a variety of different load balancing policies. </font>
+    </p>
+    <h3 id="LoadBalancer-Built-inloadbalancingpolicies">
+      <font size="2">Built-in load balancing policies </font>
+    </h3>
+    <p>
+      <font size="2">Camel provides the following policies out-of-the-box: </font>
+    </p>
+    <div class="table-wrap">
+      <table class="confluenceTable">
+        <tr>
+          <th colspan="1" rowspan="1" class="confluenceTh">
+            <p>
+              <font size="2">Policy </font>
+            </p>
+          </th>
+          <th colspan="1" rowspan="1" class="confluenceTh">
+            <p>
+              <font size="2">Description </font>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <a shape="rect" class="external-link" href="http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/processor/loadbalancer/RoundRobinLoadBalancer.html"><font size="2">Round Robin</font></a>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">The exchanges are selected from in a round robin fashion. This is a well known and classic policy, which spreads the load evenly. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <a shape="rect" class="external-link" href="http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/processor/loadbalancer/RandomLoadBalancer.html"><font size="2">Random</font></a>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">A random endpoint is selected for each exchange. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <a shape="rect" class="external-link" href="http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/processor/loadbalancer/StickyLoadBalancer.html"><font size="2">Sticky</font></a>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">Sticky load balancing using an Expression to calculate a correlation key to perform the sticky load balancing; rather like jsessionid in the web or JMSXGroupID in JMS. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <a shape="rect" class="external-link" href="http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/processor/loadbalancer/TopicLoadBalancer.html"><font size="2">Topic</font></a>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">Topic which sends to all destinations (rather like JMS Topics) </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <a shape="rect" class="external-link" href="http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/processor/loadbalancer/FailOverLoadBalancer.html"><font size="2">Failover</font></a>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">In case of failures the exchange will be tried on the next endpoint. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">Weighted Round-Robin </font>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <strong><font size="2">Camel 2.5:</font></strong><font size="2">&#160;The weighted load balancing policy allows you to specify a processing load distribution ratio for each server with respect to the others. In addition to the weight, endpoint selection is then further refined using <strong>round-robin</strong>&#160; distribution based on weight. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">Weighted Random </font>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <strong><font size="2">Camel 2.5:</font></strong><font size="2">&#160;The weighted load balancing policy allows you to specify a processing load distribution ratio for each server with respect to others.In addition to the weight, endpoint selection is then further refined using <strong>random</strong>&#160; distribution based on weight. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <font size="2">Custom </font>
+            </p>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <strong><font size="2">Camel 2.8:</font></strong><font size="2">&#160;From Camel 2.8 onwards the preferred way of using a custom <a shape="rect" href="http://camel.apache.org/load-balancer.html">Load Balancer</a>&#160;is to use this policy, instead of using the @deprecated <code>ref</code>&#160;attribute. </font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <font size="2">Circuit Breaker </font>
+          </td>
+          <td colspan="1" rowspan="1" class="confluenceTd">
+            <p>
+              <strong><font size="2">Camel 2.14:</font></strong><font size="2">&#160;Implements the&#160;Circuit Breaker pattern as described in &quot;Release it!&quot; book. </font>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1443980045116" ID="ID_1242585920" LINK="http://camel.apache.org/multicast.html" MODIFIED="1443980080520" TEXT="Multicast">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <font size="2">The Multicast allows to route the same message to a number of endpoints and process them in a different way. The main difference between the Multicast and Splitter is that Splitter will split the message into several pieces but the Multicast will not modify the request message. </font>
+  </body>
+</html></richcontent>
+<arrowlink DESTINATION="ID_181231203" ENDARROW="None" ENDINCLINATION="279;0;" ID="Arrow_ID_292202360" STARTARROW="None" STARTINCLINATION="279;0;"/>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1443980108147" ID="ID_1777161815" LINK="http://camel.apache.org/loop.html" MODIFIED="1443980117847" TEXT="Loop">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    The Loop allows for processing a message a number of times, possibly in a different way for each iteration. Useful mostly during testing.
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node CREATED="1443980173378" FOLDED="true" ID="ID_292695187" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTransformationIntro.html" MODIFIED="1461585514102" TEXT="Message Transformation">
+<node CREATED="1443980188394" FOLDED="true" ID="ID_655035410" MODIFIED="1444071848590" TEXT="overview">
+<node CREATED="1443980197985" ID="ID_620159743" MODIFIED="1443980202364">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MetadataIntegration.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444067549127" FOLDED="true" ID="ID_1270991287" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EnvelopeWrapper.html" MODIFIED="1456744015218" TEXT="Envelope Wrapper">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">Most messaging systems divide the message data into a header and a body. The header contains fields that are used by the messaging infrastructure to manage the flow of messages. However, most endpoint systems that participate in the integration solution generally are not aware of these extra data elements. In some cases, systems may even consider these fields as erroneous because they do not match the message format used by the application. On the other hand, the messaging components that route the messages between the applications may require the header fields and would consider a message invalid if it does not contain the proper header fields. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can existing systems participate in a messaging exchange that places specific requirements on the message format, such as message header fields or encryption? </font></b>
+    </p>
+    <p>
+      <b><font size="2">Use a <i>Envelope Wrapper</i>&#160;to wrap application data inside an envelope that is compliant with the messaging infrastructure. Unwrap the message when it arrives at the destination.</font></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444067664082" ID="ID_374589964" MODIFIED="1444067679964">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/Wrapper.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444067691522" FOLDED="true" ID="ID_1314788106" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DataEnricher.html" MODIFIED="1444071848590" TEXT="Content Enricher (Data Enricher)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/content-enricher.html </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">When sending messages from one system to another it is common for the target system to require more information than the source system can provide. For example, incoming Address&#160;messages may just contain the ZIP code because the designers felt that storing a redundant state code would be superfluous. Likely, another system is going to want to specify both a state code and a ZIP code field. Yet another system may not actually use state codes, but spell the state name out because it uses free-form addresses in order to support international addresses. Likewise, one system may provide us with a customer ID, but the receiving system actually requires the customer name and address. An order message sent by the order management system may just contain an order number, but we need to find the customer ID associated with that order, so we can pass it to the customer management system. The scenarios are plentiful. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do we communicate with another system if the message originator does not have all the required data items available? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a specialized transformer, a <i>Content Enricher</i>, to access an external data source in order to augment a message with missing information. </font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Content Enricher</i>&#160;uses information inside the incoming message (e.g. key fields) to retrieve data from an external source. After the <i>Content Enricher</i>&#160;retrieves the required data from the resource, it appends the data to the message. The original information from the incoming message may be carried over into the resulting message or may no longer be needed, depending on the specific needs of the receiving application. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444067709670" ID="ID_23044853" MODIFIED="1444067713508">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DataEnricher.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444067930890" FOLDED="true" ID="ID_1107702063" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentFilter.html" MODIFIED="1444071848590" TEXT="Content Filter">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/content-filter.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DataEnricher.html"><i>Content Enricher</i></a>&#160;helps us in situations where a message receiver requires more - or different - data elements than the message creator provides. There are surprisingly many situations where the opposite effect is desired: removing data elements from a message. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you simplify dealing with a large message, when you are interested only in a few data items? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Content Filter</i>&#160;to remove unimportant data items from a message leaving only important items. </font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Content Filter</i>&#160;does not necessarily just remove data elements. A <i>Content Filter</i>&#160;is also useful to simplify the structure of the message. Often times, messages are represented as tree structures. Many messages originating from external systems or packaged applications contain many levels of nested, repeating groups because they are modeled after generic, normalized database structures. Frequently, known constraints and assumptions make this level of nesting superfluous and a <i>Content Filter</i>&#160;can be used to 'flatten' the hierarchy into a simple list of elements than can be more easily understood and processed by other systems. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444067937026" ID="ID_685371032" MODIFIED="1444067939736">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ContentFilter.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444068104164" FOLDED="true" ID="ID_1569559178" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/StoreInLibrary.html" MODIFIED="1444071848591" TEXT="Claim Check (Store In Library)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/claim-check.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DataEnricher.html"><i>Content Enricher</i></a>&#160;tells us how we can deal with situations where our message is missing required data items. The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentFilter.html"><i>Content Filter</i></a>&#160;lets us remove uninteresting data items from a message. Sometimes, we want to remove fields only temporarily. For example, a message may contain a set of data items that may be needed later in the message flow, but that are not necessary for all intermediate processing steps. We may not want to carry all this information through each processing step because it may cause performance degradation and makes debugging harder because we carry so much extra data. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we reduce the data volume of message sent across the system without sacrificing information content? </font></b>
+    </p>
+    <p>
+      <b><font size="2">Store message data in a persistent store and pass a <i>Claim Check</i>&#160; to subsequent components. These components can use the <i>Claim Check</i>&#160; to retrieve the stored information.</font></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444068122254" ID="ID_960858170" MODIFIED="1444068126956">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/StoreInLibrary.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444068285846" FOLDED="true" ID="ID_285840426" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Normalizer.html" MODIFIED="1456998359931" TEXT="Normalizer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/normalizer.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">In a business-to-business (B2B) integration scenario it is quite common for an enterprise to receive messages from different business partners. These message may have the same meaning, but follow different formats, depending on the partners' internal systems and preferences. For example, we built a solution for a pay-per-view provider that has to accept and process viewership information from over 1700 (!) affiliates, most of which did not conform to a standard format. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you process messages that are semantically equivalent, but arrive in a different format?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Normalizer</i>&#160;to route each message type through a custom <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html"><i>Message Translator</i></a>&#160;so that the resulting messages match a common format.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Normalizer</i>&#160;uses a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;to route the incoming message to the correct <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html"><i>Message Translator</i></a>. This requires the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;to detect the type of the incoming message. Many messaging systems equip each message with a type specifier field in the Message Header to make this type of task simple. However, in many B2B scenarios messages do not arrive as messages compliant with the enterprise's internal messaging system, but in diverse formats such as comma separated files or XML document without associated schema. While it is certainly best practice to equip any incoming data format with a type specifier we know all to well that the world is far from perfect. As a result, we need to think of more general ways to identify the format of the incoming message. One common way for schema-less XML documents is to use the name of the root element to assume the correct type. If multiple data formats use the same root element, you can use XPATH expressions to determine the existence of specific sub-nodes. Comma-separated files can require a little more creativity. Sometimes you can determine the type based on the number of fields and the type of the data (e.g. numeric vs. string). If the data arrives as files, the easiest way may be to use the file name or the file folder structure as a surrogate <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DatatypeChannel.html"><i>Datatype Channel</i></a>. Each business partner can name the file with a unique naming convention. The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160; can then use the file name to route the message to the appropriate <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html"><i>Message Translator</i></a>. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444068331149" ID="ID_1943011585" MODIFIED="1444068334887">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/NormalizerDetail.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444068492898" FOLDED="true" ID="ID_1299970768" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html" MODIFIED="1461585514102" TEXT="Canonical Data Model">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">I am designing several applications to work together through <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. Each application has its own internal data format. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you minimize dependencies when integrating applications that use different data formats?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Therefore, design a <i>Canonical Data Model</i>&#160;that is independent from any specific application. Require each application to produce and consume messages in this common format.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Canonical Data Model</i>&#160;provides an additional level of indirection between application's individual data formats. If a new application is added to the integration solution only transformation between the <i>Canonical Data Model</i>&#160;has to created, independent from the number of applications that already participate. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444068519568" ID="ID_1494081590" MODIFIED="1444068525435">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/CanonicalDataModel.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444068585727" ID="ID_1207350889" LINK="http://camel.apache.org/sort.html" MODIFIED="1444068600035" TEXT="Sort">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">Sort can be used to sort a message. Imagine you consume text files and before processing each file you want to be sure the content is sorted. </font>
+    </p>
+    <p>
+      <font size="2">Sort will by default sort the body using a default comparator that handles numeric values or uses the string representation. You can provide your own comparator, and even an expression to return the value to be sorted. Sort requires the value returned from the expression evaluation is convertible to <code>java.util.List</code>&#160;as this is required by the JDK sort operation. </font>
+    </p>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+<node CREATED="1444068618598" ID="ID_89775071" MODIFIED="1444068626740" TEXT="Validate">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Validate uses an expression or predicates to validate the contents of a message. It is useful for ensuring that messages are valid before attempting to process them.
+    </p>
+    <p>
+      You can use the validate DSL with all kind of Predicates and Expressions. Validate evaluates the Predicate/Expression and if it is false a <code>PredicateValidationException</code>&#160;is thrown. If it is true message processing continues.
+    </p>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node CREATED="1444068691029" FOLDED="true" ID="ID_1167582709" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ComposedMessagingExample.html" MODIFIED="1444071849046" TEXT="Composed Messaging Examples">
+<node CREATED="1444068728539" FOLDED="true" ID="ID_372177548" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ComposedMessagingWS.html" MODIFIED="1444071848591" TEXT="Synchronous Implementation using Web Services">
+<node CREATED="1444068767809" ID="ID_1835828468" MODIFIED="1444068772082">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingWSAxis.gif" />
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444068773990" ID="ID_7885778" MODIFIED="1444068776472">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingWSClassDiagram.gif" />
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444068778350" ID="ID_1925030781" MODIFIED="1444068781562">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingWSDesign.gif" />
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444068783450" ID="ID_708971178" MODIFIED="1444068787012">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingWSSequenceDiagram.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444068834020" FOLDED="true" ID="ID_439062380" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ComposedMessagingTIBCO.html" MODIFIED="1444071848592" TEXT="Asynchronous Implementation with TIBCO ActiveEnterprise">
+<node CREATED="1444068843303" ID="ID_1199410027" MODIFIED="1444068845575">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingTIBCO.gif" />
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444068862823" ID="ID_1708863229" MODIFIED="1444068864895">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ComposedMessagingTIBCOIM.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1444068960260" FOLDED="true" ID="ID_1203812035" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingEndpointsIntro.html" MODIFIED="1444071849046" TEXT="Messaging Endpoints">
+<node CREATED="1444068996051" FOLDED="true" ID="ID_381191296" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingGateway.html" MODIFIED="1444071848592" TEXT="Messaging Gateway">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/messaging-gateway.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application accesses another system via <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you encapsulate access to the messaging system from the rest of the application?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Messaging Gateway</i>, a class than wraps messaging-specific method calls and exposes domain-specific methods to the application.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Messaging Gateway</i>&#160;encapsulates messaging-specific code (e.g., the code required to send or receive a message) and separates it from the rest of the application code. This way, only the <i>Messaging Gateway</i>&#160; code knows about the messaging system; the rest of the application code does not. The <i>Messaging Gateway</i>&#160;exposes a business function to the rest of the application so that instead of requiring the application to set properties like Message.MessageReadPropertyFilter.AppSpecific, a <i>Messaging Gateway</i>&#160;exposes methods such as GetCreditScore&#160;that accept strongly typed parameters just like any other method. A <i>Messaging Gateway</i>&#160;is a messaging-specific version of the more general <i>Gateway</i>&#160;&#160;pattern [<a href="http://www.amazon.com/exec/obidos/ASIN/0321127420/enterpriseint-20" target="_blank" title="Patterns of Enterprise Application Architecture">EAA</a>]. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069027314" ID="ID_723671995" MODIFIED="1444069041896">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessagingGatewaySolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069120528" FOLDED="true" ID="ID_1731309270" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingMapper.html" MODIFIED="1444071848592" TEXT="Messaging Mapper">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/messaging-mapper.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">When integrating applications using messaging, the data inside a message is often derived from domain objects inside the integrated applications. If we use a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DocumentMessage.html"><i>Document Message</i></a>, the message itself may directly represent one or domain objects. If we use a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html"><i>Command Message</i></a>, some of the data fields associated with the command are likely to be extracted from domain objects as well. There are some distinct differences between messages and objects. For example, most objects rely on associations in the form of object references and inheritance relationships. Many messaging infrastructures do not support these concepts because they have to be able to communicate with a range of applications, some of which may not be object-oriented at all. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you move data between domain objects and the messaging infrastructure while keeping the two independent of each other?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Create a separate <i>Messaging Mapper</i>&#160;that contains the mapping logic between the messaging infrastructure and the domain objects. Neither the objects nor the infrastructure have knowledge of the <i>Messaging Mapper</i>'s existence.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Messaging Mapper</i>&#160;accesses one or more domain objects and converts them into a message as required by the messaging channel. It also performs the opposite function, creating or updating domain objects based on incoming messages. Since the <i>Messaging Mapper</i>&#160;is implemented as a separate class that references the domain object(s) and the messaging layer, neither layer is aware of the other. The layers don't even know about the <i>Messaging Mapper</i>. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069148008" ID="ID_15516538" MODIFIED="1444069156325">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessagingMapperClassDiagram.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069244990" FOLDED="true" ID="ID_443906934" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/TransactionalClient.html" MODIFIED="1444071848592" TEXT="Transactional Client">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/transactional-client.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">A messaging system, by necessity, uses transactional behavior internally. It may be useful for an external client to be able to control the scope of the transactions that impact its behavior. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a client control its transactions with the messaging system?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Transactional Client</i>&#8212;make the client&#8217;s session with the messaging system transactional so that the client can specify transaction boundaries.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">Both a sender and a receiver can be transactional. With a sender, the message isn&#8217;t &#8220;really&#8221; added to the channel until the sender commits the transaction. With a receiver, the message isn&#8217;t &#8220;really&#8221; removed from the channel until the receiver commits the transaction. A sender that uses explicit transactions can be used with a receiver that uses implicit transactions, and vise versa. A single channel might have a combination of implicitly and explicitly transactional senders; it could also have a combination of receivers. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069271061" ID="ID_1125178655" MODIFIED="1444069276556">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/TransactionalClientSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069341197" FOLDED="true" ID="ID_1706738870" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PollingConsumer.html" MODIFIED="1444071848593" TEXT="&#x9;Polling Consumer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/polling-consumer.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application needs to consume <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>s, but it wants to control when it consumes each message. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can an application consume a message when the application is ready?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">The aplication should use a <i>Polling Consumer</i>, one that explicitly makes a call when it wants to receive a message.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">This is also known as a synchronous receiver, because the receiver thread blocks until a message is received. We call it a <i>Polling Consumer</i>&#160;because the receiver polls for a message, processes it, then polls for another. As a convenience, messaging API&#8217;s usually provide a receive&#160; method that blocks until a message is delivered, in addition to methods like receiveNoWait()&#160;and Receive(0)&#160;that return immediately if no message is available. This difference is only apparent when the receiver is polling faster than messages are arriving. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069352405" ID="ID_1403860209" MODIFIED="1444069357171">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/PollingConsumerSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069464828" FOLDED="true" ID="ID_1383968450" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EventDrivenConsumer.html" MODIFIED="1444071848593" TEXT="&#x9;Event-Driven Consumer">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/event-driven-consumer.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application needs to consume <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>s as soon as they&#8217;re delivered. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can an application automatically consume messages as they become available?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">The application should use an <i>Event-Driven Consumer</i>, one that is automatically handed messages as they&#8217;re delivered on the channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">This is also known as an asynchronous receiver, because the receiver does not have a running thread until a callback thread delivers a message. We call it an <i>Event-Driven Consumer</i>&#160;because the receiver acts like the message delivery is an event that triggers the receiver into action. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069489097" ID="ID_51174561" MODIFIED="1444069501079">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/EventDrivenConsumerSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069550792" FOLDED="true" ID="ID_199074383" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html" MODIFIED="1444071848593" TEXT="&#x9;Competing Consumers">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/competing-consumers.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. However, it cannot process messages as fast as they&#8217;re being added to the channel. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a messaging client process multiple messages concurrently?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Create multiple <i>Competing Consumers</i>&#160;on a single channel so that the consumers can process multiple messages concurrently.</font></b>
+    </p>
+    <p class="bodyText">
+      <i><font size="2">Competing Consumers</font></i><font size="2">&#160;are multiple consumers that are all created to receive messages from a single <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>. When the channel delivers a message, any of the consumers could potentially receive it. The messaging system's implementation determines which consumer actually receives the message, but in effect the consumers compete with each other to be the receiver. Once a consumer receives a message, it can delegate to the rest of its application to help process the message. (This solution only works with <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>s; multiple consumers on a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a>&#160;just create more copies of each message.) </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069565768" ID="ID_1091615905" MODIFIED="1444069570886">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/CompetingConsumers.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069686438" FOLDED="true" ID="ID_1056250875" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageDispatcher.html" MODIFIED="1444071848593" TEXT="&#x9;Message Dispatcher">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/message-dispatcher.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. The application needs multiple consumers on a single <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html"><i>Message Channel</i></a>&#160;to work in a coordinated fashion. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can multiple consumers on a single channel coordinate their message processing?</font></b>
+    </p>
+    <p>
+      <b><font size="2">Create a <i>Message Dispatcher</i>&#160;on a channel that will consume messages from a channel and distribute them to performers.</font></b>
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069695685" ID="ID_40227508" MODIFIED="1444069730383">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageDispatcher.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069791915" FOLDED="true" ID="ID_558020183" MODIFIED="1444071848594" TEXT="Selective Consumer (Message Selector)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/selective-consumer.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application is using <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>. It consumes <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html"><i>Message</i></a>s from a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html"><i>Message Channel</i></a>, but it does not necessarily want to consume all of the messages on that channel, just some of them. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a message consumer select which messages it wishes to receive?</font></b>
+    </p>
+    <p>
+      <b><font size="2">Make the consumer a <i>Selective Consumer</i>, one that filteres the messages delivered by its channel so that it only receives the ones that match its criteria.</font></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069817850" ID="ID_596045562" MODIFIED="1444069830576">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageSelectorSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444069946656" FOLDED="true" ID="ID_1935345894" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DurableSubscription.html" MODIFIED="1444071848594" TEXT="Durable Subscriber (Durable Subscription)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/durable-subscriber.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application is receiving messages on a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a>. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a subscriber avoid missing messages while it&#8217;s not listening for them?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Durable Subscriber</i>&#160;to make the messaging system save messages published while the subscriber is disconnected.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">A durable subscription saves messages for an inactive subscriber and delivers these saved messages when the subscriber reconnects. In this way, a subscriber will not lose any messages even though it disconnected. A durable subscription has no effect on the behavior of the subscriber or the messaging system while the subscriber is <i>active</i>&#160;&#160;(e.g., connected). A connected subscriber acts the same whether its subscription is durable or non-durable. The difference is in how the messaging system behaves when the subscriber is disconnected. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/GuaranteedMessaging.html"><i>Guaranteed Delivery</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageExpiration.html"><i>Message Expiration</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a> </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444069954916" ID="ID_1165294959" MODIFIED="1444069999941">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/DurableSubscriptionSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444070112365" ID="ID_1401098246" MODIFIED="1444070208489" TEXT="Idempotent Receiver (Idempotent Consumer)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">http://camel.apache.org/idempotent-consumer.html </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">Even when a sender application only sends a message once, the receiver application may receive the message more than once. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can a message receiver deal with duplicate messages?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Design a receiver to be an <i>Idempotent Receiver</i>--one that can safely receive the same message multiple times.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The term <i>idempotent</i>&#160;is used in mathematics to describe a function that produces the same result if it is applied to itself, i.e. f(x) = f(f(x)). In <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>&#160;this concepts translates into the a message that has the same effect whether it is received once or multiple times. This means that a message can safely be resent without causing any problems even if the receiver receives duplicates of the same message. </font>
+    </p>
+    <font size="2">... </font>
+
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html"><i>Command Message</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/GuaranteedMessaging.html"><i>Guaranteed Delivery</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html"><i>Messaging</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Resequencer.html"><i>Resequencer</i></a> </font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444070303491" FOLDED="true" ID="ID_1307874878" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingAdapter.html" MODIFIED="1444071848594" TEXT="Service Activator (Messaging Adapter)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/service-activator.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">An application has a service that it would like to make available to other applications. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can an application design a service to be invoked both via various messaging technologies and via non-messaging techniques?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Design a <i>Service Activator</i>&#160;that connects the messages on the channel to the service being accessed.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">A <i>Service Activator</i>&#160;can be one-way (request only) or two-way (<a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>). The service can be as simple as a method call&#8212;synchronous and non-remote&#8212;perhaps part of a Service Layer [<a href="http://www.amazon.com/exec/obidos/ASIN/0321127420/enterpriseint-20" target="_blank" title="Patterns of Enterprise Application Architecture">EAA</a>]. The activator can be hard-coded to always invoke the same service, or can use reflection to invoke the service indicated by the message. The activator handles all of the messaging details and invokes the service like any other client, such that the service doesn&#8217;t even know it&#8217;s being invoked through messaging. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html"><i>Command Message</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html"><i>Competing Consumers</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/EventDrivenConsumer.html"><i>Event-Driven Consumer</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/InvalidMessageChannel.html"><i>Invalid Message Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageDispatcher.html"><i>Message Dispatcher</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageEndpoint.html"><i>Message Endpoint</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingGateway.html"><i>Messaging Gateway</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PollingConsumer.html"><i>Polling Consumer</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/TransactionalClient.html"><i>Transactional Client</i></a> </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444070324090" ID="ID_979465619" MODIFIED="1444070332577">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessagingAdapterSolution.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1444070503129" FOLDED="true" ID="ID_816827081" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SystemManagementIntro.html" MODIFIED="1444071849047" TEXT="System Management">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">System Management patterns are designed to address these requirements and provide the tools to keep a complex message-based system running. We divided this chapter into three sections: </font>
+    </p>
+    <h2>
+      <font size="2">Monitoring and Controlling </font>
+    </h2>
+    <p class="bodyText">
+      <font size="2">A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>&#160;provides a single point of control to manage and monitor a distributed solution. It connects multiple components to a central management console that can display the status of each component and monitor message traffic through the components. The console can also be used to send control commands to components, e.g. to change the message flow. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">We may want to route messages through additional steps, such as validation or logging. Because these steps can introduce performance overheads, we may want to be able to switch them on and off via the control bus. A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Detour.html"><i>Detour</i></a>&#160;gives us this ability. </font>
+    </p>
+    <h2>
+      <font size="2">Observing and Analyzing Message Traffic </font>
+    </h2>
+    <p class="bodyText">
+      <font size="2">Sometimes we need to want to inspect the contents of a message without affecting the primary message flow. A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a>&#160;allows us to tap into message traffic. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">When we debug a message-based system, is is a great aid to know where a specific message has been. The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html"><i>Message History</i></a>&#160;provides this capability without introducing dependencies between components. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">While the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html"><i>Message History</i></a>&#160;is tied to an individual message, a central <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>&#160;can provide a complete account of every message that traveled through the system. Combined with the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html"><i>Message History</i></a>&#160;the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>&#160;can analyze all possible paths messages can take through the system. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html"><i>Message History</i></a>, and <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>&#160;help us analyze the asynchronous flow of a message. In order to track messages sent to request-reply services, we need to insert a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SmartProxy.html"><i>Smart Proxy</i></a>&#160;into the message stream. </font>
+    </p>
+    <h2>
+      <font size="2">Testing and Debugging </font>
+    </h2>
+    <p class="bodyText">
+      <font size="2">Testing a messaging system before deploying it into production is a good idea. But testing should not stop there. You should be actively verifying that the running messaging system is functioning properly. You can do this by periodically injecting a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/TestMessage.html"><i>Test Message</i></a>&#160;into the system and verifying the results. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">When a component fails or misbehaves, it is easy to end up with unwanted messages on a channel. During testing it is very useful to remove all remaining messages from a channel so that the components under test do not receive 'leftover' messages. A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ChannelPurger.html"><i>Channel Purger</i></a>&#160; does that for us. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444070545200" FOLDED="true" ID="ID_300724984" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html" MODIFIED="1444071848595" TEXT="Control Bus">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/controlbus.html&#160; </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">Naturally, enterprise integration systems are distributed. In fact, one of the defining qualities of an enterprise messaging system is to enable communication between disparate systems. Messaging systems allow information to be routed and transformed so that data can be exchanged between these systems. In most cases, these applications are spread across multiple networks, buildings, cities or continents. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we effectively administer a messaging system that is distributed across multiple platforms and a wide geographic area? </font></b>
+    </p>
+    <p>
+      <b><font size="2">Use a <i>Control Bus</i>&#160;to manage an enterprise integration system. The <i>Control Bus</i>&#160;uses the same messaging mechanism used by the application data, but uses separate channels to transmit data that is relevant to the management of components involved in the message flow.</font></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444070547601" ID="ID_823493051" MODIFIED="1444070588694">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ControlBus.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444070688133" FOLDED="true" ID="ID_49918513" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Detour.html" MODIFIED="1444071848595" TEXT="&#x9;Detour">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/detour.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">A <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a>&#160;is useful to inspect messages that travel across a channel. Sometimes, though, we need to modify or reroute the messages instead of simply inspecting them. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you route a message through intermediate steps to perform validation, testing or debugging functions?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Construct a <i>Detour</i>&#160;with a context-based router controlled via the <i>Control Bus</i>. In one state the router routes incoming messages through additional steps while in the other it routes messages directly to the destination channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Detour</i>&#160;uses a simple context-based router with two output channels. One output channel passes the unmodified message to the original destination. When instructed by the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>, the <i>Detour</i>&#160; routes messages to a different channel. This channel sends the message to additional components that can inspect and/or modify the message. Ultimately, these components route the message to the same destination. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444070721437" ID="ID_688163877" MODIFIED="1444070724931">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/Detour.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444070893857" FOLDED="true" ID="ID_1967394334" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html" MODIFIED="1444071848595" TEXT="Wire Tap">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/wire-tap.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i><font size="2">Point-to-Point Channel</font></i></a><font size="2">s are often used for <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DocumentMessage.html"><i>Document Message</i></a>s because they ensure that exactly one consumer will consume each message. However, for testing, monitoring or troubleshooting, it may be useful to be able to inspect all messages that travel across the channel. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How do you inspect messages that travel on a point-to-point channel?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Insert a simple Recipient List into the channel that publishes each incoming message to the main channel and a secondary channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Wire Tap</i>&#160;is a fixed <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html"><i>Recipient List</i></a>&#160;with two output channels. It consumes messages off the input channel and publishes the unmodified message to both output channels. To insert the <i>Wire Tap</i>&#160;into a channel, you need to create an additional channel and change the destination receiver to consume of the second channel. Because the analysis logic is located inside a second component, we can insert a generic <i>Wire Tap</i>&#160;into any channel without any danger of modifying the primary channel behavior. This improves reuse and reduces the risk of instrumenting an existing solution. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html"><i>Competing Consumers</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Detour.html"><i>Detour</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/DocumentMessage.html"><i>Document Message</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBroker.html"><i>Message Broker</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html"><i>Recipient List</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SystemManagementExample.html"><i>Loan Broker System Management</i></a> </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444070907217" ID="ID_1211150210" MODIFIED="1444070912118">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/WireTap.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071042750" FOLDED="true" ID="ID_952204427" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html" MODIFIED="1444071848595" TEXT="Message History">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">http://camel.apache.org/message-history.html </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">One of key benefits of a message-based systems is the loose coupling between participants; the message sender and recipient make no (or few) assumptions about each other's identity. If a message recipient retrieves a message from a message channel, it generally does not know nor care which application put the message on the channel. The message is by definition self-contained and is not associated with a specific sender. This is one of the architectural strengths of message-based systems. </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">However, the same property can make debugging and analyzing dependencies very difficult. If we are not sure where a message goes, how can we assess the impact of a change in the message format? Likewise, if we don't know which application published a message it is difficult to correct a problem with the message. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we effectively analyze and debug the flow of messages in a loosely coupled system? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Therefore, attach a <i>Message History</i>&#160;to the message. The <i>Message History</i>&#160;is a list of all applications that the message passed through since its origination. </font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Message History</i>&#160;maintains a list of all components that the message passed through. Every component that processes the message (including the originator) adds one entry to the list. The <i>Message History</i>&#160;should be part of the message header because it contains system-specific control information. Keeping this information in the header separates it from the message body that contains application specific data. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html"><i>Aggregator</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html"><i>Process Manager</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"><i>Publish-Subscribe Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html"><i>Recipient List</i></a>&#160;</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444071083006" ID="ID_1624100857" MODIFIED="1444071091898">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageHistory.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071216309" FOLDED="true" ID="ID_1058714504" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html" MODIFIED="1444071848596" TEXT="Message Store">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">As the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html"><i>Message History</i></a>&#160;describes, the architectural principle of loose coupling allows for flexibility in the solution, but can make it difficult to gain insight into the dynamic behavior of the integration solution. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can we report against message information without disturbing the loosely coupled and transient nature of a messaging system? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Message Store</i>&#160;to capture information about each message in a central location. </font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <font size="2">When using a <i>Message Store</i>, we can take advantage of the asynchronous nature of a messaging infrastructure. When we send a message to a channel, we send a duplicate of the message to a special channel to be collected by the <i>Message Store</i>. This can be performed by the component itself or we can insert a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a>&#160;into the channel. We can consider the secondary channel that carries a copy of the message as part of the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>. Sending a second message in a 'fire-and-forget' mode will not slow down the flow of the main application messages. It does, however, increase network traffic. That's why we may not store the complete message, but just a few key fields that are required for later analysis, such as a message ID, or the channel on which the message was sent and a timestamp. </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444071248157" ID="ID_1043394284" MODIFIED="1444071254569">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/MessageStore.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071400392" FOLDED="true" ID="ID_1132791757" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/SmartProxy.html" MODIFIED="1444071848596" TEXT="Smart Proxy">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">A pair of <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a>s can be used to track messages that flow through a component. However, this approach assumes that the component publishes messages to a fixed output channel. However, many service-style components publish reply messages to the channel specified by the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html"><i>Return Address</i></a>&#160;included in the request message. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you track messages on a service that publishes reply messages to the Return Address specified by the requestor?</font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Smart Proxy</i>&#160;to store the Return Address supplied by the original requestor and replace it with the address of the <i>Smart Proxy</i>. When the service sends the reply message route it to the original Return Address.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">The <i>Smart Proxy</i>&#160;intercepts messages sent on the request channel to the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>&#160;service. For each incoming message, the <i>Smart Proxy</i>&#160;stores the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html"><i>Return Address</i></a>&#160;specified by the original sender. It then replaces the <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html"><i>Return Address</i></a>&#160;in the message with the channel the reply channel that the <i>Smart Proxy</i>&#160;is listening on. When a reply message comes in on that channel, the <i>Smart Proxy</i>&#160;retrieves the stored <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html"><i>Return Address</i></a>&#160;and uses a <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>&#160;to forward the unmodified reply address to that channel. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CorrelationIdentifier.html"><i>Correlation Identifier</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html"><i>Message Router</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html"><i>Request-Reply</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html"><i>Return Address</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html"><i>Wire Tap</i></a> </font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444071423400" ID="ID_1476393833" MODIFIED="1444071431310">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/SmartProxy.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071519989" FOLDED="true" ID="ID_187833072" MODIFIED="1444071848596" TEXT="&#x9;Test Message">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p class="bodyText">
+      <font size="2">The <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html"><i>Control Bus</i></a>&#160;describes a number of approaches to monitor the health of the message processing system. Each component in the system can publish periodic &quot;heartbeat&quot; messages to the control bus in order to keep the monitoring mechanism informed that the component is still active. The heartbeat messages can contain vital stats of the component as well, such as the number of messages processed, the average time required to process a message or the percentage of CPU utilization on the machine. </font>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">What happens, though, if a component is actively processing messages, but garbles outgoing messages due to an internal fault? </font></b>
+    </p>
+    <p>
+      <b><font size="2">Therefore, use <i>Test Message</i>&#160;to assure the health of message processing components (see Figure). </font></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444071539749" ID="ID_706274511" MODIFIED="1444071544132">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/TestMessage.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071604701" FOLDED="true" ID="ID_1125809767" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/ChannelPurger.html" MODIFIED="1444071848596" TEXT="Channel Purger">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">When Bobby and I worked on the simple </font>
+    </p>
+    <p>
+      <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html"><i><font size="2">JMS Request/Reply Example</font></i></a><font size="2">, we ran into a simple, but interesting problem. The example consists of a Requestor which sends a message to a Replier and waits for the response. The example uses two <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>s, RequestQueue&#160;and ReplyQueue&#160;(see picture). </font>
+    </p>
+    <p class="bodyText">
+      <font size="2">We had plastered println&#160;statements all over the code so we can see what is going on. We started the Replier first, then the Requestor. Then a very odd thing happened. The Requestor console window claimed to have gotten a response before the Replier ever acknowledged receiving a request. A delay in the console output? Lacking any great ideas, we decided to shut the Replier down and re-ran the Requestor. Odd enough, we still received a response to our request! Magic? No, just a side effect of persistent messaging. A superfluous message was present on the ReplyQueue. When we started the Requestor it placed a new message on the RequestQueue&#160;&#160;and then immediately retrieved the extraneous reply message that was sitting on the ReplyQueue. We never noticed that this was not the reply to the request the Requestor just made! Once the Replier received the request message, it placed a new reply message on the ReplyQueue&#160;so that the 'magic' repeated during the next test. It can be amazing (or amazingly frustrating) how persistent, asynchronous messaging can play tricks on you in even the most simple scenarios! </font>
+    </p>
+    <p>
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">How can you keep 'left-over' messages on a channel from disturbing tests or running systems? </font></b>
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Use a <i>Channel Purger</i>&#160;to remove unwanted messages from a channel.</font></b>
+    </p>
+    <p class="bodyText">
+      <font size="2">A simple <i>Channel Purger</i>&#160;simply remove all the messages from a channel. This may be sufficient for test scenarios where we want to reset the system into a consistent state. If we are debugging a production system we may need to remove individual message or a set of messages based on specific criteria, such as the message ID or the values of specific message fields. </font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      <b><font size="2">Related patterns: </font></b><font size="2"><a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/CorrelationIdentifier.html"><i>Correlation Identifier</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/InvalidMessageChannel.html"><i>Invalid Message Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html"><i>Message Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html"><i>Message Store</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html"><i>Point-to-Point Channel</i></a>, <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html"><i>JMS Request/Reply Example</i></a>&#160;</font>
+    </p>
+    <p class="bodyText">
+      
+    </p>
+    <p class="bodyText">
+      
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1444071618131" ID="ID_1202234242" MODIFIED="1444071621803">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ChannelPurgerContext.gif" />
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1444071623091" ID="ID_207010672" MODIFIED="1444071815132">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="java-pix/ChannelPurger.gif" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1444071823187" ID="ID_824680441" LINK="http://camel.apache.org/logeip.html" MODIFIED="1444071833956" TEXT="Log">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      How can I log processing a <a shape="rect" href="http://camel.apache.org/message.html">Message</a>?
+    </p>
+    <p>
+      Camel provides many ways to log processing a message. Here is just some examples:
+    </p>
+    <ul class="alternate">
+      <li>
+        You can use the <a shape="rect" href="http://camel.apache.org/log.html">Log</a>&#160;component which logs the Message content.
+      </li>
+      <li>
+        You can use the <a shape="rect" href="http://camel.apache.org/tracer.html">Tracer</a>&#160;which trace logs message flow.
+      </li>
+      <li>
+        You can also use a <a shape="rect" href="http://camel.apache.org/processor.html">Processor</a>&#160;or <a shape="rect" href="http://camel.apache.org/bean.html">Bean</a>&#160;and log from Java code.
+      </li>
+      <li>
+        You can use the <code>log</code>&#160;DSL.
+      </li>
+    </ul>
+  </body>
+</html></richcontent>
+<icon BUILTIN="idea"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
