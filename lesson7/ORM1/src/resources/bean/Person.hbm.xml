@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="bean.Person" table="PERSON">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="salary" column="salary" type="int"/>
+        <property name="sinceDt" column="since_dt" type="date"/>
+    </class>
+
+    <query name="bean.Person.findByPersonId">
+        select person
+        from bean.Person as person
+        where person.id = :personId
+    </query>
+
+    <sql-query name="bean.Person.findByPersonIdCdata">
+        <return class="bean.Person" alias="person"/>
+        <![CDATA[
+        select * from PERSON peson
+        where ID = :personId
+        ]]>
+    </sql-query>
+
+</hibernate-mapping>
