@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1461439315847" ID="ID_1434711060" MODIFIED="1461585514102" TEXT="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;">
+<node CREATED="1461439315847" ID="ID_1434711060" MODIFIED="1461671536159" TEXT="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -15,7 +15,7 @@
   </body>
 </html>
 </richcontent>
-<node CREATED="1461450104195" FOLDED="true" ID="ID_332018517" MODIFIED="1461585514089" POSITION="right" TEXT="&#x41e;&#x442;&#x43a;&#x440;&#x44b;&#x442;&#x44b;&#x435; &#x432;&#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x44b;">
+<node CREATED="1461450104195" FOLDED="true" ID="ID_332018517" MODIFIED="1461663797019" POSITION="right" TEXT="&#x41e;&#x442;&#x43a;&#x440;&#x44b;&#x442;&#x44b;&#x435; &#x432;&#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x44b;">
 <node CREATED="1461450118387" ID="ID_880235143" LINK="http://shipilev.net/blog/2014/jmm-pragmatics/#_part_v_finals" MODIFIED="1461526883188" TEXT="&#x41c;&#x43e;&#x434;&#x438;&#x444;&#x438;&#x43a;&#x430;&#x446;&#x438;&#x44f; final-&#x43f;&#x43e;&#x43b;&#x435;&#x439;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -210,7 +210,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1461448501356" FOLDED="true" ID="ID_627933207" MODIFIED="1461585514102" POSITION="right" TEXT="&#x422;&#x438;&#x43f;&#x44b; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x43e;&#x432;">
+<node CREATED="1461448501356" ID="ID_627933207" MODIFIED="1461671561529" POSITION="right" TEXT="&#x422;&#x438;&#x43f;&#x44b; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x43e;&#x432;">
 <node CREATED="1461448511868" ID="ID_1683715745" MODIFIED="1461448533657" TEXT="&#x410;&#x43d;&#x430;&#x43b;&#x438;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x438;&#x435; &#x43f;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43d;&#x44b;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -228,7 +228,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1442223185774" FOLDED="true" ID="ID_930135028" MODIFIED="1461448796072" TEXT="GRASP">
+<node CREATED="1442223185774" ID="ID_930135028" MODIFIED="1461671465129" TEXT="GRASP">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -763,7 +763,7 @@
 <icon BUILTIN="smily_bad"/>
 </node>
 </node>
-<node CREATED="1442223515835" ID="ID_191999848" MODIFIED="1442559795876" TEXT="Indirection">
+<node CREATED="1442223515835" ID="ID_191999848" MODIFIED="1461671465141" TEXT="Indirection">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -839,7 +839,7 @@
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1303370124" ENDARROW="None" ENDINCLINATION="574;0;" ID="Arrow_ID_1429937196" SOURCE="ID_361846194" STARTARROW="None" STARTINCLINATION="394;0;"/>
 </node>
 </node>
-<node CREATED="1442223218326" FOLDED="true" ID="ID_1888516566" MODIFIED="1461448797150" TEXT="SOLID">
+<node CREATED="1442223218326" ID="ID_1888516566" MODIFIED="1461667678088" TEXT="SOLID">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -982,8 +982,19 @@
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_564189850" ENDARROW="None" ENDINCLINATION="156;0;" ID="Arrow_ID_727050824" SOURCE="ID_1035519314" STARTARROW="None" STARTINCLINATION="156;0;"/>
 </node>
 </node>
-<node COLOR="#bfbfbf" CREATED="1442223939845" FOLDED="true" ID="ID_871523806" LINK="https://dzone.com/articles/design-patterns-overview" MODIFIED="1461585514101" TEXT="GoF">
-<node CREATED="1442382173401" FOLDED="true" ID="ID_633259051" MODIFIED="1461585514098" TEXT="Creational">
+<node COLOR="#bfbfbf" CREATED="1442223939845" ID="ID_871523806" LINK="https://dzone.com/articles/design-patterns-overview" MODIFIED="1461671564662" TEXT="GoF">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D0%BC%D0%BC%D0%B0,_%D0%AD%D1%80%D0%B8%D1%85" title="&#x413;&#x430;&#x43c;&#x43c;&#x430;, &#x42d;&#x440;&#x438;&#x445;">&#1069;&#1088;&#1080;&#1093; &#1043;&#1072;&#1084;&#1084;&#1072;</a>, &#1056;&#1080;&#1095;&#1072;&#1088;&#1076; &#1061;&#1077;&#1083;&#1084;, &#1056;&#1072;&#1083;&#1100;&#1092; &#1044;&#1078;&#1086;&#1085;&#1089;&#1086;&#1085;, &#1044;&#1078;&#1086;&#1085; &#1042;&#1083;&#1080;&#1089;&#1089;&#1080;&#1076;&#1089;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1442382173401" ID="ID_633259051" MODIFIED="1461663788958" TEXT="Creational">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -995,7 +1006,7 @@
   </body>
 </html></richcontent>
 <arrowlink COLOR="#b0b0b0" DESTINATION="ID_287359162" ENDARROW="None" ENDINCLINATION="141;0;" ID="Arrow_ID_907733374" STARTARROW="None" STARTINCLINATION="141;0;"/>
-<node CREATED="1442382182979" FOLDED="true" ID="ID_1453516387" MODIFIED="1461585242149" TEXT="Singleton">
+<node CREATED="1442382182979" FOLDED="true" ID="ID_1453516387" MODIFIED="1461663793076" TEXT="Singleton">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1005,8 +1016,7 @@
       <em>Ensure a class has only one instance and provide a global</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585046566" MODIFIED="1461585046566">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1015,8 +1025,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_4725539768809434510.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1442382187515" FOLDED="true" ID="ID_922320536" MODIFIED="1461585240550" TEXT="Factory method">
@@ -1029,8 +1038,7 @@
       <em>Define an interface for creating an object, but let the subclasses decide which class to instantiate. The Factory method lets a class defer instantiation to subclasses</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585235049" MODIFIED="1461585235049">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1039,8 +1047,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_1445470354704730205.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1442382196215" FOLDED="true" ID="ID_1758275518" MODIFIED="1461584977381" TEXT="Abstract Factory">
@@ -1057,8 +1064,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461584972074" MODIFIED="1461584972074">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1067,8 +1073,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_6522192036355409675.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1442382202961" FOLDED="true" ID="ID_1749283791" MODIFIED="1461585034505" TEXT="Builder">
@@ -1081,8 +1086,7 @@
       <em>Allows for object level access control by acting as a pass through entity or a placeholder object</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585003225" MODIFIED="1461585003225">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1091,8 +1095,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_7181439889956198563.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1442397189268" FOLDED="true" ID="ID_922946113" MODIFIED="1461585032801" TEXT="Prototype">
@@ -1105,8 +1108,7 @@
       <em>Create objects based on a template of an exsiting object through cloning.</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585030614" MODIFIED="1461585030614">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1115,17 +1117,50 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_2887214795817689283.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
-<node CREATED="1442398344429" FOLDED="true" ID="ID_1714711684" MODIFIED="1461585514098" TEXT="Structural">
-<node CREATED="1442223948388" ID="ID_1792350717" MODIFIED="1442397751252" TEXT="Decorator">
+<node CREATED="1442398344429" ID="ID_1714711684" MODIFIED="1461669509834" TEXT="Structural">
+<node CREATED="1442223948388" FOLDED="true" ID="ID_1792350717" MODIFIED="1461671485883" TEXT="Decorator">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <em>Allows for the dynamic wrapping of objects in order to modify their existing responsibilities and behaviours</em>
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html></richcontent>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1792350717" ENDARROW="None" ENDINCLINATION="193;0;" ID="Arrow_ID_1207293456" SOURCE="ID_191999848" STARTARROW="None" STARTINCLINATION="193;0;"/>
+<node CREATED="1461669575941" ID="ID_236321023" MODIFIED="1461669575941">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_2494996023991302734.jpeg" />
+  </body>
+</html></richcontent>
 </node>
-<node CREATED="1442398340518" ID="ID_348466189" MODIFIED="1442398343603" TEXT="Adapter"/>
-<node CREATED="1461585256222" FOLDED="true" ID="ID_357728875" MODIFIED="1461585286163" TEXT="Proxy">
+</node>
+<node CREATED="1442398340518" FOLDED="true" ID="ID_348466189" MODIFIED="1461671268832" TEXT="Adapter">
+<node CREATED="1461669543622" MODIFIED="1461669543622">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_2433911615753736502.jpeg" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1461585256222" FOLDED="true" ID="ID_357728875" MODIFIED="1461671482996" TEXT="Proxy">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1135,8 +1170,7 @@
       <em>Allows for object level access control by acting as a pass through entity or a placeholder object</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585282423" MODIFIED="1461585282423">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1145,11 +1179,10 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_3734779880534814058.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1461585313563" FOLDED="true" ID="ID_1681177483" MODIFIED="1461585343495" TEXT="Flyweight &#x2014; &#x41f;&#x440;&#x438;&#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;&#x43b;&#x435;&#x43d;&#x435;&#x446;">
+<node CREATED="1461585313563" FOLDED="true" ID="ID_1681177483" MODIFIED="1461669574676" TEXT="Flyweight &#x2014; &#x41f;&#x440;&#x438;&#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;&#x43b;&#x435;&#x43d;&#x435;&#x446;">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1159,8 +1192,7 @@
       <em>Facilitates the reuse of many fine grained objects, making the utilization of large numbers of objects more efficient. </em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585331167" MODIFIED="1461585331167">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1169,8 +1201,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_6107455626907876227.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1283,8 +1314,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585396979" MODIFIED="1461585396979">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1293,8 +1323,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_379975966752187401.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1461585407069" FOLDED="true" ID="ID_874164298" MODIFIED="1461585426147" TEXT="Memento">
@@ -1307,8 +1336,7 @@
       <em>Captures and externalizes an object's internal state so that it can be restored later, all without violating encapsulation</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1461585424963" MODIFIED="1461585424963">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1317,8 +1345,7 @@
   <body>
     <img src="&#x428;&#x430;&#x431;&#x43b;&#x43e;&#x43d;&#x44b; &#x43f;&#x440;&#x43e;&#x435;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44f;_4442376991154980954.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1461585431944" ID="ID_831991256" MODIFIED="1461585473823" TEXT="Observer">
@@ -1331,8 +1358,7 @@
       <em>Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1461585485665" ID="ID_1982185886" MODIFIED="1461585494621" TEXT="State">
 <richcontent TYPE="NOTE"><html>
@@ -1344,8 +1370,7 @@
       <em>Allows an object to alter its behaviour when its internal state changes. The object will appear to change its class.</em>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1370,8 +1395,7 @@
       <a href="http://www.enterpriseintegrationpatterns.com/gregor.html">Gregor Hohpe</a>. I have been building integration solutions for large clients for many years and enjoy sharing my findings with the community. You can find the most recent content in <a href="http://www.enterpriseintegrationpatterns.com/ramblings">my Ramblings</a>. Please <a href="http://www.enterpriseintegrationpatterns.com/gregor.html">contact me</a>&#160;if you have suggestions or feedback.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1443884302490" FOLDED="true" ID="ID_1667577359" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/IntegrationStylesIntro.html" MODIFIED="1444071849043" TEXT="Integration Options">
 <node CREATED="1443884315752" ID="ID_222697016" LINK="http://www.enterpriseintegrationpatterns.com/patterns/messaging/FileTransferIntegration.html" MODIFIED="1443884362444" TEXT="File Transfer">
 <richcontent TYPE="NOTE"><html>
@@ -4325,6 +4349,25 @@
 <icon BUILTIN="idea"/>
 </node>
 </node>
+</node>
+<node CREATED="1461667684499" ID="ID_1604229184" MODIFIED="1461667690893" TEXT="common">
+<node CREATED="1461667769236" ID="ID_892966800" LINK="http://martinfowler.com/bliki/EnablingAttitude.html" MODIFIED="1461667785884" TEXT="Enabling Attitude">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      One of two <a href="http://martinfowler.com/bliki/SoftwareDevelopmentAttitude.html">SoftwareDevelopmentAttitude</a>s.The enabling attitude takes the view that developers are responsible professionals and so should be given the freedom to do whatever they need to do. Designs that follow this attitude should make things <a href="http://jroller.com/page/perryn/20040129#make_it_easy_to_use">easy to use well</a>&#160;but should assume that developers know what they are doing and thus not try hard to prevent something being used badly. As such these tools can be misused, but take the attitude that users should know better, and if they don't they deserve all they get.
+    </p>
+    <p>
+      People with a <a href="http://martinfowler.com/bliki/DirectingAttitude.html">DirectingAttitude</a>&#160;criticize this elitist attitude by saying it can only be used by the upper quartile of software developers. As such they just aren't practical for the general bell curve of software developers
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1461667695393" ID="ID_1353868784" LINK="http://martinfowler.com/bliki/DesignedInheritance.html" MODIFIED="1461667708901" TEXT="Design Inheritance"/>
+<node CREATED="1461667718680" ID="ID_1713748966" LINK="http://martinfowler.com/bliki/OpenInheritance.html" MODIFIED="1461667726861" TEXT="Open Inheritance"/>
 </node>
 </node>
 </node>
