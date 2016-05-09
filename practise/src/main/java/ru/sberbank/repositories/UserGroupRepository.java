@@ -1,4 +1,4 @@
-package ru.sberbank.dao;
+package ru.sberbank.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import ru.sberbank.model.UserGroup;
