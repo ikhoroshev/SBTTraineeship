@@ -12,7 +12,7 @@ public class AreaComparer implements Comparator<Shape> {
 
   @Override
   public int compare(Shape o1, Shape o2) {
-    // do some logic
+    // do logic
     return 0;
   }
 }

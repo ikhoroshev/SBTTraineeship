@@ -53,7 +53,7 @@ public class Application {
         userGroupRepository.save(userGroup);
 
         User user = new User(userGroup, "11111", "22222", "33333");
-       /* user.setId(1L);
+        /*user.setId(1L);
         user.setFirstName("11111");
         user.setLastName("22222");
         user.setMiddleName("33333");

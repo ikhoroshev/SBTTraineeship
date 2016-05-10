@@ -1,7 +1,5 @@
 package ru.sberbank.model;
 
-import org.springframework.boot.autoconfigure.web.ResourceProperties;
-
 import javax.persistence.*;
 
 /**

@@ -26,35 +26,44 @@ public class TypeErasure {
 
 
   @SuppressWarnings("unchecked")
-  private static <K, V> KeyValueHolder<K, V> create(Object key, Object value) {
+  private static <S, U> KeyValueHolder<S, U> create(Object key, Object value) {
 
-    KeyValueHolder<K, V> result = new KeyValueHolder<>();
+    KeyValueHolder<S, U> result = new KeyValueHolder<>();
 
-    result.key   = (K) key;
-    result.value = (V) value;
+    result.key   = (S) key;
+    result.value = (U) value;
+
+    return result;
+  }
+
+
+  private static <S, U> KeyValueHolder<S, U> createWithGenerics(S key, U value) {
+
+    KeyValueHolder<S, U> result = new KeyValueHolder<>();
+
+    result.key   = key;
+    result.value = value;
 
     return result;
   }
 
 
   private void doSomeInterestingThings() {
-/*
-    KeyValueHolder<String, Double> stringDoublePairs;
-    stringDoublePairs = create(HELLO, PI);
-    stringDoublePairs.print();
-*/
+/*    KeyValueHolder<String, Double> stringDoublePair;
+    stringDoublePair = create(HELLO, PI);
+    stringDoublePair.print();
 
-/*
     KeyValueHolder<String, String> stringPairs;
     stringPairs = create(HELLO, PI);
     stringPairs.print();
-*/
 
-/*
     KeyValueHolder<Double, Integer> doubleIntegerPairs;
     doubleIntegerPairs = create(HELLO, PI);
-    doubleIntegerPairs.print();
-*/
+    doubleIntegerPairs.print();*/
+
+    KeyValueHolder<String, Number> stringNumberPair;
+    stringNumberPair = createWithGenerics(HELLO, PI);
+    stringNumberPair.print();
   }
 
 

@@ -1,6 +1,5 @@
 package ru.sberbank.sbt.traineeship.lesson3.common;
 
-import java.math.BigDecimal;
 
 /**
  * Интерфейс счета.
@@ -10,13 +9,13 @@ import java.math.BigDecimal;
  */
 public class Account {
 
-  private final int        number;  // номер счёта
+
+  private final int number;  // номер счёта
 
 
   public Account(final int number) {
     this.number = number;
   }
-
 
   @Override public boolean equals(final Object o) {
     if (this == o) return true;

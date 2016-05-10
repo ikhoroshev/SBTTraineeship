@@ -3,7 +3,6 @@ package ru.sberbank.sbt.traineeship.lesson3.arrays;
 import org.openjdk.jmh.annotations.*;
 import ru.sberbank.sbt.traineeship.lesson3.common.Account;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
