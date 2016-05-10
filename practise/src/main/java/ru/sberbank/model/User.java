@@ -8,12 +8,21 @@ import javax.persistence.*;
 @Entity
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     @ManyToOne(cascade=CascadeType.ALL)
     private UserGroup group;
     @Column(nullable = false)
     private String name;
+
+    protected User() {};
+
+    public User(UserGroup userGroup, String firstName, String lastName, String middleName) {
+        this.userGroup = userGroup;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.middleName = middleName;
+    }
 
     public Long getId() {
         return id;
