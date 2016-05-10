@@ -1,7 +1,12 @@
 package ru.sberbank;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -47,12 +52,12 @@ public class Application {
 
         userGroupRepository.save(userGroup);
 
-        User user = new User();
-        user.setId(1L);
+        User user = new User(userGroup, "11111", "22222", "33333");
+       /* user.setId(1L);
         user.setFirstName("11111");
         user.setLastName("22222");
         user.setMiddleName("33333");
-        user.setUserGroup(userGroup);
+        user.setUserGroup(userGroup);*/
 
         userRepository.save(user);
 
