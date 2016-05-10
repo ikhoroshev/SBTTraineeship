@@ -11,13 +11,9 @@ public class User {
     @GeneratedValue
     private Long id;
     @ManyToOne(cascade=CascadeType.ALL)
-    private UserGroup userGroup;
+    private UserGroup group;
     @Column(nullable = false)
-    private String firstName;
-    @Column(nullable = false)
-    private String lastName;
-    @Column(nullable = false)
-    private String middleName;
+    private String name;
 
     public Long getId() {
         return id;
@@ -27,35 +23,19 @@ public class User {
         this.id = id;
     }
 
-    public UserGroup getUserGroup() {
-        return userGroup;
+    public UserGroup getGroup() {
+        return group;
     }
 
-    public void setUserGroup(UserGroup userGroup) {
-        this.userGroup = userGroup;
+    public void setGroup(UserGroup group) {
+        this.group = group;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
+    public void setName(String name) {
+        this.name = name;
     }
 }

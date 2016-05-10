@@ -14,7 +14,9 @@ public class UserGroup {
     @GeneratedValue
     private Long id;
     @Column(nullable = false)
-    private String groupName;
+    private String name;
+
+    private UserGroupType type;
 
     public Long getId() {
         return id;
@@ -24,11 +26,19 @@ public class UserGroup {
         this.id = id;
     }
 
-    public String getGroupName() {
-        return groupName;
+    public String getName() {
+        return name;
     }
 
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public UserGroupType getType() {
+        return type;
+    }
+
+    public void setType(UserGroupType type) {
+        this.type = type;
     }
 }

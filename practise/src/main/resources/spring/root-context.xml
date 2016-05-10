@@ -6,8 +6,9 @@
 		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="ru.sberbank.services,ru.sberbank.repositories"/>
 
-    <bean id="entityFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="packagesToScan" value="ru.sberbank.model" />
         <property name="jpaVendorAdapter">
@@ -15,7 +16,7 @@
         </property>
         <property name="jpaProperties">
             <props>
-                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.dialect">${jpa.database-dialect}</prop>
             </props>
         </property>
@@ -28,5 +29,10 @@
         <property name="password" value="${datasource.password}"/>
     </bean>
     <context:property-placeholder location="classpath:application.properties"/>
-    <jpa:repositories base-package="org.springframework.samples.petclinic.repository.springdatajpa"/>
+    <jpa:repositories base-package="ru.sberbank.repositories"/>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    <tx:annotation-driven />
 </beans>
