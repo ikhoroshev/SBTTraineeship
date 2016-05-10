@@ -22,7 +22,7 @@
         <div>
             <div>
                 <label for="userName">Last name </label>
-                <form:input class="form-control" path="name" size="30" maxlength="80" id="userName"/>
+                <form:input class="form-control" path="lastName" size="30" maxlength="80" id="userName"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>
@@ -52,7 +52,7 @@
             <tbody>
             <c:forEach var="user" items="${searchResult}">
                 <tr>
-                    <td><c:out value="${user.name}"/></td>
+                    <td><c:out value="${user.lastName} ${user.middleName} ${user.firstName}"/></td>
                     <td>
                         <c:out value="${user.group.name}"/>
                     </td>

@@ -13,12 +13,16 @@ public class User {
     @ManyToOne(cascade=CascadeType.ALL)
     private UserGroup group;
     @Column(nullable = false)
-    private String name;
+    private String firstName;
+    @Column(nullable = false)
+    private String middleName;
+    @Column(nullable = false)
+    private String lastName;
 
     protected User() {};
 
-    public User(UserGroup userGroup, String firstName, String lastName, String middleName) {
-        this.userGroup = userGroup;
+    public User(UserGroup group, String firstName, String lastName, String middleName) {
+        this.group = group;
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
@@ -40,11 +44,27 @@ public class User {
         this.group = group;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
