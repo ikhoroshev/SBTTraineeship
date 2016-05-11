@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-</head>
+<title>Добавление пользователя</title>
+<jsp:include page="../header.jsp"/>
 
 <body>
-<spring:url value="/users/find" var="findUsersForm"/>
-<nav class="navbar navbar-default" role="navigation">
-<a href="${findUsersForm}">Find users</a></nav>
-</nav>
+<jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
     Hello world!
     <spring:url value="/users" var="findUsers"/>
@@ -34,15 +26,12 @@
         <div>
             <div>
                 <button class="btn btn-default" type="submit">Find users</button>
+                <a class="btn btn-default" href='<spring:url value="/users/add" htmlEscape="true"/>'>Add User</a>
             </div>
         </div>
 
-    <div class="form-group">
-        <a class="btn btn-default" href='<spring:url value="/users/add" htmlEscape="true"/>'>Add User</a>
-        <a class="btn btn-default" href='<spring:url value="/users/delete" htmlEscape="true"/>'>Delete User</a>
-    </div>
     <c:if test="${searchResult != null}">
-        <table class="table table-stripped" style="width:600px;">
+        <table class="table table-stripped">
             <thead>
                 <tr>
                     <th>Name</th>
