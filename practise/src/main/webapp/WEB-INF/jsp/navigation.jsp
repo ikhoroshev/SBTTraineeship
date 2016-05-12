@@ -6,6 +6,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<spring:url value="/users/find" />"><span></span><span> Find users</span></a></li>
              </ul>
-        </div> <%--/.nav-collapse --%>
+        </div>
     </div>
 </nav>
