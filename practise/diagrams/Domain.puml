@@ -1,0 +1,162 @@
+@startuml
+
+class User {
+    Long id
+    String firstName
+    String middleName
+    String lastName
+    UserGroup userGroup
+}
+
+note top of User
+   |= user |
+   | id |
+   | first_name |
+   | middle_name |
+   | last_name |
+   | group_id |
+end note
+
+class UserGroup {
+    Long id
+    String groupName
+}
+
+note top of UserGroup
+   |= user_group |
+   | id |
+   | group_name |
+end note
+
+User "many" --> "1" UserGroup
+
+class SystemLog {
+    Long id
+    String code
+    String message
+    Date dateTime
+    User user
+}
+
+note top of SystemLog
+   |= system_log |
+   | id |
+   | code |
+   | message |
+   | date_time |
+   | user_id |
+end note
+
+
+class Question {
+    Long id
+    List<Answer> answers
+    AnswerType answerType (single, multiple)
+    TestChapter testChapter
+    String text
+    Test test
+}
+
+note top of Question
+   |= question |
+   | id |
+   | answer_type |
+   | test_chapter_id |
+   | text |
+   | test_id |
+end note
+
+
+Question "many" --> "1" TestChapter
+
+Question "1" <--> "many" Answer
+
+class Answer {
+    Long id
+    Question question
+    String text
+    Boolean isRight
+}
+
+note top of Answer
+   |= answer |
+   | id |
+   | question_id |
+   | text |
+   | is_right |
+end note
+
+class Result {
+    User user
+    TestRun testRun
+    Question question
+    Answer answer
+}
+
+note top of Result
+   |= result |
+   | id |
+   | user_id |
+   | test_run_id |
+   | question_id |
+   | answer_id |
+end note
+
+
+class Test {
+    String title
+    String description
+    List<Question> questions
+}
+
+note top of Test
+   |= test |
+   | id |
+   | title |
+   | description |
+end note
+
+
+Question "many" <-- "many" Test
+
+note right on link
+	| test_question |
+	| question_id |
+	| test_id |
+end note
+
+class TestChapter {
+    Long id
+    String title
+    Integer position
+}
+
+note top of TestChapter
+   |= test_chapter |
+   | id |
+   | title |
+   | position |
+end note
+
+class TestRun {
+    TestRunStatus testRunStatus (NEW, COMPLETED)
+    User user
+    Test test
+}
+
+note top of TestRun
+   |= test_run |
+   | id |
+   | test_run_status |
+   | user_id |
+   | test_id |
+end note
+
+TestRun "many" --> "1" Test
+TestRun "many" --> "1" User
+Result "many" --> "1" User
+Result "many" --> "1" TestRun
+Result "many" --> "1" Question
+
+
+@enduml
