@@ -33,21 +33,18 @@ public class UserController {
 
     @RequestMapping(value = "/users/add", method = RequestMethod.GET)
     public String initAddUserForm (User user){
-       /* User user1 = new User();
-        user1.setLastName("sfdsfd");
-        userService.addUser(user1);*/
         return "users/addUser";
     }
 
     @RequestMapping(value = "/users/add", method = RequestMethod.POST)
     public String processAddUserForm (User user){
         userService.addUser(user);
-        return "users/addUser";
+        return "users/usersList";
     }
 
     @RequestMapping(value = "/users/delete/{userId}", method = RequestMethod.GET)
     public String processAddUserForm (User user, @PathVariable("userId") long userId){
         userService.deleteUser(userId);
-        return "users/addUser";
+        return "users/usersList";
     }
 }

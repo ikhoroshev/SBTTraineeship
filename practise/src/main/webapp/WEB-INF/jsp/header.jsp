@@ -1,4 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <spring:url value="/resources/css/bootstrap.min.css" var="bootstrap"/>
+    <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapTheme"/>
+    <link rel="stylesheet" href="${bootstrap}" />
+    <link rel="stylesheet" href="${bootstrapTheme}" />
 </head>
