@@ -1,54 +1,39 @@
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.lang.String;
+import java.util.List;
 
 @Entity
 public class Question {
     @Id
     @GeneratedValue
-	private Long id;
-    @Column(nullable = false)
-	private Long answerId;
-    @Column(nullable = false)
-    private Long testId;
+    private Long id;
+
+    @OneToMany(mappedBy = "question")
+    //@JoinColumn(name = "ANSWERS_ID", nullable = false)
+    private List<Answer> answers;
+
+    @ManyToMany(mappedBy = "questions")
+    private List<Test> tests;
+
     @Column(nullable = false)
     private QuestionType type;
-    @Column(nullable = false)
-	private String text;
 
-    public Long getId()
-    {
+    @Column(nullable = false)
+    private String text;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id)
-    {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getAnswerId()
-    {
-        return answerId;
-    }
+    public List<Answer> getAnswers() { return answers; }
 
-    public void setAnswerId(Long answerId)
-    {
-        this.answerId = answerId;
-    }
-
-    public Long getTestId()
-    {
-        return testId;
-    }
-
-    public void setTestId(Long testId)
-    {
-        this.testId = testId;
-    }
+    public void setAnswers(List<Answer> answers) { this.answers = answers; }
 
     public QuestionType getType() {
         return type;
@@ -58,13 +43,15 @@ public class Question {
         this.type = type;
     }
 
-    public String getText()
-    {
+    public String getText() {
         return text;
     }
 
-    public void setText(String text)
-    {
+    public void setText(String text) {
         this.text = text;
     }
+
+    public List<Test> getTests() { return tests; }
+
+    public void setTests(List<Test> tests) { this.tests = tests; }
 }

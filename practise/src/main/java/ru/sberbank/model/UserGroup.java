@@ -10,9 +10,9 @@ import javax.persistence.Id;
  */
 @Entity
 public class UserGroup {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     private Long id;
+
     @Column(nullable = false)
     private String name;
 
