@@ -23,6 +23,10 @@ public class Question {
     @Column(nullable = false)
     private String text;
 
+    @ManyToOne
+    @JoinColumn(name = "TEST_CHAPTER_ID", nullable = false)
+    private TestChapter testChapter;
+
     public Long getId() {
         return id;
     }
