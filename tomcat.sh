@@ -1,1 +1,1 @@
-mvn tomcat7:run
+mvn -pl practise tomcat7:run
