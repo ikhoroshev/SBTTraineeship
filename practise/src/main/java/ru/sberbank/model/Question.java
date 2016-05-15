@@ -1,70 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import java.lang.String;
+import java.util.List;
 
-@Entity
-public class Question {
-    @Id
-    @GeneratedValue
-	private Long id;
-    @Column(nullable = false)
-	private Long answerId;
-    @Column(nullable = false)
-    private Long testId;
-    @Column(nullable = false)
-    private QuestionType type;
-    @Column(nullable = false)
-	private String text;
+/**
+ *
+ * @author Raim
+ */
+class Question {
+  private Long id;
+  private List<Answer> answers;
+  private TestChapter testChapter;
+  private String text;
+  private Test test;
 
-    public Long getId()
-    {
-        return id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public void setId(Long id)
-    {
-        this.id = id;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public Long getAnswerId()
-    {
-        return answerId;
-    }
+  public List<Answer> getAnswers() {
+    return answers;
+  }
 
-    public void setAnswerId(Long answerId)
-    {
-        this.answerId = answerId;
-    }
+  public void setAnswers(List<Answer> answers) {
+    this.answers = answers;
+  }
 
-    public Long getTestId()
-    {
-        return testId;
-    }
+  public TestChapter getTestChapter() {
+    return testChapter;
+  }
 
-    public void setTestId(Long testId)
-    {
-        this.testId = testId;
-    }
+  public void setTestChapter(TestChapter testChapter) {
+    this.testChapter = testChapter;
+  }
 
-    public QuestionType getType() {
-        return type;
-    }
+  public String getText() {
+    return text;
+  }
 
-    public void setType(QuestionType type) {
-        this.type = type;
-    }
+  public void setText(String text) {
+    this.text = text;
+  }
 
-    public String getText()
-    {
-        return text;
-    }
+  public Test getTest() {
+    return test;
+  }
 
-    public void setText(String text)
-    {
-        this.text = text;
-    }
+  public void setTest(Test test) {
+    this.test = test;
+  }
+  
 }
