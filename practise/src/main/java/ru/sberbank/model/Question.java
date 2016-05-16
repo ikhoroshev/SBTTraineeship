@@ -20,6 +20,10 @@ public class Question {
     @Column(nullable = false)
 	private String text;
 
+    @Column(nullable = false)
+    private String text2;
+
+
     public Long getId()
     {
         return id;
