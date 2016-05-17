@@ -5,6 +5,8 @@ import ru.sberbank.model.UserGroup;
 import ru.sberbank.repositories.UserGroupRepository;
 
 import javax.annotation.Resource;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by Николай on 16.05.2016.
@@ -24,4 +26,11 @@ public class UserGroupServiceImpl implements UserGroupService {
     public void deleteUserGroup(Long userGroupId) {
         userGroupRepository.delete(userGroupId);
     }
+
+    @Override
+    public Iterable<UserGroup> getAllUserGroup() {
+        return userGroupRepository.findAll();
+    }
+
+
 }
