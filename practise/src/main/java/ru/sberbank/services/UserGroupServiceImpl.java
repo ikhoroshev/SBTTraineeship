@@ -32,5 +32,10 @@ public class UserGroupServiceImpl implements UserGroupService {
         return userGroupRepository.findAll();
     }
 
+    @Override
+    public UserGroup getUserGroup(Long id) {
+        return userGroupRepository.findOne(id);
+    }
+
 
 }

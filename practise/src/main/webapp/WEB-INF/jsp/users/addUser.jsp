@@ -6,7 +6,7 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
- <form:form modelAttribute="user" method="post" class="form-horizontal"
+ <form:form modelAttribute="user" action="/testapp/users/add" method="POST" class="form-horizontal"
                        id="search-user-form">
                        <div class="form-group has-feedback">
                                    <div>
@@ -23,6 +23,14 @@
                                      <label for="firstName">First name </label>
                                      <form:input class="form-control" path="firstName" size="30" maxlength="80" id="firstName"/>
                                      <span class="help-inline"><form:errors path="*"/></span>
+                                   </div>
+                                   <div>
+                                       <label for="group">Group </label>
+                                       <form:select class="form-control" path="${group}" id="group">
+                                           <form:option label="" value="${null}"/>
+                                           <form:options items="${userGroups}"/>
+                                       </form:select>
+                                       <span class="help-inline"><form:errors path="*"/></span>
                                    </div>
                                    <div>
                                        <button class="btn btn-default" type="submit">Add user</button>

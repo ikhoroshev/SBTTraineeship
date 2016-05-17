@@ -12,4 +12,5 @@ public interface UserGroupService {
     void addUserGroup(UserGroup userGroup);
     void deleteUserGroup(Long userGroupId);
     Iterable<UserGroup> getAllUserGroup();
+    UserGroup getUserGroup(Long id);
 }
