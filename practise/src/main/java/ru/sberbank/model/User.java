@@ -1,19 +1,34 @@
 package ru.sberbank.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 /**
  * Created by sbt-shmygin-as on 06.04.2016.
  */
+@Entity
 public class User {
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
   private Long id;
+  @Column(nullable = false)
   private String firstName;
+  @Column(nullable = false)
   private String middleName;
+  @Column(nullable = false)
   private String lastName;
-  private UserGroup userGroup;
+  @ManyToOne(cascade=CascadeType.ALL)
+  private UserGroup group;
 
   protected User() {};
 
   public User(UserGroup userGroup, String firstName, String lastName, String middleName) {
-    this.userGroup = userGroup;
+    this.group = userGroup;
     this.firstName = firstName;
     this.lastName = lastName;
     this.middleName = middleName;
@@ -28,11 +43,11 @@ public class User {
   }
 
   public UserGroup getGroup() {
-    return userGroup;
+    return group;
   }
 
   public void setGroup(UserGroup userGroup) {
-    this.userGroup = userGroup;
+    this.group = userGroup;
   }
 
   public String getFirstName() {

@@ -1,11 +1,20 @@
 package ru.sberbank.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Created by sbt-shmygin-as on 06.04.2016.
  */
+@Entity
 public class UserGroup {
+  @Id
+  @GeneratedValue
   private Long id;
-  private String groupName;
+  @Column(nullable = false)
+  private String name;
 
   public Long getId() {
       return id;
@@ -15,12 +24,12 @@ public class UserGroup {
       this.id = id;
   }
 
-  public String getGroupName() {
-    return groupName;
+  public String getName() {
+    return name;
   }
 
-  public void setGroupName(String groupName) {
-    this.groupName = groupName;
+  public void setName(String name) {
+    this.name = name;
   }
 
 }

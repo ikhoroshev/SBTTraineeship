@@ -6,16 +6,29 @@
 package ru.sberbank.model;
 
 import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author Raim
  */
-class Question {
+@Entity
+public class Question {
+  @Id
+  @GeneratedValue
   private Long id;
+  @OneToMany
   private List<Answer> answers;
+  @ManyToOne
   private TestChapter testChapter;
+  @Column(nullable = false)
   private String text;
+  @ManyToOne
   private Test test;
 
   public Long getId() {
