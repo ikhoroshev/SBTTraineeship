@@ -18,9 +18,9 @@ public class Answer {
     @ManyToOne(cascade = CascadeType.ALL)
     private Question question;
 
-    public Answer(String text, Boolean is_right) {
+    public Answer(String text, Boolean isRight) {
         this.text = text;
-        this.isRight = is_right;
+        this.isRight = isRight;
     }
 
     public Question getQuestion() {
