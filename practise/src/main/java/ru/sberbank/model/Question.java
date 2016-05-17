@@ -30,7 +30,8 @@ public class Question {
   private String text;
   @ManyToOne
   private Test test;
-
+  private AnswerType answerType;
+  
   public Long getId() {
     return id;
   }
@@ -69,6 +70,14 @@ public class Question {
 
   public void setTest(Test test) {
     this.test = test;
+  }
+
+  public AnswerType getAnswerType() {
+    return answerType;
+  }
+
+  public void setAnswerType(AnswerType answerType) {
+    this.answerType = answerType;
   }
   
 }
