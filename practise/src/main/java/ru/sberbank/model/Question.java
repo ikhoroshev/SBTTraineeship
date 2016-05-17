@@ -30,6 +30,7 @@ public class Question {
   private String text;
   @ManyToOne
   private Test test;
+  @Column(nullable = false)
   private AnswerType answerType;
   
   public Long getId() {
