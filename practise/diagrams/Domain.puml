@@ -54,7 +54,6 @@ class Question {
     AnswerType answerType (single, multiple)
     TestChapter testChapter
     String text
-    Test test
 }
 
 note top of Question
@@ -63,7 +62,6 @@ note top of Question
    | answer_type |
    | test_chapter_id |
    | text |
-   | test_id |
 end note
 
 
