@@ -51,5 +51,4 @@ public class Test {
   public void setQuestions(List<Question> questions) {
     this.questions = questions;
   }
-  
 }

@@ -32,7 +32,7 @@ public class TestServiceImpl implements TestService {
             && !Strings.isNullOrEmpty(test.getTitle())) {
       return testRepository.findByTitleLike('%' + test.getTitle() +  '%');
     }
-    return null;
+    return testRepository.findAll();
   }
   
 }
