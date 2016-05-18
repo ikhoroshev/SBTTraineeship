@@ -19,6 +19,7 @@ import static org.hamcrest.core.StringStartsWith.startsWith;
  * @ $Revision$
  */
 public class ExampleJUnitRules {
+
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
 

@@ -18,7 +18,7 @@
             </div>
             <div>
             <label for="userGroup">Group name </label>
-                <form:input class="form-control" path="group.name" size="30" maxlength="80" id = "userGroup"/>
+                <form:input class="form-control" path="group.name" size="30" maxlength="80"   id = "userGroup"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
         </div>
