@@ -1,3 +1,6 @@
+<%@ page import="ru.sberbank.services.UserGroupService" %>
+<%@ page import="ru.sberbank.services.UserGroupServiceImpl" %>
+<%@ page import="ru.sberbank.model.UserGroup" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
@@ -24,6 +27,22 @@
                                      <form:input class="form-control" path="firstName" size="30" maxlength="80" id="firstName"/>
                                      <span class="help-inline"><form:errors path="*"/></span>
                                    </div>
+                                    <%
+
+                                        UserGroupServiceImpl userGroupService = new UserGroupServiceImpl();
+//                                        for (UserGroup userGroup:userGroupService.findUsersByExample())
+                                        userGroupService.findUsersByExample();
+                                        {
+                                            %>
+                                                <%--<%= userGroup.getName() %>--%>
+                                            <%
+                                        }
+                                    %>
+                                   <%--<select >--%>
+                                       <%--<option value = "sysadm">йцуйцк</option>--%>
+                                       <%--<option value = "admin">цукцу</option>--%>
+                                       <%--<option value="prog">цуецуе</option>--%>
+                                   <%--</select>--%>
                                    <div>
                                        <button class="btn btn-default" type="submit">Add user</button>
                                        <a class="btn btn-default" href='<spring:url value="/users/find" htmlEscape="true"/>'>Cancel</a>
