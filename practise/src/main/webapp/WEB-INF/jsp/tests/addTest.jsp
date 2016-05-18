@@ -17,7 +17,7 @@
         </div>
         <div>
           <label for="description">Description </label>
-          <form:input class="form-control" path="description" size="100" maxlength="80" id="description"/>
+          <form:textarea class="form-control textarea long-field" path="description" rows="5" id="description"/>
           <span class="help-inline"><form:errors path="*"/></span>
         </div>
         <div>
