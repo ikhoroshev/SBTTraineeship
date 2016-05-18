@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-
+        This is my page
 </body>
 </html>
