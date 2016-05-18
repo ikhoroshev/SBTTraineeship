@@ -58,4 +58,8 @@ public class Question {
     public List<Test> getTests() { return tests; }
 
     public void setTests(List<Test> tests) { this.tests = tests; }
+
+    public TestChapter getTestChapter() { return testChapter; }
+
+    public void setTestChapter(TestChapter testChapter) { this.testChapter = testChapter; }
 }
