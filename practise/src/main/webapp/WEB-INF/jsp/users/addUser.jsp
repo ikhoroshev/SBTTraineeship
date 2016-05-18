@@ -30,7 +30,7 @@
 
 
                            <c:if test="${listUserGroup != null}">
-                               <form:select path="group" items="${listUserGroup}" multiple="false" onchange="function dff() {  }" />
+                               <form:select path="group" items="${listUserGroup}" multiple="false"  />
                                <span class="help-block"><form:errors path="*"/></span>
                            </c:if>
 
