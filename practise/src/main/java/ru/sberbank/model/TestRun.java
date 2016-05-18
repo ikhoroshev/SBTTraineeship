@@ -24,7 +24,9 @@ class TestRun {
   private User user;
   @ManyToOne
   private Test test;
-
+  @Column(nullable = false)
+  private TestRunStatus testRunStatus;
+  
   public User getUser() {
     return user;
   }
@@ -47,6 +49,14 @@ class TestRun {
 
   public void setId(Long id) {
     this.id = id;
+  }
+
+  public TestRunStatus getTestRunStatus() {
+    return testRunStatus;
+  }
+
+  public void setTestRunStatus(TestRunStatus testRunStatus) {
+    this.testRunStatus = testRunStatus;
   }
   
 }
