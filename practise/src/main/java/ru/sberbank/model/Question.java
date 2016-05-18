@@ -14,9 +14,6 @@ public class Question {
     //@JoinColumn(name = "ANSWERS_ID", nullable = false)
     private List<Answer> answers;
 
-    @ManyToMany(mappedBy = "questions")
-    private List<Test> tests;
-
     @Column(nullable = false)
     private QuestionType type;
 
@@ -29,9 +26,8 @@ public class Question {
 
     public Question() {}
 
-    public Question(List<Answer> answers, List<Test> tests, QuestionType type, String text, TestChapter testChapter) {
+    public Question(List<Answer> answers, QuestionType type, String text, TestChapter testChapter) {
         this.answers = answers;
-        this.tests = tests;
         this.type = type;
         this.text = text;
         this.testChapter = testChapter;
@@ -64,10 +60,6 @@ public class Question {
     public void setText(String text) {
         this.text = text;
     }
-
-    public List<Test> getTests() { return tests; }
-
-    public void setTests(List<Test> tests) { this.tests = tests; }
 
     public TestChapter getTestChapter() { return testChapter; }
 
