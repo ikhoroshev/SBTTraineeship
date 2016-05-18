@@ -27,6 +27,16 @@ public class Question {
     @JoinColumn(name = "TEST_CHAPTER_ID", nullable = false)
     private TestChapter testChapter;
 
+    public Question() {}
+
+    public Question(List<Answer> answers, List<Test> tests, QuestionType type, String text, TestChapter testChapter) {
+        this.answers = answers;
+        this.tests = tests;
+        this.type = type;
+        this.text = text;
+        this.testChapter = testChapter;
+    }
+
     public Long getId() {
         return id;
     }

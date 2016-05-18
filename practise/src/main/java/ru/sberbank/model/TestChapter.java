@@ -18,6 +18,15 @@ public class TestChapter {
     @Column(nullable = false)
     private Integer position;
 
+    public TestChapter() {}
+
+    public TestChapter(String title) { this.title = title; position=0; }
+
+    public TestChapter(String title, Integer position) {
+        this.title = title;
+        this.position = position;
+    }
+
     public Long getId() {
         return id;
     }

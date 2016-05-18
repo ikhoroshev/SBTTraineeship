@@ -17,12 +17,11 @@
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
-            <%--breakable code
             <div>
                 <label for="testChapter">Chapter </label>
-                <form:input class="form-control" path="testChapter" size="30" maxlength="80" id="testChapter"/>
+                <form:input class="form-control" path="testChapter.title" size="30" maxlength="80" id="testChapter"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-            </div>--%>
+            </div>
 
             <div>
                 <button class="btn btn-default" type="submit">View questions</button>
