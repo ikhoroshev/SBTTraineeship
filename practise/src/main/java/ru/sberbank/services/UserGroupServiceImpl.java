@@ -6,7 +6,6 @@ import ru.sberbank.repositories.UserGroupRepository;
 
 import javax.annotation.Resource;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * Created by Николай on 16.05.2016.

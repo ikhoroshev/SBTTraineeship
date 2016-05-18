@@ -45,6 +45,11 @@ public class UserController {
 
     @RequestMapping(value = "/users/add", method = RequestMethod.POST)
     public String processAddUserForm (User user){
+        if(user.getGroup() != null) {
+            Long groupId = user.getGroup().getId();
+            UserGroup userGroup = userGroupService.getUserGroup(groupId);
+            user.setGroup(userGroup);
+        }
         userService.addUser(user);
         return "users/usersList";
     }
