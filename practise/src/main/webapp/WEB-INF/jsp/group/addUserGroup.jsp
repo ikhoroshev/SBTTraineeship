@@ -16,6 +16,7 @@
             </div>
             <div>
                 <button class="btn btn-default" type="submit">Add group</button>
+                <a class="btn btn-default" href='<spring:url value="/group/add" htmlEscape="true"/>'>Cancel</a>
             </div>
         </div>
     </form:form>

@@ -23,14 +23,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Iterable<User> findUsersByExample(User user) {
-        if (!Strings.isNullOrEmpty(user.getLastName())
+        if (user!= null && !Strings.isNullOrEmpty(user.getLastName())
                 && !Strings.isNullOrEmpty(user.getGroup().getName())) {
             return userRepository.findByLastNameLikeAndGroupNameLike('%' + user.getLastName() + '%', '%' + user.getGroup().getName() + '%');
         }
-        if (!Strings.isNullOrEmpty(user.getLastName())){
+        if (user!= null && user.getGroup() != null && !Strings.isNullOrEmpty(user.getLastName())) {
             return userRepository.findByLastNameLike('%' + user.getLastName() + '%');
         }
-        if (user.getGroup() != null && !Strings.isNullOrEmpty(user.getGroup().getName())) {
+        if (user!= null && user.getGroup() != null && !Strings.isNullOrEmpty(user.getGroup().getName())) {
             return userRepository.findByGroupNameLike('%' + user.getGroup().getName() + '%');
         }
 
