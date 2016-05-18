@@ -6,6 +6,18 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-
+    <form:form modelAttribute="userGroup" method="post" class="form-horizontal"
+               id="search-userGroup-form">
+        <div class="form-group has-feedback">
+            <div>
+                <label for="name">Group name</label>
+                <form:input class="form-control" path="name" size="30" maxlength="80" id="name"/>
+                <span class="help-inline"><form:errors path="*"/></span>
+            </div>
+            <div>
+                <button class="btn btn-default" type="submit">Add group</button>
+            </div>
+        </div>
+    </form:form>
 </div>
 </body>

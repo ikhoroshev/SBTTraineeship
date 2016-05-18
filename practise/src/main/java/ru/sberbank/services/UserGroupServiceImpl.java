@@ -1,9 +1,9 @@
 package ru.sberbank.services;
 
 import org.springframework.stereotype.Service;
+import ru.sberbank.model.User;
 import ru.sberbank.model.UserGroup;
 import ru.sberbank.repositories.UserGroupRepository;
-import ru.sberbank.repositories.UserRepository;
 
 import javax.annotation.Resource;
 
@@ -14,6 +14,12 @@ import javax.annotation.Resource;
 public class UserGroupServiceImpl implements UserGroupService {
     @Resource
     private UserGroupRepository userGroupRepository;
+
+
+
+    public Iterable<UserGroup> findUsersByExample() {
+        return userGroupRepository.findAll();
+    }
 
     @Override
     public void addUserGroup(UserGroup userGroup) {

@@ -7,6 +7,7 @@ import ru.sberbank.model.UserGroup;
  * Created by Idony on 17.05.2016.
  */
 public interface UserGroupService {
+    Iterable<UserGroup> findUsersByExample ();
     void addUserGroup (UserGroup user);
     void deleteUserGroup (UserGroup userId);
 }

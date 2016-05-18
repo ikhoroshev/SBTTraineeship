@@ -8,7 +8,7 @@ import javax.persistence.Id;
 /**
  * Created by sbt-shmygin-as on 06.04.2016.
  */
-@Entity
+@Entity(name = "user_group")
 public class UserGroup {
     @Id
     @GeneratedValue
@@ -16,7 +16,6 @@ public class UserGroup {
     @Column(nullable = false)
     private String name;
 
-    private UserGroupType type;
 
     public Long getId() {
         return id;
@@ -34,11 +33,4 @@ public class UserGroup {
         this.name = name;
     }
 
-    public UserGroupType getType() {
-        return type;
-    }
-
-    public void setType(UserGroupType type) {
-        this.type = type;
-    }
 }

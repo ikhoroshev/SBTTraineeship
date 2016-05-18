@@ -21,6 +21,9 @@ public class UserGroupController {
 
     @RequestMapping(value = "/group/add", method = RequestMethod.GET)
     public String initAddUserForm (UserGroup userGroup){
+        for (UserGroup userGroup1:userGroupService.findUsersByExample()) {
+            System.out.println(userGroup1.getName());
+        }
         return "group/addUserGroup";
     }
 

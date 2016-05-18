@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.User;
+import ru.sberbank.services.UserGroupService;
 import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
