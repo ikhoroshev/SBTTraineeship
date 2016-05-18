@@ -8,14 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <title>Search Test</title>
 <jsp:include page="../header.jsp"/>
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-    <spring:url value="/search" var="findTest"/>
-    <form:form modelAttribute="test" action="${findTest}" method="post" class="form-horizontal"
+    <spring:url value="/tests/search" var="findTest"/>
+    <form:form modelAttribute="test" action="${findTest}" method="POST" class="form-horizontal"
     id="search-test-form">
         <div>
             <label for="Title">Title </label>

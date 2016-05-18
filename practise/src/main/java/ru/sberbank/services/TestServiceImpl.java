@@ -30,8 +30,15 @@ public class TestServiceImpl implements TestService {
   public Iterable<Test> findTest (Test test) {
     if (!Strings.isNullOrEmpty(test.getDescription())
             && !Strings.isNullOrEmpty(test.getTitle())) {
+      return testRepository.findByTitleLikeAndDescriptionLike('%' + test.getTitle() +  '%', '%' + test.getDescription() +  '%');
+    }
+    if (!Strings.isNullOrEmpty(test.getDescription())) {
+      return testRepository.findByDescriptionLike('%' + test.getDescription() +  '%');
+    }
+    if (!Strings.isNullOrEmpty(test.getTitle())) {
       return testRepository.findByTitleLike('%' + test.getTitle() +  '%');
     }
+
     return testRepository.findAll();
   }
   
