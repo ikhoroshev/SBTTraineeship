@@ -4,8 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.Test;
-import ru.sberbank.model.User;
+import ru.sberbank.services.TestSearchService;
 import ru.sberbank.services.TestService;
+
 
 import javax.annotation.Resource;
 
@@ -24,7 +25,7 @@ public class SearchTestController {
 
     @RequestMapping(value = "/tests/search", method = RequestMethod.POST)
     public String processAddTestForm (Test test){
-        testService.addTest(test);
+        testService.findTest(test);
         return "tests/testsList";
     }
 

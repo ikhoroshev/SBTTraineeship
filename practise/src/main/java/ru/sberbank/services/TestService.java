@@ -13,4 +13,5 @@ import ru.sberbank.model.Test;
  */
 public interface TestService {
   void addTest (Test test);
+  Iterable<Test> findTest (Test test);
 }

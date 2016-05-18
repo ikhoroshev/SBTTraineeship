@@ -6,6 +6,8 @@
 package ru.sberbank.services;
 
 import javax.annotation.Resource;
+
+import com.google.common.base.Strings;
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.Test;
 import ru.sberbank.repositories.TestRepository;
@@ -22,6 +24,15 @@ public class TestServiceImpl implements TestService {
   @Override
   public void addTest(Test test) {
     testRepository.save(test);
+  }
+
+  @Override
+  public Iterable<Test> findTest (Test test) {
+    if (!Strings.isNullOrEmpty(test.getDescription())
+            && !Strings.isNullOrEmpty(test.getTitle())) {
+      return testRepository.findByTitleLike('%' + test.getTitle() +  '%');
+    }
+    return null;
   }
   
 }

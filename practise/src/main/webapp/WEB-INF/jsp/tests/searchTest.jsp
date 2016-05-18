@@ -6,11 +6,19 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<title>Search Test</title>
+<jsp:include page="../header.jsp"/>
 <body>
-        This is my page
+<jsp:include page="../navigation.jsp"/>
+<div class="container xd-container">
+    <form:form modelAttribute="user" action="${findUsers}" method="post" class="form-horizontal"
+    id="search-test-form">
+        <button class="btn btn-default" type="submit">Search test </button>
+        <a class="btn btn-default" href='<spring:url value="/users/add" htmlEscape="true"/>'>Add Test</a>
+    </form:form>
+
+</div>
 </body>
-</html>
