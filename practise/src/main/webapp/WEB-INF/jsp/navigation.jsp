@@ -14,6 +14,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<spring:url value="/users/find" />"><span></span><span> <div class="menuItem">Find users </div></span></a></li>
              </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="<spring:url value="/users/find" />"><span></span><span> <div class="menuItem">Find users </div></span></a></li>
+            </ul>
         </div>
     </div>
 </nav>
