@@ -6,12 +6,10 @@ import java.util.List;
 
 @Entity
 public class Question {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     private Long id;
 
-    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
-    //@JoinColumn(name = "ANSWERS_ID", nullable = false)
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Answer> answers;
 
     @Column(nullable = false)
@@ -21,10 +19,15 @@ public class Question {
     private String text;
 
     @ManyToOne
-    @JoinColumn(name = "TEST_CHAPTER_ID", nullable = false)
+    @JoinColumn(name = "TEST_CHAPTER_ID")
     private TestChapter testChapter;
 
-    public Question() {}
+    public Question() {
+        answers=null;
+        type=null;
+        text=null;
+        testChapter=null;
+    }
 
     public Question(List<Answer> answers, QuestionType type, String text, TestChapter testChapter) {
         this.answers = answers;

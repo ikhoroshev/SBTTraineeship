@@ -20,4 +20,9 @@ public class QuestionServiceImpl implements QuestionService {
             return questionRepository.findQuestionByText(question.getText());
         else return questionRepository.findAll();
     }
+
+    @Override
+    public void addQuestion(Question question) {
+        questionRepository.save(question);
+    }
 }

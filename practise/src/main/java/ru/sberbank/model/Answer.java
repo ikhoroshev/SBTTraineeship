@@ -20,6 +20,14 @@ public class Answer {
     @Column(name = "IS_RIGHT")
     private Boolean isRight;
 
+    public Answer() {
+        isRight=false;
+    }
+
+    public Answer(String text) {
+        this.text = text;
+    }
+
     public Long getId() {
         return id;
     }

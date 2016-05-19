@@ -25,6 +25,7 @@
 
             <div>
                 <button class="btn btn-default" type="submit">View questions</button>
+                <a class="btn btn-default" href='<spring:url value="/questions/add" htmlEscape="true"/>'>Add Question</a>
             </div>
         </div>
 

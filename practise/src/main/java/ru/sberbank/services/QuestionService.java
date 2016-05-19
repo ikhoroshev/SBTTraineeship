@@ -7,4 +7,5 @@ import ru.sberbank.model.Question;
  */
 public interface QuestionService {
     Iterable<Question> findQuestionByExample(Question question);
+    void addQuestion(Question question);
 }
