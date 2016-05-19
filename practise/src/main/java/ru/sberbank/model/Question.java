@@ -1,54 +1,49 @@
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.lang.String;
+import java.util.List;
 
 @Entity
 public class Question {
     @Id
     @GeneratedValue
-	private Long id;
-    @Column(nullable = false)
-	private Long answerId;
-    @Column(nullable = false)
-    private Long testId;
+    private Long id;
+
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
+    //@JoinColumn(name = "ANSWERS_ID", nullable = false)
+    private List<Answer> answers;
+
     @Column(nullable = false)
     private QuestionType type;
-    @Column(nullable = false)
-	private String text;
 
-    public Long getId()
-    {
+    @Column(nullable = false)
+    private String text;
+
+    @ManyToOne
+    @JoinColumn(name = "TEST_CHAPTER_ID", nullable = false)
+    private TestChapter testChapter;
+
+    public Question() {}
+
+    public Question(List<Answer> answers, QuestionType type, String text, TestChapter testChapter) {
+        this.answers = answers;
+        this.type = type;
+        this.text = text;
+        this.testChapter = testChapter;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id)
-    {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getAnswerId()
-    {
-        return answerId;
-    }
+    public List<Answer> getAnswers() { return answers; }
 
-    public void setAnswerId(Long answerId)
-    {
-        this.answerId = answerId;
-    }
-
-    public Long getTestId()
-    {
-        return testId;
-    }
-
-    public void setTestId(Long testId)
-    {
-        this.testId = testId;
-    }
+    public void setAnswers(List<Answer> answers) { this.answers = answers; }
 
     public QuestionType getType() {
         return type;
@@ -58,13 +53,15 @@ public class Question {
         this.type = type;
     }
 
-    public String getText()
-    {
+    public String getText() {
         return text;
     }
 
-    public void setText(String text)
-    {
+    public void setText(String text) {
         this.text = text;
     }
+
+    public TestChapter getTestChapter() { return testChapter; }
+
+    public void setTestChapter(TestChapter testChapter) { this.testChapter = testChapter; }
 }

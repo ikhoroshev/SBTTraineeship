@@ -8,7 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import ru.sberbank.model.User;
+import ru.sberbank.model.UserGroup;
+import ru.sberbank.services.UserGroupService;
 import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
@@ -18,6 +21,8 @@ import java.util.Map;
 public class UserController {
     @Resource
     private UserService userService;
+    @Resource
+    private UserGroupService userGroupService;
 
     @RequestMapping(value = "/users/find", method = RequestMethod.GET)
     public String initSearchForm(User user) {
@@ -32,12 +37,19 @@ public class UserController {
     }
 
     @RequestMapping(value = "/users/add", method = RequestMethod.GET)
-    public String initAddUserForm (User user){
+    public String initAddUserForm (User user, Map<String, Object> model){
+        Iterable<UserGroup> userGroups = userGroupService.getAllUserGroup();
+        model.put("userGroups", userGroups);
         return "users/addUser";
     }
 
     @RequestMapping(value = "/users/add", method = RequestMethod.POST)
     public String processAddUserForm (User user){
+        if(user.getGroup() != null) {
+            Long groupId = user.getGroup().getId();
+            UserGroup userGroup = userGroupService.getUserGroup(groupId);
+            user.setGroup(userGroup);
+        }
         userService.addUser(user);
         return "users/usersList";
     }
@@ -47,4 +59,5 @@ public class UserController {
         userService.deleteUser(userId);
         return "users/usersList";
     }
+
 }
