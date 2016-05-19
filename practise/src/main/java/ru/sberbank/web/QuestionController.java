@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.QuestionType;
+import ru.sberbank.model.TestChapter;
 import ru.sberbank.services.QuestionService;
+import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
 import java.util.Map;
@@ -18,6 +20,9 @@ import java.util.Map;
 public class QuestionController {
     @Resource
     private QuestionService questionService;
+
+    @Resource
+    private TestChapterService testChapterService;
 
     @RequestMapping(value = "questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question){
@@ -40,6 +45,8 @@ public class QuestionController {
 
     @RequestMapping(value = "questions/add", method = RequestMethod.GET)
     public String initAddForm(Question question, Map<String, Object> model){
+        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
         model.put("QuestionType", QuestionType.values());
         return "questions/addQuestion";
     }

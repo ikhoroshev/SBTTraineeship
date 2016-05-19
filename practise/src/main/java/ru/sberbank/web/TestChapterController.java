@@ -10,9 +10,6 @@ import ru.sberbank.services.TestChapterService;
 import javax.annotation.Resource;
 import java.util.Map;
 
-/**
- * Created by Михаил on 19.05.2016.
- */
 @Controller
 public class TestChapterController {
     @Resource
@@ -26,7 +23,7 @@ public class TestChapterController {
     public String processAddTestChapterForm (TestChapter testChapter, Map<String, Object> model){
 
         testChapterService.addTestChapter(testChapter);
-        Iterable<TestChapter> testChaptersIterable = testChapterService.getAllUserGroup();
+        Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
         model.put("allTestChapter", testChaptersIterable);
         return "chapters/testChapterList";
     }

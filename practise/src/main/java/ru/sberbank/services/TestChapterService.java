@@ -7,6 +7,5 @@ import ru.sberbank.model.TestChapter;
  */
 public interface TestChapterService {
     void addTestChapter(TestChapter testChapter);
-
-    Iterable<TestChapter> getAllUserGroup();
+    Iterable<TestChapter> getAllTestChapter();
 }
