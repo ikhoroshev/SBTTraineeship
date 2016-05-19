@@ -25,52 +25,52 @@ public class User {
   @ManyToOne
   private UserGroup group;
 
-  protected User() {};
+    protected User() {};
 
-  public User(UserGroup userGroup, String firstName, String lastName, String middleName) {
-    this.group = userGroup;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.middleName = middleName;
-  }
+    public User(UserGroup group, String firstName, String lastName, String middleName) {
+        this.group = group;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.middleName = middleName;
+    }
 
-  public Long getId() {
-    return id;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public UserGroup getGroup() {
-    return group;
-  }
+    public UserGroup getGroup() {
+        return group;
+    }
 
-  public void setGroup(UserGroup userGroup) {
-    this.group = userGroup;
-  }
+    public void setGroup(UserGroup group) {
+        this.group = group;
+    }
 
-  public String getFirstName() {
-    return firstName;
-  }
+    public String getFirstName() {
+        return firstName;
+    }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-  public String getMiddleName() {
-    return middleName;
-  }
+    public String getMiddleName() {
+        return middleName;
+    }
 
-  public void setMiddleName(String middleName) {
-    this.middleName = middleName;
-  }
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
 
-  public String getLastName() {
-    return lastName;
-  }
+    public String getLastName() {
+        return lastName;
+    }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
