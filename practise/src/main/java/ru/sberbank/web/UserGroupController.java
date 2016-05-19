@@ -28,6 +28,6 @@ public class UserGroupController {
     @RequestMapping(value = "/group/add", method = RequestMethod.POST)
     public String processAddUserForm (UserGroup userGroup){
         userGroupService.addUserGroup(userGroup);
-        return "/group/add";
+        return "index";
     }
 }

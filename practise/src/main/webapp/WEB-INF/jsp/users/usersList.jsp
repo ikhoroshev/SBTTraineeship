@@ -1,6 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <title>User list</title>
 <jsp:include page="../header.jsp"/>
 
@@ -18,7 +19,7 @@
             </div>
             <div>
             <label for="userGroup">Group name </label>
-                <form:input class="form-control" path="group.name" size="30" maxlength="80" id = "userGroup"/>
+                <form:input class="form-control" path="group.name" size="30" maxlength="80"   id = "userGroup"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
         </div>
