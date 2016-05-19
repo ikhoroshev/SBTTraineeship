@@ -13,6 +13,7 @@ import ru.sberbank.model.Test;
  * @author Raim
  */
 public interface TestRepository extends CrudRepository<Test, Long> {
+  
   Iterable<Test> findByTitleLike (String testTitleLike);
   Iterable<Test> findByTitleLikeAndDescriptionLike (String testTitleLike, String testDescriptionLike);
   Iterable<Test> findByDescriptionLike (String testTitleLike);
