@@ -1,51 +1,46 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
- *
- * @author Raim
+ * Created by Idony on 13.05.2016.
  */
-@Entity
-class TestChapter {
-  @Id
-  @GeneratedValue
-  private Long id;
-  @Column(nullable = false)
-  private String title;
-  @Column(nullable = false)
-  private Integer position;
+@Entity(name = "test_chapter")
+public class TestChapter {
 
-  public Long getId() {
-    return id;
-  }
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    @Column(nullable = false)
+    private String title;
 
-  public String getTitle() {
-    return title;
-  }
+    public Integer getPosition() {
+        return position;
+    }
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
+    public void setPosition(Integer position) {
+        this.position = position;
+    }
 
-  public Integer getPosition() {
-    return position;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setPosition(Integer position) {
-    this.position = position;
-  }
-  
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    @Column(nullable = false)
+
+    private Integer position;
+
 }

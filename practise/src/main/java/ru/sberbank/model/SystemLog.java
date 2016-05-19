@@ -1,61 +1,74 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
- *
- * @author Raim
+ * Created by Idony on 13.05.2016.
  */
+@Entity
 public class SystemLog {
-  private Long id;
-  private String code;
-  private String message;
-  private Date dateTime;
-  private User user;
 
-  public Long getId() {
-    return id;
-  }
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    @Column(nullable = false)
+    private String code;
 
-  public String getCode() {
-    return code;
-  }
+    @Column(nullable = false)
+    private String message;
 
-  public void setCode(String code) {
-    this.code = code;
-  }
+    @Column(nullable = false,name = "data_time")
+    private Date dateTime;
 
-  public String getMessage() {
-    return message;
-  }
+    @ManyToOne(cascade = CascadeType.ALL)
+    private User user;
 
-  public void setMessage(String message) {
-    this.message = message;
-  }
+    public SystemLog(String code, String message, Date dateTime, User user) {
+        this.code = code;
+        this.message = message;
+        this.dateTime = dateTime;
+        this.user = user;
+    }
 
-  public Date getDateTime() {
-    return dateTime;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setDateTime(Date dateTime) {
-    this.dateTime = dateTime;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public User getUser() {
-    return user;
-  }
+    public String getCode() {
+        return code;
+    }
 
-  public void setUser(User user) {
-    this.user = user;
-  }
-  
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Date getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(Date dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

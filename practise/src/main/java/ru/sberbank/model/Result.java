@@ -1,50 +1,54 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
+import javax.persistence.*;
+
 /**
- *
- * @author Raim
+ * Created by Idony on 17.05.2016.
  */
-class Result {
-  private User user;
-  private TestRun testRun;
-  private Question question;
-  private Answer Answer;
+@Entity
+public class Result {
+    @Id
+    @GeneratedValue
+    private Long id;
 
-  public User getUser() {
-    return user;
-  }
+    @ManyToOne(cascade = CascadeType.ALL)
+    private TestRun testRun;
 
-  public void setUser(User user) {
-    this.user = user;
-  }
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Question question;
 
-  public TestRun getTestRun() {
-    return testRun;
-  }
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Answer answer;
 
-  public void setTestRun(TestRun testRun) {
-    this.testRun = testRun;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public Question getQuestion() {
-    return question;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public void setQuestion(Question question) {
-    this.question = question;
-  }
+    public TestRun getTestRun() {
+        return testRun;
+    }
 
-  public Answer getAnswer() {
-    return Answer;
-  }
+    public void setTestRun(TestRun testRun) {
+        this.testRun = testRun;
+    }
 
-  public void setAnswer(Answer Answer) {
-    this.Answer = Answer;
-  }
-  
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
+    }
+
+    public Answer getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(Answer answer) {
+        this.answer = answer;
+    }
 }

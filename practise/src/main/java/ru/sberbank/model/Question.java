@@ -1,88 +1,79 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
-import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import java.lang.String;
+import java.util.Set;
 
 @Entity
 public class Question {
-  @Id
-  @GeneratedValue
-  private Long id;
-  @OneToMany
-  private List<Answer> answers;
-  @ManyToOne
-  private TestChapter testChapter;
-  @Column(nullable = false)
-  private String text;
-  @ManyToOne
-  private Test test;
-  @Column(nullable = false)
-  private AnswerType answerType;
+    @Id
+    @GeneratedValue
+    private Long id;
 
+    @Column(nullable = false,name = "answer_type")
+    private AnswerType answerType;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    private TestChapter testChapter;
+
+    @OneToMany
+    private Set<Answer> answer;
 
     @Column(nullable = false)
-    private String text2;
+    private String text;
 
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "test_question", catalog = "db", joinColumns = {
+            @JoinColumn(name = "question_id", nullable = false, updatable = false) },
+            inverseJoinColumns = { @JoinColumn(name = "test_id",
+                    nullable = false, updatable = false) })
+    private Set<Test> tests;
 
-    public Long getId()
-    {
+    public Long getId() {
         return id;
     }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public AnswerType getAnswerType() {
+        return answerType;
+    }
 
-  public List<Answer> getAnswers() {
-    return answers;
-  }
+    public void setAnswerType(AnswerType answerType) {
+        this.answerType = answerType;
+    }
 
-  public void setAnswers(List<Answer> answers) {
-    this.answers = answers;
-  }
+    public TestChapter getTestChapter() {
+        return testChapter;
+    }
 
-  public TestChapter getTestChapter() {
-    return testChapter;
-  }
+    public void setTestChapter(TestChapter testChapter) {
+        this.testChapter = testChapter;
+    }
 
-  public void setTestChapter(TestChapter testChapter) {
-    this.testChapter = testChapter;
-  }
+    public Set<Answer> getAnswer() {
+        return answer;
+    }
 
-  public String getText() {
-    return text;
-  }
+    public void setAnswer(Set<Answer> answer) {
+        this.answer = answer;
+    }
 
-  public void setText(String text) {
-    this.text = text;
-  }
+    public String getText() {
+        return text;
+    }
 
-  public Test getTest() {
-    return test;
-  }
+    public void setText(String text) {
+        this.text = text;
+    }
 
-  public void setTest(Test test) {
-    this.test = test;
-  }
+    public Set<Test> getTests() {
+        return tests;
+    }
 
-  public AnswerType getAnswerType() {
-    return answerType;
-  }
-
-  public void setAnswerType(AnswerType answerType) {
-    this.answerType = answerType;
-  }
-  
+    public void setTests(Set<Test> tests) {
+        this.tests = tests;
+    }
 }

@@ -1,54 +1,65 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
-import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import java.util.Set;
 
-/**
- *
- * @author Raim
- */
 @Entity
 public class Test {
-  @Id
-  @GeneratedValue
-  Long id;
-  @Column(nullable = false)
-  private String title;
-  @Column(nullable = false)
-  private String description;
-  @OneToMany
-  private List<Question> questions;
 
-  public String getTitle() {
-    return title;
-  }
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
+    @Column(nullable = false)
+    private String title;
+    @Column(nullable = false)
+    private String description;
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
 
-  public String getDescription() {
-    return description;
-  }
 
-  public void setDescription(String description) {
-    this.description = description;
-  }
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "test_question", catalog = "db", joinColumns = {
+            @JoinColumn(name = "question_id", nullable = false, updatable = false) },
+            inverseJoinColumns = { @JoinColumn(name = "test_id",
+                    nullable = false, updatable = false) })
+    private Set<Question> questions;
 
-  public List<Question> getQuestions() {
-    return questions;
-  }
 
-  public void setQuestions(List<Question> questions) {
-    this.questions = questions;
-  }
+    public Set<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(Set<Question> questions) {
+        this.questions = questions;
+    }
+
+
+
+    public Test(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

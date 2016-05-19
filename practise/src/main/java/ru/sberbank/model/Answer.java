@@ -1,62 +1,59 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 /**
- *
- * @author Raim
+ * Created by Idony on 13.05.2016.
  */
 @Entity
-class Answer {
-  @Id
-  @GeneratedValue
-  private Long id;
-  @ManyToOne
-  private Question question;
-  @Column(nullable = false)
-  private String text;
-  @Column(nullable = false)
-  private Boolean isRight;
+public class Answer {
 
-  public Long getId() {
-    return id;
-  }
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
+    @Column(nullable = false)
+    private String text;
+    @Column(nullable = false,name = "is_right")
+    private Boolean isRight;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Question question;
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public Answer(String text, Boolean isRight) {
+        this.text = text;
+        this.isRight = isRight;
+    }
 
-  public Question getQuestion() {
-    return question;
-  }
+    public Question getQuestion() {
+        return question;
+    }
 
-  public void setQuestion(Question question) {
-    this.question = question;
-  }
+    public void setQuestion(Question question) {
+        this.question = question;
+    }
 
-  public String getText() {
-    return text;
-  }
+    protected Answer() {};
 
-  public void setText(String text) {
-    this.text = text;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public Boolean getIsRight() {
-    return isRight;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public void setIsRight(Boolean isRight) {
-    this.isRight = isRight;
-  }
-  
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Boolean getIsRight() {
+        return isRight;
+    }
+
+    public void setIsRight(Boolean isRight) {
+        this.isRight = isRight;
+    }
 }
