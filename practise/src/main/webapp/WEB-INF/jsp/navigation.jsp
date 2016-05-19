@@ -13,6 +13,9 @@
                 <li>
                     <a href="<spring:url value="/groups/find" />"><span> Find group</span></a>
                 </li>
+                <li>
+                    <a href="<spring:url value="/chapters/find" />"><span> Find chapters</span></a>
+                </li>
              </ul>
         </div>
     </div>
