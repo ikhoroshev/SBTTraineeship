@@ -44,11 +44,11 @@ public class Answer {
         this.text = text;
     }
 
-    public Boolean getRight() {
+    public Boolean getIsRight() {
         return isRight;
     }
 
-    public void setRight(Boolean right) {
+    public void setIsRight(Boolean right) {
         isRight = right;
     }
 }
