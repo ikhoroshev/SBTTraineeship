@@ -24,4 +24,10 @@ public class TestChapterServiceImpl implements TestChapterService {
     public Iterable<TestChapter> getAllTestChapter() {
         return testChapterRepository.findAll();
     }
+
+    @Override
+    public Iterable<TestChapter> getTestChapterByTitle(String title) { return testChapterRepository.findByTitle(title); }
 }
+
+
+

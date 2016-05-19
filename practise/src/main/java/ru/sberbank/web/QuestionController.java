@@ -31,6 +31,8 @@ public class QuestionController {
 
     @RequestMapping(value = "questions/find", method = RequestMethod.POST)
     public String processAddForm(Question question){
+        Iterable<TestChapter> testChapterByTitle = testChapterService.getTestChapterByTitle(question.getTestChapter().getTitle());
+        question.setTestChapter(testChapterByTitle.iterator().next());
         questionService.addQuestion(question);
         return "questions/add-viewQuestion";
     }

@@ -20,7 +20,7 @@
                     <tr>
                         <td>
                             <div>
-                                <form:textarea path="text" cols="70" rows="5" id="text"/>
+                                <form:textarea path="text" cols="100" rows="5" id="text"/>
                                 <span class="help-inline"><form:errors path="*"/></span>
                             </div>
                         </td>
