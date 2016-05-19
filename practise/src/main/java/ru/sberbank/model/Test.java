@@ -31,7 +31,9 @@ public class Test {
     public void setQuestions(Set<Question> questions) {
         this.questions = questions;
     }
+    public Test (){
 
+    }
 
 
     public Test(String title, String description) {
