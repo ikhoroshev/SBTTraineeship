@@ -38,6 +38,6 @@ public class UserGroupController {
     @RequestMapping(value = "/groups/delete/{userGroupId}", method = RequestMethod.GET)
     public String processAddUserForm (UserGroup userGroup, @PathVariable("userGroupId") long userGroupId){
         userGroupService.deleteUserGroup(userGroupId);
-        return "groups/userGroupLis";
+        return "groups/userGroupList";
     }
 }
