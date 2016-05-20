@@ -8,5 +8,5 @@ import ru.sberbank.model.UserGroup;
  */
 
 public interface TestRunService {
-    Iterable<TestRun> findByUserGroupIdLike(UserGroup userGroup);
+    Iterable<TestRun> findByUserGroupLike(UserGroup userGroup);
 }

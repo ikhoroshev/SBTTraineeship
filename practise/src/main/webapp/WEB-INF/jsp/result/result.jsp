@@ -25,10 +25,18 @@
             </div>
             <div>
                 <br>
-                <button class="btn btn-default" type="submit">Add user</button>
+                <button class="btn btn-default" type="submit">Find</button>
 
             </div>
         </div>
     </form:form>
+    <div>
+        <c:if test="${resultsByGroup != null}">
+            <c:forEach var="resultByGroup" items="${resultsByGroup}">
+                <c:out value="${resultByGroup.first.user.firstName} ${resultByGroup.first.user.lastName} ${resultByGroup.first.user.group.name} ${resultByGroup.second}"/>
+            </c:forEach>
+        </c:if>
+    </div>
+
 </div>
 </body>
