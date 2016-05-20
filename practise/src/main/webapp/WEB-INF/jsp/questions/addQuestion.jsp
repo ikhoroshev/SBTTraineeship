@@ -26,7 +26,7 @@
                         </td>
                         <td>
                             <div>
-                                <form:radiobuttons path="type" id="type" items="${QuestionType}" delimiter="<br>" />
+                                <form:radiobuttons path="type" id="type" items="${QuestionType}" delimiter="<br>" checked="checked" />
                             </div>
                         </td>
                     </tr>
@@ -51,9 +51,43 @@
                 </tr>
                 </thead>
                 <tbody>
+                <tr>
+                    <td>
+                        <form:input class="form-control" path="answers[0].text" size="60" maxlength="100" id="text"/>
+                        <span class="help-inline"><form:errors path="*"/></span>
+                    </td>
+                    <td>
+                        <%--<script>
+                            var select=document.getElementById("type");
+                            var index;
+                            for(var i=0;i<select.length;i++)
+                                if(select[i].checked)
+                                        index=i;
+                            if(index==2)--%>
+                                    <form:checkbox path="answers[0].isRight"/>
+                            <%--else <form:radiobutton path="answers[0].isRight"/>
+                        </script>--%>
 
-
-
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form:input class="form-control" path="answers[1].text" size="60" maxlength="100" id="text"/>
+                        <span class="help-inline"><form:errors path="*"/></span>
+                    </td>
+                    <td>
+                        <form:checkbox path="answers[1].isRight"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form:input class="form-control" path="answers[2].text" size="60" maxlength="100" id="text"/>
+                        <span class="help-inline"><form:errors path="*"/></span>
+                    </td>
+                    <td>
+                        <form:checkbox path="answers[2].isRight"/>
+                    </td>
+                </tr>
                 </tbody>
             </table>
             <div>

@@ -1,9 +1,9 @@
 package ru.sberbank.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.sberbank.model.Answer;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.QuestionType;
 import ru.sberbank.model.TestChapter;
@@ -11,6 +11,8 @@ import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,7 +35,20 @@ public class QuestionController {
     public String processAddForm(Question question){
         Iterable<TestChapter> testChapterByTitle = testChapterService.getTestChapterByTitle(question.getTestChapter().getTitle());
         question.setTestChapter(testChapterByTitle.iterator().next());
+        List<Answer> answers = question.getAnswers();
+        Iterator<Answer> it=answers.iterator();
+        while(it.hasNext()){
+            Answer answer=it.next();
+            if(answer.getText()==null||answer.getText().trim().length()==0)
+                it.remove();
+            else
+                answer.setQuestion(question);
+        }
+
         questionService.addQuestion(question);
+
+        question.setText(null);
+        question.setTestChapter(null);
         return "questions/add-viewQuestion";
     }
 
