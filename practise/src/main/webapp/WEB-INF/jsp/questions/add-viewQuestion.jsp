@@ -12,42 +12,50 @@
         <div class="form-group has-feedback">
 
             <div>
-                <label for="text">Text </label>
+                <label for="text">Keywords </label>
                 <form:input class="form-control" path="text" size="30" maxlength="80" id="text"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
             <div>
                 <label for="testChapter">Chapter </label>
-                <form:input class="form-control" path="testChapter.title" size="30" maxlength="80" id="testChapter"/>
+                <form:select class="form-control" path="testChapter.title" id="testChapter">
+                    <c:forEach var="chapter" items="${allTestChapter}">
+                        <form:option value="${chapter.title}"/>
+                    </c:forEach>
+                </form:select>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
             <div>
                 <button class="btn btn-default" type="submit">View questions</button>
+                <a class="btn btn-default" href='<spring:url value="/questions/add" htmlEscape="true"/>'>Add Question</a>
             </div>
         </div>
 
         <c:if test="${searchQuestion != null}">
-            <thead>
-            <tr>
-                <th>Question</th>
-                <th>Answers</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="question" items="${searchQuestion}">
+            <table class="table table-stripped">
+                <thead>
                 <tr>
-                    <td><c:out value="${question.text}"/></td>
-                    <td><c:forEach var="answers" items="${question.answers}">
-                        <tr>
-                            <c:out value="${answers.text} ${answers.isRight}"/>
-                        </tr>
-                        </c:forEach>
-                    </td>
+                    <th>Question</th>
+                    <th>Answers</th>
                 </tr>
-            </c:forEach>
-            </tbody>
+                </thead>
+                <tbody>
+                <c:forEach var="question" items="${searchQuestion}">
+                    <tr>
+                        <td><c:out value="${question.text}"/></td>
+                        <td><c:forEach var="answers" items="${question.answers}">
+                            <c:out value="${answers.text}"/>
+                            <c:if test="${answers.isRight}">
+                                &nbsp;( + )
+                            </c:if>
+                        </c:forEach>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
         </c:if>
     </form:form>
 </div>

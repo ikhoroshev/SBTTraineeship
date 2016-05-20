@@ -2,10 +2,6 @@ package ru.sberbank.model;
 
 import javax.persistence.*;
 
-/**
- * Created by asphodelfod on 16.05.16.
- */
-
 @Entity
 @Table(name = "TEST_CHAPTER")
 public class TestChapter {
@@ -18,10 +14,8 @@ public class TestChapter {
     @Column(nullable = false)
     private Integer position;
 
-    public TestChapter() {}
 
-    public TestChapter(String title) { this.title = title; position=0; }
-
+    public TestChapter(){}
     public TestChapter(String title, Integer position) {
         this.title = title;
         this.position = position;
