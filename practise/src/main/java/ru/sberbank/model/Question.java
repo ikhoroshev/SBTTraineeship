@@ -10,7 +10,7 @@ public class Question {
     @GeneratedValue
     private Long id;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
     //@JoinColumn(name = "ANSWERS_ID", nullable = false)
     private List<Answer> answers;
 

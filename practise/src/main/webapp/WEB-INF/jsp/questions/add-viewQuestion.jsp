@@ -29,25 +29,28 @@
         </div>
 
         <c:if test="${searchQuestion != null}">
-            <thead>
-            <tr>
-                <th>Question</th>
-                <th>Answers</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="question" items="${searchQuestion}">
+            <table class="table table-stripped">
+                <thead>
                 <tr>
-                    <td><c:out value="${question.text}"/></td>
-                    <td><c:forEach var="answers" items="${question.answers}">
-                        <tr>
-                            <c:out value="${answers.text} ${answers.isRight}"/>
-                        </tr>
-                        </c:forEach>
-                    </td>
+                    <th>Question</th>
+                    <th>Answers</th>
                 </tr>
-            </c:forEach>
-            </tbody>
+                </thead>
+                <tbody>
+                <c:forEach var="question" items="${searchQuestion}">
+                    <tr>
+                        <td><c:out value="${question.text}"/></td>
+                        <td><c:forEach var="answers" items="${question.answers}">
+                            <c:out value="${answers.text}"/>
+                            <c:if test="${answers.isRight}">
+                                &nbsp;( + )
+                            </c:if>
+                        </c:forEach>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
         </c:if>
     </form:form>
 </div>
