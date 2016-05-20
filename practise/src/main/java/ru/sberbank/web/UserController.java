@@ -25,7 +25,9 @@ public class UserController {
     private UserGroupService userGroupService;
 
     @RequestMapping(value = "/users/find", method = RequestMethod.GET)
-    public String initSearchForm(User user) {
+    public String initSearchForm(User user, Map<String, Object> model) {
+        Iterable<User> users = userService.findUsersByExample(user);
+        model.put("searchResult", users);
         return "users/usersList";
     }
 
@@ -44,13 +46,15 @@ public class UserController {
     }
 
     @RequestMapping(value = "/users/add", method = RequestMethod.POST)
-    public String processAddUserForm (User user){
+    public String processAddUserForm (User user, Map<String, Object> model){
         if(user.getGroup() != null) {
             Long groupId = user.getGroup().getId();
             UserGroup userGroup = userGroupService.getUserGroup(groupId);
             user.setGroup(userGroup);
         }
         userService.addUser(user);
+        Iterable<User> users = userService.findUsersByExample(user);
+        model.put("searchResult", users);
         return "users/usersList";
     }
 

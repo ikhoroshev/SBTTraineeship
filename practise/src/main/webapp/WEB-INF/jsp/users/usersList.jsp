@@ -44,6 +44,9 @@
                     <td>
                         <c:out value="${user.group.name}"/>
                     </td>
+                    <td>
+                    <a class="btn btn-default" href='<spring:url value="/testRun?id=${user.id}" htmlEscape="true"/>'>Open</a>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>
