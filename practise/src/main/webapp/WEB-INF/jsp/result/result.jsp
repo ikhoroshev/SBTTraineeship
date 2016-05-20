@@ -32,9 +32,26 @@
     </form:form>
     <div>
         <c:if test="${resultsByGroup != null}">
-            <c:forEach var="resultByGroup" items="${resultsByGroup}">
-                <c:out value="${resultByGroup.first.user.firstName} ${resultByGroup.first.user.lastName} ${resultByGroup.first.user.group.name} ${resultByGroup.second}"/>
-            </c:forEach>
+            <table class="table table-stripped">
+                <thead>
+                <tr>
+                    <th>LastName FirstName</th>
+                    <th>Group name</th>
+                    <th>TestRun status</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="resultByGroup" items="${resultsByGroup}">
+                    <tr>
+                        <td><c:out value="${resultByGroup.first.user.lastName} ${resultByGroup.first.user.firstName} " /></td>
+                        <td><c:out value="${resultByGroup.first.user.group.name}"/></td>
+                        <td><c:out value="${resultByGroup.first.status} ${resultByGroup.first.testRunStatus}"/></td>
+                        <td><c:out value="${resultByGroup.second}"/></td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
         </c:if>
     </div>
 
