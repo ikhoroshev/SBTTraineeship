@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="bean.PersonExt" table="PERSON">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="salary" column="salary" type="int"/>
+        <property name="sinceDt" column="since_dt" type="date"/>
+
+        <set name="tasks" table="TASK" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PERSON_ID" not-null="true" />
+            </key>
+            <one-to-many class="bean.Task" />
+        </set>
+    </class>
+
+    <sql-query name="bean.PersonExt.getHardWorkingPersons">
+        <return-scalar column="name" type="string"/>
+        <return-scalar column="salary" type="long"/>
+        <return-scalar column="hours" type="long"/>
+        SELECT p.NAME AS name, p.SALARY, sum(t.hours) as hours
+        FROM PERSON p
+        JOIN TASK t
+        on p.id = t.person_id
+        GROUP BY p.id
+        HAVING count(t.id) > :tasksNumberAtLeast
+        ORDER BY p.salary DESC
+    </sql-query>
+
+</hibernate-mapping>
