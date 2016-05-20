@@ -1,70 +1,79 @@
 package ru.sberbank.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.lang.String;
+import java.util.Set;
 
 @Entity
 public class Question {
     @Id
     @GeneratedValue
-	private Long id;
-    @Column(nullable = false)
-	private Long answerId;
-    @Column(nullable = false)
-    private Long testId;
-    @Column(nullable = false)
-    private QuestionType type;
-    @Column(nullable = false)
-	private String text;
+    private Long id;
 
-    public Long getId()
-    {
+    @Column(nullable = false,name = "answer_type")
+    private AnswerType answerType;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    private TestChapter testChapter;
+
+    @OneToMany
+    private Set<Answer> answer;
+
+    @Column(nullable = false)
+    private String text;
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "test_question", catalog = "db", joinColumns = {
+            @JoinColumn(name = "question_id", nullable = false, updatable = false) },
+            inverseJoinColumns = { @JoinColumn(name = "test_id",
+                    nullable = false, updatable = false) })
+    private Set<Test> tests;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id)
-    {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getAnswerId()
-    {
-        return answerId;
+    public AnswerType getAnswerType() {
+        return answerType;
     }
 
-    public void setAnswerId(Long answerId)
-    {
-        this.answerId = answerId;
+    public void setAnswerType(AnswerType answerType) {
+        this.answerType = answerType;
     }
 
-    public Long getTestId()
-    {
-        return testId;
+    public TestChapter getTestChapter() {
+        return testChapter;
     }
 
-    public void setTestId(Long testId)
-    {
-        this.testId = testId;
+    public void setTestChapter(TestChapter testChapter) {
+        this.testChapter = testChapter;
     }
 
-    public QuestionType getType() {
-        return type;
+    public Set<Answer> getAnswer() {
+        return answer;
     }
 
-    public void setType(QuestionType type) {
-        this.type = type;
+    public void setAnswer(Set<Answer> answer) {
+        this.answer = answer;
     }
 
-    public String getText()
-    {
+    public String getText() {
         return text;
     }
 
-    public void setText(String text)
-    {
+    public void setText(String text) {
         this.text = text;
+    }
+
+    public Set<Test> getTests() {
+        return tests;
+    }
+
+    public void setTests(Set<Test> tests) {
+        this.tests = tests;
     }
 }
