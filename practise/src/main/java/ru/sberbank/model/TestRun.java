@@ -28,7 +28,7 @@ public class TestRun {
     @Column
     TestRunStatus testRunStatus;
 
-    public TestRun() {}
+    public TestRun() {return;}
 
     public TestRun(String status, User user, Test test) {
         this.status = status;
