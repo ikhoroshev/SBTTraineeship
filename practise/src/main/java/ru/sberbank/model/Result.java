@@ -17,7 +17,7 @@ public class Result {
     @ManyToOne(cascade = CascadeType.ALL)
     private Question question;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Answer answer;
 
     public Long getId() {

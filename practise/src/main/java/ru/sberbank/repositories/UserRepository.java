@@ -3,6 +3,7 @@ package ru.sberbank.repositories;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
 import ru.sberbank.model.User;
+import ru.sberbank.model.UserGroup;
 
 import java.util.List;
 

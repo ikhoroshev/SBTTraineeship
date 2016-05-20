@@ -12,9 +12,9 @@ public class TestRun {
     private Long id;
     @Column(nullable = false)
     private String status;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private User user;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Test test;
 
     public TestRunStatus getTestRunStatus() {
@@ -25,8 +25,11 @@ public class TestRun {
         this.testRunStatus = testRunStatus;
     }
 
-    @Column(nullable = false)
+    @Column
     TestRunStatus testRunStatus;
+
+    public TestRun() {}
+
     public TestRun(String status, User user, Test test) {
         this.status = status;
         this.user = user;
