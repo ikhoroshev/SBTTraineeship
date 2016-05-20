@@ -14,7 +14,7 @@
                     <a href="<spring:url value="/groups/find" />"><span> Find group</span></a>
                 </li>
                 <li>
-                    <a href="<spring:url value="/test/addTest" />"><span> Find test</span></a>
+                    <a href="<spring:url value="/test/add" />"><span> Find test</span></a>
                 </li>>
              </ul>
         </div>
