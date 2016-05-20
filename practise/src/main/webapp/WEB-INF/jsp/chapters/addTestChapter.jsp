@@ -28,7 +28,7 @@
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>
-                <button class="btn btn-default" type="submit">Add TestChapter</button>
+                <button class="btn btn-default" type="submit">Add chapter</button>
                 <a class="btn btn-default" href='<spring:url value="/chapters/find" htmlEscape="true"/>'>Cancel</a>
             </div>
         </div>

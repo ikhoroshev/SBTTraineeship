@@ -27,12 +27,14 @@ public class QuestionController {
     private TestChapterService testChapterService;
 
     @RequestMapping(value = "questions/find", method = RequestMethod.GET)
-    public String initViewForm(Question question){
+    public String initViewForm(Question question, Map<String, Object> model){
+        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
     }
 
     @RequestMapping(value = "questions/find", method = RequestMethod.POST)
-    public String processAddForm(Question question){
+    public String processAddForm(Question question, Map<String, Object> model){
         Iterable<TestChapter> testChapterByTitle = testChapterService.getTestChapterByTitle(question.getTestChapter().getTitle());
         question.setTestChapter(testChapterByTitle.iterator().next());
         List<Answer> answers = question.getAnswers();
@@ -49,14 +51,18 @@ public class QuestionController {
 
         question.setText(null);
         question.setTestChapter(null);
+        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
     }
 
 
     @RequestMapping(value = "questions/find2", method = RequestMethod.POST)
     public String processViewForm(Question question, Map<String, Object> model){
-        Iterable<Question> questions=questionService.findQuestionByExample(question);
+        Iterable<Question> questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
         model.put("searchQuestion", questions);
+        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
     }
 

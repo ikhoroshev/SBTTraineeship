@@ -1,11 +1,9 @@
 package ru.sberbank.services;
 
 import ru.sberbank.model.Question;
+import ru.sberbank.model.TestChapter;
 
-/**
- * Created by asphodelfod on 18.05.16.
- */
 public interface QuestionService {
-    Iterable<Question> findQuestionByExample(Question question);
+    Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter);
     void addQuestion(Question question);
 }

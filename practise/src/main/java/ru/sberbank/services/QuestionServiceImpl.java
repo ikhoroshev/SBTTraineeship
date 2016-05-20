@@ -2,24 +2,34 @@ package ru.sberbank.services;
 
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.Question;
+import ru.sberbank.model.TestChapter;
 import ru.sberbank.repositories.QuestionRepository;
 
 import javax.annotation.Resource;
+import java.util.Collection;
+import java.util.HashSet;
 
-/**
- * Created by asphodelfod on 18.05.16.
- */
 @Service
 public class QuestionServiceImpl implements QuestionService {
     @Resource
     private QuestionRepository questionRepository;
 
-    @Override
-    public Iterable<Question> findQuestionByExample(Question question) {
-        if(question.getText()!=null&&question.getText().length()>0)
-            return questionRepository.findQuestionByText(question.getText());
-        else return questionRepository.findAll();
+    private Iterable<Question> findQuestionByTextLikeAndTestChapter(String text, TestChapter testChapter) {
+        return questionRepository.findQuestionByTextLikeAndTestChapterTitle('%'+text+'%', testChapter.getTitle());
     }
+
+    @Override
+    public Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter) {
+        HashSet<Question> result=new HashSet<>();
+        String[] keyword = keywords.split(" ");
+        for(String str : keyword){
+            Iterable<Question> questionByTextLikeAndTestChapter = findQuestionByTextLikeAndTestChapter(str, testChapter);
+            result.addAll((Collection<? extends Question>) questionByTextLikeAndTestChapter);
+        }
+
+        return result;
+    }
+
 
     @Override
     public void addQuestion(Question question) {

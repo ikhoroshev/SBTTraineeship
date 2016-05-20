@@ -2,10 +2,6 @@ package ru.sberbank.model;
 
 import javax.persistence.*;
 
-/**
- * Created by asphodelfod on 16.05.16.
- */
-
 @Entity
 @Table(name = "TEST_CHAPTER")
 public class TestChapter {

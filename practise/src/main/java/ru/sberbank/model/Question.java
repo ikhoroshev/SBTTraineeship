@@ -67,4 +67,26 @@ public class Question {
     public TestChapter getTestChapter() { return testChapter; }
 
     public void setTestChapter(TestChapter testChapter) { this.testChapter = testChapter; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Question question = (Question) o;
+
+        if (!id.equals(question.id)) return false;
+        if (type != question.type) return false;
+        return text.equals(question.text);
+
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        result = 31 * result + type.hashCode();
+        result = 31 * result + text.hashCode();
+        return result;
+    }
 }

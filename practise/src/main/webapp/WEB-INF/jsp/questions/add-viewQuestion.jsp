@@ -12,14 +12,18 @@
         <div class="form-group has-feedback">
 
             <div>
-                <label for="text">Text </label>
+                <label for="text">Keywords </label>
                 <form:input class="form-control" path="text" size="30" maxlength="80" id="text"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
             <div>
                 <label for="testChapter">Chapter </label>
-                <form:input class="form-control" path="testChapter.title" size="30" maxlength="80" id="testChapter"/>
+                <form:select class="form-control" path="testChapter.title" id="testChapter">
+                    <c:forEach var="chapter" items="${allTestChapter}">
+                        <form:option value="${chapter.title}"/>
+                    </c:forEach>
+                </form:select>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
