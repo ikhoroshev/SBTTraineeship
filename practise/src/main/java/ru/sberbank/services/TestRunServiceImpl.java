@@ -17,5 +17,6 @@ public class TestRunServiceImpl implements TestRunService {
     @Override
     public Iterable<TestRun> findByUserGroupLike(UserGroup userGroup) {
         return testRunRepository.findByUserGroupLike(userGroup);
+        
     }
 }
