@@ -25,7 +25,14 @@ public class UserGroupController {
     private UserGroupService userGroupService;
 
     @RequestMapping(value = "/groups/find", method = RequestMethod.GET)
-    public String initSearchForm(UserGroup userGroup, Map<String, Object> model){
+    public String initGroupList(UserGroup userGroup, Map<String, Object> model){
+        Iterable<UserGroup> userGroupIterable = userGroupService.getAllUserGroup();
+        model.put("allUserGroup", userGroupIterable);
+        return "groups/userGroupList";
+    }
+
+    @RequestMapping(value = "/groups/addForm", method = RequestMethod.GET)
+    public String initAddForm(UserGroup userGroup, Map<String, Object> model){
         model.put("userGroupType", UserGroupType.values());
         return "groups/addUserGroup";
     }

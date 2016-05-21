@@ -9,6 +9,7 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
+    <a class="btn btn-default" href='<spring:url value="/groups/addForm" htmlEscape="true"/>'>Add group</a>
 <table class="table table-stripped">
     <thead>
     <tr>
