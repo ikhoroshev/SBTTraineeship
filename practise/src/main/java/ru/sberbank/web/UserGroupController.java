@@ -23,8 +23,6 @@ public class UserGroupController {
 
     @Resource
     private UserGroupService userGroupService;
-    //@Resource
-   // private UserGroupValidator userGroupValidator;
 
     @RequestMapping(value = "/groups/find", method = RequestMethod.GET)
     public String initSearchForm(UserGroup userGroup, Map<String, Object> model){

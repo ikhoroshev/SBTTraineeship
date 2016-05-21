@@ -18,7 +18,17 @@ public class UserGroupValidator implements Validator {
 
     @Override
     public void validate(Object o, Errors errors) {
+        UserGroup userGroup = (UserGroup) o;
+
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name","name.empty", "Name is required");
 
+        String name = userGroup.getName();
+        if ((name.length()) > 16) {
+            errors.rejectValue("name", "name.tooLong", "Name must not more than 16 characters.");
+        }
+
+        if (!name.matches("[a-zA-Zа-яА-Я]+")){
+            errors.rejectValue("name", "name.tooLetter", "Name can contain only letters.");
+        }
     }
 }
