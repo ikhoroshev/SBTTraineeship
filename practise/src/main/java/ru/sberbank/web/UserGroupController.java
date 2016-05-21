@@ -1,12 +1,15 @@
 package ru.sberbank.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.UserGroup;
 import ru.sberbank.model.UserGroupType;
 import ru.sberbank.services.UserGroupService;
+import ru.sberbank.validator.UserGroupValidator;
+
 import javax.annotation.Resource;
 
 import java.util.List;
@@ -20,6 +23,8 @@ public class UserGroupController {
 
     @Resource
     private UserGroupService userGroupService;
+    //@Resource
+   // private UserGroupValidator userGroupValidator;
 
     @RequestMapping(value = "/groups/find", method = RequestMethod.GET)
     public String initSearchForm(UserGroup userGroup, Map<String, Object> model){
@@ -28,7 +33,11 @@ public class UserGroupController {
     }
 
     @RequestMapping(value = "/groups/add", method = RequestMethod.GET)
-    public String processAddUserGroupForm(UserGroup userGroup, Map<String, Object> model){
+    public String processAddUserGroupForm(UserGroup userGroup, BindingResult result, Map<String, Object> model){
+        new UserGroupValidator().validate(userGroup, result);
+        if (result.hasErrors()){
+            return "groups/addUserGroup";
+        }
         userGroupService.addUserGroup(userGroup);
         Iterable<UserGroup> userGroupIterable = userGroupService.getAllUserGroup();
         model.put("allUserGroup", userGroupIterable);
