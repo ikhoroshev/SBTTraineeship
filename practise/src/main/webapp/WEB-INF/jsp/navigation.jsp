@@ -17,8 +17,8 @@
                     <a href="<spring:url value="/chapters/find" />"><span> Find chapters</span></a>
                 </li>
                 <li>
-                    <a href="<spring:url value="/test/add" />"><span> Find test</span></a>
-                </li>>
+                    <a href="<spring:url value="/test/add" />"><span> Test </span></a>
+                </li>
              </ul>
         </div>
     </div>
