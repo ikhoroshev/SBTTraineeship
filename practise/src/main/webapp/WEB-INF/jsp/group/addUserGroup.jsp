@@ -14,6 +14,15 @@
                 <form:input class="form-control" path="name" size="30" maxlength="80" id="name"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
+
+            <div>
+                <label for="userGroupType">Group type</label>
+                <form:select path="userGroupType">
+                    <form:option value="PUPIL">Pupil</form:option>
+                    <form:option value="TEACHER">Teacher</form:option>
+                </form:select>
+            </div>
+            <br>
             <div>
                 <button class="btn btn-default" type="submit">Add group</button>
                 <a class="btn btn-default" href='<spring:url value="/group/add" htmlEscape="true"/>'>Cancel</a>
