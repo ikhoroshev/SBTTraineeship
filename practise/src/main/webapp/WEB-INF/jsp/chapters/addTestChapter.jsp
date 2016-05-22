@@ -19,12 +19,12 @@
         <div class="form-group has-feedback">
             <div>
                 <label for="title">Title </label>
-                <form:input class="form-control" path="title" size="30" maxlength="80" id="title"/>
+                <form:input class="form-control" path="title" size="30" maxlength="50" id="title"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>
                 <label for="position">Position </label>
-                <form:input class="form-control" type="number" path="position" size="30" maxlength="80" id="position"/>
+                <form:input class="form-control" type="number"  min="0" max="5000" path="position" size="30" maxlength="50" id="position"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>

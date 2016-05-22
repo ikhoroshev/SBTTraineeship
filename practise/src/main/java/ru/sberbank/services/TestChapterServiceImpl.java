@@ -27,6 +27,11 @@ public class TestChapterServiceImpl implements TestChapterService {
 
     @Override
     public Iterable<TestChapter> getTestChapterByTitle(String title) { return testChapterRepository.findByTitle(title); }
+
+    @Override
+    public void deleteTestChapter(Long id) {
+        testChapterRepository.delete(id);
+    }
 }
 
 

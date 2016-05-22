@@ -9,4 +9,5 @@ public interface TestChapterService {
     void addTestChapter(TestChapter testChapter);
     Iterable<TestChapter> getAllTestChapter();
     Iterable<TestChapter> getTestChapterByTitle(String title);
+    void deleteTestChapter(Long id);
 }

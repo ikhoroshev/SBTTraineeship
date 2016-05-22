@@ -37,9 +37,14 @@ public class TestChapterController {
         model.put("allTestChapter", testChaptersIterable);
         return "chapters/testChapterList";
     }
-    @RequestMapping(value = "testChapter/{testChapterId}", method = RequestMethod.GET)
-    public String processDeleteTestChapterForm (TestChapter testChapter, @PathVariable("testChapterId") long testChapterId){
-        testChapterService.deleteTestChapter(testChapterId);
+    @RequestMapping(value = "testChapter/delete/{testChapterId}", method = RequestMethod.GET)
+    public String processDeleteTestChapterForm (TestChapter testChapter, @PathVariable String testChapterId,Map<String, Object> model){
+
+        Long id = Long.decode(testChapterId);
+        testChapterService.deleteTestChapter(id);
+        Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", testChaptersIterable);
+
         return "chapters/testChapterList";
     }
 

@@ -16,6 +16,7 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
+
     <table class="table table-stripped">
         <thead>
         <tr>
@@ -29,7 +30,7 @@
                 <td><c:out value="${testChapter.title}"/></td>
                 <td><c:out value="${testChapter.position}"/></td>
                 <td>
-                    <a class="btn btn-default" href='<spring:url value="/testChapter/?id=${testChapter.id}" htmlEscape="true"/>'>Delete</a>
+                    <a class="btn btn-default" href='<spring:url value="/testChapter/delete/${testChapter.id}" htmlEscape="true"/>'>Delete</a>
                 </td>
             </tr>
         </c:forEach>
