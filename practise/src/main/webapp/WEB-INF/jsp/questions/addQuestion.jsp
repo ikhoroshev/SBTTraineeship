@@ -38,6 +38,9 @@
                                     <form:option value="${chapter.title}"/>
                                 </c:forEach>
                             </form:select>
+                            <%--<script>
+                                document.getElementById('testChapter').options["%>"]
+                            </script>--%>
                             <span class="help-inline"><form:errors path="*"/></span>
                         </td>
                 </tr>
