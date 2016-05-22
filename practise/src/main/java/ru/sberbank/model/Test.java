@@ -1,8 +1,10 @@
 package ru.sberbank.model;
 
+
 import javax.persistence.*;
+import javax.persistence.Id;
 import java.util.List;
-import java.util.Set;
+
 
 @Entity
 public class Test {
@@ -22,7 +24,7 @@ public class Test {
             @JoinColumn(name = "question_id", nullable = false, updatable = false) },
             inverseJoinColumns = { @JoinColumn(name = "test_id",
                     nullable = false, updatable = false) })
-    @ElementCollection
+    @OrderBy("testChapter.position")
     private List<Question> questions;
 
 
