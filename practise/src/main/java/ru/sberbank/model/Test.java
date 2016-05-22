@@ -1,6 +1,7 @@
 package ru.sberbank.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -21,14 +22,15 @@ public class Test {
             @JoinColumn(name = "question_id", nullable = false, updatable = false) },
             inverseJoinColumns = { @JoinColumn(name = "test_id",
                     nullable = false, updatable = false) })
-    private Set<Question> questions;
+    @ElementCollection
+    private List<Question> questions;
 
 
-    public Set<Question> getQuestions() {
+    public List<Question> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(Set<Question> questions) {
+    public void setQuestions(List<Question> questions) {
         this.questions = questions;
     }
     public Test (){

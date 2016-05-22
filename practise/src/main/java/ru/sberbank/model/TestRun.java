@@ -14,8 +14,20 @@ public class TestRun {
     private String status;
     @ManyToOne
     private User user;
+
+    public Question getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public void setCurrentQuestion(Question currentQuestion) {
+        this.currentQuestion = currentQuestion;
+    }
+
     @ManyToOne
     private Test test;
+
+    @ManyToOne
+    private Question currentQuestion;
 
     public TestRunStatus getTestRunStatus() {
         return testRunStatus;
