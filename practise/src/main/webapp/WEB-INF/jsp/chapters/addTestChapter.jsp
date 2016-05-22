@@ -29,9 +29,10 @@
             </div>
             <div>
                 <button class="btn btn-default" type="submit">Add chapter</button>
-                <a class="btn btn-default" href='<spring:url value="/chapters/find" htmlEscape="true"/>'>Cancel</a>
+                <a class="btn btn-default" href='<spring:url value="/chapters/testChapterList" htmlEscape="true"/>'>View TestChapter</a>
             </div>
         </div>
+
     </form:form>
 </div>
 </body>
