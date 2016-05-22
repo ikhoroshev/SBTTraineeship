@@ -3,14 +3,11 @@ package ru.sberbank.services;
 
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
-import ru.sberbank.model.Result;
-import ru.sberbank.model.TestRun;
-import ru.sberbank.model.UserGroup;
+import ru.sberbank.model.*;
 import ru.sberbank.repositories.ResultRepository;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Idony on 20.05.2016.
@@ -19,8 +16,7 @@ import java.util.List;
 public class ResultServiceImpl implements ResultService {
     @Resource
     ResultRepository resultRepository;
-    Iterable<TestRun> testRuns;
-    int n,k;
+
     @Resource
     private TestRunService testRunService;
     @Override
@@ -32,20 +28,39 @@ public class ResultServiceImpl implements ResultService {
     public Iterable<Result> findByTestRunLike(TestRun testRun) {
         return resultRepository.findByTestRunLike(testRun);
     }
-    List<Pair<TestRun,Float>> pairList;
+
     public List<Pair<TestRun, Float>> resultByGroup(UserGroup userGroup)
     {
-        pairList=new ArrayList<>();
-        testRuns=testRunService.findByUserGroupLike(userGroup);
+        Iterable<TestRun> testRuns=testRunService.findByUserGroupLike(userGroup);
+        int n=0;
+        int k=0;
+        List<Pair<TestRun,Float>> pairList=new ArrayList<>();
+        HashMap<Question,Boolean> hashMapQuestionAndResult=null;
+        Boolean b;
         for (TestRun testRun:testRuns)
         {
-            for (Result result:findByTestRunLike(testRun))
-            {
-                if(result.getAnswer().getIsRight())n++;
-                else k++;
+            if(testRun.getTestRunStatus() == TestRunStatus.COMPLETED) {
+                if (hashMapQuestionAndResult == null) {
+                    hashMapQuestionAndResult = new HashMap<>();
+                } else {
+                    hashMapQuestionAndResult.clear();
+                }
+
+                for (Result result : findByTestRunLike(testRun)) {
+                    b = hashMapQuestionAndResult.get(result);
+                    if (b == null || b)
+                        hashMapQuestionAndResult.put(result.getQuestion(), result.getAnswer().getIsRight());
+                }
+
+                for (Boolean value : hashMapQuestionAndResult.values()) {
+                    n++;
+                    if (value) k++;
+                }
+
+                pairList.add(Pair.of(testRun, (float) k / n));
+                n = 0;
+                k = 0;
             }
-            pairList.add(Pair.of(testRun,(float)n / (n + k) ));
-            n=0;k=0;
         }//n/(n+k) % правильных
         return pairList;
     }
