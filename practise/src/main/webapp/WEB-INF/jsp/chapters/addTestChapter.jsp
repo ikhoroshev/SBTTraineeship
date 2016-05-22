@@ -24,7 +24,7 @@
             </div>
             <div>
                 <label for="position">Position </label>
-                <form:input class="form-control" path="position" size="30" maxlength="80" id="position"/>
+                <form:input class="form-control" type="number" path="position" size="30" maxlength="80" id="position"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>

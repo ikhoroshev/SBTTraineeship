@@ -28,6 +28,9 @@
             <tr>
                 <td><c:out value="${testChapter.title}"/></td>
                 <td><c:out value="${testChapter.position}"/></td>
+                <td>
+                    <a class="btn btn-default" href='<spring:url value="/testChapter/?id=${testChapter.id}" htmlEscape="true"/>'>Delete</a>
+                </td>
             </tr>
         </c:forEach>
         </tbody>
