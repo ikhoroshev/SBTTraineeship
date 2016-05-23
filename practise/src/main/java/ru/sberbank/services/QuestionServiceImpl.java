@@ -23,7 +23,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter) {
         HashSet<Question> result=new HashSet<>();
-        String[] keyword = keywords.split(" ");
+        String[] keyword = keywords.split("\\W+");
         for(String str : keyword){
             Iterable<Question> questionByTextLikeAndTestChapter = findQuestionByTextLikeAndTestChapter(str, testChapter);
             result.addAll((Collection<? extends Question>) questionByTextLikeAndTestChapter);

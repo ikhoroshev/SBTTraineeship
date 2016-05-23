@@ -62,7 +62,7 @@
                             </c:if>
                         </c:forEach>
                         </td>
-                        <td>
+                        <td align="right">
                             <a class="btn bt btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
                         </td>
                     </tr>
