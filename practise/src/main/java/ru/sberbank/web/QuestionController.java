@@ -29,6 +29,8 @@ public class QuestionController {
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+
+
         model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
     }
@@ -59,7 +61,11 @@ public class QuestionController {
 
     @RequestMapping(value = "/questions/find2", method = RequestMethod.POST)
     public String processViewForm(Question question, Map<String, Object> model){
-        Iterable<Question> questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
+        Iterable<Question> questions;
+        if(question.getTestChapter().getTitle().compareTo("ALL")==0)
+            questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(),null);
+        else questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
+
         model.put("searchQuestion", questions);
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
         model.put("allTestChapter", allTestChapter);
@@ -83,9 +89,12 @@ public class QuestionController {
 
         questionService.deleteQuestion(id);
 
-
         question=tempQuestion;
-        Iterable<Question> questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
+        Iterable<Question> questions;
+        if(question.getTestChapter().getTitle().compareTo("ALL")==0)
+            questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), null);
+        else questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
+
         model.put("searchQuestion", questions);
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
         model.put("allTestChapter", allTestChapter);

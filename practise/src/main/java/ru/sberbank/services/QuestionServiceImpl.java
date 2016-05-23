@@ -15,7 +15,9 @@ public class QuestionServiceImpl implements QuestionService {
     private QuestionRepository questionRepository;
 
     private Iterable<Question> findQuestionByTextLikeAndTestChapter(String text, TestChapter testChapter) {
-        return questionRepository.findQuestionByTextLikeAndTestChapterTitle('%'+text+'%', testChapter.getTitle());
+        if(testChapter==null)
+            return questionRepository.findQuestionByTextLike('%'+text+'%');
+        else return questionRepository.findQuestionByTextLikeAndTestChapterTitle('%'+text+'%', testChapter.getTitle());
     }
 
     @Override
