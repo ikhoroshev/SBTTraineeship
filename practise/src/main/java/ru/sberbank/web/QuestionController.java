@@ -1,6 +1,8 @@
 package ru.sberbank.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,10 +14,7 @@ import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class QuestionController {
@@ -79,13 +78,13 @@ public class QuestionController {
     }
 
     @RequestMapping(value = "/questions/delete/{questionID}", method = RequestMethod.GET)
-    public String processDeleteQuestion(@PathVariable String questionID, Question question, HashMap<String, Object> model){
+    public String processDeleteQuestion(@PathVariable String questionID, Question question, Map<String, Object> model){
         Long id = Long.decode(questionID);
 
         questionService.deleteQuestion(id);
 
-        question=tempQuestion;
 
+        question=tempQuestion;
         Iterable<Question> questions=questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
         model.put("searchQuestion", questions);
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();

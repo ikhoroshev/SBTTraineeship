@@ -23,7 +23,15 @@
                     <c:forEach var="chapter" items="${allTestChapter}">
                         <form:option value="${chapter.title}"/>
                     </c:forEach>
+                    <c:forEach var="chapter" items="${curChapter}">
+                        <form:option value="${chapter.title}"/>
+                    </c:forEach>
                 </form:select>
+                <%--<script src="http://code.jquery.com/jquery-1.4.2.min.js">
+                    $("testChapter").value("second");
+
+
+                </script>--%>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
@@ -54,7 +62,7 @@
                         </c:forEach>
                         </td>
                         <td>
-                            <a class="btn btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
+                            <a class="btn bt btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
                         </td>
                     </tr>
                 </c:forEach>
