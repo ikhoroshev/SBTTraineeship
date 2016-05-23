@@ -35,6 +35,7 @@
             </tr>
         </c:forEach>
         </tbody>
+        <a class="btn btn-default" href='<spring:url value="/chapters/find" htmlEscape="true"/>'>Cancel</a>
     </table>
 </div>
 </body>
