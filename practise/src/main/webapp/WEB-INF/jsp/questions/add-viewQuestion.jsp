@@ -7,7 +7,7 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-    <form:form modelAttribute="question" action="./find2" method="POST" class="form-horizontal"
+    <form:form modelAttribute="question" action="${pageContext.request.contextPath}/questions/find2" method="POST" class="form-horizontal"
                id="search-question-form">
         <div class="form-group has-feedback">
 
@@ -23,7 +23,15 @@
                     <c:forEach var="chapter" items="${allTestChapter}">
                         <form:option value="${chapter.title}"/>
                     </c:forEach>
+                    <c:forEach var="chapter" items="${curChapter}">
+                        <form:option value="${chapter.title}"/>
+                    </c:forEach>
                 </form:select>
+                <%--<script src="http://code.jquery.com/jquery-1.4.2.min.js">
+                    $("testChapter").value("second");
+
+
+                </script>--%>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
 
@@ -39,6 +47,7 @@
                 <tr>
                     <th>Question</th>
                     <th>Answers</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -51,6 +60,9 @@
                                 &nbsp;( + )
                             </c:if>
                         </c:forEach>
+                        </td>
+                        <td>
+                            <a class="btn bt btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
                         </td>
                     </tr>
                 </c:forEach>

@@ -7,7 +7,7 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-    <form:form modelAttribute="question" action="./find" method="POST" class="form-horizontal" id="add-question-form">
+    <form:form modelAttribute="question" action="${pageContext.request.contextPath}/questions/find" method="POST" class="form-horizontal" id="add-question-form">
         <div class="form-group has-feedback">
             <table class="table table-stripped">
                 <thead>
@@ -20,7 +20,7 @@
                     <tr>
                         <td>
                             <div>
-                                <form:textarea path="text" cols="100" rows="5" id="text"/>
+                                <form:textarea path="text" cols="100" rows="5" id="text" title="ffff"/>
                                 <span class="help-inline"><form:errors path="*"/></span>
                             </div>
                         </td>
@@ -38,6 +38,9 @@
                                     <form:option value="${chapter.title}"/>
                                 </c:forEach>
                             </form:select>
+                            <%--<script>
+                                document.getElementById('testChapter').options["%>"]
+                            </script>--%>
                             <span class="help-inline"><form:errors path="*"/></span>
                         </td>
                 </tr>
@@ -48,6 +51,7 @@
                 <tr>
                     <th>Answer</th>
                     <th>Correct?</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -81,11 +85,28 @@
                 </tr>
                 <tr>
                     <td>
+                        <div class="inputs">
                         <form:input class="form-control" path="answers[2].text" size="60" maxlength="100" id="text"/>
+                        </div>
                         <span class="help-inline"><form:errors path="*"/></span>
                     </td>
                     <td>
                         <form:checkbox path="answers[2].isRight"/>
+                    </td>
+                    <td>
+                        <%--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                            function add_input(){
+                                //var len=2;
+                                var inputs = $('.inputs input[type="text"]');
+                                var new_id = inputs.length+1;
+                                $('.inputs').append('<tr><td><input id="text" name="answers[3]" class="form-control" type="text" value="" size="60" maxlength="100" /></td>'+
+                                        '<td><input id="answers3.isRight1" name="answers[3].isRight" type="checkbox" value="true"/><input type="hidden" name="_answers[3].isRight" value="on"/></td>'+
+                                        '<td></td></tr>');
+//                            <input id="text" name="answers[0].text" class="form-control" type="text" value="" size="60" maxlength="100"/>
+                            }
+                        </script>--%>
+                        <input type="button" id="create-answer" name="create-answer" value="+" onclick="add_input()">
                     </td>
                 </tr>
                 </tbody>
