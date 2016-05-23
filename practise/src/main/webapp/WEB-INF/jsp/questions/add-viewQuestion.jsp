@@ -20,12 +20,13 @@
             <div>
                 <label for="testChapter">Chapter </label>
                 <form:select class="form-control" path="testChapter.title" id="testChapter">
+                    <form:option value="ALL"/>
                     <c:forEach var="chapter" items="${allTestChapter}">
                         <form:option value="${chapter.title}"/>
                     </c:forEach>
-                    <c:forEach var="chapter" items="${curChapter}">
+                    <%--<c:forEach var="chapter" items="${curChapter}">
                         <form:option value="${chapter.title}"/>
-                    </c:forEach>
+                    </c:forEach>--%>
                 </form:select>
                 <%--<script src="http://code.jquery.com/jquery-1.4.2.min.js">
                     $("testChapter").value("second");
@@ -61,7 +62,7 @@
                             </c:if>
                         </c:forEach>
                         </td>
-                        <td>
+                        <td align="right">
                             <a class="btn bt btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
                         </td>
                     </tr>

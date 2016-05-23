@@ -15,13 +15,15 @@ public class QuestionServiceImpl implements QuestionService {
     private QuestionRepository questionRepository;
 
     private Iterable<Question> findQuestionByTextLikeAndTestChapter(String text, TestChapter testChapter) {
-        return questionRepository.findQuestionByTextLikeAndTestChapterTitle('%'+text+'%', testChapter.getTitle());
+        if(testChapter==null)
+            return questionRepository.findQuestionByTextLike('%'+text+'%');
+        else return questionRepository.findQuestionByTextLikeAndTestChapterTitle('%'+text+'%', testChapter.getTitle());
     }
 
     @Override
     public Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter) {
         HashSet<Question> result=new HashSet<>();
-        String[] keyword = keywords.split(" ");
+        String[] keyword = keywords.split("\\W+");
         for(String str : keyword){
             Iterable<Question> questionByTextLikeAndTestChapter = findQuestionByTextLikeAndTestChapter(str, testChapter);
             result.addAll((Collection<? extends Question>) questionByTextLikeAndTestChapter);
