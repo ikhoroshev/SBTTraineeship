@@ -22,12 +22,14 @@ public class TestChapterController {
 
 
     @RequestMapping(value = "/chapters/addTestChapter", method = RequestMethod.POST)
-    public String processAddTestChapterForm (TestChapter testChapter){
+    public String processAddTestChapterForm (TestChapter testChapter,Map<String, Object> model){
 
         if (testChapter.getPosition()==null)
             testChapter.setPosition(0);
         testChapterService.addTestChapter(testChapter);
-        return "chapters/addTestChapter";
+        Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", testChaptersIterable);
+        return "chapters/testChapterList";
     }
 
     @RequestMapping(value = "/chapters/testChapterList", method = RequestMethod.GET)
@@ -39,7 +41,7 @@ public class TestChapterController {
     }
     @RequestMapping(value = "testChapter/delete/{testChapterId}", method = RequestMethod.GET)
     public String processDeleteTestChapterForm (TestChapter testChapter, @PathVariable String testChapterId,Map<String, Object> model){
-
+        /*сделать обработку см. message*/
         Long id = Long.decode(testChapterId);
         testChapterService.deleteTestChapter(id);
         Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
