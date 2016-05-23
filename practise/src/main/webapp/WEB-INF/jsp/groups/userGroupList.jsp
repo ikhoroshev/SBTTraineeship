@@ -22,6 +22,11 @@
         <tr>
             <td><c:out value="${group.name}"/></td>
             <td><c:out value="${group.type}"/></td>
+            <td>
+                <a class="btn btn-default" href='<spring:url value="/groups/delete?userGroupId=${group.id}" htmlEscape="true"/>'>Delete <c:if test="${userGroupId == group.id}">
+                    <c:out value="${noDelete}"/>
+                </c:if></a>
+            </td>
         </tr>
     </c:forEach>
     </tbody>

@@ -35,6 +35,8 @@
                 <tr>
                     <th>Name</th>
                     <th>Group name</th>
+                    <th>User open</th>
+                    <th>User delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,6 +48,11 @@
                     </td>
                     <td>
                     <a class="btn btn-default" href='<spring:url value="/testRun?id=${user.id}" htmlEscape="true"/>'>Open</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-default" href='<spring:url value="/users/delete?userId=${user.id}" htmlEscape="true"/>'>Delete <c:if test="${userId == user.id}">
+                            <c:out value="${noDelete}"/>
+                        </c:if></a>
                     </td>
                 </tr>
             </c:forEach>
