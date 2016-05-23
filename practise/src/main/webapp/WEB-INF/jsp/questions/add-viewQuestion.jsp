@@ -63,6 +63,7 @@
                         </c:forEach>
                         </td>
                         <td align="right">
+                            <a class="btn bt btn-default" href='<spring:url value="/questions/edit/${question.id}"/>'>Edit</a>
                             <a class="btn bt btn-default" href='<spring:url value="/questions/delete/${question.id}"/>'>Delete</a>
                         </td>
                     </tr>

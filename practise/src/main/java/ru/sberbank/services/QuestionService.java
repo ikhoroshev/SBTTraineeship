@@ -7,4 +7,5 @@ public interface QuestionService {
     Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter);
     void addQuestion(Question question);
     void deleteQuestion(Long id);
+    Question findQuestionByID(Long id);
 }

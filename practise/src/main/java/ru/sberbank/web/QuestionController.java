@@ -101,5 +101,22 @@ public class QuestionController {
         return "questions/add-viewQuestion";
     }
 
+    @RequestMapping(value = "/questions/edit/{questionID}", method = RequestMethod.GET)
+    public String processEditQuestion(@PathVariable String questionID, Map<String, Object> model){
+        Long id = Long.decode(questionID);
+
+        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
+        model.put("QuestionType", QuestionType.values());
+
+        Question editQuestion = questionService.findQuestionByID(id);
+        model.put("question", editQuestion);
+        model.put("isDelete", true);
+
+        questionService.deleteQuestion(editQuestion.getId());
+
+        return "/questions/addQuestion";
+    }
+
 }
 
