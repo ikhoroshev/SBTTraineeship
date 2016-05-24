@@ -14,6 +14,7 @@
         <tomcat.version>7.0.59</tomcat.version>
         <spring-io-platform.version>2.0.3.RELEASE</spring-io-platform.version>
         <spring.version>4.2.6.RELEASE</spring.version>
+        <spring-security.version>4.1.0.RELEASE</spring-security.version>
     </properties>
 
     <parent>
@@ -48,6 +49,17 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>1.10.1.RELEASE</version>
+        </dependency>
+        <!-- ... other dependency elements ... -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
