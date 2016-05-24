@@ -72,7 +72,7 @@ public class TestRunServiceImpl implements TestRunService {
             Hibernate.initialize(testRun.getCurrentQuestion().getAnswer());
             return testRun.getCurrentQuestion();
         }
-        Hibernate.initialize(testRun.getCurrentQuestion().getAnswer());
+
         return testRunn.getCurrentQuestion();
     }
 

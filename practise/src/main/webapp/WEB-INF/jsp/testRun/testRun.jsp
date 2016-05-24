@@ -33,13 +33,14 @@
         </c:if>
         <c:if test="${question.answerType=='MULTIPLE'}">
             <c:forEach var="answerItem" items="${question.answer}">
-                <form:form modelAttribute="answer"  method="post" class="form-horizontal">
+                <form:form modelAttribute="answers"  method="post" class="form-horizontal">
                     <div>
                         <div>
-                            <form:checkbox path="isRight"></form:checkbox>
+                            <form:checkbox path="isRight" value="TRUE"/>
+                            <c:out value="${answerItem.text}|${question.id}|"/>
                         </div>
                         <div>
-                            <input name="text" value="${answer.text}" hidden="true">
+                            <input name="question.id" id="question.id" value="${question.id}" hidden="true"  />
                         </div>
                        <div>
                            <button class="btn btn-default" type="submit">Next question</button>
