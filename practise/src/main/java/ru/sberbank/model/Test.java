@@ -1,9 +1,14 @@
 package ru.sberbank.model;
 
 
+import org.hibernate.annotations.SortComparator;
+import org.hibernate.annotations.SortNatural;
+import org.springframework.data.web.SortDefault;
+
 import javax.persistence.*;
 import javax.persistence.Id;
 import java.util.List;
+import java.util.SortedSet;
 
 
 @Entity
@@ -20,17 +25,18 @@ public class Test {
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "test_question", catalog = "db",
             joinColumns = {
-                    @JoinColumn(name = "question_id", nullable = false, updatable = false) },
+                    @JoinColumn(name = "test_id", nullable = false, updatable = false) },
             inverseJoinColumns = {
-                    @JoinColumn(name = "test_id",nullable = false, updatable = false) })
-    @OrderBy("testChapter.position")
-    private List<Question> questions;
+                    @JoinColumn(name = "question_id",nullable = false, updatable = false) })
 
-    public List<Question> getQuestions() {
+    @SortNatural
+    private SortedSet<Question> questions;
+
+    public SortedSet<Question> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<Question> questions) {
+    public void setQuestions(SortedSet<Question> questions) {
         this.questions = questions;
     }
     public Test (){

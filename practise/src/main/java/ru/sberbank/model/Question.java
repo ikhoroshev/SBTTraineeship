@@ -5,7 +5,7 @@ import java.lang.String;
 import java.util.Set;
 
 @Entity
-public class Question {
+public class Question implements Comparable<Question>{
     @Id
     @GeneratedValue
     private Long id;
@@ -23,10 +23,11 @@ public class Question {
     private String text;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "test_question", catalog = "db", joinColumns = {
-            @JoinColumn(name = "question_id", nullable = false, updatable = false) },
-            inverseJoinColumns = { @JoinColumn(name = "test_id",
-                    nullable = false, updatable = false) })
+    @JoinTable(name = "test_question", catalog = "db",
+            joinColumns = {
+                    @JoinColumn(name = "question_id", nullable = false, updatable = false) },
+            inverseJoinColumns = {
+                    @JoinColumn(name = "test_id",nullable = false, updatable = false) })
     private Set<Test> tests;
 
     public Long getId() {
@@ -76,4 +77,31 @@ public class Question {
     public void setTests(Set<Test> tests) {
         this.tests = tests;
     }
+
+    @Override
+    public int compareTo(Question o) {
+        int i=testChapter.getPosition().compareTo(o.getTestChapter().getPosition());
+        if(i==0)
+        {
+            return testChapter.getId().compareTo(o.getId());
+        }
+        return i;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Question question = (Question) o;
+
+        return id.equals(question.id);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode();
+    }
+
 }

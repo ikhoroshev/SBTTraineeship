@@ -26,7 +26,32 @@
                 </div>
             </form:form>
         </c:if>
+    </c:if>
+    <c:if test="${question!=null}">
+        <c:if test="${question.answerType=='SINGLE'}">
+           <c:out value="SINGLE"/>
+        </c:if>
+        <c:if test="${question.answerType=='MULTIPLE'}">
+            <c:forEach var="answerItem" items="${question.answer}">
+                <form:form modelAttribute="answer"  method="post" class="form-horizontal">
+                    <div>
+                        <div>
+                            <form:checkbox path="isRight"></form:checkbox>
+                        </div>
+                        <div>
+                            <input name="text" value="${answer.text}" hidden="true">
+                        </div>
+                       <div>
+                           <button class="btn btn-default" type="submit">Next question</button>
+                       </div>
 
+                    </div>
+
+                </form:form>
+            </c:forEach>
+
+
+        </c:if>
     </c:if>
 </div>
 </body>

@@ -1,15 +1,16 @@
 package ru.sberbank.services;
 
+import org.hibernate.Hibernate;
 import org.springframework.stereotype.Service;
-import ru.sberbank.model.Question;
-import ru.sberbank.model.TestRun;
-import ru.sberbank.model.TestRunStatus;
-import ru.sberbank.model.UserGroup;
+import org.springframework.transaction.annotation.Transactional;
+import ru.sberbank.model.*;
 import ru.sberbank.repositories.TestRepository;
 import ru.sberbank.repositories.TestRunRepository;
 
+
 import javax.annotation.Resource;
-import java.util.List;
+import java.util.Iterator;
+import java.util.SortedSet;
 
 /**
  * Created by Idony on 20.05.2016.
@@ -37,17 +38,50 @@ public class TestRunServiceImpl implements TestRunService {
     }
 
     @Override
-    public Question getQuestion(TestRun testRun) {
+    @Transactional
+    public Question nextQuestion(Long testRunId, TestRun testRunn, Answer answer) {
+        TestRun testRun = findOne(testRunId);
+        Question question = null;
         if (testRun.getTestRunStatus() == TestRunStatus.RUNNING) {
-            List<Question> questionList = testRepository.findOne(testRun.getTest().getId()).getQuestions();
-            int i=questionList.indexOf(testRun.getCurrentQuestion()) + 1;//если в листе нету возвратит -1,да +1=0
-            if (questionList.size() == i) {
-                return null;
-            } else {
-                Question question=questionList.get(i);
+
+            Test test = testRun.getTest();
+            SortedSet<Question> questionList = test.getQuestions();
+            Iterator<Question> questionIterable = questionList.iterator();
+            //если ссылки нету
+            question = questionList.first();
+            if (testRun.getCurrentQuestion() == null) {
+                testRun.setCurrentQuestion(question);
+                addOrSaveTestRun(testRun);
+                Hibernate.initialize(question.getAnswer());
                 return question;
             }
+
+            if (testRun.getCurrentQuestion() != null &&
+                    answer.getQuestion()!=null&&
+                    answer.getQuestion().getId() == testRun.getCurrentQuestion().getId()) {
+                for (int i = 0; i < questionList.size(); i++) {
+                    if (questionIterable.next().equals(testRun.getCurrentQuestion())) {
+                        question = questionIterable.next();
+                        testRun.setCurrentQuestion(question);
+                        addOrSaveTestRun(testRun);
+                        Hibernate.initialize(question.getAnswer());
+                        return question;
+                    }
+                }
+            }
+            Hibernate.initialize(testRun.getCurrentQuestion().getAnswer());
+            return testRun.getCurrentQuestion();
         }
-        return null;
+        Hibernate.initialize(testRun.getCurrentQuestion().getAnswer());
+        return testRunn.getCurrentQuestion();
+    }
+
+    @Override
+    public void startTest(Long testRunId) {
+        TestRun testRun = findOne(testRunId);
+        if (testRun.getTestRunStatus() == TestRunStatus.NEW) {
+            testRun.setTestRunStatus(TestRunStatus.RUNNING);
+            addOrSaveTestRun(testRun);
+        }
     }
 }
