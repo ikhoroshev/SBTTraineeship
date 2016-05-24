@@ -8,14 +8,17 @@
                     <a href="<spring:url value="/questions/find" />"><span> Find questions</span></a>
                 </li>
                 <li>
-                    <a href="<spring:url value="/users/find" />"><span> Find users</span></a>
+                    <a href="<spring:url value="/users/find" />"><span> Users</span></a>
                 </li>
                 <li>
-                    <a href="<spring:url value="/groups/find" />"><span> Find group</span></a>
+                    <a href="<spring:url value="/groups/find" />"><span> Group</span></a>
                 </li>
                 <li>
-                    <a href="<spring:url value="/test/addTest" />"><span> Find test</span></a>
-                </li>>
+                    <a href="<spring:url value="/chapters/find" />"><span> Find chapters</span></a>
+                </li>
+                <li>
+                    <a href="<spring:url value="/test/find" />"><span> Test </span></a>
+                </li>
              </ul>
         </div>
     </div>
