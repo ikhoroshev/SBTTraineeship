@@ -7,6 +7,15 @@ import java.util.List;
  */
 public class Answers {
     private List<Answer> answerList;
+    private Long idAnswerForSingle;
+
+    public Long getIdAnswerForSingle() {
+        return idAnswerForSingle;
+    }
+
+    public void setIdAnswerForSingle(Long idAnswerForSingle) {
+        this.idAnswerForSingle = idAnswerForSingle;
+    }
 
     public List<Answer> getAnswerList() {
         return answerList;

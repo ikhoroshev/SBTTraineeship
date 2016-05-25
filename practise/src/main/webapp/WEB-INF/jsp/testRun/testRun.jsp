@@ -26,10 +26,32 @@
                 </div>
             </form:form>
         </c:if>
+        <c:if test="${testRun.testRunStatus == 'COMPLETED'}">
+            <c:out value="TEST COMPLETED"/>
+        </c:if>
     </c:if>
     <c:if test="${question!=null}">
         <c:if test="${question.answerType=='SINGLE'}">
-           <form:
+            <form:form modelAttribute="answers"  method="post" class="form-horizontal">
+                <c:forEach var="answerItem" items="${question.answer}" varStatus="iter">
+
+                    <div>
+                        <div>
+                            <form:radiobutton path="idAnswerForSingle" value="${answerItem.id}"/>
+                            <label for="answerList[${iter.index}].isRight">${answerItem.text}</label>
+                        </div>
+                        <div>
+                            <input name="answerList[${iter.index}].question.id" value="${question.id}" hidden="true"  />
+                            <input name="answerList[${iter.index}].text" value="${answerItem.text}" hidden="true"  />
+                            <input name="answerList[${iter.index}].id" value="${answerItem.id}" hidden="true"  />
+                        </div>
+                    </div>
+                </c:forEach>
+                <div>
+                    <button class="btn btn-default" type="submit">Next question</button>
+                </div>
+            </form:form>
+
         </c:if>
         <c:if test="${question.answerType=='MULTIPLE'}">
             <form:form modelAttribute="answers"  method="post" class="form-horizontal">
@@ -43,6 +65,7 @@
                         <div>
                             <input name="answerList[${iter.index}].question.id" value="${question.id}" hidden="true"  />
                             <input name="answerList[${iter.index}].text" value="${answerItem.text}" hidden="true"  />
+                            <input name="answerList[${iter.index}].id" value="${answerItem.id}" hidden="true"  />
                         </div>
                     </div>
             </c:forEach>

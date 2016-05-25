@@ -59,11 +59,17 @@ public class TestRunServiceImpl implements TestRunService {
                     inspectionAnswer(answers, testRun)) {
                 for (int i = 0; i < questionList.size(); i++) {
                     if (questionIterable.next().equals(testRun.getCurrentQuestion())) {
-                        question = questionIterable.next();
-                        testRun.setCurrentQuestion(question);
+                        if(questionIterable.hasNext())
+                        {
+                            question = questionIterable.next();
+                            testRun.setCurrentQuestion(question);
+                            addOrSaveTestRun(testRun);
+                            Hibernate.initialize(question.getAnswer());
+                            return question;
+                        }
+                        testRun.setTestRunStatus(TestRunStatus.COMPLETED);
                         addOrSaveTestRun(testRun);
-                        Hibernate.initialize(question.getAnswer());
-                        return question;
+                        return null;
                     }
                 }
             }
@@ -86,7 +92,8 @@ public class TestRunServiceImpl implements TestRunService {
     @Override
     public boolean inspectionAnswer(Answers answers,TestRun testRun) {
 
-        //реализовать проверку
-        return false;
+        //реализовать проверку id вопроса и id ответа в вопросе
+        //и добавить ответ в result
+        return true;
     }
 }

@@ -32,12 +32,12 @@ public class TestRunController {
                                  @ModelAttribute("answers") Answers answer) {
 
 
-        objectMap.put("testRun", testRunService.findOne(testRunId));
+
         objectMap.put("testRunId", testRunId);
 
         Question question = testRunService.nextQuestion(testRunId, testRun, answer);
         objectMap.put("question", question);
-
+        objectMap.put("testRun", testRunService.findOne(testRunId));
         return "/testRun/testRun";
     }
 
@@ -50,6 +50,7 @@ public class TestRunController {
         testRunService.startTest(testRunId,testRun);
         Question question = testRunService.nextQuestion(testRunId, testRun, answer);
         objectMap.put("question", question);
+        objectMap.put("testRun", testRunService.findOne(testRunId));
         return "/testRun/testRun";
     }
 }
