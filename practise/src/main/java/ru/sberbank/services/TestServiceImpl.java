@@ -27,8 +27,13 @@ public class TestServiceImpl implements TestService {
   }
 
   @Override
-  public void deleteTest(Long id) {
-    testRepository.delete(id);
+  public String deleteTest(Long id) {
+    try {
+      testRepository.delete(id);
+    } catch (Exception e){
+      return "Удаление не возможно, данные связаны";
+    }
+    return "";
  }
 
   @Override
