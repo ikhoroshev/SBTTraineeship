@@ -113,10 +113,10 @@
             </table>
             <div>
                 <button class="btn btn-default" type="submit">Add Question</button>
-                <c:if test="${isDelete}">
+                <c:if test="${isEdit}">
                     <a class="btn bt btn-default" href='<spring:url value="/questions/find/"/>'>Delete Question</a>
                 </c:if>
-                <c:if test="!${isDelete}">
+                <c:if test="${isEdit==false}">
                     <a class="btn bt btn-default" href='<spring:url value="/questions/find/"/>'>Cancel</a>
                 </c:if>
 

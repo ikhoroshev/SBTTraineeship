@@ -84,6 +84,7 @@ public class QuestionController {
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
         model.put("allTestChapter", allTestChapter);
         model.put("QuestionType", QuestionType.values());
+        model.put("isEdit", false);
         return "questions/addQuestion";
     }
 
@@ -116,7 +117,7 @@ public class QuestionController {
 
         Question editQuestion = questionService.findQuestionByID(id);
         model.put("question", editQuestion);
-        model.put("isDelete", true);
+        model.put("isEdit", true);
 
         questionService.deleteQuestion(editQuestion.getId());
 
