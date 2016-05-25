@@ -27,6 +27,11 @@ public class TestServiceImpl implements TestService {
   }
 
   @Override
+  public void deleteTest(Long id) {
+    testRepository.delete(id);
+ }
+
+  @Override
   public Iterable<Test> findTest (Test test) {
     if (!Strings.isNullOrEmpty(test.getDescription())
             && !Strings.isNullOrEmpty(test.getTitle())) {

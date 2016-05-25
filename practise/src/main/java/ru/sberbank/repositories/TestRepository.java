@@ -8,6 +8,7 @@ package ru.sberbank.repositories;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 import ru.sberbank.model.Test;
 
@@ -18,8 +19,10 @@ import ru.sberbank.model.Test;
 public interface TestRepository extends CrudRepository<Test, Long> {
   @Modifying
   @Transactional
-  @Query("delete from Test u where u.title = 123")
-  void deleteInactiveUsers();
+  @Query("delete from Test t where t = :test")
+  void deleteInactiveTest(@Param("test") Test test);
+
+
 
   Iterable<Test> findByTitleLike (String testTitleLike);
   Iterable<Test> findByTitleLikeAndDescriptionLike (String testTitleLike, String testDescriptionLike);
