@@ -12,5 +12,6 @@ public interface TestService  {
 
     Iterable<Test> getAllTest();
 
-    void deleteTest(Test test);
+    void deleteTest(Long test);
+
 }
