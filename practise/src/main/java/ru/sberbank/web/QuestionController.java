@@ -1,8 +1,6 @@
 package ru.sberbank.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,7 +13,9 @@ import ru.sberbank.services.SystemLogService;
 import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
-import java.util.*;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 @Controller
 public class QuestionController {
@@ -33,7 +33,6 @@ public class QuestionController {
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
-
 
         model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
@@ -54,8 +53,7 @@ public class QuestionController {
         }
 
         questionService.addQuestion(question);
-        log.Log("Был добавлен вопрос","404");
-        log.Log("Был добавлен вопрос");
+        log.Log(10);
 
         question.setText(null);
         question.setTestChapter(null);
@@ -94,6 +92,7 @@ public class QuestionController {
         Long id = Long.decode(questionID);
 
         questionService.deleteQuestion(id);
+        log.Log(12);
 
         question=tempQuestion;
         Iterable<Question> questions;

@@ -13,23 +13,40 @@ public class SystemLogServiceImpl implements SystemLogService {
     SystemLogRepository logRepository;
 
     @Override
-    public void Log(String message, String... code) {
+    public void Log(String message) {
         SystemLog log=new SystemLog();
 
         log.setMessage(message);
-        if (code.length>0)
-            log.setCode(code[0]);
-        else log.setCode("");
-
+        log.setCode("");
         log.setDateTime(new Date());
 
         //TODO posle dobavleniya avtorizacii ispravit
         log.setUser(null);
 
         logRepository.save(log);
+    }
 
+    @Override
+    public void Log(int code) {
+        SystemLog log=new SystemLog();
 
+        log.setMessage(codeToMessage(code));
+        log.setCode(String.valueOf(code));
+        log.setDateTime(new Date());
 
+        //TODO posle dobavleniya avtorizacii ispravit
+        log.setUser(null);
+
+        logRepository.save(log);
+    }
+
+    private String codeToMessage(int code){
+        switch (code){
+            case 10 : return "Был добавлен вопрос";
+            case 11 : return "Был изменен вопрос";
+            case 12 : return "Был удален вопрос";
+            default: return "";
+        }
     }
 
     @Override
