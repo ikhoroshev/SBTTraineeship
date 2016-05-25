@@ -18,7 +18,7 @@
             <form:form modelAttribute="testRun"  method="post" class="form-horizontal">
                 <div>
                     <div>
-
+                        <input name="testRunStatus" value="RUNNING" hidden="true"/>
                     </div>
                     <div>
                         <button class="btn btn-default" type="submit">Start test</button>
@@ -29,27 +29,27 @@
     </c:if>
     <c:if test="${question!=null}">
         <c:if test="${question.answerType=='SINGLE'}">
-           <c:out value="SINGLE"/>
+           <form:
         </c:if>
         <c:if test="${question.answerType=='MULTIPLE'}">
-            <c:forEach var="answerItem" items="${question.answer}">
-                <form:form modelAttribute="answers"  method="post" class="form-horizontal">
+            <form:form modelAttribute="answers"  method="post" class="form-horizontal">
+            <c:forEach var="answerItem" items="${question.answer}" varStatus="iter">
+
                     <div>
                         <div>
-                            <form:checkbox path="isRight" value="TRUE"/>
-                            <c:out value="${answerItem.text}|${question.id}|"/>
+                            <form:checkbox path="answerList[${iter.index}].isRight" value="TRUE"/>
+                            <label for="answerList[${iter.index}].isRight">${answerItem.text}</label>
                         </div>
                         <div>
-                            <input name="question.id" id="question.id" value="${question.id}" hidden="true"  />
+                            <input name="answerList[${iter.index}].question.id" value="${question.id}" hidden="true"  />
+                            <input name="answerList[${iter.index}].text" value="${answerItem.text}" hidden="true"  />
                         </div>
-                       <div>
-                           <button class="btn btn-default" type="submit">Next question</button>
-                       </div>
-
                     </div>
-
-                </form:form>
             </c:forEach>
+                <div>
+                    <button class="btn btn-default" type="submit">Next question</button>
+                </div>
+            </form:form>
 
 
         </c:if>

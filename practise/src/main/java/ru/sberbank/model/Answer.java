@@ -31,7 +31,7 @@ public class Answer {
         this.question = question;
     }
 
-    protected Answer() {};
+    public Answer() {};
 
     public Long getId() {
         return id;

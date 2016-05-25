@@ -39,7 +39,7 @@ public class TestRunServiceImpl implements TestRunService {
 
     @Override
     @Transactional
-    public Question nextQuestion(Long testRunId, TestRun testRunn, Answer answer) {
+    public Question nextQuestion(Long testRunId, TestRun testRunn, Answers answers) {
         TestRun testRun = findOne(testRunId);
         Question question = null;
         if (testRun.getTestRunStatus() == TestRunStatus.RUNNING) {
@@ -47,7 +47,6 @@ public class TestRunServiceImpl implements TestRunService {
             Test test = testRun.getTest();
             SortedSet<Question> questionList = test.getQuestions();
             Iterator<Question> questionIterable = questionList.iterator();
-            //если ссылки нету
             question = questionList.first();
             if (testRun.getCurrentQuestion() == null) {
                 testRun.setCurrentQuestion(question);
@@ -57,8 +56,7 @@ public class TestRunServiceImpl implements TestRunService {
             }
 
             if (testRun.getCurrentQuestion() != null &&
-                    answer.getQuestion()!=null&&
-                    answer.getQuestion().getId() == testRun.getCurrentQuestion().getId()) {
+                    inspectionAnswer(answers, testRun)) {
                 for (int i = 0; i < questionList.size(); i++) {
                     if (questionIterable.next().equals(testRun.getCurrentQuestion())) {
                         question = questionIterable.next();
@@ -72,16 +70,23 @@ public class TestRunServiceImpl implements TestRunService {
             Hibernate.initialize(testRun.getCurrentQuestion().getAnswer());
             return testRun.getCurrentQuestion();
         }
-
+        Hibernate.initialize(testRun.getCurrentQuestion());
         return testRunn.getCurrentQuestion();
     }
 
     @Override
-    public void startTest(Long testRunId) {
+    public void startTest(Long testRunId,TestRun testRunn) {
         TestRun testRun = findOne(testRunId);
-        if (testRun.getTestRunStatus() == TestRunStatus.NEW) {
+        if (testRun.getTestRunStatus() == TestRunStatus.NEW&&testRunn.getTestRunStatus()==TestRunStatus.RUNNING) {
             testRun.setTestRunStatus(TestRunStatus.RUNNING);
             addOrSaveTestRun(testRun);
         }
+    }
+
+    @Override
+    public boolean inspectionAnswer(Answers answers,TestRun testRun) {
+
+        //реализовать проверку
+        return false;
     }
 }
