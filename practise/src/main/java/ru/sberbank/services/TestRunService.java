@@ -13,4 +13,5 @@ public interface TestRunService {
     Question nextQuestion(Long id, TestRun testRun, Answers answer);
     void startTest(Long testRunId,TestRun testRun);
     boolean inspectionAnswer(Answers answers,TestRun testRun);
+    Question hideRightAnswers(Question question);
 }

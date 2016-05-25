@@ -10,6 +10,7 @@ import ru.sberbank.model.Answer;
 import ru.sberbank.model.Answers;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.TestRun;
+import ru.sberbank.repositories.AnswerRepository;
 import ru.sberbank.services.TestRunService;
 
 import javax.annotation.Resource;
@@ -51,6 +52,7 @@ public class TestRunController {
         Question question = testRunService.nextQuestion(testRunId, testRun, answer);
         objectMap.put("question", question);
         objectMap.put("testRun", testRunService.findOne(testRunId));
+
         return "/testRun/testRun";
     }
 }

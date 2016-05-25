@@ -20,6 +20,12 @@ public class Result {
     @ManyToOne
     private Answer answer;
 
+    public Result(TestRun testRun, Question question, Answer answer) {
+        this.testRun = testRun;
+        this.question = question;
+        this.answer = answer;
+    }
+    public Result(){}
     public Long getId() {
         return id;
     }

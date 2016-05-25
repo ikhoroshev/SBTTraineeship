@@ -4,6 +4,8 @@ import org.hibernate.Hibernate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.sberbank.model.*;
+import ru.sberbank.repositories.AnswerRepository;
+import ru.sberbank.repositories.ResultRepository;
 import ru.sberbank.repositories.TestRepository;
 import ru.sberbank.repositories.TestRunRepository;
 
@@ -21,7 +23,10 @@ public class TestRunServiceImpl implements TestRunService {
     TestRunRepository testRunRepository;
     @Resource
     TestRepository testRepository;
-
+    @Resource
+    ResultRepository resultRepository;
+    @Resource
+    AnswerRepository answerRepository;
     @Override
     public Iterable<TestRun> findByUserGroupLike(UserGroup userGroup) {
         return testRunRepository.findByUserGroupLike(userGroup);
@@ -59,8 +64,7 @@ public class TestRunServiceImpl implements TestRunService {
                     inspectionAnswer(answers, testRun)) {
                 for (int i = 0; i < questionList.size(); i++) {
                     if (questionIterable.next().equals(testRun.getCurrentQuestion())) {
-                        if(questionIterable.hasNext())
-                        {
+                        if (questionIterable.hasNext()) {
                             question = questionIterable.next();
                             testRun.setCurrentQuestion(question);
                             addOrSaveTestRun(testRun);
@@ -81,19 +85,53 @@ public class TestRunServiceImpl implements TestRunService {
     }
 
     @Override
-    public void startTest(Long testRunId,TestRun testRunn) {
+    public void startTest(Long testRunId, TestRun testRunn) {
         TestRun testRun = findOne(testRunId);
-        if (testRun.getTestRunStatus() == TestRunStatus.NEW&&testRunn.getTestRunStatus()==TestRunStatus.RUNNING) {
+        if (testRun.getTestRunStatus() == TestRunStatus.NEW && testRunn.getTestRunStatus() == TestRunStatus.RUNNING) {
             testRun.setTestRunStatus(TestRunStatus.RUNNING);
             addOrSaveTestRun(testRun);
         }
     }
 
     @Override
-    public boolean inspectionAnswer(Answers answers,TestRun testRun) {
-
+    public boolean inspectionAnswer(Answers answers, TestRun testRun) {
+        if (answers.getAnswerList() == null)
+            return false;
+        for (Answer answer : answers.getAnswerList()) {
+            if (testRun.getCurrentQuestion().getId() != answer.getQuestion().getId())
+                return false;
+            boolean b = false;
+            for (Answer answerQ : testRun.getCurrentQuestion().getAnswer()) {
+                if (answerQ.getId() == answer.getId()) b = true;
+            }
+            if (!b)
+                return false;
+            if (testRun.getCurrentQuestion().getAnswerType() == AnswerType.SINGLE) {
+                if (answers.getIdAnswerForSingle() == answer.getId())
+                    answer.setIsRight(true);
+                else
+                    answer.setIsRight(false);
+            }
+        }
+        for (Answer answer : answers.getAnswerList()) {
+            if (answer.getIsRight()) {
+                Answer answer2 = new Answer();
+                answer2.setId(answer.getId());
+                resultRepository.save(new Result(testRun, testRun.getCurrentQuestion(), answer2));
+            }
+        }
         //реализовать проверку id вопроса и id ответа в вопросе
         //и добавить ответ в result
         return true;
     }
+
+    @Override
+    public Question hideRightAnswers(Question question) {
+        if (question != null)
+            for (Answer answer : question.getAnswer()) {
+                answer.setIsRight(false);
+            }
+        return question;
+    }
+
 }

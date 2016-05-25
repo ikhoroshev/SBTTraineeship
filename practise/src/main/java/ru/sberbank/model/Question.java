@@ -34,6 +34,14 @@ public class Question implements Comparable<Question>{
         return id;
     }
 
+    public Question(AnswerType answerType, TestChapter testChapter, Set<Answer> answer, String text, Set<Test> tests) {
+        this.answerType = answerType;
+        this.testChapter = testChapter;
+        this.answer = answer;
+        this.text = text;
+        this.tests = tests;
+    }
+    public Question(){}
     public void setId(Long id) {
         this.id = id;
     }
