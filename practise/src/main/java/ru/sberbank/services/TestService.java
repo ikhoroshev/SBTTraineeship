@@ -11,6 +11,7 @@ public interface TestService  {
 
     Iterable<Test> getAllTest();
 
+    Test getTest(Long id);
 
     Iterable<Test> deleteTest(long id);
 }
