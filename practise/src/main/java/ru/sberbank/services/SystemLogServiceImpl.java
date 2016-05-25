@@ -45,6 +45,9 @@ public class SystemLogServiceImpl implements SystemLogService {
             case 10 : return "Был добавлен вопрос";
             case 11 : return "Был изменен вопрос";
             case 12 : return "Был удален вопрос";
+            case 13 : return "Была добавлена глава";
+            case 14 : return "Была изменена глава";
+            case 15 : return "Была удалена глава";
             default: return "";
         }
     }

@@ -32,7 +32,9 @@
                     <a class="btn btn-default" href='<spring:url value="/testChapter/delete/${testChapter.id}" htmlEscape="true"/>'>Delete <c:if test="${testChapterId == testChapter.id}">
                         <c:out value="${noDelete}"/>
                     </c:if></a>
-                    <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit</a>
+                    <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit<c:if test="${testChapterId == testChapter.id}">
+                        <c:out value="${noEdit}"/>
+                    </c:if></a>
                 </td>
             </tr>
         </c:forEach>

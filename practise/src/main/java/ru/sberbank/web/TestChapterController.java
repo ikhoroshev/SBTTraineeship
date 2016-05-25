@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.TestChapter;
 import ru.sberbank.model.User;
+import ru.sberbank.services.SystemLogService;
 import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
@@ -17,6 +18,8 @@ public class TestChapterController {
     @Resource
     private TestChapterService testChapterService;
 
+    @Resource
+    private SystemLogService log;
 
     @RequestMapping(value = "chapters/find", method = RequestMethod.GET)
     public String initViewForm(TestChapter testChapter){ return "chapters/addTestChapter"; }
@@ -28,6 +31,7 @@ public class TestChapterController {
         if (testChapter.getPosition()==null)
             testChapter.setPosition(0);
         testChapterService.addTestChapter(testChapter);
+        log.Log(13);
         Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
         model.put("allTestChapter", testChaptersIterable);
         return "chapters/testChapterList";
@@ -46,6 +50,7 @@ public class TestChapterController {
         Long id = Long.decode(testChapterId);
         try {
             testChapterService.deleteTestChapter(id);
+            log.Log(15);
         }catch (DataIntegrityViolationException e){
             System.out.println(e);
             Iterable<TestChapter> testChapterIterable = testChapterService.getAllTestChapter();
@@ -69,8 +74,17 @@ public class TestChapterController {
         TestChapter editTestChapter = testChapterService.findTestChapterByID(id);
         model.put("testChapter", editTestChapter);
 
-
-        testChapterService.deleteTestChapter(editTestChapter.getId());
+        try {
+            testChapterService.deleteTestChapter(editTestChapter.getId());
+            log.Log(14);
+        }catch (DataIntegrityViolationException e){
+            System.out.println(e);
+            Iterable<TestChapter> testChapterIterable = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", testChapterIterable);
+            model.put("noEdit", "- can not be edit");
+            model.put("testChapterId", testChapterId);
+            return "chapters/testChapterList";
+        }
 
         return "/chapters/addTestChapter";
     }
