@@ -5,6 +5,9 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
+                    <a href="<spring:url value="/log/find" />"><span> Log</span></a>
+                </li>
+                <li>
                     <a href="<spring:url value="/questions/find" />"><span> Find questions</span></a>
                 </li>
                 <li>
