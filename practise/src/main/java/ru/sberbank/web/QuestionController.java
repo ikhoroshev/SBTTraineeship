@@ -11,6 +11,7 @@ import ru.sberbank.model.Question;
 import ru.sberbank.model.QuestionType;
 import ru.sberbank.model.TestChapter;
 import ru.sberbank.services.QuestionService;
+import ru.sberbank.services.SystemLogService;
 import ru.sberbank.services.TestChapterService;
 
 import javax.annotation.Resource;
@@ -25,6 +26,9 @@ public class QuestionController {
 
     @Resource
     private TestChapterService testChapterService;
+
+    @Resource
+    private SystemLogService log;
 
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
@@ -50,6 +54,8 @@ public class QuestionController {
         }
 
         questionService.addQuestion(question);
+        log.Log("Был добавлен вопрос","404");
+        log.Log("Был добавлен вопрос");
 
         question.setText(null);
         question.setTestChapter(null);
