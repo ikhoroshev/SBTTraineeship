@@ -19,10 +19,11 @@ public class SystemLog {
     private String message;
 
     @Column(name = "DATE_TIME", nullable = false)
+    @OrderBy
     private Date dateTime;
 
     @ManyToOne
-    @JoinColumn(name = "USER_ID", nullable = false)
+    @JoinColumn(name = "USER_ID")
     private User user;
 
     public User getUser() {
