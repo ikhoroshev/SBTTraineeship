@@ -14,7 +14,7 @@
 <jsp:include page="../navigation.jsp"/>
 
 <div class="container xd-container">
-    <form:form modelAttribute="test" method="post" class="form-horizontal" id="search-test-form">
+    <form:form modelAttribute="test" action="addTest" method="post" class="form-horizontal" id="search-test-form">
         <div class="form-group has-feedback">
             <div>
                 <label for="title">Title </label>

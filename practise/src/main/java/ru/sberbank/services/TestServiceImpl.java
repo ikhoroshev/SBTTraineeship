@@ -27,6 +27,11 @@ public class TestServiceImpl implements TestService {
         return testRepository.findAll();
     }
 
+    @Override
+    public Test getTest(Long id) {
+        return testRepository.findOne(id);
+    }
+
 
     @Override
     public Iterable<Test> deleteTest(long id) {

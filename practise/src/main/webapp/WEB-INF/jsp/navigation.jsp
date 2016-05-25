@@ -22,6 +22,9 @@
                 <li>
                     <a href="<spring:url value="/test/find" />"><span> Test </span></a>
                 </li>
+                <li>
+                    <a href="<spring:url value="/testRun/initUserTest" />"><span> Test user</span></a>
+                </li>
              </ul>
         </div>
     </div>

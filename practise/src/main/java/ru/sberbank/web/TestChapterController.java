@@ -1,5 +1,6 @@
 package ru.sberbank.web;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,9 +42,18 @@ public class TestChapterController {
     }
     @RequestMapping(value = "testChapter/delete/{testChapterId}", method = RequestMethod.GET)
     public String processDeleteTestChapterForm (TestChapter testChapter, @PathVariable String testChapterId,Map<String, Object> model){
-        /*сделать обработку см. message*/
+
         Long id = Long.decode(testChapterId);
-        testChapterService.deleteTestChapter(id);
+        try {
+            testChapterService.deleteTestChapter(id);
+        }catch (DataIntegrityViolationException e){
+            System.out.println(e);
+            Iterable<TestChapter> testChapterIterable = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", testChapterIterable);
+            model.put("noDelete", "- can not be removed");
+            model.put("testChapterId", testChapterId);
+            return "chapters/testChapterList";
+        }
         Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
         model.put("allTestChapter", testChaptersIterable);
 
