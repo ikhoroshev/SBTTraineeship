@@ -32,6 +32,11 @@ public class TestChapterServiceImpl implements TestChapterService {
     public void deleteTestChapter(Long id) {
         testChapterRepository.delete(id);
     }
+
+    @Override
+    public TestChapter findTestChapterByID(Long id) {
+        return testChapterRepository.findOne(id);
+    }
 }
 
 

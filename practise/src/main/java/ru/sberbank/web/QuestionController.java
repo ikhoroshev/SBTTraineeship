@@ -122,6 +122,5 @@ public class QuestionController {
 
         return "/questions/addQuestion";
     }
-
 }
 

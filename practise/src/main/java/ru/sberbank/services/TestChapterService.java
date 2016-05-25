@@ -10,4 +10,6 @@ public interface TestChapterService {
     Iterable<TestChapter> getAllTestChapter();
     Iterable<TestChapter> getTestChapterByTitle(String title);
     void deleteTestChapter(Long id);
+
+    TestChapter findTestChapterByID(Long id);
 }

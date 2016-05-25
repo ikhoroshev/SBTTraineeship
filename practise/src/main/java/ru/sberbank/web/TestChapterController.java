@@ -59,6 +59,19 @@ public class TestChapterController {
 
         return "chapters/testChapterList";
     }
+    @RequestMapping(value = "testChapter/edit/{testChapterId}", method = RequestMethod.GET)
+    public String processEditTestChapter(@PathVariable String testChapterId, Map<String, Object> model){
+        Long id = Long.decode(testChapterId);
+
+       Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+        model.put("allTestChapter", allTestChapter);
+
+        TestChapter editTestChapter = testChapterService.findTestChapterByID(id);
+        model.put("testChapter", editTestChapter);
 
 
+        testChapterService.deleteTestChapter(editTestChapter.getId());
+
+        return "/chapters/addTestChapter";
+    }
 }

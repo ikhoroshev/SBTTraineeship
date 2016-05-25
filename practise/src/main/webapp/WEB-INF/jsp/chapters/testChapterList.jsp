@@ -16,7 +16,6 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-
     <table class="table table-stripped">
         <thead>
         <tr>
@@ -33,8 +32,8 @@
                     <a class="btn btn-default" href='<spring:url value="/testChapter/delete/${testChapter.id}" htmlEscape="true"/>'>Delete <c:if test="${testChapterId == testChapter.id}">
                         <c:out value="${noDelete}"/>
                     </c:if></a>
+                    <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit</a>
                 </td>
-
             </tr>
         </c:forEach>
         </tbody>
