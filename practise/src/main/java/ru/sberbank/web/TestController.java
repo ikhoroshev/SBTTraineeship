@@ -33,4 +33,13 @@ public class TestController {
         return "test/testsList";
     }
 
+    @RequestMapping(value = "testChapter/delete/{testId}", method = RequestMethod.GET)
+    public String processDeleteTestForm (Test test, @PathVariable String testId,Map<String, Object> model){
+        Long id = Long.decode(testId);
+        testService.deleteTest(id);
+        Iterable<Test> testIterable = testService.getAllTest();
+        model.put("allTest", testIterable);
+
+        return "test/testsList";
+    }
 }
