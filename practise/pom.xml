@@ -14,6 +14,7 @@
         <tomcat.version>7.0.59</tomcat.version>
         <spring-io-platform.version>2.0.3.RELEASE</spring-io-platform.version>
         <spring.version>4.2.6.RELEASE</spring.version>
+        <spring-security.version>4.1.0.RELEASE</spring-security.version>
     </properties>
 
     <parent>
@@ -58,6 +59,16 @@
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>1.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
 
         <!--<dependency>-->

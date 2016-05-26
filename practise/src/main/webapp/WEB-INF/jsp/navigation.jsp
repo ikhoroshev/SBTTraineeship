@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <spring:url value="/users/find" var="findUsersForm"/>
 <nav class="navbar navbar-default" role="navigation">
 <div class="container">
@@ -25,6 +26,10 @@
                 <li>
                     <a href="<spring:url value="/testRun/initUserTest" />"><span> Test user</span></a>
                 </li>
+                <li>
+                    <a href="<c:url value='/logout'/>"><span><b> Logout</b></span></a>
+                </li>
+
              </ul>
         </div>
     </div>

@@ -17,5 +17,7 @@
     <mvc:resources mapping="/resources/**" location="/resources/"/>
 
     <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/login" view-name="login"/>
+    <mvc:view-controller path="/logout" view-name="login"/>
     <mvc:default-servlet-handler/>
 </beans>
