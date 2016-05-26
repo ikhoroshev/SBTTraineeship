@@ -9,6 +9,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<link rel="stylesheet" href="/testapp/resources/css/main.css" type="text/css"/>
 <title>Search Test</title>
 <jsp:include page="../header.jsp"/>
 <body>
@@ -59,12 +60,12 @@
                             </td>
                         </tr>
                     </c:forEach>
-                    <button class="btn btn-default" type="submit">Delete the marked </button>
+
                 </form:form>
                     </tbody>
                 </table>
 
-
+            <p class="error"> ${isError} </p>
         </c:if>
 
 

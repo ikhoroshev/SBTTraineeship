@@ -32,6 +32,7 @@ public class SearchTestController {
     public String processAddTestForm(Test test, Map<String, Object> model) {
         Iterable<Test> tests = testService.findTest(test);
         model.put("searchResult", tests);
+        model.put("isError", "");
         return "tests/searchTest";
     }
 
@@ -44,10 +45,11 @@ public class SearchTestController {
     @RequestMapping(value = "/tests/delete/{testID}", method = RequestMethod.GET)
     public String getTest(@PathVariable String testID, Test test, HashMap<String, Object> model) {
         Long id = Long.decode(testID);
-        testService.deleteTest(id);
+        model.put("isError", testService.deleteTest(id) );
 
         Iterable<Test> tests = testService.findTest(test);
         model.put("searchResult", tests);
+
         //questionService.deleteQuestion(id);
 
        // question = tempQuestion;
