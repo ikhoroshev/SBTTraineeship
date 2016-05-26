@@ -16,6 +16,8 @@ import ru.sberbank.services.UserGroupService;
 import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 @Controller
@@ -24,6 +26,16 @@ public class UserController {
     private UserService userService;
     @Resource
     private UserGroupService userGroupService;
+
+    private String sha256(String input) throws NoSuchAlgorithmException {
+        MessageDigest mDigest = MessageDigest.getInstance("SHA-256");
+        byte[] result = mDigest.digest(input.getBytes());
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < result.length; i++) {
+            sb.append(Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1));
+        }
+        return sb.toString();
+    }
 
     @RequestMapping(value = "/users/find", method = RequestMethod.GET)
     public String initSearchForm(User user, Map<String, Object> model) {
@@ -53,6 +65,13 @@ public class UserController {
             UserGroup userGroup = userGroupService.getUserGroup(groupId);
             user.setGroup(userGroup);
         }
+        try{
+            user.setPassword(sha256(user.getPassword()));
+        }
+        catch (NoSuchAlgorithmException e){
+            return "users/addUser";
+        }
+
         userService.addUser(user);
         Iterable<User> users = userService.findUsersByExample(user);
         model.put("searchResult", users);

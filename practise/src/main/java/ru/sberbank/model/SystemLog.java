@@ -3,9 +3,6 @@ package ru.sberbank.model;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by asphodelfod on 15.05.16.
- */
 @Entity
 @Table(name = "SYSTEM_LOG")
 public class SystemLog {
@@ -21,7 +18,7 @@ public class SystemLog {
     @Column(name = "DATE_TIME", nullable = false)
     private Date dateTime;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "USER_ID")
     private User user;
 

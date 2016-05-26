@@ -42,7 +42,7 @@
             <tbody>
             <c:forEach var="user" items="${searchResult}">
                 <tr>
-                    <td><c:out value="${user.lastName} ${user.middleName} ${user.firstName}"/></td>
+                    <td><c:out value="${user.lastName} ${user.firstName} ${user.middleName}"/></td>
                     <td>
                         <c:out value="${user.group.name}"/>
                     </td>
@@ -50,9 +50,11 @@
                     <a class="btn btn-default" href='<spring:url value="/testRun?id=${user.id}" htmlEscape="true"/>'>Open</a>
                     </td>
                     <td>
-                        <a class="btn btn-default" href='<spring:url value="/users/delete?userId=${user.id}" htmlEscape="true"/>'>Delete <c:if test="${userId == user.id}">
-                            <c:out value="${noDelete}"/>
-                        </c:if></a>
+                        <a class="btn btn-default" href='<spring:url value="/users/delete?userId=${user.id}" htmlEscape="true"/>'>Delete
+                            <c:if test="${userId == user.id}">
+                                <c:out value="${noDelete}"/>
+                            </c:if>
+                        </a>
                     </td>
                 </tr>
             </c:forEach>

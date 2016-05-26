@@ -11,8 +11,8 @@
         <csrf disabled="true"/>
         <intercept-url pattern="/" access="isAuthenticated()" />
         <intercept-url pattern="/login" access="permitAll"/>
-        <!--<intercept-url pattern="/users/**" access="hasRole('TEACHER')" />-->
-        <intercept-url pattern="/users/**" access="permitAll" />
+        <intercept-url pattern="/users/**" access="hasAuthority('1')"/>
+        <intercept-url pattern="/groups/**" access="hasAuthority('1')"/>
         <form-login login-page="/login" authentication-failure-url="/login?error=1" default-target-url="/"/>
         <logout logout-url="/logout" logout-success-url="/login?logout=1" invalidate-session="true"/>
         <remember-me
@@ -24,9 +24,9 @@
         <authentication-provider>
             <jdbc-user-service data-source-ref="dataSource"
                                users-by-username-query="SELECT username, password, true FROM USER WHERE username=?"
-                               authorities-by-username-query="SELECT username, 'TEACHER' FROM USER WHERE username=?"/>
+                               authorities-by-username-query="SELECT username, type FROM USER, USER_GROUP ug WHERE username=? AND GROUP_ID=ug.ID"/>
 
-
+            <password-encoder hash="sha-256"/>
         </authentication-provider>
     </authentication-manager>
 
