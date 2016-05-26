@@ -12,7 +12,5 @@ import java.util.List;
  * Created by Idony on 20.05.2016.
  */
 public interface ResultService {
-    Iterable<Result> findByTestRunUserGroupLike(UserGroup userGroup);
-    Iterable<Result> findByTestRunLike(TestRun testRun);
     List<Pair<TestRun, Float>> resultByGroup(UserGroup userGroup);
 }

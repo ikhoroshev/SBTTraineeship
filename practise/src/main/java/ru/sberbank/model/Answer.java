@@ -9,11 +9,11 @@ import javax.persistence.*;
 public class Answer {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(nullable = false)
     private String text;
-    @Column(nullable = false,name = "is_right")
+    @Column(nullable = false, name = "is_right")
     private Boolean isRight;
     @ManyToOne(cascade = CascadeType.ALL)
     private Question question;
@@ -21,6 +21,9 @@ public class Answer {
     public Answer(String text, Boolean isRight) {
         this.text = text;
         this.isRight = isRight;
+    }
+
+    public Answer() {
     }
 
     public Question getQuestion() {
@@ -31,7 +34,6 @@ public class Answer {
         this.question = question;
     }
 
-    protected Answer() {};
 
     public Long getId() {
         return id;
@@ -55,5 +57,24 @@ public class Answer {
 
     public void setIsRight(Boolean isRight) {
         this.isRight = isRight;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Answer answer = (Answer) o;
+
+        if (!id.equals(answer.id)) return false;
+        if (!question.equals(answer.question)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        return result;
     }
 }

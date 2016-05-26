@@ -1,34 +1,42 @@
 package ru.sberbank.model;
 
+
+import org.hibernate.annotations.SortComparator;
+import org.hibernate.annotations.SortNatural;
+import org.springframework.data.web.SortDefault;
+
 import javax.persistence.*;
-import java.util.Set;
+import javax.persistence.Id;
+import java.util.List;
+import java.util.SortedSet;
+
 
 @Entity
 public class Test {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(nullable = false)
     private String title;
     @Column(nullable = false)
     private String description;
 
-
-
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "test_question", catalog = "db", joinColumns = {
-            @JoinColumn(name = "question_id", nullable = false, updatable = false) },
-            inverseJoinColumns = { @JoinColumn(name = "test_id",
-                    nullable = false, updatable = false) })
-    private Set<Question> questions;
+    @JoinTable(name = "test_question", catalog = "db",
+            joinColumns = {
+                    @JoinColumn(name = "test_id", nullable = false, updatable = false) },
+            inverseJoinColumns = {
+                    @JoinColumn(name = "question_id",nullable = false, updatable = false) })
 
+    @SortNatural
+    private SortedSet<Question> questions;
 
-    public Set<Question> getQuestions() {
+    public SortedSet<Question> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(Set<Question> questions) {
+    public void setQuestions(SortedSet<Question> questions) {
         this.questions = questions;
     }
     public Test (){
