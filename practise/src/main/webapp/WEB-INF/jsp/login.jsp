@@ -32,14 +32,14 @@
         </tr>
         <tr>
             <td>
-                <input type="hidden"
+                <%--<input type="hidden"
                        name="${_csrf.parameterName}"
-                       value="${_csrf.token}"/>
+                       value="${_csrf.token}"/>--%>
                 <button type="submit" class="btn">Log in</button>
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="color: #ac2925">
                 <c:if test="${param.error != null}">
                     <p>
                         Invalid username or password.

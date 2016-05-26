@@ -8,12 +8,13 @@
 
 
     <http auto-config="true" use-expressions="true">
+        <csrf disabled="true"/>
         <intercept-url pattern="/" access="isAuthenticated()" />
-        <intercept-url pattern="/login" access="permitAll" />
+        <intercept-url pattern="/login" access="permitAll"/>
         <!--<intercept-url pattern="/users/**" access="hasRole('TEACHER')" />-->
         <intercept-url pattern="/users/**" access="permitAll" />
-        <form-login login-page="/login" authentication-failure-url="/login?error=1"/>
-        <logout logout-url="/logout" logout-success-url="/login?logout=1"/>
+        <form-login login-page="/login" authentication-failure-url="/login?error=1" default-target-url="/"/>
+        <logout logout-url="/logout" logout-success-url="/login?logout=1" invalidate-session="true"/>
         <remember-me
             key="testAppKEY"
             token-validity-seconds="259200"/>
@@ -21,9 +22,6 @@
 
     <authentication-manager>
         <authentication-provider>
-            <!--<user-service>
-                <user name="user" password="password" authorities="ROLE_ADMIN"/>
-            </user-service>-->
             <jdbc-user-service data-source-ref="dataSource"
                                users-by-username-query="SELECT username, password, true FROM USER WHERE username=?"
                                authorities-by-username-query="SELECT username, 'TEACHER' FROM USER WHERE username=?"/>
