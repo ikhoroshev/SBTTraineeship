@@ -1,11 +1,10 @@
-
 <html>
 <jsp:include page="header.jsp"/>
 <body>
 <jsp:include page="navigation.jsp"/>
-
+<title> Wellcome </title>
 <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         Dropdown
         <span class="caret"></span>
     </button>

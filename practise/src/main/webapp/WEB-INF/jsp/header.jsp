@@ -1,6 +1,7 @@
+<%@ page contentType="text/html; charset=utf-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <spring:url value="/resources/css/bootstrap.min.css" var="bootstrap"/>
     <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapTheme"/>
     <script src="/testapp/resources/js/jquery-1.12.4.min.js"></script>

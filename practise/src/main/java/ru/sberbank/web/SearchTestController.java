@@ -27,6 +27,14 @@ public class SearchTestController {
         return "tests/searchTest";
     }
 
+    @RequestMapping(value = "/tests/search/dellete", method = RequestMethod.GET)
+    public String initSearchTestFormForRemoveTest(Test test, Map<String, Object> model) {
+        Iterable<Test> tests = testService.findTest(test);
+        model.put("searchResult", tests);
+        model.put("isError", "");
+        return "tests/searchTest";
+    }
+
 
     @RequestMapping(value = "/tests/search", method = RequestMethod.POST)
     public String processAddTestForm(Test test, Map<String, Object> model) {
