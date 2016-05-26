@@ -2,12 +2,9 @@ package ru.sberbank.model;
 
 import javax.persistence.*;
 
-/**
- * Created by sbt-shmygin-as on 06.04.2016.
- */
 @Entity
 public class User {
-    @Id @GeneratedValue(strategy=GenerationType.AUTO)
+    @Id @GeneratedValue
     private Long id;
 
     @ManyToOne(cascade=CascadeType.MERGE)

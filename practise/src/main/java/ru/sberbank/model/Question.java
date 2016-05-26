@@ -19,7 +19,7 @@ public class Question {
     private String text;
 
     @ManyToOne
-    @JoinColumn(name = "TEST_CHAPTER_ID")
+    @JoinColumn(name = "TEST_CHAPTER_ID", nullable = false)
     private TestChapter testChapter;
 
     public Question() {

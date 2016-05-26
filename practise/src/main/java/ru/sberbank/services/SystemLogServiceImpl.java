@@ -16,7 +16,7 @@ public class SystemLogServiceImpl implements SystemLogService {
     private SystemLogRepository logRepository;
 
     @Resource
-    private UserRepository userRepository;
+    private UserService userService;
 
     @Override
     public void Log(String message) {
@@ -27,7 +27,7 @@ public class SystemLogServiceImpl implements SystemLogService {
         log.setDateTime(new Date());
 
         org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        ru.sberbank.model.User curUser = userRepository.findByUsername(user.getUsername());
+        ru.sberbank.model.User curUser = userService.getUser(user.getUsername());
 
         log.setUser(curUser);
 
@@ -43,8 +43,8 @@ public class SystemLogServiceImpl implements SystemLogService {
         log.setDateTime(new Date());
 
         org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        ru.sberbank.model.User curUser = userRepository.findByUsername(user.getUsername());
-        
+        ru.sberbank.model.User curUser = userService.getUser(user.getUsername());
+
         log.setUser(curUser);
 
         logRepository.save(log);

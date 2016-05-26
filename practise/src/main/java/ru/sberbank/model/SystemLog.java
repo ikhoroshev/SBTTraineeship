@@ -18,7 +18,7 @@ public class SystemLog {
     @Column(name = "DATE_TIME", nullable = false)
     private Date dateTime;
 
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JoinColumn(name = "USER_ID")
     private User user;
 

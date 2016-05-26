@@ -23,7 +23,13 @@
                 <c:forEach var="log" items="${systemLogs}">
                     <tr>
                         <td><c:out value="${log.dateTime}"/></td>
-                        <td>[<c:out value="${log.user.username}"/>]<br>
+                        <td><c:if test="${log.user!=null}">
+                                [<c:out value="${log.user.username}"/>]<br>
+                        </c:if>
+                            <c:if test="${log.user==null}">
+                                    [deleted user]
+                            </c:if>
+
                             <c:out value="${log.user.lastName}"/><br>
                             <c:out value="${log.user.firstName}"/><br>
                             <c:out value="${log.user.middleName}"/><br>

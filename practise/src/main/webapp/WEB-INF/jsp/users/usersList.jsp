@@ -33,6 +33,7 @@
         <table class="table table-stripped">
             <thead>
                 <tr>
+                    <th>Username</th>
                     <th>Name</th>
                     <th>Group name</th>
                     <th>User open</th>
@@ -42,6 +43,7 @@
             <tbody>
             <c:forEach var="user" items="${searchResult}">
                 <tr>
+                    <td><c:out value="${user.username}"/></td>
                     <td><c:out value="${user.lastName} ${user.firstName} ${user.middleName}"/></td>
                     <td>
                         <c:out value="${user.group.name}"/>

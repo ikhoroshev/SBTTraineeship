@@ -1,23 +1,24 @@
 package ru.sberbank.web;
 
-/**
- * Created by salexandrov on 09.05.2016.
- */
-
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import ru.sberbank.model.SystemLog;
 import ru.sberbank.model.User;
 import ru.sberbank.model.UserGroup;
+import ru.sberbank.repositories.SystemLogRepository;
+import ru.sberbank.repositories.UserRepository;
 import ru.sberbank.services.UserGroupService;
 import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Iterator;
 import java.util.Map;
 
 @Controller
@@ -26,6 +27,10 @@ public class UserController {
     private UserService userService;
     @Resource
     private UserGroupService userGroupService;
+    @Resource
+    private SystemLogRepository logRepository;
+
+
 
     private String sha256(String input) throws NoSuchAlgorithmException {
         MessageDigest mDigest = MessageDigest.getInstance("SHA-256");
@@ -81,8 +86,26 @@ public class UserController {
     @RequestMapping(value = "/users/delete", method = RequestMethod.GET)
     public String processAddUserForm (User user, @RequestParam("userId") long userId, Map<String, Object> model){
         try {
+
+            //удаление самого себя запрещено
+            org.springframework.security.core.userdetails.User springUser = (org.springframework.security.core.userdetails.User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            ru.sberbank.model.User curUser = userService.getUser(springUser.getUsername());
+            if(curUser.getId()==userId)
+                throw new Exception("Don't try delete yourself!");
+
+            //удаление ссылок на пользователя в логах
+            Iterable<SystemLog> logRepositoryByUserId = logRepository.findByUserId(userId);
+            Iterator<SystemLog> it = logRepositoryByUserId.iterator();
+            while(it.hasNext()){
+                SystemLog next=it.next();
+                next.setMessage(next.getMessage()+"[created by "+next.getUser().getUsername()+"]");
+                next.setUser(null);
+            }
+            logRepository.save(logRepositoryByUserId);
+
             userService.deleteUser(userId);
-        }catch (DataIntegrityViolationException e){
+        }
+        catch (Exception e){
             System.out.println(e);
             Iterable<User> users = userService.findUsersByExample(user);
             model.put("searchResult", users);
