@@ -27,6 +27,16 @@ public class TestServiceImpl implements TestService {
   }
 
   @Override
+  public String deleteTest(Long id) {
+    try {
+      testRepository.delete(id);
+    } catch (Exception e){
+      return "Удаление не возможно, данные связаны";
+    }
+    return "";
+ }
+
+  @Override
   public Iterable<Test> findTest (Test test) {
     if (!Strings.isNullOrEmpty(test.getDescription())
             && !Strings.isNullOrEmpty(test.getTitle())) {
