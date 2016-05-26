@@ -38,7 +38,8 @@ public class ResultController {
     }
 
     @RequestMapping(value = "/result", method = RequestMethod.POST)
-    public String processAddUserForm (@ModelAttribute("userGroup")UserGroup userGroup,Model model,Map<String, Object> models){
+    public String processAddUserForm (@ModelAttribute("userGroup")UserGroup userGroup,
+                                      Model model,Map<String, Object> models){
         List<Pair<TestRun,Float>> pairList=resultService.resultByGroup(userGroup);
         models.put("resultsByGroup",pairList);
         Iterable<UserGroup> userGroups = userGroupService.findUsersByExample();

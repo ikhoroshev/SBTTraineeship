@@ -50,7 +50,7 @@ public class TestRunController {
                                   @ModelAttribute("answers") Answers answer) {
         testRunService.startTest(testRunId,testRun);
         Question question = testRunService.nextQuestion(testRunId, testRun, answer);
-        objectMap.put("question", question);
+        objectMap.put("question", testRunService.hideRightAnswers(question));
         objectMap.put("testRun", testRunService.findOne(testRunId));
 
         return "/testRun/testRun";

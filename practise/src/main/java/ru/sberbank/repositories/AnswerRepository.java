@@ -9,4 +9,5 @@ import ru.sberbank.model.Answer;
  */
 @Repository
 public interface AnswerRepository extends CrudRepository<Answer, Long> {
+    Iterable<Answer> findByQuestionIdLike(Long questionId);
 }

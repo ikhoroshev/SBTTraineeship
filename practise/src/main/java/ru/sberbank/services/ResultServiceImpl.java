@@ -1,13 +1,23 @@
 package ru.sberbank.services;
 
 
+import org.hibernate.Hibernate;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.*;
+import ru.sberbank.repositories.AnswerRepository;
+import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.repositories.ResultRepository;
+import ru.sberbank.repositories.TestRepository;
 
 import javax.annotation.Resource;
-import java.util.*;
+import java.util.ArrayList;
+
+import java.lang.Iterable;
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * Created by Idony on 20.05.2016.
@@ -19,49 +29,44 @@ public class ResultServiceImpl implements ResultService {
 
     @Resource
     private TestRunService testRunService;
-    @Override
-    public Iterable<Result> findByTestRunUserGroupLike(UserGroup userGroup) {
-        return resultRepository.findByTestRunUserGroupLike(userGroup);
-    }
+
+    @Resource
+    private QuestionRepository questionRepository;
+
+    @Resource
+    private AnswerRepository answerRepository;
+
 
     @Override
-    public Iterable<Result> findByTestRunLike(TestRun testRun) {
-        return resultRepository.findByTestRunLike(testRun);
-    }
-
+    @Transient
     public List<Pair<TestRun, Float>> resultByGroup(UserGroup userGroup)
     {
         Iterable<TestRun> testRuns=testRunService.findByUserGroupLike(userGroup);
         int n=0;
         int k=0;
         List<Pair<TestRun,Float>> pairList=new ArrayList<>();
-        HashMap<Question,Boolean> hashMapQuestionAndResult=null;
+
         Boolean b;
-        for (TestRun testRun:testRuns)
-        {
-            if(testRun.getTestRunStatus() == TestRunStatus.COMPLETED) {
-                if (hashMapQuestionAndResult == null) {
-                    hashMapQuestionAndResult = new HashMap<>();
-                } else {
-                    hashMapQuestionAndResult.clear();
+        for (TestRun testRun:testRuns) {
+            if (testRun.getTestRunStatus() == TestRunStatus.COMPLETED) {
+                for (Question question : questionRepository.findByTestsIdLike(testRun.getTest().getId())) {
+                    Iterable<Result> results = resultRepository.findByTestRunIdLikeAndQuestionId(testRun.getId(),question.getId());
+                    for (Answer answerQ : answerRepository.findByQuestionIdLike(question.getId())) {
+                        for(Result result:results)
+                        {
+//                            answerQ;//все ответы
+//                            result.getAnswer();//что было отмечено
+                        }
+                    }
                 }
 
-                for (Result result : findByTestRunLike(testRun)) {
-                    b = hashMapQuestionAndResult.get(result);
-                    if (b == null || b)
-                        hashMapQuestionAndResult.put(result.getQuestion(), result.getAnswer().getIsRight());
-                }
-
-                for (Boolean value : hashMapQuestionAndResult.values()) {
-                    n++;
-                    if (value) k++;
-                }
 
                 pairList.add(Pair.of(testRun, (float) k / n));
                 n = 0;
                 k = 0;
-            }
-        }//n/(n+k) % правильных
+
+            }//n/(n+k) % правильных
+        }
         return pairList;
     }
 }

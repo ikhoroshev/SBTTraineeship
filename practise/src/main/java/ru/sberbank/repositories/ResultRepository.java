@@ -12,5 +12,5 @@ import ru.sberbank.model.UserGroup;
 @Repository
 public interface ResultRepository extends CrudRepository<Result, Long> {
     Iterable<Result> findByTestRunUserGroupLike(UserGroup userGroup);
-    Iterable<Result> findByTestRunLike(TestRun testRun);
+    Iterable<Result> findByTestRunIdLikeAndQuestionId(Long testRunId,Long questionId);
 }
