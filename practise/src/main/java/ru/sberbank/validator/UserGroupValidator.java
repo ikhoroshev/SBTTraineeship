@@ -27,8 +27,8 @@ public class UserGroupValidator implements Validator {
             errors.rejectValue("name", "name.tooLong", "Name must not more than 16 characters.");
         }
 
-        if (!name.matches("[a-zA-Zа-яА-Я]+")){
-            errors.rejectValue("name", "name.tooLetter", "Name can contain only letters.");
+        if (!name.matches("[a-zA-Zа-яА-Я_]+")){
+            errors.rejectValue("name", "name.tooLetter", "Name can contain only letters and _.");
         }
     }
 }
