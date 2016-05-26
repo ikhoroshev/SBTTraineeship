@@ -16,6 +16,7 @@
         </property>
         <property name="jpaProperties">
             <props>
+
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.dialect">${jpa.database-dialect}</prop>
             </props>

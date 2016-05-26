@@ -17,9 +17,15 @@ public class Result {
     @ManyToOne(cascade = CascadeType.ALL)
     private Question question;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Answer answer;
 
+    public Result(TestRun testRun, Question question, Answer answer) {
+        this.testRun = testRun;
+        this.question = question;
+        this.answer = answer;
+    }
+    public Result(){}
     public Long getId() {
         return id;
     }

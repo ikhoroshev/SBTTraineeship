@@ -12,10 +12,22 @@ public class TestRun {
     private Long id;
     @Column(nullable = false)
     private String status;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private User user;
-    @ManyToOne(cascade = CascadeType.ALL)
+
+    public Question getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public void setCurrentQuestion(Question currentQuestion) {
+        this.currentQuestion = currentQuestion;
+    }
+
+    @ManyToOne
     private Test test;
+
+    @ManyToOne
+    private Question currentQuestion;
 
     public TestRunStatus getTestRunStatus() {
         return testRunStatus;
@@ -25,8 +37,11 @@ public class TestRun {
         this.testRunStatus = testRunStatus;
     }
 
-    @Column(nullable = false)
+    @Column
     TestRunStatus testRunStatus;
+
+    public TestRun() {return;}
+
     public TestRun(String status, User user, Test test) {
         this.status = status;
         this.user = user;
@@ -64,5 +79,6 @@ public class TestRun {
     public void setTest(Test test) {
         this.test = test;
     }
+
 }
 

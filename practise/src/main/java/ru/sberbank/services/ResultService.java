@@ -1,0 +1,16 @@
+package ru.sberbank.services;
+
+import org.springframework.data.util.Pair;
+import org.springframework.stereotype.Repository;
+import ru.sberbank.model.Result;
+import ru.sberbank.model.TestRun;
+import ru.sberbank.model.UserGroup;
+
+import java.util.List;
+
+/**
+ * Created by Idony on 20.05.2016.
+ */
+public interface ResultService {
+    List<Pair<TestRun, Float>> resultByGroup(UserGroup userGroup);
+}

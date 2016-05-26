@@ -15,8 +15,18 @@ public class UserGroup {
     private Long id;
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false,name = "group_type")
+    private UserGroupType userGroupType;
 
-  public Long getId() {
+    public UserGroupType getUserGroupType() {
+        return userGroupType;
+    }
+
+    public void setUserGroupType(UserGroupType userGroupType) {
+        this.userGroupType = userGroupType;
+    }
+
+    public Long getId() {
       return id;
   }
 
