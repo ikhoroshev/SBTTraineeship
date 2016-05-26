@@ -10,7 +10,7 @@ import java.util.Date;
 @Service
 public class SystemLogServiceImpl implements SystemLogService {
     @Resource
-    SystemLogRepository logRepository;
+    private SystemLogRepository logRepository;
 
     @Override
     public void Log(String message) {
@@ -53,5 +53,5 @@ public class SystemLogServiceImpl implements SystemLogService {
     }
 
     @Override
-    public Iterable<SystemLog> findAll() { return logRepository.findAll(); }
+    public Iterable<SystemLog> findAll() { return logRepository.findAllByOrderByDateTimeDesc(); }
 }
