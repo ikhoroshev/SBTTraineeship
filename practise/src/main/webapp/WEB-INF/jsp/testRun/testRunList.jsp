@@ -37,11 +37,13 @@
             <tr>
                 <td><c:out value="${testrun.test.title}"/></td>
                 <td><c:out value="${testrun.testRunStatus}"/></td>
+                <td><a class="btn btn-default" href='<spring:url
+                        value="/userTest/start?testId=${testrun.test.id}&userId=${testrun.user.id}"
+                        htmlEscape="true"/>'>Start</a></td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
 </div>
-
 </body>
 </html>

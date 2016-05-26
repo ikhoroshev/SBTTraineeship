@@ -51,6 +51,6 @@ public class PlayUserTest {
         testRunService.addTestRun(testRun);
 
 
-        return "/testRun/userTest";
+        return "/testRun/initUserTest";
     }
 }
