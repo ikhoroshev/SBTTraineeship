@@ -19,7 +19,6 @@ public class SystemLog {
     private String message;
 
     @Column(name = "DATE_TIME", nullable = false)
-    @OrderBy
     private Date dateTime;
 
     @ManyToOne

@@ -1,8 +1,11 @@
 package ru.sberbank.services;
 
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.SystemLog;
 import ru.sberbank.repositories.SystemLogRepository;
+import ru.sberbank.repositories.UserRepository;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -12,6 +15,9 @@ public class SystemLogServiceImpl implements SystemLogService {
     @Resource
     private SystemLogRepository logRepository;
 
+    @Resource
+    private UserRepository userRepository;
+
     @Override
     public void Log(String message) {
         SystemLog log=new SystemLog();
@@ -20,8 +26,10 @@ public class SystemLogServiceImpl implements SystemLogService {
         log.setCode("");
         log.setDateTime(new Date());
 
-        //TODO posle dobavleniya avtorizacii ispravit
-        log.setUser(null);
+        org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        ru.sberbank.model.User curUser = userRepository.findByUsername(user.getUsername());
+
+        log.setUser(curUser);
 
         logRepository.save(log);
     }
@@ -34,8 +42,10 @@ public class SystemLogServiceImpl implements SystemLogService {
         log.setCode(String.valueOf(code));
         log.setDateTime(new Date());
 
-        //TODO posle dobavleniya avtorizacii ispravit
-        log.setUser(null);
+        org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        ru.sberbank.model.User curUser = userRepository.findByUsername(user.getUsername());
+        
+        log.setUser(curUser);
 
         logRepository.save(log);
     }
