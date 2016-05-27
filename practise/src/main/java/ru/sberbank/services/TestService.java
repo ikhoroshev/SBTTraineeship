@@ -16,4 +16,5 @@ public interface TestService {
   void addTest (Test test);
   Iterable<Test> findTest (Test test);
   Iterable<Question> findAllQuestions();
+  Iterable<Test> findAll();
 }

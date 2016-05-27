@@ -51,4 +51,9 @@ public class TestServiceImpl implements TestService {
     return questionRepository.findAll();
   }
 
+  @Override
+  public Iterable<Test> findAll() {
+    return testRepository.findAll();
+  }
+
 }

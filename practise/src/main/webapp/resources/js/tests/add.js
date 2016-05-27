@@ -18,9 +18,17 @@ function add(select,val) {
 
     for(var i=0; i<elems.length; i++)
     {
-        if(elems[i].label==val.value)
+        if(elems[i].label.localeCompare(val.value)==0)
         {
             elems[i].appendChild(val);
+            return;
+        }
+        else if(elems[i].label.localeCompare(val.value)==-1)
+        {
+            var group = document.createElement('optgroup');
+            group.label=val.value;
+            group.appendChild(val);
+            select.insertBefore(group,elems[i]);
             return;
         }
     }

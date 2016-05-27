@@ -7,6 +7,7 @@ package ru.sberbank.web;
 
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.Question;
@@ -27,7 +28,7 @@ public class TestController {
   private TestService testService;
 
   @RequestMapping(value = "/tests/add", method = RequestMethod.GET)
-  public String initAddTestForm (Test test){
+  public String initAddTestForm (@ModelAttribute("test")Test test){
     return "tests/addTest";
   }
 
@@ -38,16 +39,22 @@ public class TestController {
   }
 
   @RequestMapping(value = "/tests/link", method = RequestMethod.GET)
-  public String testConnectQuestionG (Test test, Map<String, Object> model){
-    Iterable<Question> questionList=testService.findAllQuestions();
-    model.put("questions",questionList);
+  public String testConnectQuestionG (@ModelAttribute("test")Test test, Map<String, Object> model){
+    sendQuestionsAndTests(model);
     return "tests/testLinkQuestions";
   }
 
   @RequestMapping(value = "/tests/link", method = RequestMethod.POST)
   public String testConnectQuestionP (Test test, Map<String, Object> model){
-    testService.addTest(test);
+    sendQuestionsAndTests(model);
     return "tests/testLinkQuestions";
+  }
+  private void sendQuestionsAndTests(Map<String, Object> model)
+  {
+    Iterable<Question> questionList=testService.findAllQuestions();
+    model.put("questions",questionList);
+    Iterable<Test> tests=testService.findAll();
+    model.put("tests",tests);
   }
 
 }
