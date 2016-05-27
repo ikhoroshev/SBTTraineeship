@@ -17,6 +17,7 @@
     <form:form modelAttribute="testChapter" action="/testapp/chapters/addTestChapter" method="POST" class="form-horizontal"
                id="search-testChapter-form">
         <div class="form-group has-feedback">
+            <form:input type = "hidden" path="id" size="30" maxlength="50" id="id"/>
             <div>
                 <label for="title">Title </label>
                 <form:input class="form-control" path="title" size="30" maxlength="50" id="title"/>
