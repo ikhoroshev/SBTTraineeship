@@ -4,7 +4,6 @@
 <html>
 <jsp:include page="header.jsp"/>
 <body>
-<%--<jsp:include page="navigation.jsp"/>--%>
 <spring:url value="/login" var="loginUrl"/>
 <form action="${loginUrl}" method="post">
     <table style="text-align: center; vertical-align: middle; margin: auto; margin-top: 60px">
@@ -41,14 +40,14 @@
         <tr>
             <td style="color: #ac2925">
                 <c:if test="${param.error != null}">
-                    <p>
+                    <p><b style="color: #843534">
                         Invalid username or password.
-                    </p>
+                    </b></p>
                 </c:if>
                 <c:if test="${param.logout != null}">
-                    <p>
+                    <p><b style="color: slategray">
                         You have been logged out.
-                    </p>
+                    </b></p>
                 </c:if>
             </td>
         </tr>

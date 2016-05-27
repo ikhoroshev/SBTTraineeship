@@ -32,7 +32,7 @@
                     </li>
 
                     <li>
-                        <a href="<c:url value="/logout"/>"><span><b> Logout <sec:authentication property='principal.username'/></b></span></a>
+                        <a href="<c:url value="/logout"/>"><span><b style="color: slategray"> Logout <sec:authentication property='principal.username'/></b></span></a>
                     </li>
              </ul>
         </div>
