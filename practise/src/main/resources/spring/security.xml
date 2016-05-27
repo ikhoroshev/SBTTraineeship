@@ -13,9 +13,9 @@
         <intercept-url pattern="/login" access="permitAll"/>
         <intercept-url pattern="/users/**" access="hasAuthority('1')"/>
         <intercept-url pattern="/groups/**" access="hasAuthority('1')"/>
-        <intercept-url pattern="/log/**" access="isAuthenticated()"/>
-        <intercept-url pattern="/questions/**" access="isAuthenticated()"/>
-        <intercept-url pattern="/chapters/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/log/**" access="hasAuthority('1')"/>
+        <intercept-url pattern="/questions/**" access="hasAuthority('1')"/>
+        <intercept-url pattern="/chapters/**" access="hasAuthority('1')"/>
         <intercept-url pattern="/test/**" access="isAuthenticated()"/>
         <intercept-url pattern="/testRun/**" access="isAuthenticated()"/>
         <form-login login-page="/login" authentication-failure-url="/login?error=1" default-target-url="/"/>
