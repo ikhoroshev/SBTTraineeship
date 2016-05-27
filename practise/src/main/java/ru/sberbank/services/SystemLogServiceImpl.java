@@ -64,4 +64,7 @@ public class SystemLogServiceImpl implements SystemLogService {
 
     @Override
     public Iterable<SystemLog> findAll() { return logRepository.findAllByOrderByDateTimeDesc(); }
+
+    @Override
+    public void deleteById(Long id) { logRepository.delete(id); }
 }

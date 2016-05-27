@@ -6,4 +6,5 @@ public interface SystemLogService {
     void Log(String message,int code);
     void Log(int code);
     Iterable<SystemLog> findAll();
+    void deleteById(Long id);
 }

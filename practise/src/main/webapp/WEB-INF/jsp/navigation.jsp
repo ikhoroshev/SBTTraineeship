@@ -14,13 +14,13 @@
                         <a href="<spring:url value="/questions/find" />"><span> Questions</span></a>
                     </li>
                     <li>
+                        <a href="<spring:url value="/chapters/find" />"><span> Chapters</span></a>
+                    </li>
+                    <li>
                         <a href="<spring:url value="/users/find" />"><span> Users</span></a>
                     </li>
                     <li>
                         <a href="<spring:url value="/groups/find" />"><span> Groups</span></a>
-                    </li>
-                    <li>
-                        <a href="<spring:url value="/chapters/find" />"><span> Chapters</span></a>
                     </li>
                 </sec:authorize>
 
