@@ -13,29 +13,27 @@
             <table class="table table-stripped">
                 <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>User</th>
-                    <th>Code</th>
-                    <th>Message</th>
+                    <th style="text-align: center">Date</th>
+                    <th style="text-align: center">User</th>
+                    <th style="text-align: center">Code</th>
+                    <th style="text-align: center">Message</th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:forEach var="log" items="${systemLogs}">
                     <tr>
-                        <td><c:out value="${log.dateTime}"/></td>
-                        <td><c:if test="${log.user!=null}">
+                        <td style="vertical-align: middle; text-align: center; max-width: 100px; width: 100px"><c:out value="${log.dateTime}"/></td>
+                        <td style="vertical-align: middle; text-align: center;">
+                            <c:if test="${log.user!=null}">
                                 [<c:out value="${log.user.username}"/>]<br>
-                        </c:if>
-                            <c:if test="${log.user==null}">
-                                    [deleted user]
                             </c:if>
 
                             <c:out value="${log.user.lastName}"/><br>
                             <c:out value="${log.user.firstName}"/><br>
                             <c:out value="${log.user.middleName}"/><br>
                         </td>
-                        <td><c:out value="${log.code}"/></td>
-                        <td><c:out value="${log.message}"/></td>
+                        <td style="vertical-align: middle; text-align: center; max-width: 100px; width: 100px"><c:out value="${log.code}"/></td>
+                        <td style="vertical-align: middle; text-align: center; max-width: 600px; width: 600px"><c:out value="${log.message}"/></td>
                     </tr>
                 </c:forEach>
                 </tbody>

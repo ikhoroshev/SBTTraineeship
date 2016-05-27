@@ -14,6 +14,7 @@ public interface UserService {
     void deleteUser (Long userId);
     User getUser(Long id);
     User getUser(String username);
+    Long countAdminUsers();
     Iterable<User> getAllUser();
 
 }

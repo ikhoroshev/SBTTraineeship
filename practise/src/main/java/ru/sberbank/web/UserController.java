@@ -87,6 +87,11 @@ public class UserController {
     public String processAddUserForm (User user, @RequestParam("userId") long userId, Map<String, Object> model){
         try {
 
+            //проверка требования на существование хотя бы одного администратора системы
+            Long adminUsers = userService.countAdminUsers();
+            if(adminUsers==1)
+                throw new Exception("System must have at least one user with admin role!");
+
             //удаление самого себя запрещено
             org.springframework.security.core.userdetails.User springUser = (org.springframework.security.core.userdetails.User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             ru.sberbank.model.User curUser = userService.getUser(springUser.getUsername());
@@ -98,7 +103,7 @@ public class UserController {
             Iterator<SystemLog> it = logRepositoryByUserId.iterator();
             while(it.hasNext()){
                 SystemLog next=it.next();
-                next.setMessage(next.getMessage()+"[created by "+next.getUser().getUsername()+"]");
+                next.setMessage(next.getMessage()+"[Сообщение инициировано "+next.getUser().getUsername()+"]");
                 next.setUser(null);
             }
             logRepository.save(logRepositoryByUserId);
