@@ -62,7 +62,7 @@ public class TestRunServiceImpl implements TestRunService {
 
             if (testRun.getCurrentQuestion() != null &&
                     inspectionAnswer(answers, testRun)) {
-                for (int i = 0; i < questionList.size(); i++) {
+                for (;questionIterable.hasNext();) {
                     if (questionIterable.next().equals(testRun.getCurrentQuestion())) {
                         if (questionIterable.hasNext()) {
                             question = questionIterable.next();

@@ -5,6 +5,7 @@
  */
 package ru.sberbank.services;
 
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 
 /**
@@ -14,4 +15,5 @@ import ru.sberbank.model.Test;
 public interface TestService {
   void addTest (Test test);
   Iterable<Test> findTest (Test test);
+  Iterable<Question> findAllQuestions();
 }

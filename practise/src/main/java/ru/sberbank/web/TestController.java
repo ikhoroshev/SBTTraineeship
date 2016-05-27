@@ -9,8 +9,13 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
+import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.services.TestService;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -30,6 +35,19 @@ public class TestController {
   public String processAddTestForm (Test test){
     testService.addTest(test);
     return "tests/addTest";
+  }
+
+  @RequestMapping(value = "/tests/link", method = RequestMethod.GET)
+  public String testConnectQuestionG (Test test, Map<String, Object> model){
+    Iterable<Question> questionList=testService.findAllQuestions();
+    model.put("questions",questionList);
+    return "tests/testLinkQuestions";
+  }
+
+  @RequestMapping(value = "/tests/link", method = RequestMethod.POST)
+  public String testConnectQuestionP (Test test, Map<String, Object> model){
+    testService.addTest(test);
+    return "tests/testLinkQuestions";
   }
 
 }

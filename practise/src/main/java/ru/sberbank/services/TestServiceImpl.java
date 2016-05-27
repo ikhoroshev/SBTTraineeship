@@ -9,7 +9,9 @@ import javax.annotation.Resource;
 
 import com.google.common.base.Strings;
 import org.springframework.stereotype.Service;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
+import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.repositories.TestRepository;
 
 /**
@@ -20,6 +22,8 @@ import ru.sberbank.repositories.TestRepository;
 public class TestServiceImpl implements TestService {
   @Resource
   private TestRepository testRepository;
+  @Resource
+  private QuestionRepository questionRepository;
 
   @Override
   public void addTest(Test test) {
@@ -41,5 +45,10 @@ public class TestServiceImpl implements TestService {
 
     return testRepository.findAll();
   }
-  
+
+  @Override
+  public Iterable<Question> findAllQuestions() {
+    return questionRepository.findAll();
+  }
+
 }
