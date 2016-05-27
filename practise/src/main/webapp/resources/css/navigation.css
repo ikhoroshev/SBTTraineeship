@@ -2,6 +2,13 @@
     margin-top: 5%;
 }
 
+.marginRight {
+    margin-right: 1.6% !important;
+}
+.removeMarginRight {
+    margin-right: 0!important;
+}
+
 .menuItem {
     color: black; /* Цвет символа */
     font-size: 180%; /* Размер шрифта */

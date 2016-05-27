@@ -12,10 +12,12 @@
                     </div>
                 </a>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="<spring:url value="/users/find" />"><span></span><span> <div class="menuItem">Find users </div></span></a></li>
+            <ul class="nav navbar-nav navbar-right removeMarginRight">
+                <li>
+                    <button type="button" class="btn btn-primary marginTop btn-lg " onClick='location.href="/testapp/login"'> Sign IN</button>
+                </li>
              </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right marginRight">
 
                 <div class="dropdown marginTop">
                     <button class="btn btn-success dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

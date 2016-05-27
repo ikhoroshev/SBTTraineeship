@@ -22,6 +22,8 @@ public class User {
   private String middleName;
   @Column(nullable = false)
   private String lastName;
+  @Column
+  private String password;
   @ManyToOne
   private UserGroup group;
 
@@ -73,4 +75,13 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }
