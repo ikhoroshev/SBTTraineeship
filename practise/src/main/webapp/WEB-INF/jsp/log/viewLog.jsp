@@ -17,6 +17,7 @@
                     <th style="text-align: center">User</th>
                     <th style="text-align: center">Code</th>
                     <th style="text-align: center">Message</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,6 +35,9 @@
                         </td>
                         <td style="vertical-align: middle; text-align: center; max-width: 100px; width: 100px"><c:out value="${log.code}"/></td>
                         <td style="vertical-align: middle; text-align: center; max-width: 600px; width: 600px"><c:out value="${log.message}"/></td>
+                        <td style="vertical-align: middle; text-align: right; max-width: 50px; width: 50px">
+                            <a class="btn bt btn-default" href='<spring:url value="/log/delete/${log.id}"/>'>Delete</a>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
