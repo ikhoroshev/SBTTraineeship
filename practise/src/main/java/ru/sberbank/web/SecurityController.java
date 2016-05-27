@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class SecurityController {
-    @RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
-    public String welcomePage() {
-
-
-        return "";
-
-    }
+//    @RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
+//    public String welcomePage() {
+//
+//
+//        return "";
+//
+//    }
 
 //    @RequestMapping(value = "/admin**", method = RequestMethod.GET)
 //    public ModelAndView adminPage() {

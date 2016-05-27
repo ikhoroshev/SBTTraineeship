@@ -11,6 +11,7 @@
         <intercept-url pattern="/login" access="permitAll" />
         <intercept-url pattern="/users/**" access="hasRole('ADMIN')" />
 
+
         <form-login
                 login-page="/login"
                 username-parameter="username"

@@ -24,6 +24,10 @@ public class User {
   private String lastName;
   @Column
   private String password;
+
+
+    @Column
+  private String login;
   @ManyToOne
   private UserGroup group;
 
@@ -84,4 +88,11 @@ public class User {
         this.password = password;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
 }

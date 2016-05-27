@@ -17,5 +17,13 @@
     </ul>
 </div>
 
+
+<sec:authorize access="hasRole('111')">
+
+    This content will only be visible to users who have
+    the "supervisor" authority in their list of <tt>GrantedAuthority</tt>s.
+
+</sec:authorize>
+
 </body>
 </html>
