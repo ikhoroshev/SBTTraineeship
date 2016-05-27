@@ -10,12 +10,16 @@
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
     <c:if test="${type == 0}">
-        <c:out value="${question.text}"/>
+        <h1>
+            <c:out value="${question.text}"/>
+        </h1>
+        <hr>
         <form:form modelAttribute="question" method="get">
             <div class="form-group has-feedback">
                 <div>
                     <form:radiobuttons path="id" id="type" items="${answers}" itemLabel="text" itemValue="id" delimiter="<br>" checked="checked" />
                 </div>
+                <hr>
                 <div>
                     <button class="btn btn-default" type="submit">Next</button>
                 </div>
@@ -23,12 +27,15 @@
         </form:form>
     </c:if>
     <c:if test="${type == 1}">
-        <c:out value="${question.text}"/>
+        <h1>
+            <c:out value="${question.text}"/>
+        </h1>
         <form:form modelAttribute="question" method="get">
             <div class="form-group has-feedback">
                 <div>
                     <form:checkboxes path="id" id="" items="${answers}" itemLabel="text" itemValue="id" delimiter="<br>" checked="checked" />
                 </div>
+                <hr>
                 <div>
                     <button class="btn btn-default" type="submit">Next</button>
                 </div>

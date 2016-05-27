@@ -22,10 +22,6 @@ public class UserTestController {
     @Resource
     private TestRunService testRunService;
     @Resource
-    private TestService testService;
-    @Resource
-    private UserService userService;
-    @Resource
     private QuestionService questionService;
     @Resource
     private AnswerService answerService;
@@ -55,17 +51,19 @@ public class UserTestController {
     }
 
     @RequestMapping(value = "/userTest/next", method = RequestMethod.GET)
-    public String nextQuestion(UserTestRun userTestRun, Question question, @RequestParam("id")Long answerId,
-                               Map<String, Object> model){
-        if (answerId != 0){
-            Result result = new Result();
-            Answer answer = answerService.getAnswer(answerId);
-            result.setUser(userTestRun.getUser());
-            result.setTestRun(userTestRun.getTestRun());
-            result.setQuestion(userTestRun.getQuestion());
-            result.setAnswer(answer);
-            resultService.addResult(result);
-        }
+    public String nextQuestion(UserTestRun userTestRun, Question question,
+                               @RequestParam("id")List<Long> ids, Map<String, Object> model){
+
+            for (Long id: ids) {
+                Result result = new Result();
+                Answer answer = answerService.getAnswer(id);
+                result.setUser(userTestRun.getUser());
+                result.setTestRun(userTestRun.getTestRun());
+                result.setQuestion(userTestRun.getQuestion());
+                result.setAnswer(answer);
+                resultService.addResult(result);
+            }
+
         question = userTestRun.nextQuestions();
         if (question == null){
             return "userTest/stopUserTest";

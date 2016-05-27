@@ -20,7 +20,7 @@
         </div>
         <hr>
         <div>
-            <a class="btn btn-default" href='<spring:url value="/userTest/next?id=0" htmlEscape="true"/>'>Start test</a>
+            <a class="btn btn-default" href='<spring:url value="/userTest/next?id=" htmlEscape="true"/>'>Start test</a>
         </div>
     </div>
 </body>
