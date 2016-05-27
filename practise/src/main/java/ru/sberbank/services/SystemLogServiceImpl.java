@@ -19,11 +19,11 @@ public class SystemLogServiceImpl implements SystemLogService {
     private UserService userService;
 
     @Override
-    public void Log(String message) {
+    public void Log(String message,int code) {
         SystemLog log=new SystemLog();
 
         log.setMessage(message);
-        log.setCode("");
+        log.setCode(String.valueOf(code));
         log.setDateTime(new Date());
 
         org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
