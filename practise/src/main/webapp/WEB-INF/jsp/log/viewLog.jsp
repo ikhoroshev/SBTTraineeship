@@ -13,22 +13,31 @@
             <table class="table table-stripped">
                 <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>User</th>
-                    <th>Code</th>
-                    <th>Message</th>
+                    <th style="text-align: center">Date</th>
+                    <th style="text-align: center">User</th>
+                    <th style="text-align: center">Code</th>
+                    <th style="text-align: center">Message</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:forEach var="log" items="${systemLogs}">
                     <tr>
-                        <td><c:out value="${log.dateTime}"/></td>
-                        <td><c:out value="${log.user.lastName}"/><br>
+                        <td style="vertical-align: middle; text-align: center; max-width: 100px; width: 100px"><c:out value="${log.dateTime}"/></td>
+                        <td style="vertical-align: middle; text-align: center;">
+                            <c:if test="${log.user!=null}">
+                                [<c:out value="${log.user.username}"/>]<br>
+                            </c:if>
+
+                            <c:out value="${log.user.lastName}"/><br>
                             <c:out value="${log.user.firstName}"/><br>
                             <c:out value="${log.user.middleName}"/><br>
                         </td>
-                        <td><c:out value="${log.code}"/></td>
-                        <td><c:out value="${log.message}"/></td>
+                        <td style="vertical-align: middle; text-align: center; max-width: 100px; width: 100px"><c:out value="${log.code}"/></td>
+                        <td style="vertical-align: middle; text-align: center; max-width: 600px; width: 600px"><c:out value="${log.message}"/></td>
+                        <td style="vertical-align: middle; text-align: right; max-width: 50px; width: 50px">
+                            <a class="btn bt btn-default" href='<spring:url value="/log/delete/${log.id}"/>'>Delete</a>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>

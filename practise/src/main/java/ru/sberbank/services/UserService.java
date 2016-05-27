@@ -13,5 +13,8 @@ public interface UserService {
     void addUser (User user);
     void deleteUser (Long userId);
     User getUser(Long id);
+    User getUser(String username);
+    Long countAdminUsers();
     Iterable<User> getAllUser();
+
 }

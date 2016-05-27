@@ -3,9 +3,6 @@ package ru.sberbank.model;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by asphodelfod on 15.05.16.
- */
 @Entity
 @Table(name = "SYSTEM_LOG")
 public class SystemLog {
@@ -19,7 +16,6 @@ public class SystemLog {
     private String message;
 
     @Column(name = "DATE_TIME", nullable = false)
-    @OrderBy
     private Date dateTime;
 
     @ManyToOne

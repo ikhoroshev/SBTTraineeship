@@ -6,6 +6,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.domain.Specifications;
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.User;
+import ru.sberbank.model.UserGroupType;
 import ru.sberbank.repositories.UserRepository;
 
 import static org.springframework.data.jpa.domain.Specifications.*;
@@ -51,6 +52,12 @@ public class UserServiceImpl implements UserService {
     public User getUser(Long id) {
         return userRepository.findOne(id);
     }
+
+    @Override
+    public User getUser(String username) { return userRepository.findByUsername(username); }
+
+    @Override
+    public Long countAdminUsers() { return userRepository.countByGroupType(UserGroupType.TEACHER); }
 
     @Override
     public Iterable<User> getAllUser() {
