@@ -45,12 +45,28 @@ function deleteGroup(select,val) {
             select.removeChild(elems[i]);
     }
 }
+function submit(form) {
+    document.getElementById(form).submit();
+}
+function createFormQuestions(nameSelect)
+{
+    var select = document.getElementById(nameSelect);
+    var elems = select.getElementsByTagName('option');
+    var form = document.createElement('form:form');
+    form.setAttribute('modelAttribute','questions');
+    form.setAttribute('method','post');
+    for(var i=0; i<elems.length; i++)
+    {
+        var option=document.createElement('form:label');
+        option.setAttribute('path','id');
+        option.setAttribute('text',elems[0].value);
+    }
 
+}
 function dump(obj) {
     var out = "";
     if(obj && typeof(obj) == "object"){
         for (var i in obj) {
-            if(i=="id"||i=="value")
             out += i + ": " + obj[i] +"\n";
         }
     } else {

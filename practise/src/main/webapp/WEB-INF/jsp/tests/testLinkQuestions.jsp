@@ -6,7 +6,7 @@
 <jsp:include page="../header.jsp"/>
 <body>
 <jsp:include page="../navigation.jsp"/>
-<c:set var="s"/>
+<c:set var="s" value="-1"/>
 <div class="container xd-container">
 
         <select id="slc" multiple='multiple' size="10" class="selection-handle">
@@ -31,7 +31,7 @@
         <select id="slc2" multiple="true"  size="10">
             <c:if test="${questionsInTest!=null}">
                 <c:forEach items="${questionsInTest}" var="question" varStatus="stat">
-                    <c:if test="${s!=questionsInTest.testChapter.position}">
+                    <c:if test="${s!=question.testChapter.position}">
                         <optgroup label="${question.testChapter.title}">
                     </c:if>
                     <div>
@@ -45,14 +45,10 @@
             </c:if>
         </select>
 </div>
-<form:form modelAttribute="test" method="post">
-    <form:select path="id">
-        <c:forEach items="${tests}" var="test">
-            <form:option value="${test.id}">${test.title}</form:option>
-        </c:forEach>
-    </form:select>
-    <button class="btn btn-default" type="submit" href='<spring:url value="/tests/link" htmlEscape="true"/>' >Send id test</button>
-</form:form>
+
+
+    <button class="btn btn-default" onclick="createFormQuestions('slc2')" >Send id test</button>
+
 <script src="<c:url value="/resources/js/tests/add.js"/>"></script>
 
 

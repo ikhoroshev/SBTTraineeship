@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 import ru.sberbank.repositories.QuestionRepository;
+import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.TestService;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  *
@@ -26,35 +26,49 @@ import java.util.Map;
 public class TestController {
   @Resource
   private TestService testService;
+  @Resource
+  private QuestionService questionService;
 
   @RequestMapping(value = "/tests/add", method = RequestMethod.GET)
-  public String initAddTestForm (@ModelAttribute("test")Test test){
+  public String initAddTestForm(@ModelAttribute("test") Test test) {
     return "tests/addTest";
   }
 
   @RequestMapping(value = "/tests/add", method = RequestMethod.POST)
-  public String processAddTestForm (Test test){
+  public String processAddTestForm(Test test) {
     testService.addTest(test);
     return "tests/addTest";
   }
 
   @RequestMapping(value = "/tests/link", method = RequestMethod.GET)
-  public String testConnectQuestionG (@ModelAttribute("test")Test test, Map<String, Object> model){
-    sendQuestionsAndTests(model);
+  public String testConnectQuestionG(@ModelAttribute("test") Test test, Map<String, Object> model) {
+    Iterable<Question> questionIterable = testService.findAllQuestions();
+    //добавить,чтобы проверить есть ли связь с TestRun
+    Iterable<Test> tests = testService.findAll();
+    model.put("tests", tests);
+    test = tests.iterator().next();
+    if (test != null && test.getId() != null) {
+      Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
+      model.put("questionsInTest", questionIterable1);
+      testService.questionsDeleteTest(test.getId(), questionIterable);
+      model.put("questions", questionIterable);
+    }
     return "tests/testLinkQuestions";
   }
 
   @RequestMapping(value = "/tests/link", method = RequestMethod.POST)
-  public String testConnectQuestionP (Test test, Map<String, Object> model){
-    sendQuestionsAndTests(model);
+  public String testConnectQuestionP(Test test, Map<String, Object> model) {
+    Iterable<Question> questionIterable = testService.findAllQuestions();
+    //добавить,чтобы проверить есть ли связь с TestRun
+    Iterable<Test> tests = testService.findAll();
+    model.put("tests", tests);
+    if (test != null && test.getId() != null) {
+      Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
+      model.put("questionsInTest", questionIterable1);
+      testService.questionsDeleteTest(test.getId(), questionIterable);
+      model.put("questions", questionIterable);
+    }
     return "tests/testLinkQuestions";
-  }
-  private void sendQuestionsAndTests(Map<String, Object> model)
-  {
-    Iterable<Question> questionList=testService.findAllQuestions();
-    model.put("questions",questionList);
-    Iterable<Test> tests=testService.findAll();
-    model.put("tests",tests);
   }
 
 }

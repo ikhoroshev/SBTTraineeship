@@ -14,6 +14,8 @@ import ru.sberbank.model.Test;
 import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.repositories.TestRepository;
 
+import java.util.Iterator;
+
 /**
  *
  * @author Raim
@@ -24,6 +26,8 @@ public class TestServiceImpl implements TestService {
   private TestRepository testRepository;
   @Resource
   private QuestionRepository questionRepository;
+  @Resource
+  private QuestionService questionService;
 
   @Override
   public void addTest(Test test) {
@@ -54,6 +58,36 @@ public class TestServiceImpl implements TestService {
   @Override
   public Iterable<Test> findAll() {
     return testRepository.findAll();
+  }
+
+  @Override
+  public Test findOne(Long id) {
+    return testRepository.findOne(id);
+  }
+
+  public Iterable<Question> questionsDeleteTest(Long idTest, Iterable<Question> questionIterable)
+  {
+
+    if (idTest != null) {
+      Test test=testRepository.findOne(idTest);
+      Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
+      Iterator<Question> questionIterator = questionIterable.iterator();
+
+      for (Question question; questionIterator.hasNext(); ) {
+        question=questionIterator.next();
+        for(Question question1:questionIterable1)
+        {
+          if(question.getId()==question1.getId())
+          {
+            questionIterator.remove();
+          }
+        }
+
+      }
+
+      return  questionIterable;
+    }
+    return questionIterable;
   }
 
 }
