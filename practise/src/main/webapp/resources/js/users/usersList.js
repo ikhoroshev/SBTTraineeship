@@ -4,5 +4,5 @@
 
 /* this is a file*/
 $("#check-all").click(function() {
-
+    $(".check-user").prop("checked", this.checked);
 });
