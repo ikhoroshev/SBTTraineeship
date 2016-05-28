@@ -37,7 +37,7 @@
                     <th>Name</th>
                     <th>Group name</th>
                     <th>
-                        <input type="checkbox" id="check-all" name="chk" />
+                      &nbsp;
                     </th>
                 </tr>
             </thead>
@@ -49,7 +49,7 @@
                             <c:out value="${user.group.name}"/>
                         </td>
                         <td>
-                            <input type="checkbox" class="check-user" name="chk[]" />
+                            <a href="users/delete/${user.id}"> delete </a>
                         </td>
                     </tr>
                 </c:forEach>
