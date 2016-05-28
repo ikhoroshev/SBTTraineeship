@@ -14,9 +14,7 @@ import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by �?лья on 17.05.2016.
- */
+
 @Controller
 public class SearchTestController {
     @Resource
