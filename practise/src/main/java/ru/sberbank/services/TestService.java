@@ -27,4 +27,6 @@ public interface TestService {
   List<User> deleteUserLineTest(Long idTest, List<User> questionIterable);
   void saveQuestionsOnTest(CollectionFromForm collectionFromForm);
   Iterable<Test> findAllHaventLine();
+
+  void saveUserLineTest(CollectionFromForm collectionFromForm);
 }

@@ -25,7 +25,7 @@ public class User {
   @ManyToOne
   private UserGroup group;
 
-    protected User() {};
+    public User() {};
 
     public User(UserGroup group, String firstName, String lastName, String middleName) {
         this.group = group;
@@ -72,5 +72,21 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+
+        return id.equals(user.id);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode();
     }
 }

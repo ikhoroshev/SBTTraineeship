@@ -60,13 +60,13 @@ public class TestRunController {
         return "/testRun/testRun";
     }
 
+
+
     @RequestMapping(value = "/testRun/link", method = RequestMethod.GET)
     public String testConnectQuestionG(@ModelAttribute("test") Test test, Map<String, Object> model) {
 
         Iterable<Test> tests = testService.findAllHaventLine();
         model.put("tests", tests);
-
-
 
         List<User> users = userService.findAllByOrderByGroupName();
 
@@ -87,18 +87,22 @@ public class TestRunController {
                                        Map<String, Object> model,
                                        @ModelAttribute("collectionFromForm") CollectionFromForm collectionFromForm) {
 
-        Iterable<Test> tests = testService.findAll();
+        testService.saveUserLineTest(collectionFromForm);
+        Iterable<Test> tests = testService.findAllHaventLine();
         model.put("tests", tests);
+
+
+
+        List<User> users = userService.findAllByOrderByGroupName();
+
         if (test.getId() == null)
-//            test = tests.iterator().next();
+            test = tests.iterator().next();
+
         if (test != null && test.getId() != null) {
-//            Iterable<Question> questionIterable1 = questionService.findByTestsIdLikeOrderByTestChapterPosition(test.getId());
-//            model.put("questionsInTest", questionIterable1);
-//            testService.deleteQuestionsInTest(test.getId(), questionIterable);
-//            model.put("questions", questionIterable);
+            List<User> users2=testService.deleteUserLineTest(test.getId(), users);
+            model.put("usersTest", users2);
         }
-
-
+        model.put("users", users);
 
         return "testRun/lineTestWithUser";
     }
