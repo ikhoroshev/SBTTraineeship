@@ -50,7 +50,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/users/delete/{userId}", method = RequestMethod.GET)
-    public String processAddUserForm (User user, @PathVariable("userId") long userId){
+    public String processDeleteUserForm (User user, @PathVariable("userId") long userId){
         userService.deleteUser(userId);
         return "users/usersList";
     }
