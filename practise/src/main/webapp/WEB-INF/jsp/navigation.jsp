@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
 <spring:url value="/users/find" var="findUsersForm"/>
 <link rel="stylesheet" href="/testapp/resources/css/navigation.css" type="text/css"/>
 <nav class="navbar navbar-default" role="navigation">
