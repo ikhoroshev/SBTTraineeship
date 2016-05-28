@@ -50,7 +50,12 @@ public class ResultServiceImpl implements ResultService {
                     n++;
                     List<Result> results = resultRepository.findByTestRunIdLikeAndQuestionId(testRun.getId(), question.getId());
                     if (question.getAnswerType() == AnswerType.SINGLE) {
-                        if (results.iterator().next().getAnswer().getIsRight()) k++;
+                        if(results.iterator().hasNext())
+                        {
+                            if (results.iterator().next().getAnswer().getIsRight()) k++;
+                        }
+                        else k=(int)Double.POSITIVE_INFINITY;
+
                     } else if (question.getAnswerType() == AnswerType.MULTIPLE) {
                         if(answerRepository.findByQuestionIdLike(question.getId()).size()!=results.size())
                             continue;
