@@ -40,6 +40,7 @@ public class ResultServiceImpl implements ResultService {
     @Override
     @Transient
     public List<Pair<TestRun, Float>> resultByGroup(UserGroup userGroup) {
+        if(userGroup.getId()==null)return null;
         Iterable<TestRun> testRuns = testRunService.findByUserGroupLike(userGroup);
         int n = 0;
         int k = 0;
@@ -68,7 +69,7 @@ public class ResultServiceImpl implements ResultService {
                 pairList.add(Pair.of(testRun, (float) k / n));
                 n = 0;
                 k = 0;
-            }//n/(n+k) % правильных
+            }
         }
         return pairList;
     }

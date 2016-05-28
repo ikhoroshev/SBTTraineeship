@@ -36,20 +36,29 @@
                 <tr>
                     <th>Name</th>
                     <th>Group name</th>
+                    <th>
+                        <input type="checkbox" id="check-all" name="chk" />
+                    </th>
                 </tr>
             </thead>
             <tbody>
-            <c:forEach var="user" items="${searchResult}">
-                <tr>
-                    <td><c:out value="${user.lastName} ${user.middleName} ${user.firstName}"/></td>
-                    <td>
-                        <c:out value="${user.group.name}"/>
-                    </td>
-                </tr>
-            </c:forEach>
+                <c:forEach var="user" items="${searchResult}">
+                    <tr>
+                        <td><c:out value="${user.lastName} ${user.middleName} ${user.firstName}"/></td>
+                        <td>
+                            <c:out value="${user.group.name}"/>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="check-user" name="chk[]" />
+                        </td>
+                    </tr>
+                </c:forEach>
             </tbody>
         </table>
     </c:if>
     </form:form>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="<c:url value="/resources/js/users/usersList.js" />"></script>
 </body>

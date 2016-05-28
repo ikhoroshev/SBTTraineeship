@@ -31,10 +31,10 @@
         </c:if>
     </c:if>
     <c:if test="${question!=null}">
+        <c:out value="${question.text}"/>
         <c:if test="${question.answerType=='SINGLE'}">
             <form:form modelAttribute="answers"  method="post" class="form-horizontal">
                 <c:forEach var="answerItem" items="${question.answer}" varStatus="iter">
-
                     <div>
                         <div>
                             <form:radiobutton path="idAnswerForSingle" value="${answerItem.id}"/>

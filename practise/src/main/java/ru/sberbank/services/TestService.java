@@ -15,6 +15,7 @@ import ru.sberbank.model.Test;
  */
 public interface TestService {
   void addTest (Test test);
+  String deleteTest(Long id);
   Iterable<Test> findTest (Test test);
   Iterable<Question> findAllQuestions();
   Iterable<Test> findAll();
