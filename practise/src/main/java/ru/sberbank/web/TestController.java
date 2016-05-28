@@ -29,7 +29,7 @@ public class TestController {
   @RequestMapping(value = "/tests/add", method = RequestMethod.POST)
   public String processAddTestForm (Test test){
     testService.addTest(test);
-    return "tests/addTest";
+    return "tests/searchTest";
   }
 
 }
