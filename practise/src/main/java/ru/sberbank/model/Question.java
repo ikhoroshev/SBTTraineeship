@@ -29,6 +29,18 @@ public class Question {
                     nullable = false, updatable = false) })
     private Set<Test> tests;
 
+    public Question() {
+        answer=null;
+        text=null;
+        testChapter=null;
+    }
+
+    public Question(Set<Answer> answer, String text, TestChapter testChapter) {
+        this.answer = answer;
+        this.text = text;
+        this.testChapter = testChapter;
+    }
+
     public Long getId() {
         return id;
     }

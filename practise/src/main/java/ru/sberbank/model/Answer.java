@@ -11,10 +11,13 @@ public class Answer {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+
     @Column(nullable = false)
     private String text;
-    @Column(nullable = false,name = "is_right")
+
+    @Column(nullable = false,name = "isRight")
     private Boolean isRight;
+
     @ManyToOne(cascade = CascadeType.ALL)
     private Question question;
 
@@ -31,7 +34,7 @@ public class Answer {
         this.question = question;
     }
 
-    protected Answer() {};
+    public Answer() {};
 
     public Long getId() {
         return id;
