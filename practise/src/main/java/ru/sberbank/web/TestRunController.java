@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import ru.sberbank.model.Answer;
-import ru.sberbank.model.Answers;
-import ru.sberbank.model.Question;
-import ru.sberbank.model.TestRun;
+import ru.sberbank.model.*;
 import ru.sberbank.repositories.AnswerRepository;
+import ru.sberbank.repositories.UserRepository;
 import ru.sberbank.services.TestRunService;
+import ru.sberbank.services.TestService;
+import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -24,6 +24,10 @@ import java.util.Map;
 public class TestRunController {
     @Resource
     TestRunService testRunService;
+    @Resource
+    private TestService testService;
+    @Resource
+    private UserService userService;
 
     @RequestMapping(value = "/testRun/{testRunId}", method = RequestMethod.GET)
     public String processGetForm(Map<String, Object> objectMap,
@@ -54,5 +58,52 @@ public class TestRunController {
         objectMap.put("testRun", testRunService.findOne(testRunId));
 
         return "/testRun/testRun";
+    }
+
+
+
+    @RequestMapping(value = "/testRun/link", method = RequestMethod.GET)
+    public String testConnectQuestionG(@ModelAttribute("test") Test test, Map<String, Object> model) {
+
+        Iterable<Test> tests = testService.findAllHaventLine();
+        model.put("tests", tests);
+
+        List<User> users = userService.findAllByOrderByGroupName();
+
+        if (test.getId() == null)
+        test = tests.iterator().next();
+
+        if (test != null && test.getId() != null) {
+            List<User> users2=testService.deleteUserLineTest(test.getId(), users);
+            model.put("usersTest", users2);
+        }
+        model.put("users", users);
+
+        return "testRun/lineTestWithUser";
+    }
+
+    @RequestMapping(value = "/testRun/link", method = RequestMethod.POST)
+    public String testConnectQuestionP(@ModelAttribute("test") Test test,
+                                       Map<String, Object> model,
+                                       @ModelAttribute("collectionFromForm") CollectionFromForm collectionFromForm) {
+
+        testService.saveUserLineTest(collectionFromForm);
+        Iterable<Test> tests = testService.findAllHaventLine();
+        model.put("tests", tests);
+
+
+
+        List<User> users = userService.findAllByOrderByGroupName();
+
+        if (test.getId() == null)
+            test = tests.iterator().next();
+
+        if (test != null && test.getId() != null) {
+            List<User> users2=testService.deleteUserLineTest(test.getId(), users);
+            model.put("usersTest", users2);
+        }
+        model.put("users", users);
+
+        return "testRun/lineTestWithUser";
     }
 }

@@ -12,6 +12,7 @@ import static org.springframework.data.jpa.domain.Specifications.*;
 
 import javax.annotation.Resource;
 import javax.persistence.criteria.*;
+import java.util.List;
 
 /**
  * Created by salexandrov on 09.05.2016.
@@ -45,5 +46,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(Long userId) {
         userRepository.delete(userId);
+    }
+
+    @Override
+    public List<User> findAllByOrderByGroupName() {
+        return userRepository.findAllByOrderByGroupName();
     }
 }

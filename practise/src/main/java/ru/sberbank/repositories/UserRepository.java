@@ -16,4 +16,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
     Iterable<User> findByLastNameLikeAndGroupNameLike (String userLastNameLike, String userGroupNameLike);
     Iterable<User> findByLastNameLike (String userLastNameLike);
     Iterable<User> findByGroupNameLike (String userGroupNameLike);
+    List<User> findAllByOrderByGroupName();
 }

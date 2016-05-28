@@ -10,7 +10,7 @@ public class TestRun {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    @Column(nullable = false)
+    @Column
     private String status;
     @ManyToOne
     private User user;
