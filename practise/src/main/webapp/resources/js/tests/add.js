@@ -48,25 +48,33 @@ function deleteGroup(select,val) {
 function submit(form) {
     document.getElementById(form).submit();
 }
-function createFormQuestions(nameSelect)
+function createFormQuestions(idSelect,idPerent,idForm)
 {
-    var select = document.getElementById(nameSelect);
+    var select = document.getElementById(idSelect);
     var elems = select.getElementsByTagName('option');
-    var form = document.createElement('form:form');
-    form.setAttribute('modelAttribute','questions');
-    form.setAttribute('method','post');
+    var form = document.getElementById(idForm);
+
+    var option=document.createElement('input');
+    option.setAttribute('name','idCol');
+    option.setAttribute('value',document.getElementById(idPerent).options[document.getElementById(idPerent).selectedIndex].value);
+    option.setAttribute('hidden','true');
+    form.appendChild(option);
+
     for(var i=0; i<elems.length; i++)
     {
-        var option=document.createElement('form:label');
-        option.setAttribute('path','id');
-        option.setAttribute('text',elems[0].value);
+        var option=document.createElement('input');
+        option.setAttribute('name','objectFromWithIDs['+i+'].id');
+        option.setAttribute('value',elems[i].id.substr(1));
+        option.setAttribute('hidden','true');
+        form.appendChild(option);
     }
-
+    form.submit();
 }
 function dump(obj) {
     var out = "";
-    if(obj && typeof(obj) == "object"){
+     if(obj && typeof(obj) == "object"){
         for (var i in obj) {
+            // if(i=='path'||i=='text')
             out += i + ": " + obj[i] +"\n";
         }
     } else {

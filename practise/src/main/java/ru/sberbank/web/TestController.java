@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.sberbank.model.CollectionFromForm;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 import ru.sberbank.repositories.QuestionRepository;
@@ -57,17 +58,25 @@ public class TestController {
   }
 
   @RequestMapping(value = "/tests/link", method = RequestMethod.POST)
-  public String testConnectQuestionP(Test test, Map<String, Object> model) {
+  public String testConnectQuestionP(@ModelAttribute("test") Test test,
+                                     Map<String, Object> model,
+                                     @ModelAttribute("collectionFromForm") CollectionFromForm collectionFromForm) {
+    testService.saveQuestionsOnTest(collectionFromForm);
     Iterable<Question> questionIterable = testService.findAllQuestions();
     //добавить,чтобы проверить есть ли связь с TestRun
     Iterable<Test> tests = testService.findAll();
     model.put("tests", tests);
+    if (test.getId() == null)
+      test = tests.iterator().next();
     if (test != null && test.getId() != null) {
       Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
       model.put("questionsInTest", questionIterable1);
       testService.questionsDeleteTest(test.getId(), questionIterable);
       model.put("questions", questionIterable);
     }
+
+
+
     return "tests/testLinkQuestions";
   }
 

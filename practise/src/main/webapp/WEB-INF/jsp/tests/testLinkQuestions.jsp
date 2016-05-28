@@ -26,8 +26,10 @@
             </c:forEach>
             </c:if>
         </select>
+
         <button id="add" onclick="swap('slc','slc2')">&Gt;</button>
         <button id="delete" onclick="swap('slc2','slc')">&Lt;</button>
+
         <select id="slc2" multiple="true"  size="10">
             <c:if test="${questionsInTest!=null}">
                 <c:forEach items="${questionsInTest}" var="question" varStatus="stat">
@@ -46,9 +48,23 @@
         </select>
 </div>
 
+<form:form modelAttribute="test" method="post" id="testForm">
+    <form:select path="id" onchange="submit('testForm')" id="testId">
+        <c:forEach items="${tests}" var="test">
+            <form:option value="${test.id}">${test.title}</form:option>
+        </c:forEach>
+    </form:select>
+</form:form>
 
-    <button class="btn btn-default" onclick="createFormQuestions('slc2')" >Send id test</button>
+<br><br><br><br><br><br><br><br>
+<button class="btn btn-default" onclick="createFormQuestions('slc2','testId','massID')" >Send id test</button>
 
+
+
+
+<form:form modelAttribute="collectionFromForm" method="post" id="massID">
+
+</form:form>
 <script src="<c:url value="/resources/js/tests/add.js"/>"></script>
 
 

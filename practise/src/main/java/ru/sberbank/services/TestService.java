@@ -5,6 +5,7 @@
  */
 package ru.sberbank.services;
 
+import ru.sberbank.model.CollectionFromForm;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 
@@ -19,4 +20,5 @@ public interface TestService {
   Iterable<Test> findAll();
   Test findOne(Long id);
   Iterable<Question> questionsDeleteTest(Long idTest, Iterable<Question> questionIterable);
+  void saveQuestionsOnTest(CollectionFromForm collectionFromForm);
 }
