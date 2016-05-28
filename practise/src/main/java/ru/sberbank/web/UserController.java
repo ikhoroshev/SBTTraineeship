@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.User;
 import ru.sberbank.model.UserGroup;
+import ru.sberbank.model.UsersToDelete;
 import ru.sberbank.services.UserGroupService;
 import ru.sberbank.services.UserService;
 
@@ -33,6 +34,7 @@ public class UserController {
     public String processSearchForm(User user, Map<String, Object> model) {
         Iterable<User> users = userService.findUsersByExample(user);
         model.put("searchResult", users);
+        model.put("usersToDelete", new UsersToDelete());
         return "users/usersList";
     }
 
@@ -50,9 +52,22 @@ public class UserController {
     }
 
     @RequestMapping(value = "/users/delete/{userId}", method = RequestMethod.GET)
-    public String processAddUserForm (User user, @PathVariable("userId") long userId){
-        userService.deleteUser(userId);
+    public String processDeleteUserForm (User user, @PathVariable("userId") long userId){
+        userService.deleteUser(userId); 
         return "users/usersList";
+    }
+
+    @RequestMapping(value = "/users/delete", method = RequestMethod.POST)
+    public String processDeleteForm(
+      User user,
+      UsersToDelete usersToDelete
+    ) {
+      if (null != usersToDelete) {
+          for (Long id : usersToDelete.getIds()) {
+              userService.deleteUser(id);
+          }
+      }
+      return "users/usersList";
     }
 
 }

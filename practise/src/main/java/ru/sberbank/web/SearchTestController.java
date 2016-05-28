@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Илья on 17.05.2016.
+ * Created by �?лья on 17.05.2016.
  */
 @Controller
 public class SearchTestController {
@@ -29,7 +29,7 @@ public class SearchTestController {
 
 
     @RequestMapping(value = "/tests/search", method = RequestMethod.POST)
-    public String processAddTestForm(Test test, Map<String, Object> model) {
+    public String processSearchForm(Test test, Map<String, Object> model) {
         Iterable<Test> tests = testService.findTest(test);
         model.put("searchResult", tests);
         model.put("isError", "");
