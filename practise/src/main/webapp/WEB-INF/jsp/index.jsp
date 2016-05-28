@@ -1,5 +1,5 @@
-
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
 
 
 <html>
@@ -7,27 +7,29 @@
 <body>
 <jsp:include page="navigation.jsp"/>
 
-<div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Dropdown
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-    </ul>
-</div>
-<%--<% Authentication auth = SecurityContextHolder.getContext().getAuthentication();--%>
-    <%--String login = auth.getName();%>--%>
-<sec:authorize access="hasAuthority('TEACHER')">
-
-    This content will only be visible to users who have
-    the "supervisor" authority in their list of <tt>GrantedAuthority</tt>s.
-
+<sec:authorize access="hasAuthority('PUPIL')">
+12232
 </sec:authorize>
+
+<sec:authorize access="hasAuthority('TEACHER')">
+    <div class="dropdown marginTop">
+        <button class="btn btn-success dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Tests
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="/testapp/tests/search">Search tests</a></li>
+            <li><a href="/testapp/tests/add">Add tests</a></li>
+            <li><a href="/testapp/tests/search/dellete">Remove tests</a></li>
+                <%--<li role="separator" class="divider"></li>--%>
+                <%--<li><a href="#">Separated link</a></li>--%>
+        </ul>
+
+    </div>
+</sec:authorize>
+
+
+
 
 
 </body>
