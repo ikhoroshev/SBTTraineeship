@@ -49,7 +49,7 @@
                             <c:out value="${user.group.name}"/>
                         </td>
                         <td>
-                            <a href="users/delete/${user.id}"> delete </a>
+                            <a class="btn btn-default" href="users/delete/${user.id}"> delete </a>
                         </td>
                     </tr>
                 </c:forEach>
