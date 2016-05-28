@@ -1,5 +1,4 @@
-<%@ page import="org.springframework.security.core.Authentication" %>
-<%@ page import="org.springframework.security.core.context.SecurityContextHolder" %>
+
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 
@@ -21,8 +20,9 @@
         <li><a href="#">Separated link</a></li>
     </ul>
 </div>
-<% Authentication auth = SecurityContextHolder.getContext().getAuthentication();%>
-<sec:authorize access="hasRole('TEACHER')">
+<%--<% Authentication auth = SecurityContextHolder.getContext().getAuthentication();--%>
+    <%--String login = auth.getName();%>--%>
+<sec:authorize access="hasAuthority('TEACHER')">
 
     This content will only be visible to users who have
     the "supervisor" authority in their list of <tt>GrantedAuthority</tt>s.
@@ -31,4 +31,5 @@
 
 
 </body>
+
 </html>

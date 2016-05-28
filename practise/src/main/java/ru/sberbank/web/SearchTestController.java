@@ -1,6 +1,8 @@
 package ru.sberbank.web;
 
 import org.springframework.http.HttpRequest;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +26,7 @@ public class SearchTestController {
 
     @RequestMapping(value = "/tests/search", method = RequestMethod.GET)
     public String initSearchTestForm(Test test) {
+        //Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         return "tests/searchTest";
     }
 
