@@ -12,4 +12,6 @@ public interface UserService {
 
     void addUser (User user);
     void deleteUser (Long userId);
+
+    User findUserByLoginAndPassword (String login, String password);
 }
