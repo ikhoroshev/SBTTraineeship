@@ -43,16 +43,14 @@ public class TestController {
   @RequestMapping(value = "/tests/link", method = RequestMethod.GET)
   public String testConnectQuestionG(@ModelAttribute("test") Test test, Map<String, Object> model) {
     Iterable<Question> questionIterable = testService.findAllQuestions();
-    //добавить,чтобы проверить есть ли связь с TestRun
     Iterable<Test> tests = testService.findAllHaventLine();
     model.put("tests", tests);
     test = tests.iterator().next();
     if (test != null && test.getId() != null) {
-      Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
+      Iterable<Question> questionIterable1 = testService.deleteQuestionsInTest(test.getId(), questionIterable);
       model.put("questionsInTest", questionIterable1);
-      testService.questionsDeleteTest(test.getId(), questionIterable);
-      model.put("questions", questionIterable);
     }
+    model.put("questions", questionIterable);
     return "tests/testLinkQuestions";
   }
 
@@ -70,10 +68,9 @@ public class TestController {
     if (test != null && test.getId() != null) {
       Iterable<Question> questionIterable1 = questionService.findByTestsIdLike(test.getId());
       model.put("questionsInTest", questionIterable1);
-      testService.questionsDeleteTest(test.getId(), questionIterable);
-      model.put("questions", questionIterable);
+      testService.deleteQuestionsInTest(test.getId(), questionIterable);
     }
-
+    model.put("questions", questionIterable);
 
 
     return "tests/testLinkQuestions";

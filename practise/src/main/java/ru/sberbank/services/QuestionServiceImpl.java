@@ -5,8 +5,6 @@ import ru.sberbank.model.Question;
 import ru.sberbank.repositories.QuestionRepository;
 
 import javax.annotation.Resource;
-import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Idony on 27.05.2016.
@@ -17,6 +15,6 @@ public class QuestionServiceImpl implements QuestionService {
     QuestionRepository questionRepository;
     @Override
     public Iterable<Question> findByTestsIdLike(Long test) {
-        return questionRepository.findByTestsIdLike(test);
+        return questionRepository.findByTestsIdLikeOrderByTestChapterPosition(test);
     }
 }

@@ -8,6 +8,9 @@ package ru.sberbank.services;
 import ru.sberbank.model.CollectionFromForm;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
+import ru.sberbank.model.User;
+
+import java.util.List;
 
 /**
  *
@@ -20,7 +23,8 @@ public interface TestService {
   Iterable<Question> findAllQuestions();
   Iterable<Test> findAll();
   Test findOne(Long id);
-  Iterable<Question> questionsDeleteTest(Long idTest, Iterable<Question> questionIterable);
+  Iterable<Question> deleteQuestionsInTest(Long idTest, Iterable<Question> questionIterable);
+  List<User> deleteUserLineTest(Long idTest, List<User> questionIterable);
   void saveQuestionsOnTest(CollectionFromForm collectionFromForm);
   Iterable<Test> findAllHaventLine();
 }

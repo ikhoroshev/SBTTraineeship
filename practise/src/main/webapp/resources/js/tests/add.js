@@ -23,7 +23,7 @@ function add(select,val) {
             elems[i].appendChild(val);
             return;
         }
-        else if(elems[i].label.localeCompare(val.value)==-1)
+        else if(elems[i].label.localeCompare(val.value)==1)
         {
             var group = document.createElement('optgroup');
             group.label=val.value;

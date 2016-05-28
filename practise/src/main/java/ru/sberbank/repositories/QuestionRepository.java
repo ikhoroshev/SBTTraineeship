@@ -13,5 +13,6 @@ import java.util.Set;
  */
 @Repository
 public interface QuestionRepository extends CrudRepository<Question, Long> {
-    Set<Question> findByTestsIdLike(Long test);
+    Set<Question> findByTestsIdLikeOrderByTestChapterPosition(Long test);
+    Iterable<Question> findAllByOrderByTestChapterPosition();
 }

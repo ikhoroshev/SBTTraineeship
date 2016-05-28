@@ -14,10 +14,7 @@ import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.repositories.TestRepository;
 import ru.sberbank.repositories.TestRunRepository;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  *
@@ -67,7 +64,7 @@ public class TestServiceImpl implements TestService {
 
   @Override
   public Iterable<Question> findAllQuestions() {
-    return questionRepository.findAll();
+    return questionRepository.findAllByOrderByTestChapterPosition();
   }
 
   @Override
@@ -80,7 +77,7 @@ public class TestServiceImpl implements TestService {
     return testRepository.findOne(id);
   }
 
-  public Iterable<Question> questionsDeleteTest(Long idTest, Iterable<Question> questionIterable) {
+  public Iterable<Question> deleteQuestionsInTest(Long idTest, Iterable<Question> questionIterable) {
 
     if (idTest != null) {
       Test test = testRepository.findOne(idTest);
@@ -97,32 +94,43 @@ public class TestServiceImpl implements TestService {
           }
         }
 
-
+          return questionIterable1;
       }
 
-      return questionIterable;
+
     }
-    return questionIterable;
+    return null;
   }
 
-  @Override
-  public void saveQuestionsOnTest(CollectionFromForm collectionFromForm) {
-    //добавить,чтобы проверить есть ли связь с TestRun
-    if (collectionFromForm.getIdCol() != null && !containInTestRun(collectionFromForm.getIdCol())) {
-
-      Test test = testRepository.findOne(collectionFromForm.getIdCol());
-      SortedSet<Question> questions = new TreeSet<>();
-      test.setQuestions(questions);
-      testRepository.save(test);
-      List<ObjectFromWithID> objectFromWithIDs = collectionFromForm.getObjectFromWithIDs();
-      if (objectFromWithIDs != null)
-        for (ObjectFromWithID objectFromWithID : objectFromWithIDs) {
-          Question question = questionRepository.findOne(objectFromWithID.getId());
-          questions.add(question);
+    @Override
+    public List<User> deleteUserLineTest(Long idTest, List<User> userList) {
+        List<User> users=new ArrayList<>();
+        for(TestRun testRun:testRunRepository.findByTestIdLikeOrderByUserGroupName(idTest))
+        {
+            users.add(testRun.getUser());
         }
-      testRepository.save(test);
+        userList.removeAll(users);
+        return users;
     }
-  }
+
+    @Override
+  public void saveQuestionsOnTest(CollectionFromForm collectionFromForm) {
+        //добавить,чтобы проверить есть ли связь с TestRun
+        if (collectionFromForm.getIdCol() != null && !containInTestRunNotNEW(collectionFromForm.getIdCol())) {
+
+            Test test = testRepository.findOne(collectionFromForm.getIdCol());
+            SortedSet<Question> questions = new TreeSet<>();
+            test.setQuestions(questions);
+            testRepository.save(test);
+            List<ObjectFromWithID> objectFromWithIDs = collectionFromForm.getObjectFromWithIDs();
+            if (objectFromWithIDs != null)
+                for (ObjectFromWithID objectFromWithID : objectFromWithIDs) {
+                    Question question = questionRepository.findOne(objectFromWithID.getId());
+                    questions.add(question);
+                }
+            testRepository.save(test);
+        }
+    }
 
   @Override
   public Iterable<Test> findAllHaventLine() {
@@ -134,26 +142,35 @@ public class TestServiceImpl implements TestService {
       test=testIterator.next();
       testIterator1 = testRuns.iterator();
       for (Test test1; testIterator1.hasNext(); ) {
-        test1=testIterator1.next().getTest();
-        if ( test1!= null &&
-                test.getId() == test1.getId()) {
-          testIterator.remove();
-          continue;
-        }
+          TestRun testRun=testIterator1.next();
+          //if(testRun.getTestRunStatus()!=TestRunStatus.NEW)
+          {
+              test1=testRun.getTest();
+              if ( test1!= null&&
+                      test.getId() == test1.getId()) {
+                  testIterator.remove();
+                  continue;
+              }
+          }
+
       }
     }
     return tests;
   }
 
-  public Boolean containInTestRun(Long testId) {
+  public Boolean containInTestRunNotNEW(Long testId) {
     Iterable<TestRun> testRuns = testRunRepository.findAll();
     Iterator<TestRun> testIterator1;
     testIterator1 = testRuns.iterator();
     for (Test test; testIterator1.hasNext(); ) {
-      test=testIterator1.next().getTest();
-      if (test!=null&&testId == test.getId()) {
-        return true;
-      }
+        TestRun testRun=testIterator1.next();
+        //if(testRun.getTestRunStatus()!=TestRunStatus.NEW)
+        {
+            test=testRun.getTest();
+            if (test!=null&&testId == test.getId()) {
+                return true;
+            }
+        }
     }
     return false;
   }

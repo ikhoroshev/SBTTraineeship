@@ -2,6 +2,8 @@ package ru.sberbank.services;
 
 import ru.sberbank.model.*;
 
+import java.util.List;
+
 /**
  * Created by Idony on 20.05.2016.
  */
@@ -14,4 +16,5 @@ public interface TestRunService {
     void startTest(Long testRunId,TestRun testRun);
     boolean inspectionAnswer(Answers answers,TestRun testRun);
     Question hideRightAnswers(Question question);
+//    List<TestRun>
 }

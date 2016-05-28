@@ -13,7 +13,7 @@ public class Question implements Comparable<Question>{
     @Column(nullable = false,name = "answer_type")
     private AnswerType answerType;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private TestChapter testChapter;
 
     @OneToMany
@@ -88,6 +88,8 @@ public class Question implements Comparable<Question>{
 
     @Override
     public int compareTo(Question o) {
+        if(testChapter==null)return -1;
+        if(o.getTestChapter()==null)return 1;
         int i=testChapter.getPosition().compareTo(o.getTestChapter().getPosition());
         if(i==0)
         {
