@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.CollectionFromForm;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
-import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.TestService;
 
@@ -45,7 +44,7 @@ public class TestController {
   public String testConnectQuestionG(@ModelAttribute("test") Test test, Map<String, Object> model) {
     Iterable<Question> questionIterable = testService.findAllQuestions();
     //добавить,чтобы проверить есть ли связь с TestRun
-    Iterable<Test> tests = testService.findAll();
+    Iterable<Test> tests = testService.findAllHaventLine();
     model.put("tests", tests);
     test = tests.iterator().next();
     if (test != null && test.getId() != null) {
@@ -63,8 +62,8 @@ public class TestController {
                                      @ModelAttribute("collectionFromForm") CollectionFromForm collectionFromForm) {
     testService.saveQuestionsOnTest(collectionFromForm);
     Iterable<Question> questionIterable = testService.findAllQuestions();
-    //добавить,чтобы проверить есть ли связь с TestRun
-    Iterable<Test> tests = testService.findAll();
+
+    Iterable<Test> tests = testService.findAllHaventLine();
     model.put("tests", tests);
     if (test.getId() == null)
       test = tests.iterator().next();

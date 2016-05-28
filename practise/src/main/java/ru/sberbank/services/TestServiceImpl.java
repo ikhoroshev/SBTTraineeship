@@ -9,12 +9,10 @@ import javax.annotation.Resource;
 
 import com.google.common.base.Strings;
 import org.springframework.stereotype.Service;
-import ru.sberbank.model.CollectionFromForm;
-import ru.sberbank.model.ObjectFromWithID;
-import ru.sberbank.model.Question;
-import ru.sberbank.model.Test;
+import ru.sberbank.model.*;
 import ru.sberbank.repositories.QuestionRepository;
 import ru.sberbank.repositories.TestRepository;
+import ru.sberbank.repositories.TestRunRepository;
 
 import java.util.Iterator;
 import java.util.List;
@@ -33,6 +31,8 @@ public class TestServiceImpl implements TestService {
   private QuestionRepository questionRepository;
   @Resource
   private QuestionService questionService;
+  @Resource
+  private TestRunRepository testRunRepository;
 
   @Override
   public void addTest(Test test) {
@@ -97,22 +97,54 @@ public class TestServiceImpl implements TestService {
 
   @Override
   public void saveQuestionsOnTest(CollectionFromForm collectionFromForm) {
-      if(collectionFromForm.getIdCol()!=null)
-      {
+    //добавить,чтобы проверить есть ли связь с TestRun
+    if (collectionFromForm.getIdCol() != null && !containInTestRun(collectionFromForm.getIdCol())) {
 
-        Test test=testRepository.findOne(collectionFromForm.getIdCol());
-        SortedSet<Question> questions = new TreeSet<>();
-        List<ObjectFromWithID> objectFromWithIDs=collectionFromForm.getObjectFromWithIDs();
-        if(objectFromWithIDs!=null)
-        for (ObjectFromWithID objectFromWithID:objectFromWithIDs)
-        {
-          Question question=questionRepository.findOne(objectFromWithID.getId());
+      Test test = testRepository.findOne(collectionFromForm.getIdCol());
+      SortedSet<Question> questions = new TreeSet<>();
+      test.setQuestions(questions);
+      testRepository.save(test);
+      List<ObjectFromWithID> objectFromWithIDs = collectionFromForm.getObjectFromWithIDs();
+      if (objectFromWithIDs != null)
+        for (ObjectFromWithID objectFromWithID : objectFromWithIDs) {
+          Question question = questionRepository.findOne(objectFromWithID.getId());
           questions.add(question);
         }
-        test.setQuestions(questions);
-        // удаляются предыдущие
-        testRepository.save(test);
-      }
+      testRepository.save(test);
+    }
   }
 
+  @Override
+  public Iterable<Test> findAllHaventLine() {
+    Iterable<Test> tests = testRepository.findAll();
+    Iterator<Test> testIterator = tests.iterator();
+    Iterable<TestRun> testRuns = testRunRepository.findAll();
+    Iterator<TestRun> testIterator1;
+    for (Test test; testIterator.hasNext(); ) {
+      test=testIterator.next();
+      testIterator1 = testRuns.iterator();
+      for (Test test1; testIterator1.hasNext(); ) {
+        test1=testIterator1.next().getTest();
+        if ( test1!= null &&
+                test.getId() == test1.getId()) {
+          testIterator.remove();
+          continue;
+        }
+      }
+    }
+    return tests;
+  }
+
+  public Boolean containInTestRun(Long testId) {
+    Iterable<TestRun> testRuns = testRunRepository.findAll();
+    Iterator<TestRun> testIterator1;
+    testIterator1 = testRuns.iterator();
+    for (Test test; testIterator1.hasNext(); ) {
+      test=testIterator1.next().getTest();
+      if (test!=null&&testId == test.getId()) {
+        return true;
+      }
+    }
+    return false;
+  }
 }

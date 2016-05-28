@@ -21,4 +21,5 @@ public interface TestService {
   Test findOne(Long id);
   Iterable<Question> questionsDeleteTest(Long idTest, Iterable<Question> questionIterable);
   void saveQuestionsOnTest(CollectionFromForm collectionFromForm);
+  Iterable<Test> findAllHaventLine();
 }
