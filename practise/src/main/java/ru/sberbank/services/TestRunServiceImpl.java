@@ -33,6 +33,14 @@ public class TestRunServiceImpl implements TestRunService {
     }
 
     @Override
+    public Iterable<TestRun> findByTestsUser(User user) {
+        if (user == null) {
+            return null;
+        }
+       return testRunRepository.findByUser(user);
+    }
+
+    @Override
     public TestRun findOne(Long id) {
         return testRunRepository.findOne(id);
     }

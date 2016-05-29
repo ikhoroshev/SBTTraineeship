@@ -6,6 +6,7 @@
 package ru.sberbank.services;
 
 import ru.sberbank.model.Test;
+import ru.sberbank.model.User;
 
 /**
  *
@@ -15,4 +16,5 @@ public interface TestService {
   void addTest (Test test);
   String deleteTest(Long id);
   Iterable<Test> findTest (Test test);
+//  Iterable<Test> findAllTestsUser (User user);
 }

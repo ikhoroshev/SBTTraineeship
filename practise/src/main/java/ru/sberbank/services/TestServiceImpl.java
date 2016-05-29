@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 import com.google.common.base.Strings;
 import org.springframework.stereotype.Service;
 import ru.sberbank.model.Test;
+import ru.sberbank.model.User;
 import ru.sberbank.repositories.TestRepository;
 
 /**
@@ -35,6 +36,12 @@ public class TestServiceImpl implements TestService {
     }
     return "";
  }
+
+//  @Override
+//  public Iterable<Test> findAllTestsUser (User user) {
+//   // testRepository.
+//    return null;
+//  }
 
   @Override
   public Iterable<Test> findTest (Test test) {

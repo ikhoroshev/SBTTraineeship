@@ -13,18 +13,28 @@
                 </a>
             </ul>
 
+            <sec:authentication var="principal" property="principal"/>
+
+            <ul class="nav navbar-nav navbar-right removeMarginRight">
+                <div class="marginTop">
+                    <strong> ${principal} </strong>
+                </div>
+            </ul>
             <sec:authorize access="hasAuthority('PUPIL')">
+
+
                 <ul class="nav navbar-nav navbar-right removeMarginRight">
                     <li>
                         <button type="button" class="btn btn-danger marginTop btn-lg "
-                                onClick='location.href="/testapp/login"'> TAKE THE TEST
+                                onClick='location.href="/testapp/testrun"'> TAKE THE TEST
                         </button>
                     </li>
                 </ul>
             </sec:authorize>
 
             <sec:authorize access="hasAuthority('TEACHER')">
-                <ul class="nav navbar-nav navbar-right removeMarginRight">
+
+                <ul class="nav navbar-nav navbar-right marginRight">
                     <div class="dropdown marginTop">
                         <button class="btn btn-success dropdown-toggle btn-lg" type="button" id="dropdownMenu1"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
