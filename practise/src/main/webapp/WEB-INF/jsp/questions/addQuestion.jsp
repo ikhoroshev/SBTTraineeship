@@ -78,6 +78,8 @@
                 <tbody>
                 <tr>
                     <td>
+                        <form:input type="hidden" path="answers[0].id"/>
+                        <form:input type="hidden" path="answers[0].question"/>
                         <form:input class="form-control" path="answers[0].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -86,6 +88,8 @@
                 </tr>
                 <tr>
                     <td>
+                        <form:input type="hidden" path="answers[1].id"/>
+                        <form:input type="hidden" path="answers[1].question"/>
                         <form:input class="form-control" path="answers[1].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -94,6 +98,8 @@
                 </tr>
                 <tr>
                     <td>
+                        <form:input type="hidden" path="answers[2].id"/>
+                        <form:input type="hidden" path="answers[2].question"/>
                         <form:input class="form-control" path="answers[2].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -102,6 +108,8 @@
                 </tr>
                 <tr>
                     <td>
+                        <form:input type="hidden" path="answers[3].id"/>
+                        <form:input type="hidden" path="answers[3].question"/>
                         <form:input class="form-control" path="answers[3].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -132,12 +140,12 @@
 
             <div style="text-align: center">
                 <button class="btn btn-default" type="submit">Add Question</button>
-                <c:if test="${isEdit}">
+                <%--<c:if test="${isEdit}">
                     <a class="btn bt btn-default" href='<spring:url value="/questions/find/"/>'>Delete Question</a>
                 </c:if>
-                <c:if test="${isEdit==false}">
-                    <a class="btn bt btn-default" href='<spring:url value="/questions/find/"/>'>Cancel</a>
-                </c:if>
+                <c:if test="${isEdit==false}">--%>
+                <a class="btn bt btn-default" href='<spring:url value="/questions/find/"/>'>Cancel</a>
+                <%--</c:if>--%>
 
             </div>
         </div>
