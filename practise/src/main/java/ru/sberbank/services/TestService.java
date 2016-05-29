@@ -16,7 +16,7 @@ public interface TestService  {
 
     Iterable<Test> deleteTest(long id);
 
-    Iterable<Question> findAllQuestions();
+    //Iterable<Question> findAllQuestions();
 
-    Iterable<Question> getAllQuestions(Long id, Iterable<Question> questionIterable);
+    //Iterable<Question> getAllQuestions(Long id, Iterable<Question> questionIterable);
 }

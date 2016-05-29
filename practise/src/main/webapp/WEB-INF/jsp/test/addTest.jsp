@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Notebook1
-  Date: 20.05.2016
-  Time: 12:48
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
@@ -19,38 +12,25 @@
             <div>
                 <label for="title">Title </label>
                 <form:input class="form-control" path="title" size="30" maxlength="80" id="title"/>
-                <span class="help-inline"><form:errors path="*"/></span>
             </div>
             <div>
                 <label for="description">Description </label>
                 <form:textarea class="form-control textarea long-field" path="description" rows="5" id="description"/>
-                <span class="help-inline"><form:errors path="*"/></span>
             </div>
-            <%--<div>--%>
-                <%--&lt;%&ndash;@declare id="question"&ndash;%&gt;<label for = "Question" > Question </label>--%>
-                <%--<form action ="form_action.asp" size = "30" maxlenght = "80"  path="question">--%>
-                    <%--<select name="question" multiple>--%>
-                        <%--<option value="[1]">1.</option>--%>
-                        <%--<option value="[2]">2.</option>--%>
-                        <%--<option value="[3]">3.</option>--%>
-                        <%--<option value="[4]">4.</option>--%>
-                    <%--</select>--%>
-                    <%--<input type="submit">--%>
-                <%--</form>--%>
-            <%--</div>--%>
-            <div>
-                <%--@declare id="question"--%><label for="question">Question </label>
+
+            <%--<div>
+                &lt;%&ndash;@declare id="question"&ndash;%&gt;<label for="question">Question </label>
                     <div>
-            <form action="demo_form.asp" method="get">
+            &lt;%&ndash;<form action="demo_form.asp" method="get">
                 <input type="checkbox" name="question" value="Question"> 1 <br>
                 <input type="checkbox" name="question" value="Question"> 2 <br>
-                <%--<input type="submit" value="Submit">--%>
-            </form>
+                &lt;%&ndash;<input type="submit" value="Submit">&ndash;%&gt;
+            </form>&ndash;%&gt;
                     </div>
-            </div>
+            </div>--%>
             <div>
                 <button class="btn btn-default" type="submit">Add test</button>
-                <a class="btn btn-default" href='<spring:url value="#" htmlEscape="true"/>'>Cancel</a>
+                <a class="btn btn-default" href='<spring:url value="/tests/find" htmlEscape="true"/>'>View Tests</a>
             </div>
         </div>
     </form:form>

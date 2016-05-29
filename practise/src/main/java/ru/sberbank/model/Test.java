@@ -3,10 +3,6 @@ package ru.sberbank.model;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by asphodelfod on 15.05.16.
- */
-
 @Entity
 public class Test {
     @Id @GeneratedValue
