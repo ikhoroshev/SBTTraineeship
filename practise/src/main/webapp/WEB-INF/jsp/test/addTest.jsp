@@ -26,6 +26,28 @@
                 <form:textarea class="form-control textarea long-field" path="description" rows="5" id="description"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
+            <%--<div>--%>
+                <%--&lt;%&ndash;@declare id="question"&ndash;%&gt;<label for = "Question" > Question </label>--%>
+                <%--<form action ="form_action.asp" size = "30" maxlenght = "80"  path="question">--%>
+                    <%--<select name="question" multiple>--%>
+                        <%--<option value="[1]">1.</option>--%>
+                        <%--<option value="[2]">2.</option>--%>
+                        <%--<option value="[3]">3.</option>--%>
+                        <%--<option value="[4]">4.</option>--%>
+                    <%--</select>--%>
+                    <%--<input type="submit">--%>
+                <%--</form>--%>
+            <%--</div>--%>
+            <div>
+                <%--@declare id="question"--%><label for="question">Question </label>
+                    <div>
+            <form action="demo_form.asp" method="get">
+                <input type="checkbox" name="question" value="Question"> 1 <br>
+                <input type="checkbox" name="question" value="Question"> 2 <br>
+                <%--<input type="submit" value="Submit">--%>
+            </form>
+                    </div>
+            </div>
             <div>
                 <button class="btn btn-default" type="submit">Add test</button>
                 <a class="btn btn-default" href='<spring:url value="#" htmlEscape="true"/>'>Cancel</a>

@@ -1,11 +1,9 @@
 package ru.sberbank.web;
 
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
-import ru.sberbank.model.User;
-import ru.sberbank.model.UserGroup;
 import ru.sberbank.services.TestService;
 
 import javax.annotation.Resource;
@@ -20,7 +18,7 @@ public class TestController {
     @Resource
     private TestService testService;
 
-    @RequestMapping(value = "test/find", method = RequestMethod.GET)
+    @RequestMapping(value = "test/find", method = RequestMethod.POST)
     public String initViewForm(Test test) {
         return "test/addTest";
     }
@@ -34,12 +32,27 @@ public class TestController {
     }
 
     @RequestMapping(value = "test/delete/{testId}", method = RequestMethod.GET)
-    public String processDeleteTestForm (Test test, @PathVariable ("testId") long testId){
+    public String processDeleteTestForm(Test test, @PathVariable("testId") long testId) {
         testId = Long.decode(String.valueOf(testId));
-       // testService.deleteTest(id);
+        // testService.deleteTest(id);
         Iterable<Test> testIterable = testService.deleteTest(testId);
-       // model.put("allTest", testIterable);
+        // model.put("allTest", testIterable);
 
         return "test/testsList";
     }
+
+    @RequestMapping(value = "/tests/find", method = RequestMethod.GET)
+    public String processViewQuestionForm(@ModelAttribute("test") Question test, Map<String, Object> model) {
+        Iterable<Question> questionIterable = testService.findAllQuestions();
+        Iterable<Question> tests = testService.findAllQuestions();
+        model.put("tests", tests);
+        test = tests.iterator().next();
+        if (test != null && test.getId() != null) {
+            Iterable<Question> questionIterable1 = testService.getAllQuestions(test.getId(), questionIterable);
+            model.put("question", questionIterable);
+        }
+        model.put("question", questionIterable);
+        return "tests/addTest";
+    }
 }
+

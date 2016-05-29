@@ -1,6 +1,7 @@
 package ru.sberbank.services;
 
 import org.springframework.data.repository.CrudRepository;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 
 /**
@@ -14,4 +15,8 @@ public interface TestService  {
     Test getTest(Long id);
 
     Iterable<Test> deleteTest(long id);
+
+    Iterable<Question> findAllQuestions();
+
+    Iterable<Question> getAllQuestions(Long id, Iterable<Question> questionIterable);
 }
