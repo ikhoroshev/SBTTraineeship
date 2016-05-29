@@ -13,7 +13,7 @@
                     </div>
                 </a>
             </ul>
-
+            <sec:authorize access="hasAnyAuthority('PUPIL', 'TEACHER')">
             <sec:authentication var="principal" property="principal"/>
 
             <ul class="nav navbar-nav navbar-right removeMarginRight">
@@ -30,6 +30,7 @@
 
                 </div>
             </ul>
+            </sec:authorize>vvvvvv
             <sec:authorize access="hasAuthority('PUPIL')">
 
 
