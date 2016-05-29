@@ -33,7 +33,6 @@
                         <c:out value="${noDelete}"/>
                     </c:if></a>
                     <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit<c:if test="${testChapterId == testChapter.id}">
-                        <c:out value="${noEdit}"/>
                     </c:if></a>
                 </td>
             </tr>
