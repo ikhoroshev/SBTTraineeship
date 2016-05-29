@@ -33,13 +33,51 @@ public class QuestionController {
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
-
         model.put("allTestChapter", allTestChapter);
         return "questions/add-viewQuestion";
     }
 
     @RequestMapping(value = "/questions/find", method = RequestMethod.POST)
     public String processAddForm(Question question, Map<String, Object> model){
+        //валидация
+        int answerCount=0;
+        int rightCount=0;
+        for (Answer answer : question.getAnswers())
+            if(answer.getText().trim().length()>0) {
+                answerCount++;
+                if(answer.getIsRight())
+                    rightCount++;
+            }
+        if(question.getText().trim().length()==0||question.getText().trim().length()>2000){
+            model.put("question",question);
+            Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", allTestChapter);
+
+            model.put("questionError",new String("В вопросе должно быть больше 0 и меньше 2000 символов!"));
+            return "questions/addQuestion";
+        }
+        if(question.getTestChapter()==null){
+            model.put("question",question);
+            Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", allTestChapter);
+            model.put("chapterError",new String("Создайте хотя бы одну главу для вопросов!"));
+            return "questions/addQuestion";
+        }
+        if(answerCount<2){
+            model.put("question",question);
+            Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", allTestChapter);
+            model.put("answerError",new String("Вопрос должен иметь по крайней мере 2 ответа!"));
+            return "questions/addQuestion";
+        }
+        if(rightCount==0){
+            model.put("question",question);
+            Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
+            model.put("allTestChapter", allTestChapter);
+            model.put("rightError",new String("Отметьте по крайней мере один правильный ответ!"));
+            return "questions/addQuestion";
+        }
+
         Iterable<TestChapter> testChapterByTitle = testChapterService.getTestChapterByTitle(question.getTestChapter().getTitle());
         question.setTestChapter(testChapterByTitle.iterator().next());
         List<Answer> answers = question.getAnswers();
@@ -51,6 +89,10 @@ public class QuestionController {
             else
                 answer.setQuestion(question);
         }
+
+        if(rightCount>1)
+            question.setType(QuestionType.MULTIPLE);
+        else question.setType(QuestionType.SINGLE);
 
         questionService.addQuestion(question);
         log.Log(10);
