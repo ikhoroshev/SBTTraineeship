@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <spring:url value="/users/find" var="findUsersForm"/>
@@ -17,7 +18,12 @@
 
             <ul class="nav navbar-nav navbar-right removeMarginRight">
                 <div class="marginTop">
-                    <strong> ${principal} </strong>
+                    <address>
+                    <strong>Логин:  </strong> ${principal} <br>
+                        <a href="/testapp/logout">Выйти</a>
+                </address>
+
+
                 </div>
             </ul>
             <sec:authorize access="hasAuthority('PUPIL')">
@@ -36,15 +42,15 @@
 
                 <ul class="nav navbar-nav navbar-right marginRight">
                     <div class="dropdown marginTop">
-                        <button class="btn btn-success dropdown-toggle btn-lg" type="button" id="dropdownMenu1"
+                        <button class="btn btn-success dropdown-toggle btn-lg  marginTop" type="button" id="dropdownMenu1"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Tests
+                            Тесты
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="/testapp/tests/search">Search tests</a></li>
-                            <li><a href="/testapp/tests/add">Add tests</a></li>
-                            <li><a href="/testapp/tests/search/dellete">Remove tests</a></li>
+                            <li><a href="/testapp/tests/search">Найти тест</a></li>
+                            <li><a href="/testapp/tests/add">Добавить тест</a></li>
+                            <li><a href="/testapp/tests/search/dellete">Удалить тест</a></li>
                                 <%--<li role="separator" class="divider"></li>--%>
                                 <%--<li><a href="#">Separated link</a></li>--%>
                         </ul>
@@ -55,13 +61,13 @@
                     <div class="dropdown marginTop">
                         <button class="btn btn-info dropdown-toggle btn-lg" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Users
+                            Пользователи
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="/testapp/users/find">Search users</a></li>
-                            <li><a href="/testapp/users/add">Add users</a></li>
-                            <li><a href="/testapp/users/search/dellete">Remove tests</a></li>
+                            <li><a href="/testapp/users/find">Найти пользователя</a></li>
+                            <li><a href="/testapp/users/add">Добавить пользователя</a></li>
+                            <li><a href="/testapp/users/find">Удалить пользователя</a></li>
                         </ul>
                     </div>
 
@@ -71,8 +77,17 @@
     </div>
 
 
-    <footer class="footer">
-        <br>
-        <p>THIS IS FOOTER</p>
+    <footer class="footer" style="overflow: hidden">
+        <img src="/testapp/resources/image/sberTech.png" class="imgLeftMargin" alt="SberT">
+        <div class="footer_textRight">
+        <address style="display: inline">
+            <small>
+            <strong>Контакты: </strong><br>
+                <strong>Наталья Беломестных<br></strong>
+            <a href="nebelomestnyh.sbt@sberbank.ru">nebelomestnyh.sbt@sberbank.ru</a><br>
+                <strong><abbr title="Phone"></abbr> +7 (913) 158-68-57 </strong>
+            </small>
+        </address>
+        </div>
     </footer>
 </nav>

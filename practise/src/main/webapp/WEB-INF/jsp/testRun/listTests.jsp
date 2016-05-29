@@ -5,7 +5,7 @@
   Time: 1:12
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -40,7 +40,7 @@
                         <td>
                             <label>
                                     <%--<input type="checkbox"  name="${test.id}" value="TRUE">--%>
-                                <a class="btn btn-default" href='<spring:url value="/testrun/${test.id}"/>'>RUN</a>
+                                <a class="btn btn-default" href='<spring:url value="//testRun/${test.id}"/>'>RUN</a>
                             </label>
                         </td>
                     </tr>
