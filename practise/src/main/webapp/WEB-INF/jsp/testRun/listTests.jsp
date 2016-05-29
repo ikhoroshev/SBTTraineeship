@@ -5,7 +5,7 @@
   Time: 1:12
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -26,6 +26,7 @@
             <tr>
                 <th>Title</th>
                 <th>Description</th>
+                <th>Статус</th>
                 <th>Пройти</th>
             </tr>
             </thead>
@@ -37,6 +38,7 @@
                         <td>
                             <c:out value="${test.getTest().getDescription()}"/>
                         </td>
+                        <td><c:out value="${test.getStatus() } "/></td>
                         <td>
                             <label>
                                     <%--<input type="checkbox"  name="${test.id}" value="TRUE">--%>

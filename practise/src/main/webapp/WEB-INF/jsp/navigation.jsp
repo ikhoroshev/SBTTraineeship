@@ -30,14 +30,14 @@
 
                 </div>
             </ul>
-            </sec:authorize>vvvvvv
+            </sec:authorize>
             <sec:authorize access="hasAuthority('PUPIL')">
 
 
-                <ul class="nav navbar-nav navbar-right removeMarginRight">
+                <ul class="nav navbar-nav navbar-right marginRight">
                     <li>
                         <button type="button" class="btn btn-danger marginTop btn-lg "
-                                onClick='location.href="/testapp/testrun"'> TAKE THE TEST
+                                onClick='location.href="/testapp/listTests"'> Пройти тест
                         </button>
                     </li>
                 </ul>

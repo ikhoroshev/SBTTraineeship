@@ -13,7 +13,7 @@
         <intercept-url pattern="/testrun/**" access="hasAuthority('PUPIL')" />
         <intercept-url pattern="/users/**" access="hasAuthority('TEACHER')" />
         <form-login login-page="/login"/>
-        <logout logout-url="/logout" invalidate-session="true"/>
+        <logout logout-url="/logout" invalidate-session="true" logout-success-url="/"/>
     </http>
 
     <authentication-manager>

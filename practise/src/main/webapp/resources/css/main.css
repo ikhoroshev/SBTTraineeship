@@ -2,3 +2,8 @@
     margin-left: 25%;
     color: red; /* Цвет символа */
 }
+
+.buttonInCentr{
+    margin-left: 40%;
+    display: inline-block;
+}
