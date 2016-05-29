@@ -8,7 +8,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <a href="/testapp">
-                    <div class="marginRightLogo">
+                    <div class="marginRightLogo" style="margin-top: 1%;">
                         <img src="/testapp/resources/image/SBTLogoFinal.png" alt="SberT">
                     </div>
                 </a>
@@ -20,7 +20,11 @@
                 <div class="marginTop">
                     <address>
                     <strong>Логин:  </strong> ${principal} <br>
-                        <a href="/testapp/logout">Выйти</a>
+                        <c:url var="logoutUrl" value="/logout"/>
+                        <form action="/testapp/logout" method="post" style="overflow: hidden; float: left">
+                            <input type="submit" value="Выйти" />
+                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                        </form>
                 </address>
 
 
