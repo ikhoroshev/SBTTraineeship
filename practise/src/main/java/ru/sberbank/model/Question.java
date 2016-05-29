@@ -15,7 +15,7 @@ public class Question {
     @Column(nullable = false)
     private QuestionType type;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 2000)
     private String text;
 
     @ManyToOne
