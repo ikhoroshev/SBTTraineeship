@@ -5,7 +5,7 @@ import java.lang.String;
 import java.util.List;
 
 @Entity
-public class Question {
+public class Question extends Test {
     @Id @GeneratedValue
     private Long id;
 
