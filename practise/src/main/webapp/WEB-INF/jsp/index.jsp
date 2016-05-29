@@ -10,7 +10,7 @@
 <body>
 <jsp:include page="navigation.jsp"/>
 
-
+<sec:authorize access="hasRole('ROLE_ANONYMOUS')">
 <div class="buttonInCentr">
     <button type="button" class="btn btn-primary marginTop btn-lg " style="width:100%"
             onClick='location.href="/testapp/login"'> Войти
@@ -19,7 +19,7 @@
             onClick='location.href="/testapp/testrun"'> Зарегистрироваться
     </button>
 </div>
-
+</sec:authorize>
 </body>
 
 </html>

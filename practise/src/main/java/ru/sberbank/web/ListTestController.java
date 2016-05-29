@@ -27,7 +27,7 @@ public class ListTestController {
     @Resource
     private UserService userService;
 
-    @RequestMapping(value = "/listTests", method = RequestMethod.GET)
+    @RequestMapping(value = "/testRun/listTests", method = RequestMethod.GET)
     public String initListTestsForm(Map<String, Object> model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findUserByLogin(auth.getName());

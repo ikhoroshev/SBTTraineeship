@@ -37,7 +37,7 @@
                 <ul class="nav navbar-nav navbar-right marginRight">
                     <li>
                         <button type="button" class="btn btn-danger marginTop btn-lg "
-                                onClick='location.href="/testapp/listTests"'> Пройти тест
+                                onClick='location.href="/testapp/testRun/listTests"'> Пройти тест
                         </button>
                     </li>
                 </ul>

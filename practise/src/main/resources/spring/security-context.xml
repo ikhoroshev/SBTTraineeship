@@ -12,15 +12,13 @@
         <intercept-url pattern="/login" access="permitAll" />
         <intercept-url pattern="/testrun/**" access="hasAuthority('PUPIL')" />
         <intercept-url pattern="/users/**" access="hasAuthority('TEACHER')" />
+        <intercept-url pattern="/tests/**" access="hasAuthority('TEACHER')" />
         <form-login login-page="/login"/>
         <logout logout-url="/logout" invalidate-session="true" logout-success-url="/"/>
     </http>
 
     <authentication-manager>
         <authentication-provider ref="authenticationProvider">
-            <!--<user-service>-->
-                <!--<user name="user" password="password" authorities="ROLE_ADMIN"/>-->
-            <!--</user-service>-->
         </authentication-provider>
     </authentication-manager>
 

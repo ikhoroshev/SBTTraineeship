@@ -42,7 +42,7 @@
                         <td>
                             <label>
                                     <%--<input type="checkbox"  name="${test.id}" value="TRUE">--%>
-                                <a class="btn btn-default" href='<spring:url value="//testRun/${test.id}"/>'>RUN</a>
+                                <a class="btn btn-default" href='<spring:url value="/testRun/${test.id}"/>'>RUN</a>
                             </label>
                         </td>
                     </tr>
