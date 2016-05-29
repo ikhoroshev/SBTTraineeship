@@ -13,4 +13,6 @@ public interface UserService {
     void addUser (User user);
     void deleteUser (Long userId);
     List<User> findAllByOrderByGroupName();
+    User findUserByLogin (String login);
+    User findUserByLoginAndPassword (String login, String password);
 }

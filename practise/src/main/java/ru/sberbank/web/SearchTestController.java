@@ -1,6 +1,8 @@
 package ru.sberbank.web;
 
 import org.springframework.http.HttpRequest;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +24,7 @@ public class SearchTestController {
 
     @RequestMapping(value = "/tests/search", method = RequestMethod.GET)
     public String initSearchTestForm(Test test) {
+        //Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         return "tests/searchTest";
     }
 
@@ -34,11 +37,13 @@ public class SearchTestController {
         return "tests/searchTest";
     }
 
-//    @RequestMapping(value = "/tests/del", method = RequestMethod.POST)
-//    public String dellete(@ModelAttribute("TestForm") TestForm testForm) {
-//        System.out.println("111");
-//        return "tests/searchTest";
-//    }
+    @RequestMapping(value = "/tests/search/dellete", method = RequestMethod.GET)
+    public String dellete(Test test, Map<String, Object> model) {
+        Iterable<Test> tests = testService.findAll();
+        model.put("searchResult", tests);
+        model.put("isError", "");;
+        return "tests/searchTest";
+    }
 
     @RequestMapping(value = "/tests/delete/{testID}", method = RequestMethod.GET)
     public String getTest(@PathVariable String testID, Test test, HashMap<String, Object> model) {
@@ -48,14 +53,6 @@ public class SearchTestController {
         Iterable<Test> tests = testService.findTest(test);
         model.put("searchResult", tests);
 
-        //questionService.deleteQuestion(id);
-
-       // question = tempQuestion;
-
-//        Iterable<Question> questions = questionService.findQuestionByKeywordsAndTestChapter(question.getText(), question.getTestChapter());
-//        model.put("searchQuestion", questions);
-//        Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
-//        model.put("allTestChapter", allTestChapter);
         return "tests/searchTest";
     }
 }

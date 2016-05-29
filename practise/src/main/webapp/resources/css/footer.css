@@ -1,0 +1,21 @@
+.footer {
+    border: solid 1px green;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.imgLeftMargin {
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+}
+.footer_textRight {
+    float: right;
+    margin-right: 1%;
+}
+
+.footer_textLeft {
+    text-align: left;
+}

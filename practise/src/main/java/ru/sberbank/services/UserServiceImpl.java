@@ -23,6 +23,22 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Override
+    public User findUserByLogin (String login) {
+        if (login != null) {
+            return userRepository.findByLogin(login);
+        }
+        return null;
+    }
+
+    @Override
+    public User findUserByLoginAndPassword(String login, String password) {
+        if (login != null && password != null ) {
+            return userRepository.findByLoginAndPassword(login, password);
+        }
+        return null;
+    }
+
+    @Override
     public Iterable<User> findUsersByExample(User user) {
         if (user!= null && !Strings.isNullOrEmpty(user.getLastName())
                 && !Strings.isNullOrEmpty(user.getGroup().getName())) {
