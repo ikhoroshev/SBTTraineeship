@@ -14,7 +14,7 @@ public interface TestService  {
 
     Test getTest(Long id);
 
-    Iterable<Test> deleteTest(long id);
+    String deleteTest(long id);
 
     Iterable<Question> findAllQuestions();
 
