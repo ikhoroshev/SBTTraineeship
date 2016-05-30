@@ -8,5 +8,6 @@ public interface QuestionService {
     void addQuestion(Question question);
     void deleteQuestion(Long id);
     Question findQuestionByID(Long id);
+    Question findQuestionByText(String text);
     Iterable<Question> getAllQuestion();
 }

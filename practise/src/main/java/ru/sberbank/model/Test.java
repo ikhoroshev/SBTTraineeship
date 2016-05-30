@@ -3,10 +3,6 @@ package ru.sberbank.model;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by asphodelfod on 15.05.16.
- */
-
 @Entity
 public class Test {
     @Id @GeneratedValue
@@ -20,6 +16,13 @@ public class Test {
     @ManyToMany
     private List<Question> questions;
 
+    public Test() {}
+
+    public Test(String title, String description, List<Question> questions) {
+        this.title = title;
+        this.description = description;
+        this.questions = questions;
+    }
 
     public String getTitle() {
         return title;

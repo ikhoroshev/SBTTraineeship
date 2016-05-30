@@ -22,11 +22,10 @@
                     <li>
                         <a href="<spring:url value="/groups/find" />"><span> Groups</span></a>
                     </li>
-                </sec:authorize>
-
                     <li>
                         <a href="<spring:url value="/test/find" />"><span> Test</span></a>
                     </li>
+                </sec:authorize>
                     <li>
                         <a href="<spring:url value="/testRun/initUserTest" />"><span> Test user</span></a>
                     </li>

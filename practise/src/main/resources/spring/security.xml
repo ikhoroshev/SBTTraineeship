@@ -16,7 +16,7 @@
         <intercept-url pattern="/log/**" access="hasAuthority('1')"/>
         <intercept-url pattern="/questions/**" access="hasAuthority('1')"/>
         <intercept-url pattern="/chapters/**" access="hasAuthority('1')"/>
-        <intercept-url pattern="/test/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/test/**" access="hasAuthority('1')"/>
         <intercept-url pattern="/testRun/**" access="isAuthenticated()"/>
         <form-login login-page="/login" authentication-failure-url="/login?error=1" default-target-url="/"/>
         <logout logout-url="/logout" logout-success-url="/login?logout=1" invalidate-session="true"/>

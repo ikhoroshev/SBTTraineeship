@@ -47,6 +47,9 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
+    public Question findQuestionByText(String text) { return questionRepository.findByText(text); }
+
+    @Override
     public Iterable<Question> getAllQuestion() {
         return questionRepository.findAll();
     }
