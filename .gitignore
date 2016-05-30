@@ -12,5 +12,5 @@ buildNumber.properties
 .mvn/timing.properties
 .idea
 *.iml
-
+*.bak
 
