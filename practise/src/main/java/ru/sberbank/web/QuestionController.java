@@ -13,6 +13,10 @@ import ru.sberbank.model.Question;
 
 import java.util.*;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import ru.sberbank.model.Question;
+import ru.sberbank.services.QuestionService;
 /**
  * Created by dns on 19.05.16.
  */
@@ -24,7 +28,6 @@ public class QuestionController {
     @RequestMapping(value = "/questions/add", method = RequestMethod.GET)
     public String initAddQuestionForm (Question question, Map<String, Object> model){
 
-        question = new Question();
         Set<Answer> answer = new LinkedHashSet<Answer>();
         answer.add(new Answer("answer 1", false));
         answer.add(new Answer("answer 2", false));
@@ -37,8 +40,7 @@ public class QuestionController {
     }
 
     @RequestMapping(value = "/questions/add", method = RequestMethod.POST)
-    public String processAddQuestionForm (Question question){
-
+    public String processAddTestForm (Question question){
         questionService.addQuestion(question);
         return "questions/addQuestion";
     }

@@ -11,6 +11,9 @@
 <div class="container xd-container">
     <spring:url value="/questions/add" var="addQuestion"/>
     <form:form modelAttribute="question" action="${addQuestion}" method="post" class="form-horizontal">
+
+    <%--<form:form modelAttribute="question" method="post" class="form-horizontal" id="search-test-form">--%>
+
         <div class="form-group has-feedback">
             <div>
                 <label for="text">Text </label>
@@ -79,7 +82,6 @@
                         </tr>
                     </tbody>
                 </table>
-
             </div>
             <div>
                 <button class="btn btn-default" type="submit">Add question</button>
