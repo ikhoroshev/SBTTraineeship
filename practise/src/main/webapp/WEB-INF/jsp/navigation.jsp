@@ -46,7 +46,7 @@
             <sec:authorize access="hasAuthority('TEACHER')">
 
                 <ul class="nav navbar-nav navbar-right marginRight">
-                    <div class="dropdown marginTop">
+                    <div class="dropdown ">
                         <button class="btn btn-success dropdown-toggle btn-lg  marginTop" type="button" id="dropdownMenu1"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Тесты
@@ -63,8 +63,8 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right marginRight">
-                    <div class="dropdown marginTop">
-                        <button class="btn btn-info dropdown-toggle btn-lg" type="button" id="dropdownMenu2"
+                    <div class="dropdown ">
+                        <button class="btn btn-info dropdown-toggle btn-lg marginTop" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Пользователи
                             <span class="caret"></span>
@@ -75,7 +75,19 @@
                             <li><a href="/testapp/users/find">Удалить пользователя</a></li>
                         </ul>
                     </div>
+                </ul>
 
+                <ul class="nav navbar-nav navbar-right marginRight">
+                    <div class="dropdown ">
+                        <button class="btn btn-info dropdown-toggle btn-lg marginTop" type="button" id="dropdownMenu3"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Группы
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="/testapp/users/find">Добавить группу</a></li>
+                        </ul>
+                    </div>
                 </ul>
             </sec:authorize>
         </div>
