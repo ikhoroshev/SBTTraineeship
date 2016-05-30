@@ -34,10 +34,10 @@ public class UserTestController {
         Test test = testRun.getTest();
         User user = testRun.getUser();
 
-        //////временно/////////////////////////////
+        /*//////временно/////////////////////////////
         List<Question> questionList = (List<Question>) questionService.getAllQuestion();
         test.setQuestions(questionList);
-        ///////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////*/
 
         userTestRun.setTestRun(testRun);
         userTestRun.setTest(test);

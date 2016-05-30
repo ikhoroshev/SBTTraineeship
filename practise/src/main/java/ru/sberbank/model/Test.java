@@ -13,7 +13,7 @@ public class Test {
 
     private String description;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Question> questions;
 
     public Test() {}
