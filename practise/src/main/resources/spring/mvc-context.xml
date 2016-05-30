@@ -19,4 +19,8 @@
     <mvc:view-controller path="/" view-name="index"/>
     <mvc:view-controller path="/login" view-name="login"/>
     <mvc:default-servlet-handler/>
+    
+    <bean id="myBeansValidator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+    <mvc:annotation-driven validator="myBeansValidator" />
+
 </beans>
