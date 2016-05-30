@@ -9,7 +9,9 @@
 <body>
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
-<h1>Stop</h1>
+    <h1>Stop</h1>
+    <a class="btn btn-default" href='<spring:url value="/viewResult?userId=${user.id}&testRunId=${testRun}" htmlEscape="true"/>'>Open Result</a>
+
 </div>
 </body>
 </html>
