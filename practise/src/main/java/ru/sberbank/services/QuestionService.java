@@ -1,3 +1,14 @@
+//package ru.sberbank.services;
+//
+//import ru.sberbank.model.Question;
+//import ru.sberbank.model.TestChapter;
+//
+//public interface QuestionService {
+//    Iterable<Question> findQuestionByKeywordsAndTestChapter(String keywords, TestChapter testChapter);
+//    void addQuestion(Question question);
+//    void deleteQuestion(Long id);
+//    Question findQuestionByID(Long id);
+//}
 package ru.sberbank.services;
 
 import ru.sberbank.model.Question;
@@ -8,4 +19,6 @@ public interface QuestionService {
     void addQuestion(Question question);
     void deleteQuestion(Long id);
     Question findQuestionByID(Long id);
+    Question findQuestionByText(String text);
+    Iterable<Question> getAllQuestion();
 }

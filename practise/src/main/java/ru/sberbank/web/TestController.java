@@ -2,6 +2,8 @@ package ru.sberbank.web;
 
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
@@ -9,8 +11,7 @@ import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.TestService;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class TestController {
@@ -27,7 +28,22 @@ public class TestController {
     }
 
     @RequestMapping(value = "test/addTest", method = RequestMethod.POST)
-    public String processAddTest(Test test, Map<String, Object> model) {
+    public String initQuestionForm(Test test, Model model){
+        model.addAttribute("test",test);
+        model.addAttribute("questionList", questionService.getAllQuestion());
+        return "test/addTest2";
+    }
+
+
+    @RequestMapping(value = "test/addTest2", method = RequestMethod.POST)
+    public String processAddTest(Test test, Map<String, Object> model, BindingResult result) {
+        List<Question> newQuestions = new ArrayList<>();
+        List<Question> questions = test.getQuestions();
+        Iterator<Question> it=questions.iterator();
+        while (it.hasNext())
+            newQuestions.add(questionService.findQuestionByText(it.next().getText()));
+
+        test.setQuestions(newQuestions);
         testService.addTest(test);
         Iterable<Test> tests = testService.getAllTest();
         model.put("allTest", tests);
@@ -56,4 +72,5 @@ public class TestController {
         return "test/testsList";
     }
 }
+
 
