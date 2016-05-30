@@ -67,12 +67,13 @@ public class TestController {
             testService.deleteTest(id);
         }
         catch (DataIntegrityViolationException e){
-
         }
-        Iterable<Test> testIterable = testService.getAllTest();
-        model.put("allTest", testIterable);
+        finally {
+            Iterable<Test> testIterable = testService.getAllTest();
+            model.put("allTest", testIterable);
 
-        return "test/testsList";
+            return "test/testsList";
+        }
     }
 
     @RequestMapping(value = "/tests/find", method = RequestMethod.GET)
