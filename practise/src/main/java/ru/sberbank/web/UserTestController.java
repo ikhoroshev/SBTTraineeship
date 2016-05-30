@@ -12,9 +12,6 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Николай on 26.05.2016.
- */
 @Controller
 @SessionAttributes(types = UserTestRun.class)
 public class UserTestController {
@@ -54,18 +51,25 @@ public class UserTestController {
     public String nextQuestion(UserTestRun userTestRun, Question question,
                                @RequestParam("id")List<Long> ids, Map<String, Object> model){
 
-            for (Long id: ids) {
-                Result result = new Result();
-                Answer answer = answerService.getAnswer(id);
-                result.setUser(userTestRun.getUser());
-                result.setTestRun(userTestRun.getTestRun());
-                result.setQuestion(userTestRun.getQuestion());
-                result.setAnswer(answer);
-                resultService.addResult(result);
-            }
+        for (Long id: ids) {
+            Result result = new Result();
+            Answer answer = answerService.getAnswer(id);
+            result.setUser(userTestRun.getUser());
+            result.setTestRun(userTestRun.getTestRun());
+            result.setQuestion(userTestRun.getQuestion());
+            result.setAnswer(answer);
+            resultService.addResult(result);
+        }
 
         question = userTestRun.nextQuestions();
+
         if (question == null){
+            TestRun testRun = userTestRun.getTestRun();
+            User user = testRun.getUser();
+            model.put("user", user);
+            model.put("testRun", testRun.getId());
+            testRun.setTestRunStatus(TestRunStatus.COMPLETED);
+            testRunService.addTestRun(testRun);
             return "userTest/stopUserTest";
         }
         model.put("type", question.getType().ordinal());
