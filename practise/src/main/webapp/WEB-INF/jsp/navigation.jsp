@@ -22,7 +22,7 @@
                             <strong>Логин: </strong> ${principal} <br>
                             <c:url var="logoutUrl" value="/logout"/>
                             <form action="/testapp/logout" method="post" style="overflow: hidden; float: left">
-                                <input type="submit" class=" btn-warning btn-xs btn" value="Выйти"/>
+                                <input type="submit" class=" btn-warning btn-sm btn" value="Выйти"/>
                                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             </form>
                         </address>
