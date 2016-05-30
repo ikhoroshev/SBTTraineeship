@@ -29,6 +29,10 @@ public class Question{
         testChapter=null;
     }
 
+    public Question(String text) {
+        this.text = text;
+    }
+
     public Question(List<Answer> answers, QuestionType type, String text, TestChapter testChapter) {
         this.answers = answers;
         this.type = type;
@@ -80,6 +84,11 @@ public class Question{
         return text.equals(question.text);
 
 
+    }
+
+    @Override
+    public String toString() {
+        return text;
     }
 
     @Override

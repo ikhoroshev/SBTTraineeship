@@ -10,4 +10,5 @@ import ru.sberbank.model.TestChapter;
 public interface QuestionRepository extends CrudRepository<Question, Long> {
     Iterable<Question> findQuestionByTextLike(String text);
     Iterable<Question> findQuestionByTextLikeAndTestChapterTitle(String text, String testChapterTitle);
+    Question findByText(String text);
 }

@@ -16,6 +16,13 @@ public class Test {
     @ManyToMany
     private List<Question> questions;
 
+    public Test() {}
+
+    public Test(String title, String description, List<Question> questions) {
+        this.title = title;
+        this.description = description;
+        this.questions = questions;
+    }
 
     public String getTitle() {
         return title;
