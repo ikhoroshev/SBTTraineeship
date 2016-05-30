@@ -10,6 +10,7 @@
         <!--<csrf disabled="true"/>-->
         <intercept-url pattern="/" access="permitAll" />
         <intercept-url pattern="/login" access="permitAll" />
+        <intercept-url pattern="/registration" access="permitAll" />
         <intercept-url pattern="/testrun/**" access="hasAuthority('PUPIL')" />
         <intercept-url pattern="/users/**" access="hasAuthority('TEACHER')" />
         <intercept-url pattern="/tests/**" access="hasAuthority('TEACHER')" />
