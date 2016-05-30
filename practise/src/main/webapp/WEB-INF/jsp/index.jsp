@@ -16,7 +16,7 @@
             onClick='location.href="/testapp/login"'> Войти
     </button> <br><br>
     <button type="button" class="btn btn-warning btn-lg "
-            onClick='location.href="/testapp/testrun"'> Зарегистрироваться
+            onClick='location.href="/testapp/registration"'> Зарегистрироваться
     </button>
 </div>
 </sec:authorize>
