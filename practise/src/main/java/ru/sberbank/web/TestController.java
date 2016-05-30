@@ -21,6 +21,7 @@ public class TestController {
 
     @Resource
     private QuestionService questionService;
+    private int error=1;
 
     @RequestMapping(value = "test/find", method = RequestMethod.GET)
     public String initAddForm(Test test) {
@@ -31,14 +32,22 @@ public class TestController {
     public String initQuestionForm(Test test, Model model){
         model.addAttribute("test",test);
         model.addAttribute("questionList", questionService.getAllQuestion());
+        error=0;
         return "test/addTest2";
     }
 
 
     @RequestMapping(value = "test/addTest2", method = RequestMethod.POST)
     public String processAddTest(Test test, Map<String, Object> model, BindingResult result) {
+        if(error==1){
+            return "test/addTest";
+        }
+
         List<Question> newQuestions = new ArrayList<>();
         List<Question> questions = test.getQuestions();
+        if(questions==null) {
+            return "test/addTest";
+        }
         Iterator<Question> it=questions.iterator();
         while (it.hasNext())
             newQuestions.add(questionService.findQuestionByText(it.next().getText()));
@@ -47,6 +56,7 @@ public class TestController {
         testService.addTest(test);
         Iterable<Test> tests = testService.getAllTest();
         model.put("allTest", tests);
+        error=1;
         return "test/testsList";
     }
 
