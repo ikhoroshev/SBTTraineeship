@@ -1,10 +1,9 @@
 package ru.sberbank.services;
 
-import com.google.common.base.Strings;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 
-import com.google.common.base.Strings;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 import ru.sberbank.repositories.TestRepository;
 
@@ -38,6 +37,16 @@ public class TestServiceImpl implements TestService {
         //id = null;
         testRepository.delete(id);
         return testRepository.findAll();
+    }
+
+    @Override
+    public Iterable<Question> findAllQuestions() {
+        return null;
+    }
+
+    @Override
+    public Iterable<Question> getAllQuestions(Long id, Iterable<Question> questionIterable) {
+        return null;
     }
 }
 

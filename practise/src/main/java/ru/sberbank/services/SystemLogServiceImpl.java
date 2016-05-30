@@ -27,6 +27,11 @@ public class SystemLogServiceImpl implements SystemLogService {
     }
 
     @Override
+    public void Log(int i, String message) {
+
+    }
+
+    @Override
     public void Log(int code) {
         SystemLog log=new SystemLog();
 
@@ -54,4 +59,9 @@ public class SystemLogServiceImpl implements SystemLogService {
 
     @Override
     public Iterable<SystemLog> findAll() { return logRepository.findAll(); }
+
+    @Override
+    public void Log(String s, int i) {
+
+    }
 }
