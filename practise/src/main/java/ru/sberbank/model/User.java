@@ -13,38 +13,26 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class User {
-  @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
-  private Long id;
-  @Column(nullable = false)
-  private String firstName;
-  @Column(nullable = false)
-  private String middleName;
-  @Column(nullable = false)
-  private String lastName;
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Long id;
+    
+    @Column(nullable = false)
+    private String firstName;
+    @Column(nullable = false)
+    private String middleName;
+    @Column(nullable = false)
+    private String lastName;
+    
     @Column(nullable = false)
     private String login;
     @Column(nullable = false)
     private String password;
-  @ManyToOne
-  private UserGroup group;
+    @Column(nullable = false)
+    private String confirmPassword;
+    
+    @ManyToOne
+    private UserGroup group;
 
     public User() {};
 
@@ -95,15 +83,38 @@ public class User {
         this.lastName = lastName;
     }
 
+    
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }  
+    
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
         User user = (User) o;
-
         return id.equals(user.id);
-
     }
 
     @Override
