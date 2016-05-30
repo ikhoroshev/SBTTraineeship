@@ -68,6 +68,8 @@ public class UserTestController {
             User user = testRun.getUser();
             model.put("user", user);
             model.put("testRun", testRun.getId());
+            testRun.setTestRunStatus(TestRunStatus.COMPLETED);
+            testRunService.addTestRun(testRun);
             return "userTest/stopUserTest";
         }
         model.put("type", question.getType().ordinal());
