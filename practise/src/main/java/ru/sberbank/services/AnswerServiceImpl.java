@@ -6,9 +6,6 @@ import ru.sberbank.repositories.AnswerRepository;
 
 import javax.annotation.Resource;
 
-/**
- * Created by Николай on 26.05.2016.
- */
 @Service
 public class AnswerServiceImpl implements AnswerService {
 

@@ -29,8 +29,8 @@ public class QuestionController {
     @Resource
     private SystemLogService log;
 
-    @Resource
-    private AnswerService answerService;
+    //@Resource
+    //private AnswerService answerService;
 
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
@@ -79,8 +79,8 @@ public class QuestionController {
         while(it.hasNext()){
             Answer answer=it.next();
             if(answer.getText()==null||answer.getText().trim().length()==0) {
-                if(answer.getId()!=null)
-                    answerService.deleteAnswer(answer.getId());
+                //if(answer.getId()!=null)
+                    //answerService.deleteAnswer(answer.getId());
                 it.remove();
             }
             else
