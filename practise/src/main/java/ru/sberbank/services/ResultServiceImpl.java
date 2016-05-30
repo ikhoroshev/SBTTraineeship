@@ -6,9 +6,6 @@ import ru.sberbank.repositories.ResultRepository;
 
 import javax.annotation.Resource;
 
-/**
- * Created by Николай on 26.05.2016.
- */
 @Service
 public class ResultServiceImpl implements ResultService {
 
@@ -33,5 +30,10 @@ public class ResultServiceImpl implements ResultService {
     @Override
     public Result getResult(Long id) {
         return resultRepository.findOne(id);
+    }
+
+    @Override
+    public Iterable<Result> findResult(Long userId, Long testRunId) {
+        return resultRepository.findResultByUserIdAndTestRunId(userId, testRunId);
     }
 }

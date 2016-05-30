@@ -18,27 +18,12 @@ public class SystemLogServiceImpl implements SystemLogService {
     @Resource
     private UserService userService;
 
+    //логирование для эксепшенов
     @Override
-    public void Log(String message) {
+    public void Log(String message, int code) {
         SystemLog log=new SystemLog();
 
         log.setMessage(message);
-        log.setCode("");
-        log.setDateTime(new Date());
-
-        org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        ru.sberbank.model.User curUser = userService.getUser(user.getUsername());
-
-        log.setUser(curUser);
-
-        logRepository.save(log);
-    }
-
-    @Override
-    public void Log(int code) {
-        SystemLog log=new SystemLog();
-
-        log.setMessage(codeToMessage(code));
         log.setCode(String.valueOf(code));
         log.setDateTime(new Date());
 
@@ -50,15 +35,40 @@ public class SystemLogServiceImpl implements SystemLogService {
         logRepository.save(log);
     }
 
-    private String codeToMessage(int code){
+    //информационное логирование
+    @Override
+    public void Log(int code, String... arg) {
+        SystemLog log=new SystemLog();
+
+        log.setMessage(codeToMessage(code,arg));
+        log.setCode(String.valueOf(code));
+        log.setDateTime(new Date());
+
+        org.springframework.security.core.userdetails.User user = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        ru.sberbank.model.User curUser = userService.getUser(user.getUsername());
+
+        log.setUser(curUser);
+
+        logRepository.save(log);
+    }
+
+    private String codeToMessage(int code, String... arg){
         switch (code){
-            case 10 : return "Был добавлен вопрос";
+            case 10 : {
+                if(arg.length==1)
+                    return "Был добавлен вопрос <"+arg[0]+">";
+                else return "Был добавлен вопрос";
+            }
             case 11 : return "Был изменен вопрос";
-            case 12 : return "Был удален вопрос";
+            case 12 : {
+                if(arg.length==1)
+                    return "Был удален вопрос <"+arg[0]+">";
+                return "Был удален вопрос";
+            }
             case 13 : return "Была добавлена глава";
             case 14 : return "Была изменена глава";
             case 15 : return "Была удалена глава";
-            default: return "";
+            default: return "Неизвестное событие!";
         }
     }
 

@@ -34,9 +34,7 @@ public class QuestionServiceImpl implements QuestionService {
 
 
     @Override
-    public void addQuestion(Question question) {
-        questionRepository.save(question);
-    }
+    public void addQuestion(Question question) { questionRepository.save(question); }
 
     @Override
     public void deleteQuestion(Long id) {
@@ -46,5 +44,13 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public Question findQuestionByID(Long id) {
         return questionRepository.findOne(id);
+    }
+
+    @Override
+    public Question findQuestionByText(String text) { return questionRepository.findByText(text); }
+
+    @Override
+    public Iterable<Question> getAllQuestion() {
+        return questionRepository.findAll();
     }
 }

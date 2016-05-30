@@ -12,7 +12,7 @@ public class SystemLog {
     @Column(nullable = false)
     private String code;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 2000)
     private String message;
 
     @Column(name = "DATE_TIME", nullable = false)

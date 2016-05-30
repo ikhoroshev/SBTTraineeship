@@ -31,7 +31,7 @@ public class TestChapterController {
         if (testChapter.getPosition()==null)
             testChapter.setPosition(0);
         testChapterService.addTestChapter(testChapter);
-        log.Log(13);
+        log.Log(13,testChapter.getTitle()+ testChapter.getPosition());
         Iterable<TestChapter> testChaptersIterable = testChapterService.getAllTestChapter();
         model.put("allTestChapter", testChaptersIterable);
         return "chapters/testChapterList";
@@ -52,10 +52,10 @@ public class TestChapterController {
             testChapterService.deleteTestChapter(id);
             log.Log(15);
         }catch (DataIntegrityViolationException e){
-            System.out.println(e);
+            log.Log(String.valueOf(e),100);
             Iterable<TestChapter> testChapterIterable = testChapterService.getAllTestChapter();
             model.put("allTestChapter", testChapterIterable);
-            model.put("noDelete", "- can not be removed");
+            model.put("DeleteError", new String("Removal of the current chapter is impossible"));
             model.put("testChapterId", testChapterId);
             return "chapters/testChapterList";
         }
@@ -67,7 +67,7 @@ public class TestChapterController {
     @RequestMapping(value = "testChapter/edit/{testChapterId}", method = RequestMethod.GET)
     public String processEditTestChapter(@PathVariable String testChapterId, Map<String, Object> model){
         Long id = Long.decode(testChapterId);
-        
+        log.Log(14);
         TestChapter editTestChapter = testChapterService.findTestChapterByID(id);
         model.put("testChapter", editTestChapter);
 

@@ -21,10 +21,11 @@
                 <td><c:out value="${tests.title}"/></td>
                 <td><c:out value="${tests.description}"/></td>
             <td>
-                <a class="btn btn-default" href='<spring:url value="/test/delete/${test.id}" htmlEscape="true"/>'>Delete</a>
+                <a class="btn btn-default" href='<spring:url value="/test/delete/${tests.id}" htmlEscape="true"/>'>Delete</a>
             </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+</div>
 </body>

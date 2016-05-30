@@ -8,6 +8,7 @@
 <jsp:include page="../navigation.jsp"/>
 <div class="container xd-container">
         <div>
+            <input type="datetime-local">
             <a class="btn btn-default" href='<spring:url value="/" htmlEscape="true"/>'>Index Page</a>
         </div>
             <table class="table table-stripped">

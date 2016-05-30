@@ -5,7 +5,7 @@ import java.lang.String;
 import java.util.List;
 
 @Entity
-public class Question {
+public class Question{
     @Id @GeneratedValue
     private Long id;
 
@@ -15,7 +15,7 @@ public class Question {
     @Column(nullable = false)
     private QuestionType type;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 2000)
     private String text;
 
     @ManyToOne
@@ -27,6 +27,10 @@ public class Question {
         type=null;
         text=null;
         testChapter=null;
+    }
+
+    public Question(String text) {
+        this.text = text;
     }
 
     public Question(List<Answer> answers, QuestionType type, String text, TestChapter testChapter) {
@@ -80,6 +84,11 @@ public class Question {
         return text.equals(question.text);
 
 
+    }
+
+    @Override
+    public String toString() {
+        return text;
     }
 
     @Override
