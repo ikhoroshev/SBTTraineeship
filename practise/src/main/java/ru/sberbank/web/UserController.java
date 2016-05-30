@@ -38,17 +38,17 @@ public class UserController {
         return "users/usersList";
     }
 
-    @RequestMapping(value = "/users/add", method = RequestMethod.GET)
+    @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String initAddUserForm (User user,Map<String, Object> model){
         Iterable<UserGroup> userGroups = userGroupService.findUsersByExample();
         model.put("listUserGroup", userGroups);
         return "users/addUser";
     }
 
-    @RequestMapping(value = "/users/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String processAddUserForm (@ModelAttribute("user")User user){
         userService.addUser(user);
-        return "users/usersList";
+        return "login";
     }
 
     @RequestMapping(value = "/users/delete/{userId}", method = RequestMethod.GET)
