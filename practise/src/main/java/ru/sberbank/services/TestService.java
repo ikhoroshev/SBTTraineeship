@@ -1,6 +1,7 @@
 package ru.sberbank.services;
 
 import org.springframework.data.repository.CrudRepository;
+import ru.sberbank.model.Question;
 import ru.sberbank.model.Test;
 
 /**

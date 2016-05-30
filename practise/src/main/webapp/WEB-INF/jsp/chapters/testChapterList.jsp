@@ -29,12 +29,19 @@
                 <td><c:out value="${testChapter.title}"/></td>
                 <td><c:out value="${testChapter.position}"/></td>
                 <td>
-                    <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit<c:if test="${testChapterId == testChapter.id}">
-                        <c:out value="${noEdit}"/>
-                    </c:if></a>
-                    <a class="btn btn-default" href='<spring:url value="/testChapter/delete/${testChapter.id}" htmlEscape="true"/>'>Delete <c:if test="${testChapterId == testChapter.id}">
-                        <c:out value="${noDelete}"/>
-                    </c:if></a>
+                    <a class="btn bt btn-default" href='<spring:url value="/testChapter/edit/${testChapter.id}"/>'>Edit
+                    </a>
+                    <a class="btn btn-default" href='<spring:url value="/testChapter/delete/${testChapter.id}" htmlEscape="true"/>'>Delete
+                    </a>
+                    <div>
+                        <c:if test="${testChapterId == testChapter.id}">
+                            <c:if test="${DeleteError!=null}">
+                                <b style="color: #843534">
+                                    <c:out value="${DeleteError}"/>
+                                </b>
+                            </c:if>
+                        </c:if>
+                    </div>
                 </td>
             </tr>
         </c:forEach>

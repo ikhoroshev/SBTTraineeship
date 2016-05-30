@@ -78,8 +78,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <form:input type="hidden" path="answers[0].id"/>
-                        <form:input type="hidden" path="answers[0].question"/>
+                        <form:input type="hidden" path="answers[0].id" id="a0id"/>
                         <form:input class="form-control" path="answers[0].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -88,8 +87,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <form:input type="hidden" path="answers[1].id"/>
-                        <form:input type="hidden" path="answers[1].question"/>
+                        <form:input type="hidden" path="answers[1].id" id="a1id"/>
                         <form:input class="form-control" path="answers[1].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -98,8 +96,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <form:input type="hidden" path="answers[2].id"/>
-                        <form:input type="hidden" path="answers[2].question"/>
+                        <form:input type="hidden" path="answers[2].id" id="a2id"/>
                         <form:input class="form-control" path="answers[2].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">
@@ -108,8 +105,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <form:input type="hidden" path="answers[3].id"/>
-                        <form:input type="hidden" path="answers[3].question"/>
+                        <form:input type="hidden" path="answers[3].id" id="a3id"/>
                         <form:input class="form-control" path="answers[3].text" maxlength="255" id="text"/>
                     </td>
                     <td style="text-align: center; vertical-align: middle">

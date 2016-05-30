@@ -64,7 +64,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/users/add", method = RequestMethod.POST)
-    public String processAddUserForm (User user, Map<String, Object> model){
+    public String processAddUserForm (User user, Map<String, Object> model) {
         if(user.getGroup() != null) {
             Long groupId = user.getGroup().getId();
             UserGroup userGroup = userGroupService.getUserGroup(groupId);
@@ -76,6 +76,21 @@ public class UserController {
         catch (NoSuchAlgorithmException e){
             return "users/addUser";
         }
+        Iterable<User> it = userService.getAllUser();
+       /* while (it.iterator().hasNext())
+        {
+            User tempUser = it.iterator().next();
+            if (tempUser.getUsername() == user.getUsername()) {
+                try {
+                    throw new Exception("Name is using");
+                } catch (Exception e) {
+                    return "users/usersList";
+                }
+
+            }
+            it.iterator().remove();
+        }
+        */
 
         userService.addUser(user);
         Iterable<User> users = userService.findUsersByExample(user);

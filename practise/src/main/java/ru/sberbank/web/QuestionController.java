@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sberbank.model.*;
+import ru.sberbank.services.AnswerService;
 import ru.sberbank.services.QuestionService;
 import ru.sberbank.services.SystemLogService;
 import ru.sberbank.services.TestChapterService;
@@ -27,6 +28,9 @@ public class QuestionController {
 
     @Resource
     private SystemLogService log;
+
+    //@Resource
+    //private AnswerService answerService;
 
     @RequestMapping(value = "/questions/find", method = RequestMethod.GET)
     public String initViewForm(Question question, Map<String, Object> model){
@@ -74,8 +78,11 @@ public class QuestionController {
         Iterator<Answer> it=answers.iterator();
         while(it.hasNext()){
             Answer answer=it.next();
-            if(answer.getText()==null||answer.getText().trim().length()==0)
+            if(answer.getText()==null||answer.getText().trim().length()==0) {
+                //if(answer.getId()!=null)
+                    //answerService.deleteAnswer(answer.getId());
                 it.remove();
+            }
             else
                 answer.setQuestion(question);
         }
@@ -112,8 +119,7 @@ public class QuestionController {
     public String initAddForm(Question question, Map<String, Object> model){
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
         model.put("allTestChapter", allTestChapter);
-        model.put("QuestionType", QuestionType.values());
-//        model.put("isEdit", false);
+
         return "questions/addQuestion";
     }
 
@@ -147,16 +153,10 @@ public class QuestionController {
     @RequestMapping(value = "/questions/edit/{questionID}", method = RequestMethod.GET)
     public String processEditQuestion(@PathVariable String questionID, Map<String, Object> model){
         Long id = Long.decode(questionID);
-
         Iterable<TestChapter> allTestChapter = testChapterService.getAllTestChapter();
         model.put("allTestChapter", allTestChapter);
-//        model.put("QuestionType", QuestionType.values());
-
         Question editQuestion = questionService.findQuestionByID(id);
         model.put("question", editQuestion);
-//        model.put("isEdit", true);
-
-//        questionService.deleteQuestion(editQuestion.getId());
 
         return "/questions/addQuestion";
     }
