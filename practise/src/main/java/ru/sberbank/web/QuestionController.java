@@ -41,6 +41,8 @@ public class QuestionController {
 
     @RequestMapping(value = "/questions/add", method = RequestMethod.POST)
     public String processAddTestForm (Question question){
+
+
         questionService.addQuestion(question);
         return "questions/addQuestion";
     }
