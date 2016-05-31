@@ -1,5 +1,6 @@
 package ru.sberbank.model;
 
+import java.util.Objects;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by sbt-shmygin-as on 06.04.2016.
@@ -17,17 +20,26 @@ public class User {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     
+    @Size(min = 3, max = 35)
     @Column(nullable = false)
     private String firstName;
+    
+    @Size(min = 3, max = 35)
     @Column(nullable = false)
     private String middleName;
+    
+    @Size(min = 3, max = 35)
     @Column(nullable = false)
     private String lastName;
     
+    @Size(min = 3, max = 35)
     @Column(nullable = false)
     private String login;
+    
+    @Size(min = 3, max = 35)
     @Column(nullable = false)
     private String password;
+    
     @Column(nullable = false)
     private String confirmPassword;
     
@@ -119,6 +131,8 @@ public class User {
 
     @Override
     public int hashCode() {
-        return id.hashCode();
+      int hash = 7;
+      hash = 59 * hash + Objects.hashCode(this.id);
+      return hash;
     }
 }
