@@ -54,9 +54,9 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="/testapp/tests/search">Найти тест</a></li>
-                                <li><a href="/testapp/tests/add">Добавить тест</a></li>
-                                <li><a href="/testapp/tests/search/dellete">Удалить тест</a></li>
+                                <li><a href="/testapp/tests/search">Найти </a></li>
+                                <li><a href="/testapp/tests/add">Добавить </a></li>
+                                <li><a href="/testapp/tests/search/dellete">Удалить</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/testapp/tests/link">Тест - вопрос</a></li>
                                 <li><a href="/testapp/testRun/link">Тест - человек</a></li>
@@ -75,7 +75,7 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="/testapp/group/add">Добавить группу</a></li>
+                                <li><a href="/testapp/group/add">Добавить</a></li>
                             </ul>
                         </div>
                     </ul>
@@ -89,9 +89,9 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="/testapp/users/find">Найти пользователя</a></li>
-                                <li><a href="/testapp/registration">Добавить пользователя</a></li>
-                                <li><a href="/testapp/users/find">Удалить пользователя</a></li>
+                                <li><a href="/testapp/users/find" >Найти</a></li>
+                                <li><a href="/testapp/registration">Добавить</a></li>
+                                <li><a href="/testapp/users/find">Удалить</a></li>
                             </ul>
                         </div>
                     </ul>
