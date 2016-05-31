@@ -57,9 +57,11 @@
                                 <li><a href="/testapp/tests/search">Найти тест</a></li>
                                 <li><a href="/testapp/tests/add">Добавить тест</a></li>
                                 <li><a href="/testapp/tests/search/dellete">Удалить тест</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/testapp/tests/link">Тест - вопрос</a></li>
+                                <li><a href="/testapp/testRun/link">Тест - человек</a></li>
+                                <li role="separator" class="divider"></li>
                                 <li><a href="/testapp/result">Результаты</a></li>
-                                    <%--<li role="separator" class="divider"></li>--%>
-                                    <%--<li><a href="#">Separated link</a></li>--%>
                             </ul>
                         </div>
                     </ul>
