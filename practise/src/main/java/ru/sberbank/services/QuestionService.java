@@ -12,4 +12,6 @@ import java.util.Set;
 
 public interface QuestionService {
     Iterable<Question> findByTestsIdLike(Long test);
+    void addQuestion (Question question);
+
 }

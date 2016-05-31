@@ -51,10 +51,9 @@ end note
 class Question {
     Long id
     List<Answer> answers
-    AnswerType answerType (single, multiple)
+    AnswerType answerType //single, multiple
     TestChapter testChapter
     String text
-    Test test
 }
 
 note top of Question
@@ -63,7 +62,6 @@ note top of Question
    | answer_type |
    | test_chapter_id |
    | text |
-   | test_id |
 end note
 
 
@@ -139,7 +137,7 @@ note top of TestChapter
 end note
 
 class TestRun {
-    TestRunStatus testRunStatus (NEW, COMPLETED)
+    TestRunStatus testRunStatus //NEW, COMPLETED
     User user
     Test test
 }

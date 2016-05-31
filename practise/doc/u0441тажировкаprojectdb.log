@@ -1,0 +1,57 @@
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+alter table test_question drop constraint FKi9tfy70garri03ngbkjiaop14
+alter table test_question drop constraint FKnca96r8t0fo37mk6s25sydaeg
+drop table test_question if exists
+alter table Answer drop constraint FKfiomvt17psxodcis3d8nmopx8
+alter table Question drop constraint FKiahcd0a7yadywqkst9mw0n08f
+alter table Question_Answer drop constraint FK46fvetwitb78vyxiap2ayfe9r
+alter table Question_Answer drop constraint FKdovdxegcb1fececsvgg6gd4sk
+alter table Result drop constraint FK7ulvsn7to2fg1gpqhia07a9im
+alter table Result drop constraint FKk3n13g26asp6d84rg9mrxvduj
+alter table Result drop constraint FKlcfr0dngpt8pdm1g5rk0ymdl1
+alter table SystemLog drop constraint FKk51iqr4a6kgadqavvgtcrp182
+alter table TestRun drop constraint FKkmcrt9kyca6dc0b06k1cglwkq
+alter table TestRun drop constraint FKoh6i07p8g0kchek5ed4rvx53i
+alter table User drop constraint FKebbdbf55570ks872ci7gykhbt
+drop table Answer if exists
+drop table Question if exists
+drop table Question_Answer if exists
+drop table Result if exists
+drop table SystemLog if exists
+drop table Test if exists
+drop table test_chapter if exists
+drop table TestRun if exists
+drop table User if exists
+drop table UserGroup if exists
+drop sequence hibernate_sequence
+create table test_question (question_id bigint not null, test_id bigint not null, primary key (question_id, test_id))
+create sequence hibernate_sequence start with 1 increment by 1
+create table Answer (id bigint not null, is_right boolean not null, text varchar(255) not null, question_id bigint, primary key (id))
+create table Question (id bigint not null, answer_type integer not null, text varchar(255) not null, testChapter_id bigint, primary key (id))
+create table Question_Answer (Question_id bigint not null, answer_id bigint not null, primary key (Question_id, answer_id))
+create table Result (id bigint not null, answer_id bigint, question_id bigint, testRun_id bigint, primary key (id))
+create table SystemLog (id bigint not null, code varchar(255) not null, data_time timestamp not null, message varchar(255) not null, user_id bigint, primary key (id))
+create table Test (id bigint not null, description varchar(255) not null, title varchar(255) not null, primary key (id))
+create table test_chapter (id bigint not null, position integer not null, title varchar(255) not null, primary key (id))
+create table TestRun (id bigint not null, status varchar(255) not null, testRunStatus integer not null, test_id bigint, user_id bigint, primary key (id))
+create table User (id bigint not null, firstName varchar(255) not null, lastName varchar(255) not null, middleName varchar(255) not null, group_id bigint, primary key (id))
+create table UserGroup (id bigint not null, name varchar(255) not null, primary key (id))
+alter table Question_Answer add constraint UK_5nlxbyuy6eyk6i2yo9chraxd3 unique (answer_id)
+alter table test_question add constraint FKi9tfy70garri03ngbkjiaop14 foreign key (test_id) references Test
+alter table test_question add constraint FKnca96r8t0fo37mk6s25sydaeg foreign key (question_id) references Question
+alter table Answer add constraint FKfiomvt17psxodcis3d8nmopx8 foreign key (question_id) references Question
+alter table Question add constraint FKiahcd0a7yadywqkst9mw0n08f foreign key (testChapter_id) references test_chapter
+alter table Question_Answer add constraint FK46fvetwitb78vyxiap2ayfe9r foreign key (answer_id) references Answer
+alter table Question_Answer add constraint FKdovdxegcb1fececsvgg6gd4sk foreign key (Question_id) references Question
+alter table Result add constraint FK7ulvsn7to2fg1gpqhia07a9im foreign key (answer_id) references Answer
+alter table Result add constraint FKk3n13g26asp6d84rg9mrxvduj foreign key (question_id) references Question
+alter table Result add constraint FKlcfr0dngpt8pdm1g5rk0ymdl1 foreign key (testRun_id) references TestRun
+alter table SystemLog add constraint FKk51iqr4a6kgadqavvgtcrp182 foreign key (user_id) references User
+alter table TestRun add constraint FKkmcrt9kyca6dc0b06k1cglwkq foreign key (test_id) references Test
+alter table TestRun add constraint FKoh6i07p8g0kchek5ed4rvx53i foreign key (user_id) references User
+alter table User add constraint FKebbdbf55570ks872ci7gykhbt foreign key (group_id) references UserGroup
+INSERT INTO QUESTION VALUES(1,0,'qwe',NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT

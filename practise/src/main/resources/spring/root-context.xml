@@ -18,6 +18,7 @@
             <props>
 
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
+
                 <prop key="hibernate.dialect">${jpa.database-dialect}</prop>
             </props>
         </property>
@@ -25,7 +26,7 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${datasource.driverClassName}"/>
-        <property name="url" value="${datasource.url}"/>
+        <property name="url" value="jdbc:hsqldb:file:c:/doc/db"/>
         <property name="username" value="${datasource.username}"/>
         <property name="password" value="${datasource.password}"/>
     </bean>
