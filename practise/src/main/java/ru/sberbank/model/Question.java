@@ -93,7 +93,7 @@ public class Question implements Comparable<Question>{
         int i=testChapter.getPosition().compareTo(o.getTestChapter().getPosition());
         if(i==0)
         {
-            return testChapter.getId().compareTo(o.getId());
+            return getId().compareTo(o.getId());
         }
         return i;
     }

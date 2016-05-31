@@ -1,6 +1,14 @@
 .marginTop {
-    margin-top: 3.5%;
+    margin-top: 0.4%;
 }
+
+.navbar-default {
+    background-color: white;
+    border-bottom-color: green;
+    border-radius: 0;
+    
+}
+
 
 .marginRight {
     margin-right: 1.6% !important;
