@@ -13,7 +13,7 @@
 
 
 <div class="questions">
-        <select id="slc" multiple='multiple' size="10" class="selection" >
+        <select id="slc" multiple='multiple' size="10" class="selection form-control" >
 
             <c:if test="${questions!=null}">
                 <c:forEach items="${questions}" var="user" varStatus="stat">
@@ -39,7 +39,7 @@
 
 <div>
     <form:form modelAttribute="test" method="post" id="testForm" cssClass="controlForm" >
-        <form:select path="id" onchange="submit('testForm')" id="testId" cssClass="controlSelect">
+        <form:select path="id" onchange="submit('testForm')" id="testId" cssClass="form-control controlSelect">
             <c:forEach items="${tests}" var="test">
                 <form:option value="${test.id}">${test.title}</form:option>
             </c:forEach>
@@ -57,7 +57,7 @@
 
         <c:set var="s" value="-1"/>
 
-        <select id="slc2" multiple="true"  size="10" class="selection">
+        <select id="slc2" multiple="true"  size="10" class="selection form-control">
             <c:if test="${questionsInTest!=null}">
                 <c:forEach items="${questionsInTest}" var="user" varStatus="stat">
                     <c:if test="${s!=user.testChapter.position}">
