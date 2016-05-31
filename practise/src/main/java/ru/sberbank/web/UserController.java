@@ -17,9 +17,15 @@ import ru.sberbank.services.UserService;
 
 import javax.annotation.Resource;
 import java.util.Map;
+import javax.validation.Valid;
+import org.apache.log4j.Logger;
+import org.springframework.validation.BindingResult;
+import ru.sberbank.validators.UserValidator;
 
 @Controller
 public class UserController {
+    private final Logger logger = Logger.getLogger(UserController.class);
+  
     @Resource
     private UserService userService;
     @Resource
@@ -41,12 +47,21 @@ public class UserController {
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String initAddUserForm (User user,Map<String, Object> model){
         Iterable<UserGroup> userGroups = userGroupService.findUsersByExample();
-        model.put("listUserGroup", userGroups);
+        model.put("listUserGroup", userGroups);        
         return "users/addUser";
     }
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
-    public String processAddUserForm (@ModelAttribute("user")User user){
+    public String processAddUserForm (@Valid User user, BindingResult bindingResult){
+        UserValidator userValidator = new UserValidator();
+        userValidator.validate(user, bindingResult);
+        if (user.getLogin() != null && userService.findUserByLogin(user.getLogin()) != null) {
+          bindingResult.rejectValue("login", "owned.login");
+        }
+        if (bindingResult.hasErrors()) {
+          logger.info("\n[processAddUserForm has errors ]\n");
+          return "users/addUser";
+        }
         userService.addUser(user);
         return "login";
     }
