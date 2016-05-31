@@ -53,7 +53,7 @@
                                 Тесты
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
                                 <li><a href="/testapp/tests/search">Найти </a></li>
                                 <li><a href="/testapp/tests/add">Добавить </a></li>
                                 <li><a href="/testapp/tests/search/dellete">Удалить</a></li>
@@ -74,7 +74,7 @@
                                 Группы
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
                                 <li><a href="/testapp/group/add">Добавить</a></li>
                             </ul>
                         </div>
@@ -88,7 +88,7 @@
                                 Пользователи
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
                                 <li><a href="/testapp/users/find" >Найти</a></li>
                                 <li><a href="/testapp/registration">Добавить</a></li>
                                 <li><a href="/testapp/users/find">Удалить</a></li>
