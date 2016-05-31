@@ -18,22 +18,22 @@
                 <form action="${loginUrl}" method="POST">
                     <c:if test="${param.error != null}">
                         <div class="alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             Неверное имя пользователя и/или пароль
                         </div>
                     </c:if>
                     <c:if test="${param.logout != null}">
                         <div class="alert alert-warning">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             You have been logged out.
                         </div>
                     </c:if>
                         
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" size="30" placeholder="username" name="username" maxlength="80" id="username"/>
-                        <span class="help-inline"><form:errors path="*"/></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" size="30" placeholder="password" name="password" maxlength="80" id="password"/>
-                        <span class="help-inline"><form:errors path="*"/></span>
                     </div>
 
                     <input type="hidden"
