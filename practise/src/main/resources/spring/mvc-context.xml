@@ -22,5 +22,11 @@
     
     <bean id="myBeansValidator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
     <mvc:annotation-driven validator="myBeansValidator" />
-
+    
+    <bean id="messageSource"
+        class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename">
+            <value>spring\messages</value>
+        </property>
+    </bean>
 </beans>
